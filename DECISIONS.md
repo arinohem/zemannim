@@ -39,7 +39,7 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Israel / diaspora | From location (approximate border) | — | Choice; **Setting** (auto/on/off) |
 | Purim | 15 Adar within ~6 km of Jerusalem's Old City, else 14; Adar II in leap years | — | Choice; **Setting** (auto/on/off) |
 | Parasha | Annual cycle; reading of the chosen location; when Israel and diaspora differ, the other is shown below | Tefilla 13:1. Algorithm ours, checked against Hebcal for 5600–6199: 0 differences | Verified |
-| Haftaroth | **Not implemented** — Italian rite, to be checked with owner | — | To do |
+| Haftaroth | **Not implemented.** Owner's plan (2026-11-02): lists for the Italian, Ashkenazi, and Sephardi rites, but only if the Ashkenazi list can be traced to Western Ashkenazi sources and the Sephardi list to Western Sephardi sources / the Rambam; otherwise Italian only | To find. Candidate for the Rambam (UNKNOWN, to verify): the order of haftaroth in Tefilla 13 and in the order of prayers at the end of Sefer Ahava | To do |
 | Parasha romanisation | Provisional | — | To do (align with Mahazor) |
 | Time zone | City list: fixed zone; GPS: device zone | — | Choice |
 
