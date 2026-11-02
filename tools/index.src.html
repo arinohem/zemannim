@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zemannim secondo il Mishne Tora</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Zemannim MT">
+<meta name="theme-color" content="#f4f1ea">
+<!--PWA-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#f4f1ea; --card:#fffdf8; --ink:#1d1b17; --mute:#6c665c; --line:#e2dccf; --acc:#7a4b16; --accbg:#f3e6d3; }
+@media (prefers-color-scheme: dark) { :root { --bg:#16140f; --card:#211e18; --ink:#efe9dc; --mute:#a59d8e; --line:#38332a; --acc:#e0a861; --accbg:#3a2c1a; } }
+* { box-sizing:border-box; }
+html,body { margin:0; background:var(--bg); color:var(--ink); font-family:"Source Sans 3", -apple-system, system-ui, sans-serif; -webkit-text-size-adjust:100%; }
+[lang="he"], .zhe, .parhe, .heb { font-family:"Frank Ruhl Libre", "Times New Roman", serif; }
+header { position:sticky; top:0; z-index:5; background:var(--bg); padding:calc(env(safe-area-inset-top) + 10px) 16px 8px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); }
+header h1 { font-size:17px; margin:0; font-weight:600; }
+header button { background:none; border:1px solid var(--line); color:var(--ink); border-radius:16px; padding:5px 12px; font-size:14px; font-family:inherit; }
+main { padding:12px 16px calc(env(safe-area-inset-bottom) + 96px); max-width:560px; margin:0 auto; }
+.place { display:block; width:100%; text-align:start; background:none; border:none; color:var(--acc); text-decoration:underline; font-size:15px; padding:4px 0 10px; font-family:inherit; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px 14px; margin-bottom:10px; text-align:center; }
+.date .wd { color:var(--mute); font-size:15px; }
+.date .big { font-size:24px; margin:2px 0; }
+.date .heb { font-size:21px; }
+.small { color:var(--mute); font-size:13.5px; margin-top:3px; }
+.label { color:var(--mute); font-size:13.5px; }
+.parhe { font-size:28px; font-weight:700; line-height:1.2; }
+.diverge { margin-top:8px; padding-top:8px; border-top:1px dashed var(--line); font-size:14px; color:var(--acc); }
+.notes { margin:6px 0 10px; font-size:15px; line-height:1.45; }
+.notes > div { padding:6px 2px; border-bottom:1px solid var(--line); text-align:center; }
+.times { margin-top:4px; }
+.row { border-bottom:1px solid var(--line); }
+.row summary { list-style:none; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:11px 2px; cursor:pointer; direction:ltr; }
+.row summary::-webkit-details-marker { display:none; }
+.row .t { font-size:22px; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.row .z { text-align:right; display:flex; flex-direction:column; align-items:flex-end; }
+.row .zhe { font-size:22px; font-weight:700; line-height:1.15; }
+.row .zit { color:var(--mute); font-size:12.5px; max-width:230px; line-height:1.25; }
+.row .tag { margin-top:3px; font-size:12px; background:var(--accbg); color:var(--acc); padding:1px 8px; border-radius:10px; }
+.row.next .t, .row.next .zhe { color:var(--acc); }
+.src { font-size:13px; color:var(--mute); padding:0 2px 10px; }
+.foot { text-align:center; color:var(--mute); font-size:13px; padding:12px 0; }
+nav { position:fixed; left:0; right:0; bottom:0; background:var(--bg); border-top:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; padding:8px 14px calc(env(safe-area-inset-bottom) + 8px); z-index:5; direction:ltr; }
+nav button, nav input { font-family:inherit; font-size:16px; color:var(--ink); background:var(--card); border:1px solid var(--line); border-radius:12px; padding:9px 14px; }
+nav .arrow { font-size:20px; padding:6px 18px; }
+#sheet { position:fixed; inset:0; background:var(--bg); z-index:10; overflow:auto; padding:calc(env(safe-area-inset-top) + 8px) 18px calc(env(safe-area-inset-bottom) + 24px); transform:translateY(100%); transition:transform .25s ease; }
+#sheet.open { transform:none; }
+.sheethead { display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; background:var(--bg); padding:8px 0; border-bottom:1px solid var(--line); }
+.sheethead button, .wide, select { font-family:inherit; font-size:15px; color:var(--ink); background:var(--card); border:1px solid var(--line); border-radius:10px; padding:8px 12px; }
+.wide { display:block; width:100%; margin:8px 0; }
+select { width:100%; }
+#sheet h3 { font-size:15px; margin:18px 0 6px; }
+.seg { display:flex; gap:6px; flex-wrap:wrap; }
+.seg button { flex:1; font-family:inherit; font-size:14px; padding:8px 6px; border-radius:10px; border:1px solid var(--line); background:var(--card); color:var(--ink); }
+.seg button.on { background:var(--acc); color:var(--card); border-color:var(--acc); }
+.notesdoc { font-size:15px; line-height:1.5; }
+.notesdoc h4 { margin:16px 0 4px; font-size:15px; }
+.notesdoc .st { font-size:12px; padding:1px 7px; border-radius:8px; background:var(--accbg); color:var(--acc); margin-left:4px; }
+.notesdoc p { margin:4px 0; }
+</style>
+</head>
+<body>
+<header><h1 id="appTitle">Zemannim secondo il Mishne Tora</h1><button id="settingsBtn">Impostazioni</button></header>
+<main id="main"></main>
+<nav><button class="arrow" id="prev" aria-label="giorno precedente">◀</button><input type="date" id="dateInput"><button id="todayBtn">Oggi</button><button class="arrow" id="next" aria-label="giorno successivo">▶</button></nav>
+<div id="sheet"></div>
+<template id="notesTpl"><div class="notesdoc">
+<p>Ogni regola dell’app, con la fonte e lo stato. <b>MT</b> = letto nel Mishne Tora (testo di mechon-mamre.org); <b>Comm.</b> = Commento alla Mishna del Rambam; <b>dedotto</b> = conclusione nostra; <b>scelta</b> = decisione dell’utente. Le voci con un’impostazione si possono invertire.</p>
+<h4>Ore stagionali <span class="st">dedotto</span></h4><p>Il giorno va dal sorgere al tramonto, diviso in 12 ore. La quarta ora finisce a «שליש היום» (Tefilla 3:1); la preghiera comincia «עם הנץ החמה» (3:1) e la minḥà si può dire «עד שתשקע החמה» (3:4).</p>
+<h4>Ṣeth ha-kokhavim = fine dello Shabbath <span class="st">MT · scelta</span></h4><p>20 minuti fissi dopo il tramonto: «וזה העת כמו שליש שעה אחר שקיעת החמה» (Terumoth 7:2). In alternativa 18 minuti: ¾ di mil, con il mil di «שני חומשי שעה משעות ההשויה» (Comm. Pesaḥim 3:2). Non ho trovato il passo in cui il Rambam stesso enuncia i ¾ di mil; Shabbath 5:4 parla solo di tre stelle medie. <i>Impostazione: 20 / 18.</i></p>
+<h4>ʿAlòth ha-shaḥar <span class="st">Comm. · scelta</span></h4><p>Il MT usa l’alba come limite (Qeriath Shemaʿ 1:10–13; Tefilla 3:6–7) ma, nei capitoli letti, non ne dà la distanza dal sorgere. Si usa il Comm. Berakhoth 1:1: «בכדי שעה וחומש שעה מן השעות הזמניות», intese come ore stagionali del giorno (lettura nostra). <i>Impostazione: mostra / nascondi.</i></p>
+<h4>Orari del giorno <span class="st">MT</span></h4><p>Shemaʿ del mattino: fine della 3ª ora (Qeriath Shemaʿ 1:12–14). Shaḥrith: fino alla fine della 4ª ora (Tefilla 3:1). Musaf: fino a 7 ore, solo nei giorni con Musaf (3:5). Minḥà gedolà da 6½, qetannà da 9½, fino a quando resta 1¼ ore, e si può pregare fino al tramonto (3:2, 3:4). Mezzanotte: fine preferibile dello Shemaʿ della sera (Qeriath Shemaʿ 1:10); il MT non la definisce, la calcoliamo a metà fra tramonto e sorgere <span class="st">dedotto</span>.</p>
+<h4>Accensione dei lumi <span class="st">MT</span></h4><p>Non mostrata: il MT dice solo «מבעוד יום, קודם שקיעת החמה» (Shabbath 5:3), senza minuti.</p>
+<h4>Sole <span class="st">scelta</span></h4><p>Sorgere e tramonto a livello del mare, senza correzione per l’altitudine (i passi letti non ne parlano). Algoritmo NOAA; differenza dagli orari di Zemaneh Yosef per Ferrara: entro il minuto.</p>
+<h4>Arrotondamento <span class="st">scelta tecnica</span></h4><p>Con l’arrotondamento prudente i termini finali sono arrotondati al minuto precedente, gli inizi al minuto seguente. Non è una regola del MT. <i>Impostazione: sì / no.</i></p>
+<h4>Nefilath appayim <span class="st">MT · scelta</span></h4><p>Non si fa: Shabbath, feste e Ḥol ha-moʿed («מועדות»; Ḥol ha-moʿed incluso per scelta), Rosh ha-Shanà, Rosh Ḥodesh, Ḥanukkà, Purim, Minḥà della vigilia di Shabbath e di festa (Tefilla 5:15). Di sera non si fa mai («ולא בערבית שבכל יום»), tranne a Yom ha-Kippurim, quando si fa in ogni preghiera; per questo ʿArvith compare solo quel giorno. In tutti gli altri giorni si fa, anche il 9 di Av. <b>Da verificare:</b> qui la vigilia di Yom ha-Kippurim è trattata come vigilia di festa («ערבי … ימים טובים»): è una nostra lettura.</p>
+<h4>Pioggia <span class="st">MT · rito italiano</span></h4><p>Menzione nella seconda benedizione da Musaf di Shemini ʿAṣereth (diaspora: primo giorno) fino a Shaḥrith del primo giorno di Pesaḥ (Tefilla 2:17, 2:19). Formula del rito italiano: «משיב הרוח ומוריד הגשם»; d’estate nulla (non «מוריד הטל»). Richiesta in Birkath ha-shanim: in Israele dal 7 di Marḥeshwan; fuori dal 60° giorno dopo la tequfa di Tishri, contando come 1° il giorno della tequfa, finché si menziona la pioggia (2:18). Il MT nomina Shinʿar, Siria ed Egitto «והדומין להן»: l’applicazione all’Europa è nostra.</p>
+<h4>Tequfa <span class="st">MT · scelta reversibile</span></h4><p>Si usa il cap. 9 di Qiddush ha-Ḥodesh (anno di 365¼ giorni; tequfa di Nisan dell’anno 1 = 7 g 9 h 642 ḥ prima del molad, 9:3). Il cap. 10 (365 g 5 h 997 ḥ 48 r; 9 h 642 ḥ prima del molad, 10:3) è detto «האמת יותר» (10:6) e anticipa la richiesta di circa 11 giorni (nel 2026: 24 novembre invece del 5 dicembre). <i>Impostazione: cap. 9 / cap. 10.</i></p>
+<h4>Israele, secondo giorno di festa, Purim <span class="st">scelta</span></h4><p>Israele o diaspora si ricava dalla posizione (confine approssimativo). Purim il 15 entro circa 6 km dalla Città Vecchia di Gerusalemme, altrimenti il 14; negli anni embolismici in Adar II. <i>Impostazioni: automatico / sì / no.</i></p>
+<h4>Parashoth <span class="st">verificato</span></h4><p>Lettura annuale (Tefilla 13:1). Calcolate con un algoritmo nostro e confrontate con la libreria Hebcal per 600 anni (5600–6199), in Israele e nella diaspora: nessuna differenza. Si mostra la lettura del luogo scelto; quando Israele e diaspora leggono parashoth diverse, compare sotto anche l’altra.</p>
+<h4>Da fare</h4><p>Haftaroth secondo il rito italiano (da verificare insieme). Romanizzazione delle parashoth: provvisoria, da allineare al Mahazor. Fuso orario: con la posizione GPS si usa il fuso del dispositivo.</p>
+</div></template>
+<!--SCRIPTS-->
+</body>
+</html>
