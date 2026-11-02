@@ -74,6 +74,8 @@ function hebFromRd(rd) {
 }
 const MONTHS_HE = { 1: 'ניסן', 2: 'אייר', 3: 'סיון', 4: 'תמוז', 5: 'אב', 6: 'אלול', 7: 'תשרי', 8: 'מרחשון', 9: 'כסלו', 10: 'טבת', 11: 'שבט', 12: 'אדר', 13: 'אדר שני' };
 const MONTHS_IT = { 1: 'Nisan', 2: 'Iyyar', 3: 'Siwan', 4: 'Tammuz', 5: 'Av', 6: 'Elul', 7: 'Tishri', 8: 'Marḥeshwan', 9: 'Kislew', 10: 'Ṭeveth', 11: 'Shevaṭ', 12: 'Adar', 13: 'Adar II' };
+// Romanizzazione scientifica: toglie l'accento italiano del Mahazor (Minḥà → Minḥa) per inglese e francese
+const sciRoman = s => s.replace(/[àèìòù]/g, c => ({ 'à': 'a', 'è': 'e', 'ì': 'i', 'ò': 'o', 'ù': 'u' }[c]));
 function monthName(m, y, lang) {
   if (m === 12 && hLeap(y)) return lang === 'he' ? 'אדר ראשון' : 'Adar I';
   return (lang === 'he' ? MONTHS_HE : MONTHS_IT)[m];
@@ -97,22 +99,25 @@ function dayInfo(rd, opt) {
   const purimDay = opt.walled ? 15 : 14;
   const adarPurim = hLeap(y) ? 13 : 12;
   const info = { y, m, d, names: [], yomTov: false, holMoed: false, roshHodesh: false, hanukka: false, purim: false, yomKippur: false, roshHashana: false, musaf: false };
-  const add = (it, he) => info.names.push({ it, he });
+  const add = (it, he, en = sciRoman(it), fr = en) => info.names.push({ it, he, en, fr });
   if (m === 7 && (d === 1 || d === 2)) { info.yomTov = info.roshHashana = true; add('Rosh ha-Shanà', 'ראש השנה'); }
   if (m === 7 && d === 10) { info.yomKippur = true; add('Yom ha-Kippurim', 'יום הכפורים'); }
   if (m === 7 && (d === 15 || (!il && d === 16))) { info.yomTov = true; add('Sukkoth', 'סכות'); }
   if (m === 7 && d > (il ? 15 : 16) && d <= 21) { info.holMoed = true; add('Ḥol ha-moʿed Sukkoth', 'חול המועד סכות'); }
   if (m === 7 && d === 22) { info.yomTov = true; add('Shemini ʿAṣereth', 'שמיני עצרת'); }
-  if (m === 7 && d === 23 && !il) { info.yomTov = true; add('Shemini ʿAṣereth (secondo giorno)', 'שמיני עצרת (יום שני)'); }
+  if (m === 7 && d === 23 && !il) { info.yomTov = true; add('Shemini ʿAṣereth (secondo giorno)', 'שמיני עצרת (יום שני)', 'Shemini ʿAṣereth (second day)', 'Shemini ʿAṣereth (deuxième jour)'); }
   if (m === 1 && (d === 15 || (!il && d === 16))) { info.yomTov = true; add('Pesaḥ', 'פסח'); }
   if (m === 1 && d > (il ? 15 : 16) && d <= 20) { info.holMoed = true; add('Ḥol ha-moʿed Pesaḥ', 'חול המועד פסח'); }
-  if (m === 1 && (d === 21 || (!il && d === 22))) { info.yomTov = true; add('Pesaḥ (ultimi giorni)', 'שביעי של פסח'); }
+  if (m === 1 && (d === 21 || (!il && d === 22))) { info.yomTov = true; add('Pesaḥ (ultimi giorni)', 'שביעי של פסח', 'Pesaḥ (last days)', 'Pesaḥ (derniers jours)'); }
   if (m === 3 && (d === 6 || (!il && d === 7))) { info.yomTov = true; add('Shavuʿoth', 'שבועות'); }
   if ((d === 1 && m !== 7) || d === 30) { info.roshHodesh = true; add('Rosh Ḥodesh', 'ראש חדש'); }
   const hanStart = rdFromHeb(y, 9, 25);
   const hy = (m >= 7) ? y : y - 1; // Ḥanukka cade in Kislew/Ṭeveth dell'anno che inizia a Tishri
   const hs = rdFromHeb(hy, 9, 25);
-  if (rd >= hs && rd < hs + 8) { info.hanukka = true; add('Ḥanukkà, ' + (rd - hs + 1) + '° giorno', 'חנכה'); }
+  if (rd >= hs && rd < hs + 8) {
+    const n = rd - hs + 1;
+    info.hanukka = true; add('Ḥanukkà, ' + n + '° giorno', 'חנכה', 'Ḥanukka, day ' + n, 'Ḥanukka, ' + (n === 1 ? '1er' : n + 'e') + ' jour');
+  }
   if (m === adarPurim && d === purimDay) { info.purim = true; add('Purim', 'פורים'); }
   info.shabbath = weekday(rd) === 6;
   info.musaf = info.shabbath || info.yomTov || info.holMoed || info.roshHodesh || info.yomKippur;
@@ -301,6 +306,6 @@ function computeDay(rd, opt) {
   return res;
 }
 
-const api = { rdFromGreg, gregFromRd, weekday, hebFromRd, rdFromHeb, hLeap, monthName, hebNumeral, dayInfo, parashaFor, PARASHOTH, sunrise, sunset, tequfaTishri, sheelaStartDiaspora, computeDay, monthLen, newYear };
+const api = { sciRoman, rdFromGreg, gregFromRd, weekday, hebFromRd, rdFromHeb, hLeap, monthName, hebNumeral, dayInfo, parashaFor, PARASHOTH, sunrise, sunset, tequfaTishri, sheelaStartDiaspora, computeDay, monthLen, newYear };
 if (typeof module !== 'undefined') module.exports = api; else root.MTEngine = api;
 })(this);

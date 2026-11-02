@@ -42,3 +42,12 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Haftaroth | **Not implemented** — Italian rite, to be checked with owner | — | To do |
 | Parasha romanisation | Provisional | — | To do (align with Mahazor) |
 | Time zone | City list: fixed zone; GPS: device zone | — | Choice |
+
+## Interface
+
+| Rule | Implementation | Source | Status |
+|---|---|---|---|
+| Languages | Hebrew terms always shown; captions in Italian, English, or French; a fourth option shows Hebrew only | — | Choice (owner, 2026-11-02); **Setting** |
+| Romanisation by language | Italian captions keep the Mahazor forms (Minḥà, Ḥanukkà); English and French use the scientific romanisation without the accent (Minḥa, Ḥanukka) | — | Choice |
+| Decisions page | Italian only for now; may be translated later | — | Choice |
+| English and French texts | Drafted by Claude; to be reviewed by the owner | — | To do |

@@ -40,7 +40,40 @@ const T = {
     walledLbl: 'Città murata (Purim il 15)', auto: 'automatico', on: 'sì', off: 'no', prudentLbl: 'Arrotondamento prudente',
     langLbl: 'Lingua', zone: 'Orari nel fuso', shabbIn: 'Inizio dello Shabbath', shabbOut: 'Fine dello Shabbath',
     ytIn: 'Inizio della festa', ytOut: 'Fine della festa', source: 'Fonte', polar: 'In questo luogo e giorno il sole non sorge o non tramonta.',
-    firstMention: 'da Musaf si comincia a dire', lastMention: 'si dice fino a Shaḥrith; da Musaf non si dice più', israelOn: 'Israele', diaspora: 'diaspora', inIsrael: 'In Israele', naAll: 'in ogni preghiera', arvithKippur: 'ʿArvith (sera di Kippur)', inDiaspora: 'Nella diaspora', festReading: 'lettura della festa'
+    firstMention: 'da Musaf si comincia a dire', lastMention: 'si dice fino a Shaḥrith; da Musaf non si dice più', israelOn: 'Israele', diaspora: 'diaspora', inIsrael: 'In Israele', naAll: 'in ogni preghiera', arvithKippur: 'ʿArvith (sera di Kippur)', inDiaspora: 'Nella diaspora', festReading: 'lettura della festa',
+    chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico'
+  },
+  en: {
+    title: 'Zemannim according to the Mishne Tora', today: 'Today', week: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    afterSunset: 'After sunset', parasha: 'Weekly parasha', festShabbath: 'Festival Shabbath: festival reading',
+    na: 'Nefilath appayim', shahrith: 'Shaḥrith', minha: 'Minḥa', arvith: 'ʿArvith', yes: 'yes', no: 'no',
+    rainMention: 'Second blessing', rainSummer: 'nothing is said in summer', ask: 'Request for rain',
+    askYes: 'yes', askNo: 'not yet', askFrom: 'from', hour: 'Seasonal hour', settings: 'Settings', notes: 'Notes on the choices (in Italian)',
+    close: 'Close', place: 'Place', useGps: 'Use my location', gpsFail: 'Location is not available on this page: choose a city.',
+    gpsWait: 'Finding your location…', manual: 'Coordinates', apply: 'Apply', tzethLbl: 'Ṣeth ha-kokhavim (end of Shabbath)',
+    tequfaLbl: 'Tequfa for the request for rain (diaspora)', dawnLbl: 'Show ʿaloth ha-shaḥar', israelLbl: 'Land of Israel',
+    walledLbl: 'Walled city (Purim on the 15th)', auto: 'automatic', on: 'yes', off: 'no', prudentLbl: 'Prudent rounding',
+    langLbl: 'Language', zone: 'Times in time zone', shabbIn: 'Shabbath begins', shabbOut: 'Shabbath ends',
+    ytIn: 'Festival begins', ytOut: 'Festival ends', source: 'Source', polar: 'At this place and date the sun does not rise or does not set.',
+    firstMention: 'said from Musaf onwards', lastMention: 'said until Shaḥrith; no longer said from Musaf', israelOn: 'Israel', diaspora: 'diaspora', inIsrael: 'In Israel', naAll: 'at every prayer', arvithKippur: 'ʿArvith (Kippur night)', inDiaspora: 'In the diaspora', festReading: 'festival reading',
+    chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only'
+  },
+  fr: {
+    title: 'Zemannim selon le Mishne Tora', today: 'Aujourd’hui', week: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
+    months: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
+    afterSunset: 'Après le coucher du soleil', parasha: 'Parasha de la semaine', festShabbath: 'Shabbath de fête : lecture de la fête',
+    na: 'Nefilath appayim', shahrith: 'Shaḥrith', minha: 'Minḥa', arvith: 'ʿArvith', yes: 'oui', no: 'non',
+    rainMention: 'Deuxième bénédiction', rainSummer: 'en été on ne dit rien', ask: 'Demande de la pluie',
+    askYes: 'oui', askNo: 'pas encore', askFrom: 'à partir du', hour: 'Heure saisonnière', settings: 'Réglages', notes: 'Notes sur les choix (en italien)',
+    close: 'Fermer', place: 'Lieu', useGps: 'Utiliser ma position', gpsFail: 'Position indisponible sur cette page : choisissez une ville.',
+    gpsWait: 'Recherche de la position…', manual: 'Coordonnées', apply: 'Appliquer', tzethLbl: 'Ṣeth ha-kokhavim (fin du Shabbath)',
+    tequfaLbl: 'Tequfa pour la demande de la pluie (diaspora)', dawnLbl: 'Afficher ʿaloth ha-shaḥar', israelLbl: 'Terre d’Israël',
+    walledLbl: 'Ville fortifiée (Purim le 15)', auto: 'automatique', on: 'oui', off: 'non', prudentLbl: 'Arrondi prudent',
+    langLbl: 'Langue', zone: 'Heures dans le fuseau', shabbIn: 'Début du Shabbath', shabbOut: 'Fin du Shabbath',
+    ytIn: 'Début de la fête', ytOut: 'Fin de la fête', source: 'Source', polar: 'En ce lieu et à cette date, le soleil ne se lève pas ou ne se couche pas.',
+    firstMention: 'on le dit à partir de Musaf', lastMention: 'on le dit jusqu’à Shaḥrith ; à partir de Musaf on ne le dit plus', israelOn: 'Israël', diaspora: 'diaspora', inIsrael: 'En Israël', naAll: 'à chaque prière', arvithKippur: 'ʿArvith (nuit de Kippur)', inDiaspora: 'En diaspora', festReading: 'lecture de la fête',
+    chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul'
   },
   he: {
     title: 'זמנים על פי משנה תורה', today: 'היום', week: ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום שישי', 'שבת'],
@@ -55,26 +88,56 @@ const T = {
     walledLbl: 'עיר מוקפת חומה (פורים בט״ו)', auto: 'אוטומטי', on: 'כן', off: 'לא', prudentLbl: 'עיגול לחומרא',
     langLbl: 'שפה', zone: 'שעות לפי אזור הזמן', shabbIn: 'כניסת שבת', shabbOut: 'יציאת שבת',
     ytIn: 'כניסת יום טוב', ytOut: 'יציאת יום טוב', source: 'מקור', polar: 'במקום וביום זה החמה אינה זורחת או אינה שוקעת.',
-    firstMention: 'מתחילים במוסף', lastMention: 'אומרים עד שחרית; ממוסף אין אומרים', israelOn: 'ארץ ישראל', diaspora: 'חוץ לארץ', inIsrael: 'בארץ ישראל', naAll: 'בכל תפלה ותפלה', arvithKippur: 'ערבית (ליל יום הכפורים)', inDiaspora: 'בחוץ לארץ', festReading: 'קריאת המועד'
+    firstMention: 'מתחילים במוסף', lastMention: 'אומרים עד שחרית; ממוסף אין אומרים', israelOn: 'ארץ ישראל', diaspora: 'חוץ לארץ', inIsrael: 'בארץ ישראל', naAll: 'בכל תפלה ותפלה', arvithKippur: 'ערבית (ליל יום הכפורים)', inDiaspora: 'בחוץ לארץ', festReading: 'קריאת המועד',
+    chapter: 'פרק', langLbl2: 'שפה (נוסף על העברית)', hebOnly: 'עברית בלבד'
   }
 };
+// 'he' = solo ebraico; 'it' / 'en' / 'fr' = ebraico con didascalie in quella lingua
+if (!T[S.lang]) S.lang = 'it';
 const L = () => T[S.lang];
+const cap = () => S.lang !== 'he';          // ci sono didascalie accanto all'ebraico?
+const COLON = () => S.lang === 'fr' ? ' :' : ':';
+const roman = s => S.lang === 'it' ? s : E.sciRoman(s);
+const LOCALE = { it: 'it-IT', en: 'en-GB', fr: 'fr-FR', he: 'he-IL' };
 
-// Voci della lista: etichetta ebraica, didascalia italiana, fonte, tipo di arrotondamento
+// Voci della lista: etichetta ebraica, didascalie, fonte (stringa o testo per lingua), tipo di arrotondamento
 const ZEMANIM = {
-  alot:    { he: 'עלות השחר', it: 'Spuntare dell’alba', src: 'Rambam, Comm. alla Mishna, Berakhoth 1:1 (non MT): 1⅕ ore stagionali prima del sorgere', r: 'n' },
-  netz:    { he: 'הנץ החמה', it: 'Sorgere del sole', src: 'MT Qeriath Shemaʿ 1:12; Tefilla 3:1', r: 'n' },
-  shema:   { he: 'סוף זמן קריאת שמע', it: 'Fine dello Shemaʿ del mattino (3 ore)', src: 'MT Qeriath Shemaʿ 1:12–14', r: 'f' },
-  tefilla: { he: 'סוף זמן תפלת השחר', it: 'Fine di Shaḥrith (4 ore)', src: 'MT Tefilla 3:1', r: 'f' },
-  hatzot:  { he: 'חצות היום', it: 'Mezzogiorno (6 ore)', src: 'MT Tefilla 3:9 («חצי היום»)', r: 'n' },
-  minhaG:  { he: 'מנחה גדולה', it: 'Minḥà gedolà (6½ ore)', src: 'MT Tefilla 3:2, 3:4', r: 'c' },
-  musaf:   { he: 'סוף זמן תפלת המוספין', it: 'Fine di Musaf (7 ore)', src: 'MT Tefilla 3:5', r: 'f' },
-  minhaQ:  { he: 'מנחה קטנה', it: 'Minḥà qetannà (9½ ore)', src: 'MT Tefilla 3:2, 3:4', r: 'c' },
-  plag:    { he: 'שעה ורביע קודם השקיעה', it: 'Fine della minḥà qetannà, 1¼ ore prima del tramonto (si può pregare fino al tramonto)', src: 'MT Tefilla 3:4', r: 'f' },
-  shqia:   { he: 'שקיעת החמה', it: 'Tramonto', src: 'MT Shabbath 5:3–4; Tefilla 3:4', r: 'f' },
-  tzeth:   { he: 'צאת הכוכבים', it: 'Uscita delle stelle', src: 'MT Terumoth 7:2 («כמו שליש שעה אחר שקיעת החמה»); Shabbath 5:4', r: 'c' },
-  hatzotLayla: { he: 'חצות הלילה', it: 'Mezzanotte (fine preferibile dello Shemaʿ della sera)', src: 'MT Qeriath Shemaʿ 1:10; calcolata a metà fra tramonto e sorgere', r: 'n' }
+  alot:    { he: 'עלות השחר', it: 'Spuntare dell’alba', en: 'Break of dawn', fr: 'Lever de l’aube',
+             src: { it: 'Rambam, Comm. alla Mishna, Berakhoth 1:1 (non MT): 1⅕ ore stagionali prima del sorgere',
+                    en: 'Rambam, Commentary on the Mishna, Berakhoth 1:1 (not MT): 1⅕ seasonal hours before sunrise',
+                    fr: 'Rambam, Commentaire de la Mishna, Berakhoth 1:1 (pas le MT) : 1⅕ heure saisonnière avant le lever du soleil' }, r: 'n' },
+  netz:    { he: 'הנץ החמה', it: 'Sorgere del sole', en: 'Sunrise', fr: 'Lever du soleil', src: 'MT Qeriath Shemaʿ 1:12; Tefilla 3:1', r: 'n' },
+  shema:   { he: 'סוף זמן קריאת שמע', it: 'Fine dello Shemaʿ del mattino (3 ore)', en: 'End of the morning Shemaʿ (3 hours)', fr: 'Fin du Shemaʿ du matin (3 heures)', src: 'MT Qeriath Shemaʿ 1:12–14', r: 'f' },
+  tefilla: { he: 'סוף זמן תפלת השחר', it: 'Fine di Shaḥrith (4 ore)', en: 'End of Shaḥrith (4 hours)', fr: 'Fin de Shaḥrith (4 heures)', src: 'MT Tefilla 3:1', r: 'f' },
+  hatzot:  { he: 'חצות היום', it: 'Mezzogiorno (6 ore)', en: 'Midday (6 hours)', fr: 'Midi (6 heures)', src: 'MT Tefilla 3:9 («חצי היום»)', r: 'n' },
+  minhaG:  { he: 'מנחה גדולה', it: 'Minḥà gedolà (6½ ore)', en: 'Minḥa gedola (6½ hours)', fr: 'Minḥa gedola (6½ heures)', src: 'MT Tefilla 3:2, 3:4', r: 'c' },
+  musaf:   { he: 'סוף זמן תפלת המוספין', it: 'Fine di Musaf (7 ore)', en: 'End of Musaf (7 hours)', fr: 'Fin de Musaf (7 heures)', src: 'MT Tefilla 3:5', r: 'f' },
+  minhaQ:  { he: 'מנחה קטנה', it: 'Minḥà qetannà (9½ ore)', en: 'Minḥa qetanna (9½ hours)', fr: 'Minḥa qetanna (9½ heures)', src: 'MT Tefilla 3:2, 3:4', r: 'c' },
+  plag:    { he: 'שעה ורביע קודם השקיעה', it: 'Fine della minḥà qetannà, 1¼ ore prima del tramonto (si può pregare fino al tramonto)',
+             en: 'End of minḥa qetanna, 1¼ hours before sunset (one may pray until sunset)',
+             fr: 'Fin de la minḥa qetanna, 1¼ heure avant le coucher du soleil (on peut prier jusqu’au coucher du soleil)', src: 'MT Tefilla 3:4', r: 'f' },
+  shqia:   { he: 'שקיעת החמה', it: 'Tramonto', en: 'Sunset', fr: 'Coucher du soleil', src: 'MT Shabbath 5:3–4; Tefilla 3:4', r: 'f' },
+  tzeth:   { he: 'צאת הכוכבים', it: 'Uscita delle stelle', en: 'Emergence of the stars', fr: 'Sortie des étoiles', src: 'MT Terumoth 7:2 («כמו שליש שעה אחר שקיעת החמה»); Shabbath 5:4', r: 'c' },
+  hatzotLayla: { he: 'חצות הלילה', it: 'Mezzanotte (fine preferibile dello Shemaʿ della sera)', en: 'Midnight (preferred end of the evening Shemaʿ)', fr: 'Minuit (fin préférable du Shemaʿ du soir)',
+             src: { it: 'MT Qeriath Shemaʿ 1:10; calcolata a metà fra tramonto e sorgere',
+                    en: 'MT Qeriath Shemaʿ 1:10; computed as the midpoint between sunset and sunrise',
+                    fr: 'MT Qeriath Shemaʿ 1:10 ; calculé à mi-chemin entre le coucher et le lever du soleil' }, r: 'n' }
 };
+// In modalità solo ebraico le fonti restano in italiano, come prima
+const srcText = z => typeof z.src === 'string' ? z.src : (z.src[S.lang] || z.src.it);
+
+// Nomi delle città (e della posizione GPS) nelle altre lingue; la chiave è il nome salvato
+const PLACE_NAMES = {
+  Londra: { en: 'London', fr: 'Londres', he: 'לונדון' }, Parigi: { en: 'Paris', fr: 'Paris', he: 'פריז' },
+  Gerusalemme: { en: 'Jerusalem', fr: 'Jérusalem', he: 'ירושלים' }, 'Tel Aviv': { he: 'תל אביב' },
+  Seul: { en: 'Seoul', fr: 'Séoul', he: 'סיאול' }, 'New York': { he: 'ניו יורק' },
+  Torino: { en: 'Turin', fr: 'Turin' }, Padova: { en: 'Padua', fr: 'Padoue' }, Venezia: { en: 'Venice', fr: 'Venise' },
+  Milano: { en: 'Milan', fr: 'Milan' }, Roma: { en: 'Rome', fr: 'Rome' }, Firenze: { en: 'Florence', fr: 'Florence' },
+  Livorno: { fr: 'Livourne' }, Napoli: { en: 'Naples', fr: 'Naples' }, Bologna: { fr: 'Bologne' }, Ferrara: { fr: 'Ferrare' },
+  'Posizione attuale': { en: 'Current location', fr: 'Position actuelle', he: 'מיקום נוכחי' },
+  'מיקום נוכחי': { it: 'Posizione attuale', en: 'Current location', fr: 'Position actuelle' }
+};
+const placeName = n => (PLACE_NAMES[n] && PLACE_NAMES[n][S.lang]) || n;
 
 // ---------- Luogo: Israele e Gerusalemme ----------
 function inIsrael(lat, lon) {
@@ -105,15 +168,16 @@ function fmtTime(date, kind) {
   else if (S.prudent && kind === 'c') ms = Math.ceil(ms / 60000) * 60000;
   else ms = Math.round(ms / 60000) * 60000;
   try {
-    return new Date(ms).toLocaleTimeString(S.lang === 'he' ? 'he-IL' : 'it-IT', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: S.place.tz || undefined });
+    return new Date(ms).toLocaleTimeString(LOCALE[S.lang], { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: S.place.tz || undefined });
   } catch (e) { return new Date(ms).toTimeString().slice(0, 5); }
 }
 function hebDateStr(h) {
   return S.lang === 'he'
     ? E.hebNumeral(h.d) + ' ' + E.monthName(h.m, h.y, 'he') + ' ' + E.hebNumeral(h.y)
-    : h.d + ' ' + E.monthName(h.m, h.y, 'it') + ' ' + h.y;
+    : h.d + ' ' + E.monthName(h.m, h.y, S.lang) + ' ' + h.y;
 }
-function gregStr(g) { return g.d + ' ' + L().months[g.m - 1] + ' ' + g.y; }
+const dayNum = d => (S.lang === 'fr' && d === 1) ? '1er' : d;
+function gregStr(g) { return dayNum(g.d) + ' ' + L().months[g.m - 1] + ' ' + g.y; }
 function todayRd() {
   const now = new Date();
   let parts;
@@ -138,44 +202,44 @@ function render() {
   const nextHeb = E.hebFromRd(current + 1);
 
   let html = '';
-  html += `<button class="place" id="placeBtn">${esc(S.place.name)} · ${o.israel ? l.israelOn : l.diaspora}</button>`;
-  html += `<section class="card date"><div class="wd">${l.week[wd]}${S.lang === 'it' ? ' / ' + T.he.week[wd] : ''}</div>
+  html += `<button class="place" id="placeBtn">${esc(placeName(S.place.name))} · ${o.israel ? l.israelOn : l.diaspora}</button>`;
+  html += `<section class="card date"><div class="wd">${l.week[wd]}${cap() ? ' / ' + T.he.week[wd] : ''}</div>
     <div class="big">${isToday ? l.today + ' – ' : ''}${gregStr(g)}</div>
     <div class="heb">${hebDateStr(h)}</div>
-    <div class="small">${l.afterSunset}: ${hebDateStr(nextHeb)}</div></section>`;
+    <div class="small">${l.afterSunset}${COLON()} ${hebDateStr(nextHeb)}</div></section>`;
 
   // Parashà del sabato di questa settimana (o della festa)
   const sat = current + ((6 - wd + 7) % 7);
   const par = E.parashaFor(sat, o.israel);
   const other = E.parashaFor(sat, !o.israel);
   const pHe = p => p ? p.map(i => E.PARASHOTH[i][1]).join('–') : null;
-  const pIt = p => p ? p.map(i => E.PARASHOTH[i][0]).join('–') : null;
+  const pIt = p => p ? p.map(i => roman(E.PARASHOTH[i][0])).join('–') : null;
   html += '<section class="card par">';
-  if (par) html += `<div class="label">${l.parasha}</div><div class="parhe" lang="he" dir="rtl">${pHe(par)}</div>${S.lang === 'it' ? `<div class="small">${pIt(par)}</div>` : ''}`;
+  if (par) html += `<div class="label">${l.parasha}</div><div class="parhe" lang="he" dir="rtl">${pHe(par)}</div>${cap() ? `<div class="small">${pIt(par)}</div>` : ''}`;
   else html += `<div class="label">${l.festShabbath}</div>`;
   if (JSON.stringify(par) !== JSON.stringify(other)) {
     const where = o.israel ? l.inDiaspora : l.inIsrael;
-    const what = other ? (S.lang === 'it' ? `<span lang="he">${pHe(other)}</span> (${pIt(other)})` : pHe(other)) : l.festReading;
-    html += `<div class="diverge">${where}: ${what}</div>`;
+    const what = other ? (cap() ? `<span lang="he">${pHe(other)}</span> (${pIt(other)})` : pHe(other)) : l.festReading;
+    html += `<div class="diverge">${where}${COLON()} ${what}</div>`;
   }
   html += '</section>';
 
   // Note del giorno
   const notes = [];
-  for (const n of r.info.names) notes.push(S.lang === 'he' ? n.he : `${n.it} <span lang="he">${n.he}</span>`);
+  for (const n of r.info.names) notes.push(cap() ? `${n[S.lang]} <span lang="he">${n.he}</span>` : n.he);
   if (!r.polar) {
     const na = r.na, yn = v => v ? l.yes : l.no;
-    notes.push(na.all ? `${l.na}: ${l.naAll}` :
-      `${l.na}: ${l.shahrith} ${yn(na.shahrith)} · ${l.minha} ${yn(na.minha)}${na.arvith ? ` · ${l.arvithKippur} ${yn(true)}` : ''}`);
+    notes.push(na.all ? `${l.na}${COLON()} ${l.naAll}` :
+      `${l.na}${COLON()} ${l.shahrith} ${yn(na.shahrith)} · ${l.minha} ${yn(na.minha)}${na.arvith ? ` · ${l.arvithKippur} ${yn(true)}` : ''}`);
   }
   const rain = r.rain;
   let rainTxt = rain.mention ? '<span lang="he">משיב הרוח ומוריד הגשם</span>' : l.rainSummer;
   if (rain.firstMention) rainTxt += ` (${l.firstMention})`;
   if (rain.lastMention) rainTxt += ` (${l.lastMention})`;
-  notes.push(`${l.rainMention}: ${rainTxt}`);
+  notes.push(`${l.rainMention}${COLON()} ${rainTxt}`);
   if (rain.mention) {
     const af = E.gregFromRd(rain.askStart);
-    notes.push(`${l.ask}: ${rain.ask ? l.askYes : l.askNo} (${l.askFrom} ${af.d} ${l.months[af.m - 1]}${o.israel ? '' : (S.lang === 'he' ? ', תקופה לפי פרק ' + E.hebNumeral(S.tequfa).replace(/[׳״]/g, '') : ', tequfa cap. ' + S.tequfa)})`);
+    notes.push(`${l.ask}${COLON()} ${rain.ask ? l.askYes : l.askNo} (${l.askFrom} ${dayNum(af.d)} ${l.months[af.m - 1]}${o.israel ? '' : (S.lang === 'he' ? ', תקופה לפי פרק ' + E.hebNumeral(S.tequfa).replace(/[׳״]/g, '') : ', tequfa ' + l.chapter + ' ' + S.tequfa)})`);
   }
   html += `<section class="notes">${notes.map(n => `<div>${n}</div>`).join('')}</section>`;
 
@@ -194,11 +258,11 @@ function render() {
       const kind = (t.key === 'tzeth' && extra) ? 'c' : z.r;
       html += `<details class="row${i === nextIdx ? ' next' : ''}"><summary>
         <span class="t">${fmtTime(t.date, kind)}${i === nextIdx ? ' ◂' : ''}</span>
-        <span class="z"><span class="zhe" lang="he" dir="rtl">${z.he}</span>${S.lang === 'it' ? `<span class="zit">${z.it}</span>` : ''}${extra ? `<span class="tag">${extra}</span>` : ''}</span>
-        </summary><div class="src">${l.source}: ${esc(z.src)}${t.key === 'tzeth' ? ` · ${S.tzeth} min` : ''}</div></details>`;
+        <span class="z"><span class="zhe" lang="he" dir="rtl">${z.he}</span>${cap() ? `<span class="zit">${z[S.lang]}</span>` : ''}${extra ? `<span class="tag">${extra}</span>` : ''}</span>
+        </summary><div class="src">${l.source}${COLON()} ${esc(srcText(z))}${t.key === 'tzeth' ? ` · ${S.tzeth} min` : ''}</div></details>`;
     });
     const hm = r.hourMs / 60000;
-    html += `<div class="foot">${l.hour}: ${Math.floor(hm)}m ${Math.round((hm % 1) * 60)}s · ${l.zone} ${esc(S.place.tz || '')}</div>`;
+    html += `<div class="foot">${l.hour}${COLON()} ${Math.floor(hm)}m ${Math.round((hm % 1) * 60)}s · ${l.zone} ${esc(S.place.tz || '')}</div>`;
     html += '</section>';
   }
   document.getElementById('main').innerHTML = html;
@@ -207,6 +271,7 @@ function render() {
   document.getElementById('appTitle').textContent = l.title;
   document.getElementById('settingsBtn').textContent = l.settings;
   document.getElementById('todayBtn').textContent = l.today;
+  document.title = l.title;
 }
 
 // ---------- Impostazioni e note ----------
@@ -218,12 +283,12 @@ function openSheet(which) {
   const sh = document.getElementById('sheet');
   let html = `<div class="sheethead"><b>${which === 'notes' ? l.notes : l.settings}</b><button id="closeSheet">${l.close}</button></div>`;
   if (which === 'settings') {
-    html += `<h3>${l.place}</h3><p>${esc(S.place.name)} (${S.place.lat.toFixed(4)}, ${S.place.lon.toFixed(4)})</p>
+    html += `<h3>${l.place}</h3><p>${esc(placeName(S.place.name))} (${S.place.lat.toFixed(4)}, ${S.place.lon.toFixed(4)})</p>
       <button class="wide" id="gps">${l.useGps}</button><p class="small" id="gpsMsg"></p>
-      <select id="city">${CITIES.map((c, i) => `<option value="${i}" ${c[0] === S.place.name ? 'selected' : ''}>${c[0]}</option>`).join('')}</select>
-      <h3>${l.langLbl}</h3>${seg('lang', S.lang, [['it', 'Italiano'], ['he', 'עברית']])}
+      <select id="city">${CITIES.map((c, i) => `<option value="${i}" ${c[0] === S.place.name ? 'selected' : ''}>${esc(placeName(c[0]))}</option>`).join('')}</select>
+      <h3>${cap() ? l.langLbl2 : l.langLbl}</h3>${seg('lang', S.lang, [['it', 'Italiano'], ['en', 'English'], ['fr', 'Français'], ['he', T.he.hebOnly]])}
       <h3>${l.tzethLbl}</h3>${seg('tzeth', S.tzeth, [[20, '20 min'], [18, '18 min']])}
-      <h3>${l.tequfaLbl}</h3>${seg('tequfa', S.tequfa, [[9, 'cap. 9 (365¼)'], [10, 'cap. 10']])}
+      <h3>${l.tequfaLbl}</h3>${seg('tequfa', S.tequfa, [[9, `${l.chapter} 9 (365¼)`], [10, `${l.chapter} 10`]])}
       <h3>${l.dawnLbl}</h3>${seg('dawn', S.dawn, [[true, l.on], [false, l.off]])}
       <h3>${l.israelLbl}</h3>${seg('israel', S.israel, [['auto', l.auto], ['on', l.on], ['off', l.off]])}
       <h3>${l.walledLbl}</h3>${seg('walled', S.walled, [['auto', l.auto], ['on', l.on], ['off', l.off]])}
@@ -247,7 +312,7 @@ function openSheet(which) {
     msg.textContent = l.gpsWait;
     navigator.geolocation.getCurrentPosition(p => {
       let tz; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) {}
-      S.place = { name: (S.lang === 'he' ? 'מיקום נוכחי' : 'Posizione attuale'), lat: p.coords.latitude, lon: p.coords.longitude, tz };
+      S.place = { name: 'Posizione attuale', lat: p.coords.latitude, lon: p.coords.longitude, tz };
       save(); current = todayRd(); render(); openSheet('settings');
     }, () => { msg.textContent = l.gpsFail; }, { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 });
   };
