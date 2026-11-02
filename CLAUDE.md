@@ -2,7 +2,7 @@
 
 A personal web app (PWA) for the owner's iPhone. It shows the day's halakhic times, the Hebrew date, the parasha and a few liturgical notes, **according to the Mishne Tora (MT) only**. It is served by GitHub Pages from the root of `main`: https://arinohem.github.io/zemannim/
 
-Read `DECISIONS.md` before changing any rule. Every rule there was settled with the owner; do not change one silently.
+Read `DECISIONS.md` before changing any rule. Every rule there was settled with the owner; do not change one silently. Record decisions only in DECISIONS.md and the in-app decisions page; do not create ADRs or CONTEXT.md in this project.
 
 ## Halakhic ground rules (owner's instructions)
 
@@ -26,7 +26,7 @@ Read `DECISIONS.md` before changing any rule. Every rule there was settled with 
 - `tools/index.src.html` — page template, styles, and the in-app "Note sulle scelte" (decisions page, in Italian). **Edit this, not `index.html`.**
 - `tools/build.py` — writes `index.html`; `--preview` writes a single-file `preview.html` (scripts inlined) for previews where external files can't load.
 - `sw.js` — offline cache. **Bump the cache name (`mt-zemanim-vN`) whenever any served file changes**, or installed copies may keep old files.
-- `tests/` — `npm install` then `npm test`. Compares Hebrew dates (1900–2100) and parashoth (5600–6199, Israel and diaspora) with @hebcal/core (dev only, GPL; never ship it), and sunrise/sunset with Hebcal's NOAA. All must report 0 mismatches.
+- `tests/` — `npm install` then `npm test`. Compares Hebrew dates (1900–2100) and parashoth (5600–6199, Israel and diaspora) with @hebcal/core (dev only, GPL; never ship it), and sunrise/sunset with Hebcal's NOAA. `npm test` fails on any date or parasha mismatch, or if sunrise/sunset differs from Hebcal by more than 5 seconds.
 
 ## Workflow
 

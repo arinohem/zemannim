@@ -9,6 +9,7 @@ for(let rd=E.rdFromGreg(1900,1,1); rd<E.rdFromGreg(2100,1,1); rd+=1){
   if(E.rdFromHeb(h.y,h.m,h.d)!==rd){ if(bad++<5) console.log('roundtrip',rd);}
 }
 console.log('date mismatches',bad);
+if(bad) process.exitCode=1;
 // 2. parasha
 for(const il of [false,true]){
   let mism=0,tot=0;
@@ -24,4 +25,5 @@ for(const il of [false,true]){
     }
   }
   console.log(il?'Israel':'Diaspora','parasha mismatches',mism,'of',tot);
+  if(mism) process.exitCode=1;
 }
