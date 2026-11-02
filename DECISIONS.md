@@ -11,7 +11,7 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Seasonal hours | Sunrise → sunset, ÷ 12 | Tefilla 3:1 (prayer starts «עם הנץ החמה»; 4th hour = «שליש היום»); 3:4 (minḥa «עד שתשקע החמה») | Inferred; Choice |
 | Ṣeth ha-kokhavim = end of Shabbath and festivals | 20 fixed minutes after sunset | Terumoth 7:2: «וזה העת כמו שליש שעה אחר שקיעת החמה»; Shabbath 5:4 (three medium stars, no minutes) | MT; Choice; **Setting** (20/18) |
 | Alternative 18 min | ¾ mil × 24 min | Mil = «שני חומשי שעה משעות ההשויה» (Comm. Pesaḥim 3:2). Where the Rambam states ¾ mil himself: **not found** | Comm.; Inferred |
-| ʿAlòth ha-shaḥar | 1.2 seasonal *day* hours before sunrise | Comm. Berakhoth 1:1: «בכדי שעה וחומש שעה מן השעות הזמניות». The MT uses dawn only as a limit (Qeriath Shemaʿ 1:10–13; Tefilla 3:6–7) without an interval in the chapters read. Day vs night seasonal hour: text silent; day hour chosen | Comm.; Inferred; Choice; **Setting** (show/hide) |
+| ʿAloth ha-shaḥar | 1.2 seasonal *day* hours before sunrise | Comm. Berakhoth 1:1: «בכדי שעה וחומש שעה מן השעות הזמניות». The MT uses dawn only as a limit (Qeriath Shemaʿ 1:10–13; Tefilla 3:6–7) without an interval in the chapters read. Day vs night seasonal hour: text silent; day hour chosen | Comm.; Inferred; Choice; **Setting** (show/hide) |
 | End of morning Shemaʿ | 3 hours | Qeriath Shemaʿ 1:12–14 | MT |
 | End of Shaḥrith | 4 hours | Tefilla 3:1 | MT |
 | End of Musaf (only on Musaf days) | 7 hours | Tefilla 3:5 | MT |
@@ -40,7 +40,7 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Purim | 15 Adar within ~6 km of Jerusalem's Old City, else 14; Adar II in leap years | — | Choice; **Setting** (auto/on/off) |
 | Parasha | Annual cycle; reading of the chosen location; when Israel and diaspora differ, the other is shown below | Tefilla 13:1. Algorithm ours, checked against Hebcal for 5600–6199: 0 differences | Verified |
 | Haftaroth | **Not implemented.** Owner's plan (2026-11-02): lists for the Italian, Ashkenazi, and Sephardi rites, but only if the Ashkenazi list can be traced to Western Ashkenazi sources and the Sephardi list to Western Sephardi sources / the Rambam; otherwise Italian only | To find. Candidate for the Rambam (UNKNOWN, to verify): the order of haftaroth in Tefilla 13 and in the order of prayers at the end of Sefer Ahava | To do |
-| Parasha romanisation | Provisional | — | To do (align with Mahazor) |
+| Parasha romanisation | Accents settled (see Interface); other conventions still to be checked against the Maḥazor | — | To do |
 | Time zone | City list: fixed zone; GPS: device zone | — | Choice |
 
 ## Interface
@@ -48,6 +48,6 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Rule | Implementation | Source | Status |
 |---|---|---|---|
 | Languages | Hebrew terms always shown; captions in Italian, English, or French; a fourth option shows Hebrew only | — | Choice (owner, 2026-11-02); **Setting** |
-| Romanisation by language | Italian captions keep the Mahazor forms (Minḥà, Ḥanukkà); English and French use the scientific romanisation without the accent (Minḥa, Ḥanukka) | — | Choice |
+| Romanisation by language | Italian: every word that would be *tronca* (stressed on a final vowel) takes an accent — à, è (seghol), é (ṣere), ì, ò, ù (Minḥà, Ḥayyé Sarà, Teṣawwè, Wayḥì) — and no other word does (ʿaloth, Haazinu; monosyllables such as Bo). English and French: the same forms without accents (Minḥa, Ḥayye Sara) | Stress from the Masoretic accents of the verses that name the parashoth (Sefaria, Miqra according to the Masorah): all final except הַאֲזִ֥ינוּ; שָׂרָ֔ה is final | Choice (owner, 2026-11-02); stresses Verified |
 | Decisions page | Italian only for now; may be translated later | — | Choice |
 | English and French texts | Drafted by Claude; to be reviewed by the owner | — | To do |

@@ -15,7 +15,8 @@ Read `DECISIONS.md` before changing any rule. Every rule there was settled with 
 
 - UI: Italian and Hebrew. Halakhic terms appear in Hebrew script (like the Zemaneh Yosef app); Italian captions underneath.
 - Romanisation: scientific, based on ISO 259, with the owner's exceptions: `sh` for ש; daghesh forte doubled (not for sh); no daghesh lene doubling; no vowel quantity; ṣērê = e; refuyyoth → v, gh, dh, kh, f, th; no matres lectionis (Tora, not Torah); no initial ʾalef; classical grammar always (mobile vs quiescent shewa: שַׁחְרִית = Shaḥrith).
-- Italian romanisation follows the owner's Mahazor conventions: final stressed -a written -à (Minḥà, Meghillà, Ḥanukkà); gimel refuyya = gh.
+- Italian romanisation follows the owner's Maḥazor conventions: every word that would be *tronca* in Italian (stress on a final vowel) takes an accent: à, è for seghol, é for ṣere, ì, ò, ù (Minḥà, Meghillà, Ḥayyé Sarà, Teṣawwè, Wayḥì); no other word does (ʿaloth, Haazinu, monosyllables). Check the stress, e.g. on the Masoretic accents. Gimel refuyya = gh.
+- English, French, and any other language: the same romanisation without those accents (`sciRoman` in `engine.js`).
 - The app's name is **Zemannim** (daghesh in the nun).
 - Italian: no doubled gender forms; use the generic masculine.
 

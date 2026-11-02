@@ -74,8 +74,9 @@ function hebFromRd(rd) {
 }
 const MONTHS_HE = { 1: 'ניסן', 2: 'אייר', 3: 'סיון', 4: 'תמוז', 5: 'אב', 6: 'אלול', 7: 'תשרי', 8: 'מרחשון', 9: 'כסלו', 10: 'טבת', 11: 'שבט', 12: 'אדר', 13: 'אדר שני' };
 const MONTHS_IT = { 1: 'Nisan', 2: 'Iyyar', 3: 'Siwan', 4: 'Tammuz', 5: 'Av', 6: 'Elul', 7: 'Tishri', 8: 'Marḥeshwan', 9: 'Kislew', 10: 'Ṭeveth', 11: 'Shevaṭ', 12: 'Adar', 13: 'Adar II' };
-// Romanizzazione scientifica: toglie l'accento italiano del Mahazor (Minḥà → Minḥa) per inglese e francese
-const sciRoman = s => s.replace(/[àèìòù]/g, c => ({ 'à': 'a', 'è': 'e', 'ì': 'i', 'ò': 'o', 'ù': 'u' }[c]));
+// Romanizzazione: in italiano le parole tronche hanno l'accento (à, è = segol, é = ṣere, ì, ò, ù);
+// in inglese e francese le stesse forme senza accento (Minḥà → Minḥa)
+const sciRoman = s => s.replace(/[àèéìòù]/g, c => ({ 'à': 'a', 'è': 'e', 'é': 'e', 'ì': 'i', 'ò': 'o', 'ù': 'u' }[c]));
 function monthName(m, y, lang) {
   if (m === 12 && hLeap(y)) return lang === 'he' ? 'אדר ראשון' : 'Adar I';
   return (lang === 'he' ? MONTHS_HE : MONTHS_IT)[m];
@@ -104,8 +105,8 @@ function dayInfo(rd, opt) {
   if (m === 7 && d === 10) { info.yomKippur = true; add('Yom ha-Kippurim', 'יום הכפורים'); }
   if (m === 7 && (d === 15 || (!il && d === 16))) { info.yomTov = true; add('Sukkoth', 'סכות'); }
   if (m === 7 && d > (il ? 15 : 16) && d <= 21) { info.holMoed = true; add('Ḥol ha-moʿed Sukkoth', 'חול המועד סכות'); }
-  if (m === 7 && d === 22) { info.yomTov = true; add('Shemini ʿAṣereth', 'שמיני עצרת'); }
-  if (m === 7 && d === 23 && !il) { info.yomTov = true; add('Shemini ʿAṣereth (secondo giorno)', 'שמיני עצרת (יום שני)', 'Shemini ʿAṣereth (second day)', 'Shemini ʿAṣereth (deuxième jour)'); }
+  if (m === 7 && d === 22) { info.yomTov = true; add('Sheminì ʿAṣereth', 'שמיני עצרת'); }
+  if (m === 7 && d === 23 && !il) { info.yomTov = true; add('Sheminì ʿAṣereth (secondo giorno)', 'שמיני עצרת (יום שני)', 'Shemini ʿAṣereth (second day)', 'Shemini ʿAṣereth (deuxième jour)'); }
   if (m === 1 && (d === 15 || (!il && d === 16))) { info.yomTov = true; add('Pesaḥ', 'פסח'); }
   if (m === 1 && d > (il ? 15 : 16) && d <= 20) { info.holMoed = true; add('Ḥol ha-moʿed Pesaḥ', 'חול המועד פסח'); }
   if (m === 1 && (d === 21 || (!il && d === 22))) { info.yomTov = true; add('Pesaḥ (ultimi giorni)', 'שביעי של פסח', 'Pesaḥ (last days)', 'Pesaḥ (derniers jours)'); }
@@ -126,19 +127,19 @@ function dayInfo(rd, opt) {
 
 // ---------- Parashoth (lettura annuale; MT Tefilla 13:1) ----------
 const PARASHOTH = [
-  ['Bereshith', 'בראשית'], ['Noaḥ', 'נח'], ['Lekh lekhà', 'לך לך'], ['Wayyerà', 'וירא'], ['Ḥayye Sarà', 'חיי שרה'],
-  ['Toledoth', 'תולדות'], ['Wayyeṣe', 'ויצא'], ['Wayyishlaḥ', 'וישלח'], ['Wayyeshev', 'וישב'], ['Miqqeṣ', 'מקץ'],
-  ['Wayyiggash', 'ויגש'], ['Wayḥi', 'ויחי'], ['Shemoth', 'שמות'], ['Waera', 'וארא'], ['Bo', 'בא'],
-  ['Beshallaḥ', 'בשלח'], ['Yithro', 'יתרו'], ['Mishpaṭim', 'משפטים'], ['Terumà', 'תרומה'], ['Teṣawwe', 'תצוה'],
-  ['Ki thissà', 'כי תשא'], ['Wayyaqhel', 'ויקהל'], ['Pequde', 'פקודי'], ['Wayyiqrà', 'ויקרא'], ['Ṣaw', 'צו'],
-  ['Shemini', 'שמיני'], ['Thazriaʿ', 'תזריע'], ['Meṣoraʿ', 'מצורע'], ['Aḥare moth', 'אחרי מות'], ['Qedoshim', 'קדשים'],
-  ['Emor', 'אמר'], ['Behar', 'בהר'], ['Beḥuqqothay', 'בחקתי'], ['Bemidbar', 'במדבר'], ['Naso', 'נשא'],
+  ['Bereshith', 'בראשית'], ['Noaḥ', 'נח'], ['Lekh lekhà', 'לך לך'], ['Wayyerà', 'וירא'], ['Ḥayyé Sarà', 'חיי שרה'],
+  ['Toledoth', 'תולדות'], ['Wayyeṣé', 'ויצא'], ['Wayyishlaḥ', 'וישלח'], ['Wayyeshev', 'וישב'], ['Miqqeṣ', 'מקץ'],
+  ['Wayyiggash', 'ויגש'], ['Wayḥì', 'ויחי'], ['Shemoth', 'שמות'], ['Waerà', 'וארא'], ['Bo', 'בא'],
+  ['Beshallaḥ', 'בשלח'], ['Yithrò', 'יתרו'], ['Mishpaṭim', 'משפטים'], ['Terumà', 'תרומה'], ['Teṣawwè', 'תצוה'],
+  ['Ki thissà', 'כי תשא'], ['Wayyaqhel', 'ויקהל'], ['Pequdé', 'פקודי'], ['Wayyiqrà', 'ויקרא'], ['Ṣaw', 'צו'],
+  ['Sheminì', 'שמיני'], ['Thazriaʿ', 'תזריע'], ['Meṣoraʿ', 'מצורע'], ['Aḥaré moth', 'אחרי מות'], ['Qedoshim', 'קדשים'],
+  ['Emor', 'אמר'], ['Behar', 'בהר'], ['Beḥuqqothay', 'בחקתי'], ['Bemidbar', 'במדבר'], ['Nasò', 'נשא'],
   ['Behaʿalothekhà', 'בהעלתך'], ['Shelaḥ lekhà', 'שלח לך'], ['Qoraḥ', 'קרח'], ['Ḥuqqath', 'חקת'], ['Balaq', 'בלק'],
-  ['Pineḥas', 'פינחס'], ['Maṭṭoth', 'מטות'], ['Masʿe', 'מסעי'], ['Devarim', 'דברים'], ['Waethḥannan', 'ואתחנן'],
-  ['ʿEqev', 'עקב'], ['Reʾe', 'ראה'], ['Shofeṭim', 'שופטים'], ['Ki theṣe', 'כי תצא'], ['Ki thavo', 'כי תבוא'],
+  ['Pineḥas', 'פינחס'], ['Maṭṭoth', 'מטות'], ['Masʿé', 'מסעי'], ['Devarim', 'דברים'], ['Waethḥannan', 'ואתחנן'],
+  ['ʿEqev', 'עקב'], ['Reʾé', 'ראה'], ['Shofeṭim', 'שופטים'], ['Ki theṣé', 'כי תצא'], ['Ki thavò', 'כי תבוא'],
   ['Niṣṣavim', 'נצבים'], ['Wayyelekh', 'וילך'], ['Haazinu', 'האזינו'], ['We-zoth ha-berakhà', 'וזאת הברכה']
 ];
-// Nota: le forme romanizzate sono provvisorie e vanno riviste secondo le convenzioni del Mahazor italiano.
+// Accento sulle tronche secondo gli accenti masoretici dei versetti (Haazinu è piana: הַאֲזִ֥ינוּ; Bo è monosillabo).
 
 function isFestivalShabbath(rd, il) {
   const i = dayInfo(rd, { israel: il });
