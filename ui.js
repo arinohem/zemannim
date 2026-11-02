@@ -31,7 +31,7 @@ const T = {
     title: 'Zemannim secondo il Mishné Torà', today: 'Oggi', week: ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'],
     months: ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'],
     afterSunset: 'Dopo il tramonto', parasha: 'Parashà della settimana', festShabbath: 'Sabato festivo: lettura della festa',
-    na: 'Nefilath appayim', shahrith: 'Shaḥrith', minha: 'Minḥà', arbith: 'ʿArbith', yes: 'sì', no: 'no',
+    na: 'Nefilath appayim', shahrith: 'Shaḥrith', minha: 'Minḥà', arvith: 'ʿArvith', yes: 'sì', no: 'no',
     ask: 'Richiesta della pioggia',
     askYes: 'sì', askNo: 'non ancora', askFrom: 'dal', hour: 'Ora stagionale', settings: 'Impostazioni', notes: 'Note sulle scelte',
     close: 'Chiudi', place: 'Luogo', useGps: 'Usa la mia posizione', gpsFail: 'Posizione non disponibile in questa pagina: scegli una città.',
@@ -40,14 +40,14 @@ const T = {
     walledLbl: 'Città murata (Purim il 15)', auto: 'automatico', on: 'sì', off: 'no', prudentLbl: 'Arrotondamento prudente',
     langLbl: 'Lingua', zone: 'Orari nel fuso', shabbIn: 'Inizio dello Shabbath', shabbOut: 'Fine dello Shabbath',
     ytIn: 'Inizio della festa', ytOut: 'Fine della festa', source: 'Fonte', polar: 'In questo luogo e giorno il sole non sorge o non tramonta.',
-    firstMention: 'da Musaf si comincia a dire', lastMention: 'si dice fino a Shaḥrith; da Musaf non si dice più', israelOn: 'Israele', diaspora: 'diaspora', inIsrael: 'In Israele', naAll: 'in ogni preghiera', arbithKippur: 'ʿArbith (sera di Kippur)', inDiaspora: 'Nella diaspora', festReading: 'lettura della festa',
+    firstMention: 'da Musaf si comincia a dire', lastMention: 'si dice fino a Shaḥrith; da Musaf non si dice più', israelOn: 'Israele', diaspora: 'diaspora', inIsrael: 'In Israele', naAll: 'in ogni preghiera', arvithKippur: 'ʿArvith (sera di Kippur)', inDiaspora: 'Nella diaspora', festReading: 'lettura della festa',
     tequfa: 'tequfà', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico'
   },
   en: {
     title: 'Zemannim according to the Mishne Tora', today: 'Today', week: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
     afterSunset: 'After sunset', parasha: 'Weekly parasha', festShabbath: 'Festival Shabbath: festival reading',
-    na: 'Nefilath appayim', shahrith: 'Shaḥrith', minha: 'Minḥa', arbith: 'ʿArbith', yes: 'yes', no: 'no',
+    na: 'Nefilath appayim', shahrith: 'Shaḥrith', minha: 'Minḥa', arvith: 'ʿArvith', yes: 'yes', no: 'no',
     ask: 'Request for rain',
     askYes: 'yes', askNo: 'not yet', askFrom: 'from', hour: 'Seasonal hour', settings: 'Settings', notes: 'Notes on the choices (in Italian)',
     close: 'Close', place: 'Place', useGps: 'Use my location', gpsFail: 'Location is not available on this page: choose a city.',
@@ -56,14 +56,14 @@ const T = {
     walledLbl: 'Walled city (Purim on the 15th)', auto: 'automatic', on: 'yes', off: 'no', prudentLbl: 'Prudent rounding',
     langLbl: 'Language', zone: 'Times in time zone', shabbIn: 'Shabbath begins', shabbOut: 'Shabbath ends',
     ytIn: 'Festival begins', ytOut: 'Festival ends', source: 'Source', polar: 'At this place and date the sun does not rise or does not set.',
-    firstMention: 'said from Musaf onwards', lastMention: 'said until Shaḥrith; no longer said from Musaf', israelOn: 'Israel', diaspora: 'diaspora', inIsrael: 'In Israel', naAll: 'at every prayer', arbithKippur: 'ʿArbith (Kippur night)', inDiaspora: 'In the diaspora', festReading: 'festival reading',
+    firstMention: 'said from Musaf onwards', lastMention: 'said until Shaḥrith; no longer said from Musaf', israelOn: 'Israel', diaspora: 'diaspora', inIsrael: 'In Israel', naAll: 'at every prayer', arvithKippur: 'ʿArvith (Kippur night)', inDiaspora: 'In the diaspora', festReading: 'festival reading',
     tequfa: 'tequfa', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only'
   },
   fr: {
     title: 'Zemannim selon le Mishne Tora', today: 'Aujourd’hui', week: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
     months: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
     afterSunset: 'Après le coucher du soleil', parasha: 'Parasha de la semaine', festShabbath: 'Shabbath de fête : lecture de la fête',
-    na: 'Nefilath appayim', shahrith: 'Shaḥrith', minha: 'Minḥa', arbith: 'ʿArbith', yes: 'oui', no: 'non',
+    na: 'Nefilath appayim', shahrith: 'Shaḥrith', minha: 'Minḥa', arvith: 'ʿArvith', yes: 'oui', no: 'non',
     ask: 'Demande de la pluie',
     askYes: 'oui', askNo: 'pas encore', askFrom: 'à partir du', hour: 'Heure saisonnière', settings: 'Réglages', notes: 'Notes sur les choix (en italien)',
     close: 'Fermer', place: 'Lieu', useGps: 'Utiliser ma position', gpsFail: 'Position indisponible sur cette page : choisissez une ville.',
@@ -72,14 +72,14 @@ const T = {
     walledLbl: 'Ville fortifiée (Purim le 15)', auto: 'automatique', on: 'oui', off: 'non', prudentLbl: 'Arrondi prudent',
     langLbl: 'Langue', zone: 'Heures dans le fuseau', shabbIn: 'Début du Shabbath', shabbOut: 'Fin du Shabbath',
     ytIn: 'Début de la fête', ytOut: 'Fin de la fête', source: 'Source', polar: 'En ce lieu et à cette date, le soleil ne se lève pas ou ne se couche pas.',
-    firstMention: 'on le dit à partir de Musaf', lastMention: 'on le dit jusqu’à Shaḥrith ; à partir de Musaf on ne le dit plus', israelOn: 'Israël', diaspora: 'diaspora', inIsrael: 'En Israël', naAll: 'à chaque prière', arbithKippur: 'ʿArbith (nuit de Kippur)', inDiaspora: 'En diaspora', festReading: 'lecture de la fête',
+    firstMention: 'on le dit à partir de Musaf', lastMention: 'on le dit jusqu’à Shaḥrith ; à partir de Musaf on ne le dit plus', israelOn: 'Israël', diaspora: 'diaspora', inIsrael: 'En Israël', naAll: 'à chaque prière', arvithKippur: 'ʿArvith (nuit de Kippur)', inDiaspora: 'En diaspora', festReading: 'lecture de la fête',
     tequfa: 'tequfa', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul'
   },
   he: {
     title: 'זמנים על פי משנה תורה', today: 'היום', week: ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום שישי', 'שבת'],
     months: ['ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני', 'יולי', 'אוגוסט', 'ספטמבר', 'אוקטובר', 'נובמבר', 'דצמבר'],
     afterSunset: 'אחר השקיעה', parasha: 'פרשת השבוע', festShabbath: 'שבת של מועד: קריאת המועד',
-    na: 'נפילת אפים', shahrith: 'שחרית', minha: 'מנחה', arbith: 'ערבית', yes: 'כן', no: 'לא',
+    na: 'נפילת אפים', shahrith: 'שחרית', minha: 'מנחה', arvith: 'ערבית', yes: 'כן', no: 'לא',
     ask: 'שאלת גשמים',
     askYes: 'כן', askNo: 'עדיין לא', askFrom: 'מ־', hour: 'שעה זמנית', settings: 'הגדרות', notes: 'הערות על הבחירות (באיטלקית)',
     close: 'סגור', place: 'מקום', useGps: 'השתמש במיקום שלי', gpsFail: 'המיקום אינו זמין בדף זה: בחר עיר.',
@@ -88,7 +88,7 @@ const T = {
     walledLbl: 'עיר מוקפת חומה (פורים בט״ו)', auto: 'אוטומטי', on: 'כן', off: 'לא', prudentLbl: 'עיגול לחומרא',
     langLbl: 'שפה', zone: 'שעות לפי אזור הזמן', shabbIn: 'כניסת שבת', shabbOut: 'יציאת שבת',
     ytIn: 'כניסת יום טוב', ytOut: 'יציאת יום טוב', source: 'מקור', polar: 'במקום וביום זה החמה אינה זורחת או אינה שוקעת.',
-    firstMention: 'מתחילים במוסף', lastMention: 'אומרים עד שחרית; ממוסף אין אומרים', israelOn: 'ארץ ישראל', diaspora: 'חוץ לארץ', inIsrael: 'בארץ ישראל', naAll: 'בכל תפלה ותפלה', arbithKippur: 'ערבית (ליל יום הכפורים)', inDiaspora: 'בחוץ לארץ', festReading: 'קריאת המועד',
+    firstMention: 'מתחילים במוסף', lastMention: 'אומרים עד שחרית; ממוסף אין אומרים', israelOn: 'ארץ ישראל', diaspora: 'חוץ לארץ', inIsrael: 'בארץ ישראל', naAll: 'בכל תפלה ותפלה', arvithKippur: 'ערבית (ליל יום הכפורים)', inDiaspora: 'בחוץ לארץ', festReading: 'קריאת המועד',
     chapter: 'פרק', langLbl2: 'שפה (נוסף על העברית)', hebOnly: 'עברית בלבד'
   }
 };
@@ -107,11 +107,11 @@ const ZEMANIM = {
                     en: 'Rambam, Commentary on the Mishna, Berakhoth 1:1 (not MT): 1⅕ seasonal hours before sunrise',
                     fr: 'Rambam, Commentaire de la Mishna, Berakhoth 1:1 (pas le MT) : 1⅕ heure saisonnière avant le lever du soleil' }, r: 'n' },
   netz:    { he: 'הנץ החמה', it: 'Sorgere del sole', en: 'Sunrise', fr: 'Lever du soleil', src: 'MT Qeriath Shemaʿ 1:12; Tefillà 3:1', r: 'n' },
-  shema:   { he: 'סוף זמן קריאת שמע', it: 'Fine dello Shemaʿ del mattino (3 ore)', en: 'End of the morning Shemaʿ (3 hours)', fr: 'Fin du Shemaʿ du matin (3 heures)', src: 'MT Qeriath Shemaʿ 1:12–14', r: 'f' },
-  tefilla: { he: 'סוף זמן תפלת השחר', it: 'Fine di Shaḥrith (4 ore)', en: 'End of Shaḥrith (4 hours)', fr: 'Fin de Shaḥrith (4 heures)', src: 'MT Tefillà 3:1', r: 'f' },
+  shema:   { he: 'סוף זמן קריאת שמע', it: 'Termine per lo Shemaʿ del mattino (3 ore)', en: 'End of the morning Shemaʿ (3 hours)', fr: 'Fin du Shemaʿ du matin (3 heures)', src: 'MT Qeriath Shemaʿ 1:12–14', r: 'f' },
+  tefilla: { he: 'סוף זמן תפלת השחר', it: 'Termine per Shaḥrith (4 ore)', en: 'End of Shaḥrith (4 hours)', fr: 'Fin de Shaḥrith (4 heures)', src: 'MT Tefillà 3:1', r: 'f' },
   hatzot:  { he: 'חצות היום', it: 'Mezzogiorno (6 ore)', en: 'Midday (6 hours)', fr: 'Midi (6 heures)', src: 'MT Tefillà 3:9 («חצי היום»)', r: 'n' },
   minhaG:  { he: 'מנחה גדולה', it: 'Minḥà geḏolà (6½ ore)', en: 'Minḥa geḏola (6½ hours)', fr: 'Minḥa geḏola (6½ heures)', src: 'MT Tefillà 3:2, 3:4', r: 'c' },
-  musaf:   { he: 'סוף זמן תפלת המוספין', it: 'Fine di Musaf (7 ore)', en: 'End of Musaf (7 hours)', fr: 'Fin de Musaf (7 heures)', src: 'MT Tefillà 3:5', r: 'f' },
+  musaf:   { he: 'סוף זמן תפלת המוספין', it: 'Termine per Musaf (7 ore)', en: 'End of Musaf (7 hours)', fr: 'Fin de Musaf (7 heures)', src: 'MT Tefillà 3:5', r: 'f' },
   minhaQ:  { he: 'מנחה קטנה', it: 'Minḥà qetannà (9½ ore)', en: 'Minḥa qetanna (9½ hours)', fr: 'Minḥa qetanna (9½ heures)', src: 'MT Tefillà 3:2, 3:4', r: 'c' },
   plag:    { he: 'שעה ורביע קודם השקיעה', it: 'Fine della minḥà qetannà, 1¼ ore prima del tramonto (si può pregare fino al tramonto)',
              en: 'End of minḥa qetanna, 1¼ hours before sunset (one may pray until sunset)',
@@ -230,7 +230,7 @@ function render() {
   if (!r.polar) {
     const na = r.na, yn = v => v ? l.yes : l.no;
     notes.push(na.all ? `${l.na}${COLON()} ${l.naAll}` :
-      `${l.na}${COLON()} ${l.shahrith} ${yn(na.shahrith)} · ${l.minha} ${yn(na.minha)}${na.arbith ? ` · ${l.arbithKippur} ${yn(true)}` : ''}`);
+      `${l.na}${COLON()} ${l.shahrith} ${yn(na.shahrith)} · ${l.minha} ${yn(na.minha)}${na.arvith ? ` · ${l.arvithKippur} ${yn(true)}` : ''}`);
   }
   const rain = r.rain;
   // Rito italiano: d'estate non si dice nulla, quindi non si mostra nulla

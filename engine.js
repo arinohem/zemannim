@@ -132,7 +132,7 @@ const PARASHIYYOTH = [
   ['Wayyiggash', 'ויגש'], ['Wayḥì', 'ויחי'], ['Shemoth', 'שמות'], ['Waerà', 'וארא'], ['Bo', 'בא'],
   ['Beshallaḥ', 'בשלח'], ['Yithrò', 'יתרו'], ['Mishpaṭim', 'משפטים'], ['Terumà', 'תרומה'], ['Teṣawwè', 'תצוה'],
   ['Ki thissà', 'כי תשא'], ['Wayyaqhel', 'ויקהל'], ['Pequḏé', 'פקודי'], ['Wayyiqrà', 'ויקרא'], ['Ṣaw', 'צו'],
-  ['Sheminì', 'שמיני'], ['Thazriaʿ', 'תזריע'], ['Meṣoraʿ', 'מצורע'], ['Aḥaré moth', 'אחרי מות'], ['Qeḏoshim', 'קדשים'],
+  ['Sheminì', 'שמיני'], ['Tazriaʿ', 'תזריע'], ['Meṣoraʿ', 'מצורע'], ['Aḥaré moth', 'אחרי מות'], ['Qeḏoshim', 'קדשים'],
   ['Emor', 'אמר'], ['Behar', 'בהר'], ['Beḥuqqothay', 'בחקתי'], ['Bemiḏbar', 'במדבר'], ['Nasò', 'נשא'],
   ['Behaʿalothekhà', 'בהעלתך'], ['Shelaḥ lekhà', 'שלח לך'], ['Qoraḥ', 'קרח'], ['Ḥuqqath', 'חקת'], ['Balaq', 'בלק'],
   ['Pineḥas', 'פינחס'], ['Maṭṭoth', 'מטות'], ['Masʿé', 'מסעי'], ['Deḇarim', 'דברים'], ['Waethḥannan', 'ואתחנן'],
@@ -291,9 +291,9 @@ function computeDay(rd, opt) {
   const festive = info.shabbath || info.yomTov || info.holMoed || info.roshHashana || info.roshHodesh || info.hanukka || info.purim;
   // Vigilia di Kippur esclusa: non è tra i «ימים טובים» (Sheḇithath Yom Ṭoḇ 1:1)
   const ereb = tomorrow.shabbath || tomorrow.yomTov;
-  // ʿArbith appartiene al giorno ebraico che comincia la sera: si fa solo la sera che apre Yom ha-Kippurim.
-  res.na = info.yomKippur ? { all: true, shahrith: true, minha: true, arbith: false } :
-    { shahrith: !festive, minha: !festive && !ereb, arbith: tomorrow.yomKippur };
+  // ʿArvith appartiene al giorno ebraico che comincia la sera: si fa solo la sera che apre Yom ha-Kippurim.
+  res.na = info.yomKippur ? { all: true, shahrith: true, minha: true, arvith: false } :
+    { shahrith: !festive, minha: !festive && !ereb, arvith: tomorrow.yomKippur };
 
   // Pioggia (Tefilla 2:17–19; formula secondo il rito italiano)
   const { y, m, d } = res.heb;

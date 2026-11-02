@@ -29,8 +29,8 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 
 | Rule | Implementation | Source | Status |
 |---|---|---|---|
-| Nefilath appayim omitted | Shabbath, festivals, Ḥol ha-moʿeḏ, Rosh ha-Shana, Rosh Ḥoḏesh, Ḥanukka, Purim (local day), Minḥa on eve of Shabbath and festivals; never at ʿArbith | Tefilla 5:16 [15]: «מנהג פשוט… שאין נפילת פנים בשבתות ובמועדות, ולא בראש השנה, ולא בראשי חודשים ובחנוכה ופורים, ולא במנחה של ערבי שבתות וימים טובים, ולא בערבית שבכל יום» | MT; Ḥol ha-moʿeḏ included by Choice |
-| Yom ha-Kippurim | At every prayer, including the ʿArbith that opens it | Tefilla 5:16 [15]: «וביום הכיפורים בלבד, נופלין על פניהם בכל תפילה ותפילה» | MT |
+| Nefilath appayim omitted | Shabbath, festivals, Ḥol ha-moʿeḏ, Rosh ha-Shana, Rosh Ḥoḏesh, Ḥanukka, Purim (local day), Minḥa on eve of Shabbath and festivals; never at ʿArvith | Tefilla 5:16 [15]: «מנהג פשוט… שאין נפילת פנים בשבתות ובמועדות, ולא בראש השנה, ולא בראשי חודשים ובחנוכה ופורים, ולא במנחה של ערבי שבתות וימים טובים, ולא בערבית שבכל יום» | MT; Ḥol ha-moʿeḏ included by Choice |
+| Yom ha-Kippurim | At every prayer, including the ʿArvith that opens it | Tefilla 5:16 [15]: «וביום הכיפורים בלבד, נופלין על פניהם בכל תפילה ותפילה» | MT |
 | Eve of Kippur, Minḥa | Nefilath appayim is said (not a festival eve) | Sheḇithath Yom Ṭoḇ 1:1: the «ימים טובים» are six days (Pesaḥ 1st and 7th, Sukkoth 1st and 8th, Shaḇuʿoth, 1 Tishri); Kippur is not among them, and Tefilla 5:16 [15] treats it as a separate category. Applying the 1:1 definition to Tefilla 5:16 is ours. Teshuḇa 2:9 [7] (confession on the eve) is silent on nefilath appayim | MT; Inferred; Choice (owner, 2026-11-02) |
 | Tishʿa be-Aḇ and all other days | Nefilath appayim is said | Not listed in 5:16 [15] | Choice (owner: omit only where MT states it) |
 | Mention of rain | «משיב הרוח ומוריד הגשם» from Musaf of Shemini ʿAṣereth (diaspora: first day) to Shaḥrith of 1st day of Pesaḥ; nothing in summer | Dates: Tefilla 2:17, 2:19. Wording: Italian rite (MT 2:17 has «מוריד הגשם» / «מוריד הטל») | MT; Choice |
@@ -49,6 +49,8 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 |---|---|---|---|
 | Languages | Hebrew terms always shown; captions in Italian, English, or French; a fourth option shows Hebrew only | — | Choice (owner, 2026-11-02); **Setting** |
 | Romanisation by language | Italian: every word that would be *tronca* (stressed on a final vowel) takes an accent — à, è (seghol), é (ṣere), ì, ò, ù (Minḥà, Ḥayyé Sarà, Teṣawwè, Wayḥì) — and no other word does (ʿaloth, Haazinu; monosyllables such as Bo). English and French: the same forms without accents (Minḥa, Ḥayye Sara) | Stress from the Masoretic accents of the verses that name the parashiyyoth (Sefaria, Miqra according to the Masorah): all final except הַאֲזִ֥ינוּ; שָׂרָ֔ה is final | Choice (owner, 2026-11-02); stresses Verified |
-| Refuyyoth | ḇ, ḡ, ḏ, kh, f, th in every language (Sheḇaṭ, Meḡillà, Ḥoḏesh); replaces the older v, gh, dh. Only a real refuyya takes the line: after a silent shewa the letter is plain (ʿArbith, Bemiḏbar) | — | Choice (owner, 2026-11-02) |
+| Refuyyoth | ḇ, ḡ, ḏ, kh, f, th in every language (Sheḇaṭ, Meḡillà, Ḥoḏesh); replaces the older v, gh, dh. Only a real refuyya takes the line: after a silent shewa the letter is plain (Bemiḏbar) | — | Choice (owner, 2026-11-02) |
+| Romanisation exceptions | ʿArvith (v, not b); Tazriaʿ (title form, not Thazriaʿ from כִּי תַזְרִיעַ); after a hyphen (article, prefixes) the daghesh forte is not written: the hyphen replaces the gemination (ha-kokhaḇim, ha-moʿeḏ) | — | Choice (owner, 2026-11-02) |
+| Italian deadline captions | «Termine per» (Termine per lo Shemaʿ, per Shaḥrith, per Musaf); «Fine» kept where it is not a deadline (fine dello Shabbath, della festa, della minḥà qetannà) | — | Choice (owner, 2026-11-02) |
 | Decisions page | Italian only for now; may be translated later | — | Choice |
 | English and French texts | Drafted by Claude; to be reviewed by the owner | — | To do |
