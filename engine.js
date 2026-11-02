@@ -1,4 +1,4 @@
-/* Zemannim secondo il Mishne Tora — motore di calcolo.
+/* Zemannim secondo il Mishné Torà — motore di calcolo.
    Tutto il codice è originale; nessuna dipendenza esterna.
    Calendario ebraico: algoritmi aritmetici standard (Reingold–Dershowitz, "Calendrical Calculations").
    Sole: algoritmo NOAA (Meeus), alba/tramonto a livello del mare, zenit 90°50'. */
@@ -27,8 +27,8 @@ function gregFromRd(rd) {
 function weekday(rd) { return mod(rd, 7); } // 0 = domenica … 6 = sabato
 
 // ---------- Calendario ebraico (MT, Hilkhoth Qiddush ha-Ḥoḏesh 6–8: calendario fisso) ----------
-const EPOCH = -1373427; // RD di 1 Tishri dell'anno 1
-// mesi: 1 Nisan … 6 Elul, 7 Tishri … 12 Aḏar (Aḏar I negli anni embolismici), 13 Aḏar II
+const EPOCH = -1373427; // RD di 1 Tishrì dell'anno 1
+// mesi: 1 Nisan … 6 Elul, 7 Tishrì … 12 Aḏar (Aḏar I negli anni embolismici), 13 Aḏar II
 function hLeap(y) { return mod(7 * y + 1, 19) < 7; }
 function lastMonth(y) { return hLeap(y) ? 13 : 12; }
 function elapsedDays(y) {
@@ -73,7 +73,7 @@ function hebFromRd(rd) {
   return { y, m, d: rd - rdFromHeb(y, m, 1) + 1 };
 }
 const MONTHS_HE = { 1: 'ניסן', 2: 'אייר', 3: 'סיון', 4: 'תמוז', 5: 'אב', 6: 'אלול', 7: 'תשרי', 8: 'מרחשון', 9: 'כסלו', 10: 'טבת', 11: 'שבט', 12: 'אדר', 13: 'אדר שני' };
-const MONTHS_IT = { 1: 'Nisan', 2: 'Iyyar', 3: 'Siwan', 4: 'Tammuz', 5: 'Aḇ', 6: 'Elul', 7: 'Tishri', 8: 'Marḥeshwan', 9: 'Kislew', 10: 'Ṭeḇeth', 11: 'Sheḇaṭ', 12: 'Aḏar', 13: 'Aḏar II' };
+const MONTHS_IT = { 1: 'Nisan', 2: 'Iyyar', 3: 'Siwan', 4: 'Tammuz', 5: 'Aḇ', 6: 'Elul', 7: 'Tishrì', 8: 'Marḥeshwan', 9: 'Kislew', 10: 'Ṭeḇeth', 11: 'Sheḇaṭ', 12: 'Aḏar', 13: 'Aḏar II' };
 // Romanizzazione: in italiano le parole tronche hanno l'accento (à, è = segol, é = ṣere, ì, ò, ù);
 // in inglese e francese le stesse forme senza accento (Minḥà → Minḥa)
 const sciRoman = s => s.replace(/[àèéìòù]/g, c => ({ 'à': 'a', 'è': 'e', 'é': 'e', 'ì': 'i', 'ò': 'o', 'ù': 'u' }[c]));
@@ -113,7 +113,7 @@ function dayInfo(rd, opt) {
   if (m === 3 && (d === 6 || (!il && d === 7))) { info.yomTov = true; add('Shaḇuʿoth', 'שבועות'); }
   if ((d === 1 && m !== 7) || d === 30) { info.roshHodesh = true; add('Rosh Ḥoḏesh', 'ראש חדש'); }
   const hanStart = rdFromHeb(y, 9, 25);
-  const hy = (m >= 7) ? y : y - 1; // Ḥanukka cade in Kislew/Ṭeḇeth dell'anno che inizia a Tishri
+  const hy = (m >= 7) ? y : y - 1; // Ḥanukkà cade in Kislew/Ṭeḇeth dell'anno che inizia a Tishrì
   const hs = rdFromHeb(hy, 9, 25);
   if (rd >= hs && rd < hs + 8) {
     const n = rd - hs + 1;
@@ -125,7 +125,7 @@ function dayInfo(rd, opt) {
   return info;
 }
 
-// ---------- Parashiyyoth (lettura annuale; MT Tefilla 13:1) ----------
+// ---------- Parashiyyoth (lettura annuale; MT Tefillà 13:1) ----------
 const PARASHIYYOTH = [
   ['Bereshith', 'בראשית'], ['Noaḥ', 'נח'], ['Lekh lekhà', 'לך לך'], ['Wayyerà', 'וירא'], ['Ḥayyé Sarà', 'חיי שרה'],
   ['Toleḏoth', 'תולדות'], ['Wayyeṣé', 'ויצא'], ['Wayyishlaḥ', 'וישלח'], ['Wayyesheḇ', 'וישב'], ['Miqqeṣ', 'מקץ'],
@@ -153,7 +153,7 @@ function slots(fromRd, toRd, il) { // sabati non festivi, inclusi gli estremi
   return out;
 }
 const sedraCache = new Map();
-// Ciclo che inizia con Bereshith dopo Simḥath Tora dell'anno y (Tishri y … Elul y).
+// Ciclo che inizia con Bereshith dopo Simḥath Torà dell'anno y (Tishrì y … Elul y).
 // Si legge una parashà per sabato non festivo; si uniscono due parashiyyoth (solo le coppie consuete)
 // il più tardi possibile (in Israele, tra Pesaḥ e Shaḇuʿoth, il prima possibile), quando altrimenti non si arriverebbe in tempo ai punti fissi:
 // Ṣaw (anno semplice) / Meṣoraʿ (anno embolismico) prima di Pesaḥ; Bemiḏbar prima di Shaḇuʿoth;
@@ -240,22 +240,22 @@ function toDate(rd, minutesUtc) {
 function sunrise(rd, lat, lon) { const t = sunEvent(rd, lat, lon, true, 90.833); return t === null ? null : toDate(rd, t); }
 function sunset(rd, lat, lon) { const t = sunEvent(rd, lat, lon, false, 90.833); return t === null ? null : toDate(rd, t); }
 
-// ---------- Tequfa di Tishri (MT Qiddush ha-Ḥoḏesh 9 e 10) ----------
+// ---------- Tequfà di Tishrì (MT Qiddush ha-Ḥoḏesh 9 e 10) ----------
 const PART = 1 / 25920; // un ḥeleq in giorni
 function moladNisanRd(y) { // molad di Nisan dell'anno y, in giorni RD (ora di Gerusalemme, da mezzanotte)
   const months = floor((235 * y - 234) / 19) + (hLeap(y) ? 7 : 6);
   return EPOCH - 876 / 25920 + months * (29 + 13753 / 25920);
 }
-function tequfaTishri(y, method) { // tequfa di Tishri che segue il Nisan dell'anno y
-  // cap. 9: anno di 365¼ giorni; tequfa di Nisan dell'anno 1 = 7g 9h 642p prima del molad di Nisan (9:3)
-  // cap. 10: anno di 365g 5h 997p 48r; tequfa di Nisan dell'anno 1 = 9h 642p prima del molad di Nisan (10:3)
+function tequfaTishri(y, method) { // tequfà di Tishrì che segue il Nisan dell'anno y
+  // cap. 9: anno di 365¼ giorni; tequfà di Nisan dell'anno 1 = 7g 9h 642p prima del molad di Nisan (9:3)
+  // cap. 10: anno di 365g 5h 997p 48r; tequfà di Nisan dell'anno 1 = 9h 642p prima del molad di Nisan (10:3)
   const yearLen = method === 10 ? 365 + 5 / 24 + 997 * PART + 48 / 76 * PART : 365.25;
   const off = method === 10 ? 9 / 24 + 642 * PART : 7 + 9 / 24 + 642 * PART;
   const t1 = moladNisanRd(1) - off;
   return t1 + (y - 1) * yearLen + yearLen / 2; // valore RD frazionario (ora media di Gerusalemme)
 }
-// Primo giorno (RD civile) in cui si chiede la pioggia nella diaspora: 60° giorno contando il giorno della tequfa come 1°.
-function sheelaStartDiaspora(hy, method) { // hy = anno che inizia a Tishri
+// Primo giorno (RD civile) in cui si chiede la pioggia nella diaspora: 60° giorno contando il giorno della tequfà come 1°.
+function sheelaStartDiaspora(hy, method) { // hy = anno che inizia a Tishrì
   return floor(tequfaTishri(hy - 1, method)) + 59;
 }
 
@@ -286,7 +286,7 @@ function computeDay(rd, opt) {
   res.hourMs = hour;
   res.sunrise = sr; res.sunset = ss;
 
-  // Nefilath appayim (MT Tefilla 5:16 [15])
+  // Nefilath appayim (MT Tefillà 5:16 [15])
   const tomorrow = dayInfo(rd + 1, opt);
   const festive = info.shabbath || info.yomTov || info.holMoed || info.roshHashana || info.roshHodesh || info.hanukka || info.purim;
   // Vigilia di Kippur esclusa: non è tra i «ימים טובים» (Sheḇithath Yom Ṭoḇ 1:1)
@@ -295,9 +295,9 @@ function computeDay(rd, opt) {
   res.na = info.yomKippur ? { all: true, shahrith: true, minha: true, arvith: false } :
     { shahrith: !festive, minha: !festive && !ereb, arvith: tomorrow.yomKippur };
 
-  // Pioggia (Tefilla 2:17–19; formula secondo il rito italiano)
+  // Pioggia (Tefillà 2:17–19; formula secondo il rito italiano)
   const { y, m, d } = res.heb;
-  // L'anno y comincia a Tishri: Nisan–Elul di y vengono dopo Tishri–Adar dello stesso y
+  // L'anno y comincia a Tishrì: Nisan–Elul di y vengono dopo Tishrì–Aḏar dello stesso y
   const startMention = rdFromHeb(y, 7, 22);   // Musaf di Shemini ʿAṣereth
   const endMention = rdFromHeb(y, 1, 15);     // fino a Shaḥrith del 1° giorno di Pesaḥ
   const mention = rd >= startMention && rd <= endMention;

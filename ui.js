@@ -1,4 +1,4 @@
-/* Interfaccia — Zemannim secondo il Mishne Tora */
+/* Interfaccia — Zemannim secondo il Mishné Torà */
 (function () {
 'use strict';
 const E = window.MTEngine;
