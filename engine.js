@@ -26,9 +26,9 @@ function gregFromRd(rd) {
 }
 function weekday(rd) { return mod(rd, 7); } // 0 = domenica … 6 = sabato
 
-// ---------- Calendario ebraico (MT, Hilkhoth Qiddush ha-Ḥodesh 6–8: calendario fisso) ----------
+// ---------- Calendario ebraico (MT, Hilkhoth Qiddush ha-Ḥoḏesh 6–8: calendario fisso) ----------
 const EPOCH = -1373427; // RD di 1 Tishri dell'anno 1
-// mesi: 1 Nisan … 6 Elul, 7 Tishri … 12 Adar (Adar I negli anni embolismici), 13 Adar II
+// mesi: 1 Nisan … 6 Elul, 7 Tishri … 12 Aḏar (Aḏar I negli anni embolismici), 13 Aḏar II
 function hLeap(y) { return mod(7 * y + 1, 19) < 7; }
 function lastMonth(y) { return hLeap(y) ? 13 : 12; }
 function elapsedDays(y) {
@@ -73,12 +73,12 @@ function hebFromRd(rd) {
   return { y, m, d: rd - rdFromHeb(y, m, 1) + 1 };
 }
 const MONTHS_HE = { 1: 'ניסן', 2: 'אייר', 3: 'סיון', 4: 'תמוז', 5: 'אב', 6: 'אלול', 7: 'תשרי', 8: 'מרחשון', 9: 'כסלו', 10: 'טבת', 11: 'שבט', 12: 'אדר', 13: 'אדר שני' };
-const MONTHS_IT = { 1: 'Nisan', 2: 'Iyyar', 3: 'Siwan', 4: 'Tammuz', 5: 'Av', 6: 'Elul', 7: 'Tishri', 8: 'Marḥeshwan', 9: 'Kislew', 10: 'Ṭeveth', 11: 'Shevaṭ', 12: 'Adar', 13: 'Adar II' };
+const MONTHS_IT = { 1: 'Nisan', 2: 'Iyyar', 3: 'Siwan', 4: 'Tammuz', 5: 'Aḇ', 6: 'Elul', 7: 'Tishri', 8: 'Marḥeshwan', 9: 'Kislew', 10: 'Ṭeḇeth', 11: 'Sheḇaṭ', 12: 'Aḏar', 13: 'Aḏar II' };
 // Romanizzazione: in italiano le parole tronche hanno l'accento (à, è = segol, é = ṣere, ì, ò, ù);
 // in inglese e francese le stesse forme senza accento (Minḥà → Minḥa)
 const sciRoman = s => s.replace(/[àèéìòù]/g, c => ({ 'à': 'a', 'è': 'e', 'é': 'e', 'ì': 'i', 'ò': 'o', 'ù': 'u' }[c]));
 function monthName(m, y, lang) {
-  if (m === 12 && hLeap(y)) return lang === 'he' ? 'אדר ראשון' : 'Adar I';
+  if (m === 12 && hLeap(y)) return lang === 'he' ? 'אדר ראשון' : 'Aḏar I';
   return (lang === 'he' ? MONTHS_HE : MONTHS_IT)[m];
 }
 function hebNumeral(n) {
@@ -104,16 +104,16 @@ function dayInfo(rd, opt) {
   if (m === 7 && (d === 1 || d === 2)) { info.yomTov = info.roshHashana = true; add('Rosh ha-Shanà', 'ראש השנה'); }
   if (m === 7 && d === 10) { info.yomKippur = true; add('Yom ha-Kippurim', 'יום הכפורים'); }
   if (m === 7 && (d === 15 || (!il && d === 16))) { info.yomTov = true; add('Sukkoth', 'סכות'); }
-  if (m === 7 && d > (il ? 15 : 16) && d <= 21) { info.holMoed = true; add('Ḥol ha-moʿed Sukkoth', 'חול המועד סכות'); }
+  if (m === 7 && d > (il ? 15 : 16) && d <= 21) { info.holMoed = true; add('Ḥol ha-moʿeḏ Sukkoth', 'חול המועד סכות'); }
   if (m === 7 && d === 22) { info.yomTov = true; add('Sheminì ʿAṣereth', 'שמיני עצרת'); }
   if (m === 7 && d === 23 && !il) { info.yomTov = true; add('Sheminì ʿAṣereth (secondo giorno)', 'שמיני עצרת (יום שני)', 'Shemini ʿAṣereth (second day)', 'Shemini ʿAṣereth (deuxième jour)'); }
   if (m === 1 && (d === 15 || (!il && d === 16))) { info.yomTov = true; add('Pesaḥ', 'פסח'); }
-  if (m === 1 && d > (il ? 15 : 16) && d <= 20) { info.holMoed = true; add('Ḥol ha-moʿed Pesaḥ', 'חול המועד פסח'); }
+  if (m === 1 && d > (il ? 15 : 16) && d <= 20) { info.holMoed = true; add('Ḥol ha-moʿeḏ Pesaḥ', 'חול המועד פסח'); }
   if (m === 1 && (d === 21 || (!il && d === 22))) { info.yomTov = true; add('Pesaḥ (ultimi giorni)', 'שביעי של פסח', 'Pesaḥ (last days)', 'Pesaḥ (derniers jours)'); }
-  if (m === 3 && (d === 6 || (!il && d === 7))) { info.yomTov = true; add('Shavuʿoth', 'שבועות'); }
-  if ((d === 1 && m !== 7) || d === 30) { info.roshHodesh = true; add('Rosh Ḥodesh', 'ראש חדש'); }
+  if (m === 3 && (d === 6 || (!il && d === 7))) { info.yomTov = true; add('Shaḇuʿoth', 'שבועות'); }
+  if ((d === 1 && m !== 7) || d === 30) { info.roshHodesh = true; add('Rosh Ḥoḏesh', 'ראש חדש'); }
   const hanStart = rdFromHeb(y, 9, 25);
-  const hy = (m >= 7) ? y : y - 1; // Ḥanukka cade in Kislew/Ṭeveth dell'anno che inizia a Tishri
+  const hy = (m >= 7) ? y : y - 1; // Ḥanukka cade in Kislew/Ṭeḇeth dell'anno che inizia a Tishri
   const hs = rdFromHeb(hy, 9, 25);
   if (rd >= hs && rd < hs + 8) {
     const n = rd - hs + 1;
@@ -128,16 +128,16 @@ function dayInfo(rd, opt) {
 // ---------- Parashiyyoth (lettura annuale; MT Tefilla 13:1) ----------
 const PARASHIYYOTH = [
   ['Bereshith', 'בראשית'], ['Noaḥ', 'נח'], ['Lekh lekhà', 'לך לך'], ['Wayyerà', 'וירא'], ['Ḥayyé Sarà', 'חיי שרה'],
-  ['Toledoth', 'תולדות'], ['Wayyeṣé', 'ויצא'], ['Wayyishlaḥ', 'וישלח'], ['Wayyeshev', 'וישב'], ['Miqqeṣ', 'מקץ'],
+  ['Toleḏoth', 'תולדות'], ['Wayyeṣé', 'ויצא'], ['Wayyishlaḥ', 'וישלח'], ['Wayyesheḇ', 'וישב'], ['Miqqeṣ', 'מקץ'],
   ['Wayyiggash', 'ויגש'], ['Wayḥì', 'ויחי'], ['Shemoth', 'שמות'], ['Waerà', 'וארא'], ['Bo', 'בא'],
   ['Beshallaḥ', 'בשלח'], ['Yithrò', 'יתרו'], ['Mishpaṭim', 'משפטים'], ['Terumà', 'תרומה'], ['Teṣawwè', 'תצוה'],
-  ['Ki thissà', 'כי תשא'], ['Wayyaqhel', 'ויקהל'], ['Pequdé', 'פקודי'], ['Wayyiqrà', 'ויקרא'], ['Ṣaw', 'צו'],
-  ['Sheminì', 'שמיני'], ['Thazriaʿ', 'תזריע'], ['Meṣoraʿ', 'מצורע'], ['Aḥaré moth', 'אחרי מות'], ['Qedoshim', 'קדשים'],
-  ['Emor', 'אמר'], ['Behar', 'בהר'], ['Beḥuqqothay', 'בחקתי'], ['Bemidbar', 'במדבר'], ['Nasò', 'נשא'],
+  ['Ki thissà', 'כי תשא'], ['Wayyaqhel', 'ויקהל'], ['Pequḏé', 'פקודי'], ['Wayyiqrà', 'ויקרא'], ['Ṣaw', 'צו'],
+  ['Sheminì', 'שמיני'], ['Thazriaʿ', 'תזריע'], ['Meṣoraʿ', 'מצורע'], ['Aḥaré moth', 'אחרי מות'], ['Qeḏoshim', 'קדשים'],
+  ['Emor', 'אמר'], ['Behar', 'בהר'], ['Beḥuqqothay', 'בחקתי'], ['Bemiḏbar', 'במדבר'], ['Nasò', 'נשא'],
   ['Behaʿalothekhà', 'בהעלתך'], ['Shelaḥ lekhà', 'שלח לך'], ['Qoraḥ', 'קרח'], ['Ḥuqqath', 'חקת'], ['Balaq', 'בלק'],
-  ['Pineḥas', 'פינחס'], ['Maṭṭoth', 'מטות'], ['Masʿé', 'מסעי'], ['Devarim', 'דברים'], ['Waethḥannan', 'ואתחנן'],
-  ['ʿEqev', 'עקב'], ['Reʾé', 'ראה'], ['Shofeṭim', 'שופטים'], ['Ki theṣé', 'כי תצא'], ['Ki thavò', 'כי תבוא'],
-  ['Niṣṣavim', 'נצבים'], ['Wayyelekh', 'וילך'], ['Haazinu', 'האזינו'], ['We-zoth ha-berakhà', 'וזאת הברכה']
+  ['Pineḥas', 'פינחס'], ['Maṭṭoth', 'מטות'], ['Masʿé', 'מסעי'], ['Deḇarim', 'דברים'], ['Waethḥannan', 'ואתחנן'],
+  ['ʿEqeḇ', 'עקב'], ['Reʾé', 'ראה'], ['Shofeṭim', 'שופטים'], ['Ki theṣé', 'כי תצא'], ['Ki thaḇò', 'כי תבוא'],
+  ['Niṣṣaḇim', 'נצבים'], ['Wayyelekh', 'וילך'], ['Haazinu', 'האזינו'], ['We-zoth ha-berakhà', 'וזאת הברכה']
 ];
 // Accento sulle tronche secondo gli accenti masoretici dei versetti (Haazinu è piana: הַאֲזִ֥ינוּ; Bo è monosillabo).
 
@@ -155,9 +155,9 @@ function slots(fromRd, toRd, il) { // sabati non festivi, inclusi gli estremi
 const sedraCache = new Map();
 // Ciclo che inizia con Bereshith dopo Simḥath Tora dell'anno y (Tishri y … Elul y).
 // Si legge una parashà per sabato non festivo; si uniscono due parashiyyoth (solo le coppie consuete)
-// il più tardi possibile (in Israele, tra Pesaḥ e Shavuʿoth, il prima possibile), quando altrimenti non si arriverebbe in tempo ai punti fissi:
-// Ṣaw (anno semplice) / Meṣoraʿ (anno embolismico) prima di Pesaḥ; Bemidbar prima di Shavuʿoth;
-// Devarim nel sabato prima del 9 di Av; Niṣṣavim nel sabato prima di Rosh ha-Shanà.
+// il più tardi possibile (in Israele, tra Pesaḥ e Shaḇuʿoth, il prima possibile), quando altrimenti non si arriverebbe in tempo ai punti fissi:
+// Ṣaw (anno semplice) / Meṣoraʿ (anno embolismico) prima di Pesaḥ; Bemiḏbar prima di Shaḇuʿoth;
+// Deḇarim nel sabato prima del 9 di Aḇ; Niṣṣaḇim nel sabato prima di Rosh ha-Shanà.
 const PAIRS = [21, 26, 28, 31, 38, 41];
 function sedraCycle(y, il) {
   const key = y + (il ? 'i' : 'd');
@@ -189,7 +189,7 @@ function sedraCycle(y, il) {
     }
     if (combine) { map.set(s[i], [k, k + 1]); k += 2; } else { map.set(s[i], [k]); k += 1; }
   }
-  // dopo Rosh ha-Shanà: Wayyelekh e Haazinu, oppure solo Haazinu (Niṣṣavim–Wayyelekh uniti)
+  // dopo Rosh ha-Shanà: Wayyelekh e Haazinu, oppure solo Haazinu (Niṣṣaḇim–Wayyelekh uniti)
   const lastSat = s[s.length - 1];
   if (post.length >= 2) { map.set(post[0], [51]); map.set(post[1], [52]); }
   else if (post.length === 1) { map.set(lastSat, [50, 51]); map.set(post[0], [52]); }
@@ -240,7 +240,7 @@ function toDate(rd, minutesUtc) {
 function sunrise(rd, lat, lon) { const t = sunEvent(rd, lat, lon, true, 90.833); return t === null ? null : toDate(rd, t); }
 function sunset(rd, lat, lon) { const t = sunEvent(rd, lat, lon, false, 90.833); return t === null ? null : toDate(rd, t); }
 
-// ---------- Tequfa di Tishri (MT Qiddush ha-Ḥodesh 9 e 10) ----------
+// ---------- Tequfa di Tishri (MT Qiddush ha-Ḥoḏesh 9 e 10) ----------
 const PART = 1 / 25920; // un ḥeleq in giorni
 function moladNisanRd(y) { // molad di Nisan dell'anno y, in giorni RD (ora di Gerusalemme, da mezzanotte)
   const months = floor((235 * y - 234) / 19) + (hLeap(y) ? 7 : 6);
@@ -289,19 +289,19 @@ function computeDay(rd, opt) {
   // Nefilath appayim (MT Tefilla 5:16 [15])
   const tomorrow = dayInfo(rd + 1, opt);
   const festive = info.shabbath || info.yomTov || info.holMoed || info.roshHashana || info.roshHodesh || info.hanukka || info.purim;
-  // Vigilia di Kippur esclusa: non è tra i «ימים טובים» (Shevitath Yom Ṭov 1:1)
+  // Vigilia di Kippur esclusa: non è tra i «ימים טובים» (Sheḇithath Yom Ṭoḇ 1:1)
   const ereb = tomorrow.shabbath || tomorrow.yomTov;
-  // ʿArvith appartiene al giorno ebraico che comincia la sera: si fa solo la sera che apre Yom ha-Kippurim.
-  res.na = info.yomKippur ? { all: true, shahrith: true, minha: true, arvith: false } :
-    { shahrith: !festive, minha: !festive && !ereb, arvith: tomorrow.yomKippur };
+  // ʿArbith appartiene al giorno ebraico che comincia la sera: si fa solo la sera che apre Yom ha-Kippurim.
+  res.na = info.yomKippur ? { all: true, shahrith: true, minha: true, arbith: false } :
+    { shahrith: !festive, minha: !festive && !ereb, arbith: tomorrow.yomKippur };
 
   // Pioggia (Tefilla 2:17–19; formula secondo il rito italiano)
   const { y, m, d } = res.heb;
-  const startMention = rdFromHeb(m >= 7 ? y : y - 1, 7, 22);   // Musaf di Shemini ʿAṣereth
-  const endMention = rdFromHeb(m >= 7 ? y + 1 : y, 1, 15);       // fino a Shaḥrith del 1° giorno di Pesaḥ
+  // L'anno y comincia a Tishri: Nisan–Elul di y vengono dopo Tishri–Adar dello stesso y
+  const startMention = rdFromHeb(y, 7, 22);   // Musaf di Shemini ʿAṣereth
+  const endMention = rdFromHeb(y, 1, 15);     // fino a Shaḥrith del 1° giorno di Pesaḥ
   const mention = rd >= startMention && rd <= endMention;
-  const hy = m >= 7 ? y : y - 1;
-  const askStart = opt.israel ? rdFromHeb(hy, 8, 7) : sheelaStartDiaspora(hy, opt.tequfaMethod);
+  const askStart = opt.israel ? rdFromHeb(y, 8, 7) : sheelaStartDiaspora(y, opt.tequfaMethod);
   const ask = rd >= askStart && rd < endMention;
   res.rain = { mention, firstMention: rd === startMention, lastMention: rd === endMention, ask, askStart };
   return res;
