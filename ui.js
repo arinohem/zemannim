@@ -212,8 +212,8 @@ function render() {
   const sat = current + ((6 - wd + 7) % 7);
   const par = E.parashaFor(sat, o.israel);
   const other = E.parashaFor(sat, !o.israel);
-  const pHe = p => p ? p.map(i => E.PARASHOTH[i][1]).join('–') : null;
-  const pIt = p => p ? p.map(i => roman(E.PARASHOTH[i][0])).join('–') : null;
+  const pHe = p => p ? p.map(i => E.PARASHIYYOTH[i][1]).join('–') : null;
+  const pIt = p => p ? p.map(i => roman(E.PARASHIYYOTH[i][0])).join('–') : null;
   html += '<section class="card par">';
   if (par) html += `<div class="label">${l.parasha}</div><div class="parhe" lang="he" dir="rtl">${pHe(par)}</div>${cap() ? `<div class="small">${pIt(par)}</div>` : ''}`;
   else html += `<div class="label">${l.festShabbath}</div>`;

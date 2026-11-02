@@ -126,7 +126,7 @@ function dayInfo(rd, opt) {
 }
 
 // ---------- Parashiyyoth (lettura annuale; MT Tefilla 13:1) ----------
-const PARASHOTH = [
+const PARASHIYYOTH = [
   ['Bereshith', 'בראשית'], ['Noaḥ', 'נח'], ['Lekh lekhà', 'לך לך'], ['Wayyerà', 'וירא'], ['Ḥayyé Sarà', 'חיי שרה'],
   ['Toledoth', 'תולדות'], ['Wayyeṣé', 'ויצא'], ['Wayyishlaḥ', 'וישלח'], ['Wayyeshev', 'וישב'], ['Miqqeṣ', 'מקץ'],
   ['Wayyiggash', 'ויגש'], ['Wayḥì', 'ויחי'], ['Shemoth', 'שמות'], ['Waerà', 'וארא'], ['Bo', 'בא'],
@@ -307,6 +307,6 @@ function computeDay(rd, opt) {
   return res;
 }
 
-const api = { sciRoman, rdFromGreg, gregFromRd, weekday, hebFromRd, rdFromHeb, hLeap, monthName, hebNumeral, dayInfo, parashaFor, PARASHOTH, sunrise, sunset, tequfaTishri, sheelaStartDiaspora, computeDay, monthLen, newYear };
+const api = { sciRoman, rdFromGreg, gregFromRd, weekday, hebFromRd, rdFromHeb, hLeap, monthName, hebNumeral, dayInfo, parashaFor, PARASHIYYOTH, sunrise, sunset, tequfaTishri, sheelaStartDiaspora, computeDay, monthLen, newYear };
 if (typeof module !== 'undefined') module.exports = api; else root.MTEngine = api;
 })(this);
