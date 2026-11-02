@@ -22,12 +22,12 @@ Read `DECISIONS.md` before changing any rule. Every rule there was settled with 
 
 ## Code layout
 
-- `engine.js` — all calculations, no dependencies: Hebrew calendar (Reingold–Dershowitz arithmetic), festivals (Israel/diaspora), parashoth, sun (NOAA, sea level), MT times, nefilath appayim, rain, tequfa (MT Qiddush ha-Ḥodesh 9 and 10).
+- `engine.js` — all calculations, no dependencies: Hebrew calendar (Reingold–Dershowitz arithmetic), festivals (Israel/diaspora), parashiyyoth, sun (NOAA, sea level), MT times, nefilath appayim, rain, tequfa (MT Qiddush ha-Ḥodesh 9 and 10).
 - `ui.js` — interface, settings (localStorage), Italian/Hebrew texts, geolocation.
 - `tools/index.src.html` — page template, styles, and the in-app "Note sulle scelte" (decisions page, in Italian). **Edit this, not `index.html`.**
 - `tools/build.py` — writes `index.html`; `--preview` writes a single-file `preview.html` (scripts inlined) for previews where external files can't load.
 - `sw.js` — offline cache. **Bump the cache name (`mt-zemanim-vN`) whenever any served file changes**, or installed copies may keep old files.
-- `tests/` — `npm install` then `npm test`. Compares Hebrew dates (1900–2100) and parashoth (5600–6199, Israel and diaspora) with @hebcal/core (dev only, GPL; never ship it), and sunrise/sunset with Hebcal's NOAA. `npm test` fails on any date or parasha mismatch, or if sunrise/sunset differs from Hebcal by more than 5 seconds.
+- `tests/` — `npm install` then `npm test`. Compares Hebrew dates (1900–2100) and parashiyyoth (5600–6199, Israel and diaspora) with @hebcal/core (dev only, GPL; never ship it), and sunrise/sunset with Hebcal's NOAA. `npm test` fails on any date or parasha mismatch, or if sunrise/sunset differs from Hebcal by more than 5 seconds.
 
 ## Workflow
 

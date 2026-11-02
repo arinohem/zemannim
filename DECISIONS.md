@@ -48,6 +48,6 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Rule | Implementation | Source | Status |
 |---|---|---|---|
 | Languages | Hebrew terms always shown; captions in Italian, English, or French; a fourth option shows Hebrew only | — | Choice (owner, 2026-11-02); **Setting** |
-| Romanisation by language | Italian: every word that would be *tronca* (stressed on a final vowel) takes an accent — à, è (seghol), é (ṣere), ì, ò, ù (Minḥà, Ḥayyé Sarà, Teṣawwè, Wayḥì) — and no other word does (ʿaloth, Haazinu; monosyllables such as Bo). English and French: the same forms without accents (Minḥa, Ḥayye Sara) | Stress from the Masoretic accents of the verses that name the parashoth (Sefaria, Miqra according to the Masorah): all final except הַאֲזִ֥ינוּ; שָׂרָ֔ה is final | Choice (owner, 2026-11-02); stresses Verified |
+| Romanisation by language | Italian: every word that would be *tronca* (stressed on a final vowel) takes an accent — à, è (seghol), é (ṣere), ì, ò, ù (Minḥà, Ḥayyé Sarà, Teṣawwè, Wayḥì) — and no other word does (ʿaloth, Haazinu; monosyllables such as Bo). English and French: the same forms without accents (Minḥa, Ḥayye Sara) | Stress from the Masoretic accents of the verses that name the parashiyyoth (Sefaria, Miqra according to the Masorah): all final except הַאֲזִ֥ינוּ; שָׂרָ֔ה is final | Choice (owner, 2026-11-02); stresses Verified |
 | Decisions page | Italian only for now; may be translated later | — | Choice |
 | English and French texts | Drafted by Claude; to be reviewed by the owner | — | To do |

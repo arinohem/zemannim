@@ -125,7 +125,7 @@ function dayInfo(rd, opt) {
   return info;
 }
 
-// ---------- Parashoth (lettura annuale; MT Tefilla 13:1) ----------
+// ---------- Parashiyyoth (lettura annuale; MT Tefilla 13:1) ----------
 const PARASHOTH = [
   ['Bereshith', 'בראשית'], ['Noaḥ', 'נח'], ['Lekh lekhà', 'לך לך'], ['Wayyerà', 'וירא'], ['Ḥayyé Sarà', 'חיי שרה'],
   ['Toledoth', 'תולדות'], ['Wayyeṣé', 'ויצא'], ['Wayyishlaḥ', 'וישלח'], ['Wayyeshev', 'וישב'], ['Miqqeṣ', 'מקץ'],
@@ -154,7 +154,7 @@ function slots(fromRd, toRd, il) { // sabati non festivi, inclusi gli estremi
 }
 const sedraCache = new Map();
 // Ciclo che inizia con Bereshith dopo Simḥath Tora dell'anno y (Tishri y … Elul y).
-// Si legge una parashà per sabato non festivo; si uniscono due parashoth (solo le coppie consuete)
+// Si legge una parashà per sabato non festivo; si uniscono due parashiyyoth (solo le coppie consuete)
 // il più tardi possibile (in Israele, tra Pesaḥ e Shavuʿoth, il prima possibile), quando altrimenti non si arriverebbe in tempo ai punti fissi:
 // Ṣaw (anno semplice) / Meṣoraʿ (anno embolismico) prima di Pesaḥ; Bemidbar prima di Shavuʿoth;
 // Devarim nel sabato prima del 9 di Av; Niṣṣavim nel sabato prima di Rosh ha-Shanà.
