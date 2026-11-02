@@ -2,7 +2,7 @@
 
 Each rule implemented in the app, its source, and its status.
 Status: **MT** = read in the Mishne Tora (mechon-mamre.org) · **Comm.** = Rambam's Commentary on the Mishna (Sefaria, Vilna ed.) · **Inferred** = our conclusion · **Choice** = decided by the owner · **Setting** = can be switched in the app.
-Halakha numbers follow mechon-mamre.org.
+Halakha numbers follow mechon-mamre.org; where they differ from the printed editions, the printed number follows in brackets.
 
 ## Times
 
@@ -29,10 +29,10 @@ Halakha numbers follow mechon-mamre.org.
 
 | Rule | Implementation | Source | Status |
 |---|---|---|---|
-| Nefilath appayim omitted | Shabbath, festivals, Ḥol ha-moʿed, Rosh ha-Shana, Rosh Ḥodesh, Ḥanukka, Purim (local day), Minḥa on eve of Shabbath and festivals; never at ʿArvith | Tefilla 5:15: «מנהג פשוט… שאין נפילת פנים בשבתות ובמועדות, ולא בראש השנה, ולא בראשי חודשים ובחנוכה ופורים, ולא במנחה של ערבי שבתות וימים טובים, ולא בערבית שבכל יום» | MT; Ḥol ha-moʿed included by Choice |
-| Yom ha-Kippurim | At every prayer, including the ʿArvith that opens it | Tefilla 5:15: «וביום הכיפורים בלבד, נופלין על פניהם בכל תפילה ותפילה» | MT |
-| Tishʿa be-Av and all other days | Nefilath appayim is said | Not listed in 5:15 | Choice (owner: omit only where MT states it) |
-| **Open:** eve of Kippur Minḥa | Currently treated as a festival eve (no NA) | Reading of «ערבי… ימים טובים» | Inferred — **to confirm with owner** |
+| Nefilath appayim omitted | Shabbath, festivals, Ḥol ha-moʿed, Rosh ha-Shana, Rosh Ḥodesh, Ḥanukka, Purim (local day), Minḥa on eve of Shabbath and festivals; never at ʿArvith | Tefilla 5:16 [15]: «מנהג פשוט… שאין נפילת פנים בשבתות ובמועדות, ולא בראש השנה, ולא בראשי חודשים ובחנוכה ופורים, ולא במנחה של ערבי שבתות וימים טובים, ולא בערבית שבכל יום» | MT; Ḥol ha-moʿed included by Choice |
+| Yom ha-Kippurim | At every prayer, including the ʿArvith that opens it | Tefilla 5:16 [15]: «וביום הכיפורים בלבד, נופלין על פניהם בכל תפילה ותפילה» | MT |
+| Eve of Kippur, Minḥa | Nefilath appayim is said (not a festival eve) | Shevitath Yom Ṭov 1:1: the «ימים טובים» are six days (Pesaḥ 1st and 7th, Sukkoth 1st and 8th, Shavuʿoth, 1 Tishri); Kippur is not among them, and Tefilla 5:16 [15] treats it as a separate category. Applying the 1:1 definition to Tefilla 5:16 is ours. Teshuva 2:9 [7] (confession on the eve) is silent on nefilath appayim | MT; Inferred; Choice (owner, 2026-11-02) |
+| Tishʿa be-Av and all other days | Nefilath appayim is said | Not listed in 5:16 [15] | Choice (owner: omit only where MT states it) |
 | Mention of rain | «משיב הרוח ומוריד הגשם» from Musaf of Shemini ʿAṣereth (diaspora: first day) to Shaḥrith of 1st day of Pesaḥ; nothing in summer | Dates: Tefilla 2:17, 2:19. Wording: Italian rite (MT 2:17 has «מוריד הגשם» / «מוריד הטל») | MT; Choice |
 | Request for rain | Israel: from 7 Marḥeshwan. Diaspora: from the 60th day after tequfath Tishri, tequfa day = day 1. Until rain is no longer mentioned | Tefilla 2:18 («שואלין את הגשמים ביום שישים אחר תקופת תשרי»; «כל זמן שמזכיר הגשם»). The MT names Shinʿar, Syria, Egypt «והדומין להן»: applying it to Europe is ours | MT; Inferred |
 | Tequfa | **Chapter 9** (365¼ days; tequfath Nisan of year 1 = 7d 9h 642p before molad Nisan, 9:3). Alternative chapter 10 (365d 5h 997p 48r; 9h 642p before molad, 10:3), called «האמת יותר» (10:6): request ~11 days earlier (2026: 24 Nov instead of 5 Dec) | Qiddush ha-Ḥodesh 9–10 | MT; Choice; **Setting** (reversible) |

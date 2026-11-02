@@ -280,10 +280,11 @@ function computeDay(rd, opt) {
   res.hourMs = hour;
   res.sunrise = sr; res.sunset = ss;
 
-  // Nefilath appayim (MT Tefilla 5:15)
+  // Nefilath appayim (MT Tefilla 5:16 [15])
   const tomorrow = dayInfo(rd + 1, opt);
   const festive = info.shabbath || info.yomTov || info.holMoed || info.roshHashana || info.roshHodesh || info.hanukka || info.purim;
-  const ereb = tomorrow.shabbath || tomorrow.yomTov || tomorrow.yomKippur; // vigilia: v. nota sulle scelte
+  // Vigilia di Kippur esclusa: non è tra i «ימים טובים» (Shevitath Yom Ṭov 1:1)
+  const ereb = tomorrow.shabbath || tomorrow.yomTov;
   // ʿArvith appartiene al giorno ebraico che comincia la sera: si fa solo la sera che apre Yom ha-Kippurim.
   res.na = info.yomKippur ? { all: true, shahrith: true, minha: true, arvith: false } :
     { shahrith: !festive, minha: !festive && !ereb, arvith: tomorrow.yomKippur };
