@@ -74,7 +74,7 @@ function hebFromRd(rd) {
 }
 const MONTHS_HE = { 1: 'ניסן', 2: 'אייר', 3: 'סיון', 4: 'תמוז', 5: 'אב', 6: 'אלול', 7: 'תשרי', 8: 'מרחשון', 9: 'כסלו', 10: 'טבת', 11: 'שבט', 12: 'אדר', 13: 'אדר שני' };
 const MONTHS_IT = { 1: 'Nisan', 2: 'Iyyar', 3: 'Siwan', 4: 'Tammuz', 5: 'Aḇ', 6: 'Elul', 7: 'Tishrì', 8: 'Marḥeshwan', 9: 'Kislew', 10: 'Ṭeḇeth', 11: 'Sheḇaṭ', 12: 'Aḏar', 13: 'Aḏar II' };
-// Romanizzazione: in italiano le parole tronche hanno l'accento (à, è = segol, é = ṣere, ì, ò, ù);
+// Romanizzazione: in italiano le parole tronche hanno l'accento (à, è = segol, é = ṣeré, ì, ò, ù);
 // in inglese e francese le stesse forme senza accento (Minḥà → Minḥa)
 const sciRoman = s => s.replace(/[àèéìòù]/g, c => ({ 'à': 'a', 'è': 'e', 'é': 'e', 'ì': 'i', 'ò': 'o', 'ù': 'u' }[c]));
 function monthName(m, y, lang) {
@@ -298,7 +298,7 @@ function computeDay(rd, opt) {
   // Pioggia (Tefillà 2:17–19; formula secondo il rito italiano)
   const { y, m, d } = res.heb;
   // L'anno y comincia a Tishrì: Nisan–Elul di y vengono dopo Tishrì–Aḏar dello stesso y
-  const startMention = rdFromHeb(y, 7, 22);   // Musaf di Shemini ʿAṣereth
+  const startMention = rdFromHeb(y, 7, 22);   // Musaf di Sheminì ʿAṣereth
   const endMention = rdFromHeb(y, 1, 15);     // fino a Shaḥrith del 1° giorno di Pesaḥ
   const mention = rd >= startMention && rd <= endMention;
   const askStart = opt.israel ? rdFromHeb(y, 8, 7) : sheelaStartDiaspora(y, opt.tequfaMethod);
