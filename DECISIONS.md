@@ -16,7 +16,7 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | End of Shaḥrith | 4 hours | Tefilla 3:1 | MT |
 | End of Musaf (only on Musaf days) | 7 hours | Tefilla 3:5 | MT |
 | Midday | 6 hours | Tefilla 3:9 («חצי היום») | MT |
-| Minḥa geḏola / qetanna | 6½ / 9½ hours | Tefilla 3:2, 3:4 | MT |
+| Minḥa geḏola / qeṭanna | 6½ / 9½ hours | Tefilla 3:2, 3:4 | MT |
 | 1¼ hours before sunset | 10¾ hours (MT wording, not called פלג המנחה) | Tefilla 3:4: «עד שיישאר מן היום שעה ורביע; ויש לו להתפלל אותה, עד שתשקע החמה» | MT |
 | Midnight | Midpoint sunset → next sunrise | Qeriʾath Shemaʿ 1:10 («חצי הלילה», undefined) | Inferred |
 | Candle lighting | **Not shown** | Shabbath 5:3: «מבעוד יום, קודם שקיעת החמה» (no minutes) | MT; Choice |
@@ -39,7 +39,7 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Israel / diaspora | From location (approximate border) | — | Choice; **Setting** (auto/on/off) |
 | Purim | 15 Aḏar within ~6 km of Jerusalem's Old City, else 14; Aḏar II in leap years | — | Choice; **Setting** (auto/on/off) |
 | Parasha | Annual cycle; reading of the chosen location; when Israel and diaspora differ, the other is shown below | Tefilla 13:1. Algorithm ours, checked against Hebcal for 5600–6199: 0 differences | Verified |
-| Haftaroth | **Not implemented.** Owner's plan (2026-11-02): lists for the Italian, Ashkenazi, and Sephardi rites, but only if the Ashkenazi list can be traced to Western Ashkenazi sources and the Sephardi list to Western Sephardi sources / the Rambam; otherwise Italian only | To find. Candidate for the Rambam (UNKNOWN, to verify): the order of haftaroth in Tefilla 13 and in the order of prayers at the end of Sefer Ahaḇa | To do |
+| Hafṭaroth | **Not implemented.** Owner's plan (2026-11-02): lists for the Italian, Ashkenazi, and Sephardi rites, but only if the Ashkenazi list can be traced to Western Ashkenazi sources and the Sephardi list to Western Sephardi sources / the Rambam; otherwise Italian only | To find. Candidate for the Rambam (UNKNOWN, to verify): the order of haftaroth in Tefilla 13 and in the order of prayers at the end of Sefer Ahaḇa | To do |
 | Parasha romanization | Checked against the Maḥazor project (2026-11-03): it has no list of the parashiyyoth; its transliteration rules match the app's except gimel refuyya (gh there, ḡ here by the owner's later rule) | Maḥazor `.claude/rules/rubriche.md` | Done |
 | Time zone | City list: fixed zone; GPS: device zone | — | Choice |
 
@@ -52,7 +52,7 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Refuyyoth | ḇ, ḡ, ḏ, kh, f, th in every language (Sheḇaṭ, Meḡillà, Ḥoḏesh); kaf and taw can be switched to ḵ, ṯ (setting, default kh, th; 2026-11-03); pe stays f; replaces the older v, gh, dh. Only a real refuyya takes the line: after a silent shewa the letter is plain (Bemiḏbar) | — | Choice (owner, 2026-11-02) |
 | ʾAlef | Consonantal ʾalef is written ʾ (Reʾé, Haʾazinu, Waʾerà, Waʾethḥannan, Qeriʾath); not word-initially, also after a prefix hyphen (Emor, Elul, be-Aḇ); quiescent ʾalef is not written (Bereshith, Rosh, Wayyiqrà, Ṣeth) | — | Choice (owner, 2026-11-03) |
 | Romanization exceptions | ʿArḇith (spirant, as in the Maḥazor, although the shewa is silent; 2026-11-03); Tazriaʿ (title form, not Thazriaʿ from כִּי תַזְרִיעַ); after a hyphen (article, prefixes) the daghesh forte is not written: the hyphen replaces the gemination (ha-kokhaḇim, ha-moʿeḏ) | — | Choice (owner, 2026-11-02) |
-| Deadline captions | Italian «Termine per», English «Latest time for», French «Heure limite pour» (Shemaʿ, Shaḥrith, Musaf, minḥa qetanna, and «termine preferibile» for the evening Shemaʿ at midnight, 2026-11-03); «Fine» / «End» / «Fin» kept for the end of Shabbath and of the festival | — | Choice (owner, 2026-11-02) |
+| Deadline captions | Italian «Termine per», English «Latest time for», French «Heure limite pour» (Shemaʿ, Shaḥrith, Musaf, minḥa qeṭanna, and «termine preferibile» for the evening Shemaʿ at midnight, 2026-11-03); «Fine» / «End» / «Fin» kept for the end of Shabbath and of the festival | — | Choice (owner, 2026-11-02) |
 | Transliteration of כ and ת | Setting «Traslitterazione di כ e ת» (EN «Romanization», FR «Translittération»): kh, th (default) or ḵ, ṯ. The sources store ḵ, ṯ, which occur only in transliteration; the display turns them into kh, th. App-wide default: `translit` in `DEFAULTS`, `ui.js` | — | Choice (owner, 2026-11-03); **Setting** |
 | Transliteration of ב | Separate setting «Traslitterazione di ב» (EN «Romanization of ב», FR «Translittération de ב»): ḇ (default) or v. Kept apart from kaf and taw because the treatment of beth is less widely agreed. Sources store ḇ; app-wide default: `beth` in `DEFAULTS`, `ui.js` | — | Choice (owner, 2026-11-03); **Setting** |
 | Decisions page | Italian only for now; may be translated later | — | Choice |

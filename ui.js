@@ -6,8 +6,8 @@ const E = window.MTEngine;
 // ---------- Impostazioni (salvate sul dispositivo, se possibile) ----------
 const DEFAULTS = {
   lang: 'it', tzeth: 20, tequfa: 9, dawn: true, israel: 'auto', walled: 'auto', prudent: true,
-  translit: 'digraph', // כ e ת refuyyoth: 'digraph' = kh, th; 'line' = ḵ, ṯ
-  beth: 'line',        // ב refuyya: 'line' = ḇ; 'v' = v
+  translit: 'digraph', // כ e ת refuyyoṯ: 'digraph' = kh, th; 'line' = ḵ, ṯ
+  beth: 'line',        // ב refuyyà: 'line' = ḇ; 'v' = v
   place: { name: 'Ferrara', lat: 44.8378, lon: 11.6198, tz: 'Europe/Rome' }
 };
 let S = Object.assign({}, DEFAULTS);
@@ -100,9 +100,9 @@ const L = () => T[S.lang];
 const cap = () => S.lang !== 'he';          // ci sono didascalie accanto all'ebraico?
 const COLON = () => S.lang === 'fr' ? ' :' : ':';
 const roman = s => S.lang === 'it' ? s : E.sciRoman(s);
-// Nei sorgenti כ e ת refuyyoth sono scritte ḵ e ṯ (lettere che compaiono solo nella traslitterazione);
+// Nei sorgenti כ e ת refuyyoṯ sono scritte ḵ e ṯ (lettere che compaiono solo nella traslitterazione);
 // qui diventano kh e th se l'impostazione lo chiede
-// Così anche ב refuyya, scritta ḇ, che diventa v se l'impostazione (separata) lo chiede
+// Così anche ב refuyyà, scritta ḇ, che diventa v se l'impostazione (separata) lo chiede
 // Gli esempi fissi della pagina delle note stanno in <span class="fix"> e non si convertono
 const translit = html => html.split(/(<span class="fix">[^<]*<\/span>)/).map((s, i) => {
   if (i % 2) return s;
@@ -124,10 +124,10 @@ const ZEMANIM = {
   hatzot:  { he: 'חצות היום', it: 'Mezzogiorno (6 ore)', en: 'Midday (6 hours)', fr: 'Midi (6 heures)', src: 'MT Tefillà 3:9 («חצי היום»)', r: 'n' },
   minhaG:  { he: 'מנחה גדולה', it: 'Minḥà geḏolà (6½ ore)', en: 'Minḥa geḏola (6½ hours)', fr: 'Minḥa geḏola (6½ heures)', src: 'MT Tefillà 3:2, 3:4', r: 'c' },
   musaf:   { he: 'סוף זמן תפלת המוספין', it: 'Termine per Musaf (7 ore)', en: 'Latest time for Musaf (7 hours)', fr: 'Heure limite pour Musaf (7 heures)', src: 'MT Tefillà 3:5', r: 'f' },
-  minhaQ:  { he: 'מנחה קטנה', it: 'Minḥà qetannà (9½ ore)', en: 'Minḥa qetanna (9½ hours)', fr: 'Minḥa qetanna (9½ heures)', src: 'MT Tefillà 3:2, 3:4', r: 'c' },
-  plag:    { he: 'שעה ורביע קודם השקיעה', it: 'Termine per la minḥà qetannà, 1¼ ore prima del tramonto (si può pregare fino al tramonto)',
-             en: 'Latest time for minḥa qetanna, 1¼ hours before sunset (one may pray until sunset)',
-             fr: 'Heure limite pour la minḥa qetanna, 1¼ heure avant le coucher du soleil (on peut prier jusqu’au coucher du soleil)', src: 'MT Tefillà 3:4', r: 'f' },
+  minhaQ:  { he: 'מנחה קטנה', it: 'Minḥà qeṭannà (9½ ore)', en: 'Minḥa qeṭanna (9½ hours)', fr: 'Minḥa qeṭanna (9½ heures)', src: 'MT Tefillà 3:2, 3:4', r: 'c' },
+  plag:    { he: 'שעה ורביע קודם השקיעה', it: 'Termine per la minḥà qeṭannà, 1¼ ore prima del tramonto (si può pregare fino al tramonto)',
+             en: 'Latest time for minḥa qeṭanna, 1¼ hours before sunset (one may pray until sunset)',
+             fr: 'Heure limite pour la minḥa qeṭanna, 1¼ heure avant le coucher du soleil (on peut prier jusqu’au coucher du soleil)', src: 'MT Tefillà 3:4', r: 'f' },
   shqia:   { he: 'שקיעת החמה', it: 'Tramonto', en: 'Sunset', fr: 'Coucher du soleil', src: 'MT Shabbaṯ 5:3–4; Tefillà 3:4', r: 'f' },
   tzeth:   { he: 'צאת הכוכבים', it: 'Uscita delle stelle', en: 'Emergence of the stars', fr: 'Sortie des étoiles', src: 'MT Terumoṯ 7:2 («כמו שליש שעה אחר שקיעת החמה»); Shabbaṯ 5:4', r: 'c' },
   hatzotLayla: { he: 'חצות הלילה', it: 'Mezzanotte (termine preferibile per lo Shemaʿ della sera)', en: 'Midnight (preferred latest time for the evening Shemaʿ)', fr: 'Minuit (heure limite préférable pour le Shemaʿ du soir)',
@@ -252,7 +252,7 @@ function render() {
     if (rain.lastMention) rainTxt += ` (${l.lastMention})`;
     notes.push(rainTxt);
     const af = E.gregFromRd(rain.askStart);
-    // dopo l'ultima richiesta della stagione (1° giorno di Pesaḥ) la riga non serve più
+    // dopo l'ultima richiesta della stagione (1° giorno di Pèsaḥ) la riga non serve più
     if (rain.ask || current < rain.askStart)
       notes.push(`${l.ask}${COLON()} ${rain.ask ? l.askYes : l.askNo} (${l.askFrom} ${dayNum(af.d)} ${l.months[af.m - 1]}${o.israel ? '' : (S.lang === 'he' ? ', תקופה לפי פרק ' + E.hebNumeral(S.tequfa).replace(/[׳״]/g, '') : ', ' + l.tequfa + ' ' + l.chapter + ' ' + S.tequfa)})`);
   }

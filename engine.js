@@ -26,7 +26,7 @@ function gregFromRd(rd) {
 }
 function weekday(rd) { return mod(rd, 7); } // 0 = domenica … 6 = sabato
 
-// ---------- Calendario ebraico (MT, Hilkhoth Qiddush ha-Ḥòḏesh 6–8: calendario fisso) ----------
+// ---------- Calendario ebraico (MT, Hilḵoṯ Qiddush ha-Ḥòḏesh 6–8: calendario fisso) ----------
 const EPOCH = -1373427; // RD di 1 Tishrì dell'anno 1
 // mesi: 1 Nisan … 6 Elul, 7 Tishrì … 12 Aḏar (Aḏar I negli anni embolismici), 13 Aḏar II
 function hLeap(y) { return mod(7 * y + 1, 19) < 7; }
@@ -79,7 +79,8 @@ const MONTHS_IT = { 1: 'Nisan', 2: 'Iyyar', 3: 'Siwan', 4: 'Tammuz', 5: 'Aḇ', 
 const sciRoman = s => s.replace(/[àèéìòùÀÈÉÌÒÙ]/g, c => ({ 'à': 'a', 'è': 'e', 'é': 'e', 'ì': 'i', 'ò': 'o', 'ù': 'u', 'À': 'A', 'È': 'E', 'É': 'E', 'Ì': 'I', 'Ò': 'O', 'Ù': 'U' }[c]));
 function monthName(m, y, lang) {
   if (m === 12 && hLeap(y)) return lang === 'he' ? 'אדר ראשון' : 'Aḏar I';
-  return (lang === 'he' ? MONTHS_HE : MONTHS_IT)[m];
+  if (lang === 'he') return MONTHS_HE[m];
+  return lang === 'it' ? MONTHS_IT[m] : sciRoman(MONTHS_IT[m]); // Tishrì / Tishri
 }
 function hebNumeral(n) {
   const ones = ['', 'א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט'];
@@ -154,7 +155,7 @@ function slots(fromRd, toRd, il) { // sabati non festivi, inclusi gli estremi
   return out;
 }
 const sedraCache = new Map();
-// Ciclo che inizia con Bereshiṯ dopo Simḥath Torà dell'anno y (Tishrì y … Elul y).
+// Ciclo che inizia con Bereshiṯ dopo Simḥaṯ Torà dell'anno y (Tishrì y … Elul y).
 // Si legge una parashà per sabato non festivo; si uniscono due parashiyyoṯ (solo le coppie consuete)
 // il più tardi possibile (in Israele, tra Pèsaḥ e Shaḇuʿoṯ, il prima possibile), quando altrimenti non si arriverebbe in tempo ai punti fissi:
 // Ṣaw (anno semplice) / Meṣoraʿ (anno embolismico) prima di Pèsaḥ; Bemiḏbar prima di Shaḇuʿoṯ;
@@ -242,7 +243,7 @@ function sunrise(rd, lat, lon) { const t = sunEvent(rd, lat, lon, true, 90.833);
 function sunset(rd, lat, lon) { const t = sunEvent(rd, lat, lon, false, 90.833); return t === null ? null : toDate(rd, t); }
 
 // ---------- Tequfà di Tishrì (MT Qiddush ha-Ḥòḏesh 9 e 10) ----------
-const PART = 1 / 25920; // un ḥeleq in giorni
+const PART = 1 / 25920; // un ḥèleq in giorni
 function moladNisanRd(y) { // molad di Nisan dell'anno y, in giorni RD (ora di Gerusalemme, da mezzanotte)
   const months = floor((235 * y - 234) / 19) + (hLeap(y) ? 7 : 6);
   return EPOCH - 876 / 25920 + months * (29 + 13753 / 25920);
