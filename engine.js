@@ -93,6 +93,42 @@ function hebNumeral(n) {
   return s.length > 1 ? s.slice(0, -1) + '״' + s.slice(-1) : s + '׳';
 }
 
+// ---------- Digiuni (MT Taʿaniyyoṯ 5:2–5; letture: Tefillà 13:18) ----------
+// m = 12 vale «il mese di Purim» (Aḏar II negli anni embolismici); ifShabbath = spostamento in giorni se cade di sabato
+const FASTS = [
+  { key: 'gedalya', m: 7, d: 3, ifShabbath: 1, he: 'צום גדליה', it: 'Digiuno di Geḏalyà', en: 'Fast of Geḏalya', fr: 'Jeûne de Geḏalya' },
+  { key: 'tevet10', m: 10, d: 10, ifShabbath: 1, he: 'עשרה בטבת', it: 'Digiuno del 10 di Ṭeḇeṯ', en: 'Fast of 10 Ṭeḇeṯ', fr: 'Jeûne du 10 Ṭeḇeṯ' },
+  { key: 'esther', m: 12, d: 13, ifShabbath: -2, he: 'תענית אסתר', it: 'Digiuno di Ester', en: 'Fast of Esther', fr: 'Jeûne d’Esther' },
+  { key: 'tammuz17', m: 4, d: 17, ifShabbath: 1, he: 'שבעה עשר בתמוז', it: 'Digiuno del 17 di Tammuz', en: 'Fast of 17 Tammuz', fr: 'Jeûne du 17 Tammuz' },
+  { key: 'av9', m: 5, d: 9, ifShabbath: 1, he: 'תשעה באב', it: 'Tishʿà be-Aḇ', en: 'Tishʿa be-Aḇ', fr: 'Tishʿa be-Aḇ' }
+];
+const MOVED = {
+  post: { it: ' (rinviato a domenica)', he: ' (נדחה)', en: ' (postponed to Sunday)', fr: ' (reporté au dimanche)' },
+  pre: { it: ' (anticipato a giovedì)', he: ' (מוקדם)', en: ' (brought forward to Thursday)', fr: ' (avancé au jeudi)' }
+};
+// Lettura della Torà nei digiuni: «ויחל משה» a Shaḥriṯ e a Minḥà; il 9 di Aḇ a Shaḥriṯ «כי תוליד בנים»
+function fastReading(key) {
+  return key === 'av9' ? { shahrith: 'כי תוליד בנים', minha: 'ויחל משה' } : { shahrith: 'ויחל משה', minha: 'ויחל משה' };
+}
+
+// ---------- Le quattro parashiyyoṯ (MT Tefillà 13:20–21) ----------
+// Sheqalim: il sabato di Rosh Ḥòḏesh Aḏar o quello prima; Zaḵor: il sabato della settimana in cui cade Purim (il 14);
+// Ha-ḥòḏesh: il sabato della settimana di Rosh Ḥòḏesh Nisan; Parà: il sabato prima di Ha-ḥòḏesh.
+// Negli anni embolismici si conta da Aḏar II: 13:21 ammette fra Sheqalim e Zaḵor al massimo un sabato di intervallo.
+const SPECIAL = {
+  sheqalim: ['Sheqalim', 'פרשת שקלים'], zakhor: ['Zaḵor', 'פרשת זכור'], para: ['Parà', 'פרשת פרה'], hahodesh: ['Ha-ḥòḏesh', 'פרשת החדש']
+};
+function specialParasha(sat) { // sat = rd di un sabato
+  const { y } = hebFromRd(sat);
+  const am = hLeap(y) ? 13 : 12;
+  const hahodesh = prevSatOnOrBefore(rdFromHeb(y, 1, 1));
+  if (sat === prevSatOnOrBefore(rdFromHeb(y, am, 1))) return 'sheqalim';
+  if (sat === prevSatOnOrBefore(rdFromHeb(y, am, 14))) return 'zakhor';
+  if (sat === hahodesh - 7) return 'para';
+  if (sat === hahodesh) return 'hahodesh';
+  return null;
+}
+
 // ---------- Feste (dipendono da Israele / diaspora) ----------
 // Restituisce informazioni sul giorno ebraico (il giorno che inizia la sera precedente).
 function dayInfo(rd, opt) {
@@ -121,6 +157,17 @@ function dayInfo(rd, opt) {
     info.hanukka = true; add('Ḥanukkà, ' + n + '° giorno', 'חנכה', 'Ḥanukka, day ' + n, 'Ḥanukka, ' + (n === 1 ? '1er' : n + 'e') + ' jour');
   }
   if (m === adarPurim && d === purimDay) { info.purim = true; add('Purim', 'פורים'); }
+  // Digiuni (MT Taʿaniyyoṯ 5:2–5). Dei quattro, quello che cade di sabato si rinvia a domenica;
+  // il digiuno di Ester (13 Aḏar, «ונהגו») si anticipa a giovedì 11. Negli anni embolismici in Aḏar II, come Purim (Meḡillà 1:12).
+  for (const f of FASTS) {
+    const fm = f.m === 12 ? adarPurim : f.m;
+    let frd = rdFromHeb(y, fm, f.d), moved = null;
+    if (weekday(frd) === 6) { frd += f.ifShabbath; moved = f.ifShabbath > 0 ? 'post' : 'pre'; }
+    if (frd !== rd) continue;
+    info.fast = { key: f.key, moved };
+    const sfx = MOVED[moved] || { it: '', he: '', en: '', fr: '' };
+    info.names.push({ it: f.it + sfx.it, he: f.he + sfx.he, en: f.en + sfx.en, fr: f.fr + sfx.fr });
+  }
   info.shabbath = weekday(rd) === 6;
   info.musaf = info.shabbath || info.yomTov || info.holMoed || info.roshHodesh || info.yomKippur;
   return info;
@@ -261,6 +308,14 @@ function sheelaStartDiaspora(hy, method) { // hy = anno che inizia a Tishrì
   return floor(tequfaTishri(hy - 1, method)) + 59;
 }
 
+// Giorno dell'ʿÒmer (1–49) del giorno ebraico rd, oppure null
+function omerDay(rd) {
+  const { y, m } = hebFromRd(rd);
+  if (m < 1 || m > 3) return null;
+  const n = rd - rdFromHeb(y, 1, 16) + 1;
+  return n >= 1 && n <= 49 ? n : null;
+}
+
 // ---------- Calcolo della giornata ----------
 function computeDay(rd, opt) {
   const { lat, lon } = opt;
@@ -306,9 +361,13 @@ function computeDay(rd, opt) {
   const askStart = opt.israel ? rdFromHeb(y, 8, 7) : sheelaStartDiaspora(y, opt.tequfaMethod);
   const ask = rd >= askStart && rd < endMention;
   res.rain = { mention, firstMention: rd === startMention, lastMention: rd === endMention, ask, askStart };
+
+  // Conteggio dell'ʿÒmer (MT Temiḏin u-Musafin 7:19 [22]): si conta di notte, dalla notte del 16 Nisan, per 49 giorni.
+  // Si mostra il giorno civile la cui sera apre il giorno da contare.
+  res.omerTonight = omerDay(rd + 1);
   return res;
 }
 
-const api = { sciRoman, rdFromGreg, gregFromRd, weekday, hebFromRd, rdFromHeb, hLeap, monthName, hebNumeral, dayInfo, parashaFor, PARASHIYYOTH, sunrise, sunset, tequfaTishri, sheelaStartDiaspora, computeDay, monthLen, newYear };
+const api = { sciRoman, rdFromGreg, gregFromRd, weekday, hebFromRd, rdFromHeb, hLeap, monthName, hebNumeral, dayInfo, parashaFor, PARASHIYYOTH, specialParasha, SPECIAL, fastReading, omerDay, sunrise, sunset, tequfaTishri, sheelaStartDiaspora, computeDay, monthLen, newYear };
 if (typeof module !== 'undefined') module.exports = api; else root.MTEngine = api;
 })(this);

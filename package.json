@@ -4,7 +4,7 @@
   "description": "Zemannim secondo il Mishne Tora (PWA personale)",
   "scripts": {
     "build": "python3 tools/build.py",
-    "test": "node tests/calendar.test.mjs && node tests/sun.test.mjs"
+    "test": "node tests/calendar.test.mjs && node tests/festivals.test.mjs && node tests/sun.test.mjs"
   },
   "devDependencies": { "@hebcal/core": "^6.14.7" }
 }
