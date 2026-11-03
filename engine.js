@@ -179,6 +179,8 @@ function dayInfo(rd, opt) {
   info.musaf = info.shabbath || info.yomTov || info.holMoed || info.roshHodesh || info.yomKippur;
   return info;
 }
+// ʿAmiḏà feriale di diciannove benedizioni (Tefillà 2:1–2), con Birkaṯ ha-shanim; di sabato, nelle feste e a Kippur se ne dicono sette (2:5, 2:9)
+function weekdayAmida(i) { return !i.shabbath && !i.yomTov && !i.yomKippur; }
 
 // ---------- Parashiyyoṯ (lettura annuale; MT Tefillà 13:1) ----------
 const PARASHIYYOTH = [
@@ -366,8 +368,38 @@ function computeDay(rd, opt) {
   const endMention = rdFromHeb(y, 1, 15);     // fino a Shaḥriṯ del 1° giorno di Pèsaḥ
   const mention = rd >= startMention && rd <= endMention;
   const askStart = opt.israel ? rdFromHeb(y, 8, 7) : sheelaStartDiaspora(y, opt.tequfaMethod);
-  const ask = rd >= askStart && rd < endMention;
-  res.rain = { mention, firstMention: rd === startMention, lastMention: rd === endMention, ask, askStart };
+  // Tefillà 2:18 dà il giorno, non la preghiera: si comincia dalla ʿArḇiṯ della sera che apre quel giorno
+  // (scelta del proprietario, 2026-11-03), cioè dalla prima ʿArḇiṯ feriale da quella sera in poi.
+  // Si chiede «כל זמן שמזכיר הגשם»: l'ultima volta è la Minḥà dell'ultimo giorno feriale prima del 15 Nisan.
+  let askEve = askStart - 1;
+  while (!weekdayAmida(dayInfo(askEve + 1, opt))) askEve++;
+  let lastAsk = endMention - 1;
+  while (!weekdayAmida(dayInfo(lastAsk, opt))) lastAsk--;
+  const ask = rd > askEve && rd <= lastAsk;
+  res.rain = { mention, firstMention: rd === startMention, lastMention: rd === endMention, ask,
+    askTonight: rd === askEve, askFirst: rd === askEve + 1, askLast: rd === lastAsk, askEve };
+
+  // Aggiunte alla ʿAmiḏà (Tefillà 2:12–13, 2:15, 2:20). Il giorno civile ha Shaḥriṯ e Minḥà del giorno ebraico rd
+  // e la ʿArḇiṯ di rd + 1: scope 'all' = oggi e stasera, 'tonight' = da ʿArḇiṯ di stasera, 'untilMinha' = fino a Minḥà.
+  // L'ultimo giorno dei dieci giorni è Kippur: «עד מוצאי יום הכיפורים» (2:20), senza limite di preghiera.
+  const ADD = {
+    tenDays: i => i.m === 7 && i.d <= 10,          // 2:20: המלך הקדוש, המלך המשפט
+    yaale: i => i.roshHodesh || i.holMoed,          // 2:12–13: יעלה ויבוא nell'ʿAḇoḏà
+    nissim: i => i.hanukka || i.purim               // 2:15: על הניסים nella Hoḏayà
+  };
+  res.amida = [];
+  for (const key in ADD) {
+    const t = ADD[key](info), n = ADD[key](tomorrow);
+    if (!t && !n) continue;
+    const scope = t && n ? 'all' : n ? 'tonight' : info.yomKippur ? 'all' : 'untilMinha';
+    const item = { key, scope };
+    // «המלך המשפט» è nell'11ª benedizione: solo nella ʿAmiḏà feriale
+    if (key === 'tenDays') {
+      const mt = t && weekdayAmida(info), mn = n && weekdayAmida(tomorrow);
+      item.mishpat = mt || mn ? (mt && mn ? 'all' : mn ? 'tonight' : 'untilMinha') : null;
+    }
+    res.amida.push(item);
+  }
 
   // Conteggio dell'ʿÒmer (MT Temiḏin u-Musafin 7:19 [22]): si conta di notte, dalla notte del 16 Nisan, per 49 giorni.
   // Si mostra il giorno civile la cui sera apre il giorno da contare.
@@ -375,6 +407,6 @@ function computeDay(rd, opt) {
   return res;
 }
 
-const api = { sciRoman, rdFromGreg, gregFromRd, weekday, hebFromRd, rdFromHeb, hLeap, monthName, hebNumeral, dayInfo, parashaFor, PARASHIYYOTH, specialParasha, SPECIAL, fastReading, omerDay, sunrise, sunset, tequfaTishri, sheelaStartDiaspora, computeDay, monthLen, newYear };
+const api = { sciRoman, rdFromGreg, gregFromRd, weekday, hebFromRd, rdFromHeb, hLeap, monthName, hebNumeral, dayInfo, parashaFor, PARASHIYYOTH, specialParasha, SPECIAL, fastReading, omerDay, sunrise, sunset, tequfaTishri, sheelaStartDiaspora, weekdayAmida, computeDay, monthLen, newYear };
 if (typeof module !== 'undefined') module.exports = api; else root.MTEngine = api;
 })(this);

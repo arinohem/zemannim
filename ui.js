@@ -37,7 +37,9 @@ const T = {
     afterSunset: 'Dopo il tramonto', parasha: 'Parashà della settimana', festShabbath: 'Sabato festivo: lettura della festa',
     na: 'Nefilaṯ appàyim', shahrith: 'Shaḥriṯ', minha: 'Minḥà', arvith: 'ʿArḇiṯ', yes: 'sì', no: 'no',
     ask: 'Richiesta della pioggia',
-    askYes: 'sì', askNo: 'non ancora', askFrom: 'dal', hour: 'Ora stagionale', settings: 'Impostazioni', notes: 'Note sulle scelte',
+    askYes: 'sì', askNo: 'non ancora', askFrom: 'dalla sera del', askTonight: 'si comincia da ʿArḇiṯ di stasera', askFirst: 'sì, da ʿArḇiṯ di ieri sera', askLast: 'sì, per l’ultima volta a Minḥà',
+    scTonight: 'Da ʿArḇiṯ di stasera', scUntilMinha: 'Fino a Minḥà', b3: '3ª benedizione', b11: '11ª benedizione', aboda: 'nell’ʿAḇoḏà', hodaya: 'nella Hoḏayà',
+    anenu: 'in Shomeaʿ tefillà; l’officiante ne fa una benedizione a sé, fra Goʾel e Rofé', boneh: 'in Boné Yerushalàyim', hour: 'Ora stagionale', settings: 'Impostazioni', notes: 'Note sulle scelte',
     close: 'Chiudi', place: 'Luogo', useGps: 'Usa la mia posizione', gpsFail: 'Posizione non disponibile in questa pagina: scegli una città.',
     gpsWait: 'Ricerca della posizione…', manual: 'Coordinate', apply: 'Applica', tzethLbl: 'Ṣeṯ ha-koḵaḇim (fine dello Shabbaṯ)',
     tequfaLbl: 'Tequfà per la richiesta della pioggia (diaspora)', dawnLbl: 'Mostra ʿaloṯ ha-shàḥar', israelLbl: 'Terra d’Israele',
@@ -55,7 +57,9 @@ const T = {
     afterSunset: 'After sunset', parasha: 'Weekly parasha', festShabbath: 'Festival Shabbaṯ: festival reading',
     na: 'Nefilaṯ appayim', shahrith: 'Shaḥriṯ', minha: 'Minḥa', arvith: 'ʿArḇiṯ', yes: 'yes', no: 'no',
     ask: 'Request for rain',
-    askYes: 'yes', askNo: 'not yet', askFrom: 'from', hour: 'Seasonal hour', settings: 'Settings', notes: 'Notes on the choices (in Italian)',
+    askYes: 'yes', askNo: 'not yet', askFrom: 'from the evening of', askTonight: 'begins at ʿArḇiṯ tonight', askFirst: 'yes, since ʿArḇiṯ last night', askLast: 'yes, for the last time at Minḥa',
+    scTonight: 'From ʿArḇiṯ tonight', scUntilMinha: 'Until Minḥa', b3: '3rd blessing', b11: '11th blessing', aboda: 'in the ʿAḇoḏa', hodaya: 'in the Hoḏaya',
+    anenu: 'in Shomeaʿ tefilla; the reader makes it a separate blessing, between Goʾel and Rofe', boneh: 'in Bone Yerushalayim', hour: 'Seasonal hour', settings: 'Settings', notes: 'Notes on the choices (in Italian)',
     close: 'Close', place: 'Place', useGps: 'Use my location', gpsFail: 'Location is not available on this page: choose a city.',
     gpsWait: 'Finding your location…', manual: 'Coordinates', apply: 'Apply', tzethLbl: 'Ṣeṯ ha-koḵaḇim (end of Shabbaṯ)',
     tequfaLbl: 'Tequfa for the request for rain (diaspora)', dawnLbl: 'Show ʿaloṯ ha-shaḥar', israelLbl: 'Land of Israel',
@@ -73,7 +77,9 @@ const T = {
     afterSunset: 'Après le coucher du soleil', parasha: 'Parasha de la semaine', festShabbath: 'Shabbaṯ de fête : lecture de la fête',
     na: 'Nefilaṯ appayim', shahrith: 'Shaḥriṯ', minha: 'Minḥa', arvith: 'ʿArḇiṯ', yes: 'oui', no: 'non',
     ask: 'Demande de la pluie',
-    askYes: 'oui', askNo: 'pas encore', askFrom: 'à partir du', hour: 'Heure saisonnière', settings: 'Réglages', notes: 'Notes sur les choix (en italien)',
+    askYes: 'oui', askNo: 'pas encore', askFrom: 'à partir du soir du', askTonight: 'commence ce soir à ʿArḇiṯ', askFirst: 'oui, depuis ʿArḇiṯ hier soir', askLast: 'oui, pour la dernière fois à Minḥa',
+    scTonight: 'À partir de ʿArḇiṯ ce soir', scUntilMinha: 'Jusqu’à Minḥa', b3: '3e bénédiction', b11: '11e bénédiction', aboda: 'dans la ʿAḇoḏa', hodaya: 'dans la Hoḏaya',
+    anenu: 'dans Shomeaʿ tefilla ; l’officiant en fait une bénédiction à part, entre Goʾel et Rofe', boneh: 'dans Bone Yerushalayim', hour: 'Heure saisonnière', settings: 'Réglages', notes: 'Notes sur les choix (en italien)',
     close: 'Fermer', place: 'Lieu', useGps: 'Utiliser ma position', gpsFail: 'Position indisponible sur cette page : choisissez une ville.',
     gpsWait: 'Recherche de la position…', manual: 'Coordonnées', apply: 'Appliquer', tzethLbl: 'Ṣeṯ ha-koḵaḇim (fin du Shabbaṯ)',
     tequfaLbl: 'Tequfa pour la demande de la pluie (diaspora)', dawnLbl: 'Afficher ʿaloṯ ha-shaḥar', israelLbl: 'Terre d’Israël',
@@ -91,7 +97,9 @@ const T = {
     afterSunset: 'אחר השקיעה', parasha: 'פרשת השבוע', festShabbath: 'שבת של מועד: קריאת המועד',
     na: 'נפילת אפים', shahrith: 'שחרית', minha: 'מנחה', arvith: 'ערבית', yes: 'כן', no: 'לא',
     ask: 'שאלת גשמים',
-    askYes: 'כן', askNo: 'עדיין לא', askFrom: 'מ־', hour: 'שעה זמנית', settings: 'הגדרות', notes: 'הערות על הבחירות (באיטלקית)',
+    askYes: 'כן', askNo: 'עדיין לא', askFrom: 'מערבית בערב', askTonight: 'מתחילים בערבית של הלילה', askFirst: 'כן, מערבית של אמש', askLast: 'כן, בפעם האחרונה במנחה',
+    scTonight: 'מערבית של הלילה', scUntilMinha: 'עד מנחה', b3: 'בברכה שלישית', b11: 'בברכת אחת עשרה', aboda: 'בעבודה', hodaya: 'בהודיה',
+    anenu: 'בשומע תפילה; ושליח ציבור אומרה ברכה בפני עצמה, בין גואל לרופא', boneh: 'בבונה ירושלים', hour: 'שעה זמנית', settings: 'הגדרות', notes: 'הערות על הבחירות (באיטלקית)',
     close: 'סגור', place: 'מקום', useGps: 'השתמש במיקום שלי', gpsFail: 'המיקום אינו זמין בדף זה: בחר עיר.',
     gpsWait: 'מחפש מיקום…', manual: 'קואורדינטות', apply: 'החל', tzethLbl: 'צאת הכוכבים (מוצאי שבת)',
     tequfaLbl: 'תקופה לשאלת גשמים (חוץ לארץ)', dawnLbl: 'הצג עלות השחר', israelLbl: 'ארץ ישראל',
@@ -264,19 +272,40 @@ function render() {
     notes.push(na.all ? `${l.na}${COLON()} ${l.naAll}` :
       `${l.na}${COLON()} ${l.shahrith} ${yn(na.shahrith)} · ${l.minha} ${yn(na.minha)}${na.arvith ? ` · ${l.arvithKippur} ${yn(true)}` : ''}`);
   }
-  const rain = r.rain;
+  const rain = r.rain, HL = html => ({ html, hl: true }); // HL: nota evidenziata (un cambio comincia o finisce)
+  const heb = s => `<span lang="he">${s}</span>`;
+  const lc = s => s[0].toLowerCase() + s.slice(1);
   // Rito italiano: d'estate non si dice nulla, quindi non si mostra nulla
   if (rain.mention) {
-    let rainTxt = '<span lang="he">משיב הרוח ומוריד הגשם</span>';
+    let rainTxt = heb('משיב הרוח ומוריד הגשם');
     if (rain.firstMention) rainTxt += ` (${l.firstMention})`;
     if (rain.lastMention) rainTxt += ` (${l.lastMention})`;
-    notes.push(rainTxt);
-    const af = E.gregFromRd(rain.askStart);
-    // dopo l'ultima richiesta della stagione (1° giorno di Pèsaḥ) la riga non serve più
-    if (rain.ask || current < rain.askStart)
-      notes.push(`${l.ask}${COLON()} ${rain.ask ? l.askYes : l.askNo} (${l.askFrom} ${dayNum(af.d)} ${l.months[af.m - 1]}${o.israel ? '' : (S.lang === 'he' ? ', תקופה לפי פרק ' + E.hebNumeral(S.tequfa).replace(/[׳״]/g, '') : ', ' + l.tequfa + ' ' + l.chapter + ' ' + S.tequfa)})`);
+    notes.push(rain.firstMention || rain.lastMention ? HL(rainTxt) : rainTxt);
+    // dopo l'ultima richiesta della stagione la riga non serve più
+    if (rain.ask || current <= rain.askEve) {
+      const st = rain.askTonight ? l.askTonight : !rain.ask ? l.askNo : rain.askFirst ? l.askFirst : rain.askLast ? l.askLast : l.askYes;
+      const br = [];
+      if (!rain.ask && !rain.askTonight) { const af = E.gregFromRd(rain.askEve); br.push(`${l.askFrom} ${dayNum(af.d)} ${l.months[af.m - 1]}`); }
+      if (!o.israel) br.push(S.lang === 'he' ? 'תקופה לפי פרק ' + E.hebNumeral(S.tequfa).replace(/[׳״]/g, '') : l.tequfa + ' ' + l.chapter + ' ' + S.tequfa);
+      const txt = `${l.ask}${COLON()} ${st}${br.length ? ` (${br.join(', ')})` : ''}`;
+      notes.push(rain.askTonight || rain.askFirst || rain.askLast ? HL(txt) : txt);
+    }
   }
-  html += `<section class="notes">${notes.map(n => `<div>${n}</div>`).join('')}</section>`;
+  // Aggiunte alla ʿAmiḏà (Tefillà 2:12–13, 2:15, 2:20)
+  for (const a of r.amida || []) {
+    let body;
+    if (a.key === 'tenDays') body = `${heb('המלך הקדוש')} (${l.b3})` + (a.mishpat ? ` · ${heb('המלך המשפט')} (${l.b11}${a.mishpat !== a.scope && a.mishpat !== 'all' ? ', ' + lc(a.mishpat === 'tonight' ? l.scTonight : l.scUntilMinha) : ''})` : '');
+    else if (a.key === 'yaale') body = `${heb('יעלה ויבוא')} (${l.aboda})`;
+    else body = `${heb('על הניסים')} (${l.hodaya})`;
+    if (a.scope === 'all') notes.push(body);
+    else notes.push(HL(`${a.scope === 'tonight' ? l.scTonight : l.scUntilMinha}${COLON()} ${body}`));
+  }
+  // Digiuni (Tefillà 2:16): עננו; il 9 di Aḇ anche רחם in Boné Yerushalàyim
+  if (r.info.fast) {
+    notes.push(`${heb('עננו')} (${l.anenu})`);
+    if (r.info.fast.key === 'av9') notes.push(`${heb('רחם ה׳ אלוהינו')} (${l.boneh})`);
+  }
+  html += `<section class="notes">${notes.map(n => n.hl ? `<div class="hl">${n.html}</div>` : `<div>${n}</div>`).join('')}</section>`;
 
   // Orari
   if (r.polar) html += `<p class="small">${l.polar}</p>`;
