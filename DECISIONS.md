@@ -62,3 +62,4 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Minor festivals and recurrences | Decide which to mark (now shown: Rosh Ḥodesh, Ḥanukka, Purim besides the festivals) | — | To do (owner, 2026-11-03) |
 | Seasonal changes | Review how to mark changes such as the start of the request for rain and of the mention of rain | — | To do (owner, 2026-11-03) |
 | Israel / diaspora readings | Review whether and how to mark weeks when the weekly reading differs (now: the other reading is shown below) | — | To do (owner, 2026-11-03) |
+| App logo | Design a suitable logo for the app icon (now `icon-180/192/512.png`); also a maskable version for Android | — | To do (owner, 2026-11-03) |
