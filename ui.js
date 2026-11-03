@@ -303,7 +303,7 @@ function render() {
   // Digiuni (Tefillà 2:16), formule del rito italiano (Piattelli, che segue il ms. del 1265 e Bologna):
   // il 9 di Aḇ a ʿArḇiṯ, Shaḥriṯ e Minḥà; negli altri digiuni, facoltativi, a Shaḥriṯ e Minḥà per chi digiuna
   // (scelta del proprietario, 2026-11-03).
-  const anenu = `${heb('עננו ה׳ עננו')} (${l.anenu})`, rahem = `${heb('רחם ה׳ אלהינו עלינו')} (${l.boneh})`;
+  const anenu = `${heb('עננו יי עננו')} (${l.anenu})`, rahem = `${heb('רחם יי אלהינו עלינו')} (${l.boneh})`;
   if (tomorrow.fast && tomorrow.fast.key === 'av9') notes.push(HL(`${l.scTonight}${COLON()} ${anenu} · ${rahem}`));
   if (r.info.fast) notes.push(r.info.fast.key === 'av9' ? `${l.both}${COLON()} ${anenu} · ${rahem}` : `${l.ifFast} (${l.both})${COLON()} ${anenu}`);
   html += `<section class="notes">${notes.map(n => n.hl ? `<div class="hl">${n.html}</div>` : `<div>${n}</div>`).join('')}</section>`;
