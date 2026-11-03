@@ -381,7 +381,8 @@ function computeDay(rd, opt) {
 
   // Aggiunte alla ʿAmiḏà (Tefillà 2:12–13, 2:15, 2:20). Il giorno civile ha Shaḥriṯ e Minḥà del giorno ebraico rd
   // e la ʿArḇiṯ di rd + 1: scope 'all' = oggi e stasera, 'tonight' = da ʿArḇiṯ di stasera, 'untilMinha' = fino a Minḥà.
-  // L'ultimo giorno dei dieci giorni è Kippur: «עד מוצאי יום הכיפורים» (2:20), senza limite di preghiera.
+  // L'ultimo giorno dei dieci giorni è Kippur: «עד מוצאי יום הכיפורים» (2:20); la ʿArḇiṯ dopo Kippur torna a «האל הקדוש»
+  // (scelta del proprietario, 2026-11-03), quindi 'untilNeila' = fino a Neʿilà.
   const ADD = {
     tenDays: i => i.m === 7 && i.d <= 10,          // 2:20: המלך הקדוש, המלך המשפט
     yaale: i => i.roshHodesh || i.holMoed,          // 2:12–13: יעלה ויבוא nell'ʿAḇoḏà
@@ -391,7 +392,7 @@ function computeDay(rd, opt) {
   for (const key in ADD) {
     const t = ADD[key](info), n = ADD[key](tomorrow);
     if (!t && !n) continue;
-    const scope = t && n ? 'all' : n ? 'tonight' : info.yomKippur ? 'all' : 'untilMinha';
+    const scope = t && n ? 'all' : n ? 'tonight' : info.yomKippur ? 'untilNeila' : 'untilMinha';
     const item = { key, scope };
     // «המלך המשפט» è nell'11ª benedizione: solo nella ʿAmiḏà feriale
     if (key === 'tenDays') {
