@@ -58,3 +58,4 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Transliteration of ב | Separate setting «Traslitterazione di ב» (EN «Romanization of ב», FR «Translittération de ב»): ḇ (default) or v. Kept apart from kaf and taw because the treatment of beth is less widely agreed. Sources store ḇ; app-wide default: `beth` in `DEFAULTS`, `ui.js` | — | Choice (owner, 2026-11-03); **Setting** |
 | Decisions page | Italian only for now; may be translated later | — | Choice |
 | English and French texts | Drafted by Claude; to be reviewed by the owner | — | To do |
+| Italian texts | Interface, captions, and decisions page: full review of the Italian (style, terminology, consistency), not yet done | — | To do (owner, 2026-11-03) |
