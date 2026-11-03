@@ -107,8 +107,12 @@ const MOVED = {
   pre: { it: ' (anticipato a giovedì)', he: ' (מוקדם)', en: ' (brought forward to Thursday)', fr: ' (avancé au jeudi)' }
 };
 // Lettura della Torà nei digiuni: «ויחל משה» a Shaḥriṯ e a Minḥà; il 9 di Aḇ a Shaḥriṯ «כי תוליד בנים»
+// 17 Tammuz: rito italiano come nel Maḥazor di Bologna 1540–41, di seguito senza saltare, «לפי שבי"ז בתמוז נשתברו הלוחות»;
+// nel ms. BnF hébr. 599 (1265) è uso di alcuni luoghi. Il MT (Tefillà 13:18) salta a «פסל לך», come negli altri digiuni.
 function fastReading(key) {
-  return key === 'av9' ? { shahrith: 'כי תוליד בנים', minha: 'ויחל משה' } : { shahrith: 'ויחל משה', minha: 'ויחל משה' };
+  if (key === 'av9') return { shahrith: 'כי תוליד בנים', minha: 'ויחל משה' };
+  if (key === 'tammuz17') { const r = 'ויחל משה · ויפן וירד · פסל לך'; return { shahrith: r, minha: r, italian: true }; }
+  return { shahrith: 'ויחל משה', minha: 'ויחל משה' };
 }
 
 // ---------- Sabati con nome: le quattro parashiyyoṯ (MT Tefillà 13:20–21) e Shabbaṯ ha-Gaḏol ----------
