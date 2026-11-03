@@ -4,7 +4,7 @@ import {createRequire} from 'module'; const require = createRequire(import.meta.
 const E = require('../engine.js');
 
 const FAST = {"Tzom Gedaliah": 'gedalya', "Asara B'Tevet": 'tevet10', "Ta'anit Esther": 'esther', 'Tzom Tammuz': 'tammuz17', "Tish'a B'Av": 'av9', "Tish'a B'Av (observed)": 'av9'};
-const SPEC = {'Shabbat Shekalim': 'sheqalim', 'Shabbat Zachor': 'zakhor', 'Shabbat Parah': 'para', 'Shabbat HaChodesh': 'hahodesh'};
+const SPEC = {'Shabbat HaGadol': 'haggadol', 'Shabbat Shekalim': 'sheqalim', 'Shabbat Zachor': 'zakhor', 'Shabbat Parah': 'para', 'Shabbat HaChodesh': 'hahodesh'};
 let fastBad = 0, specBad = 0, omerBad = 0, n = 0;
 for (let hy = 5600; hy < 6200; hy++) {
   const theirsFast = new Map(), theirsSpec = new Map(), theirsOmer = new Map();
@@ -28,5 +28,5 @@ for (let hy = 5600; hy < 6200; hy++) {
     if ((om || undefined) !== theirsOmer.get(rd)) { if (omerBad++ < 8) console.log('omer', hy, E.gregFromRd(rd), 'ours', om, 'hebcal', theirsOmer.get(rd)); }
   }
 }
-console.log('fast mismatches', fastBad, '· four parashiyyoth mismatches', specBad, '· ʿomer mismatches', omerBad, 'of', n, 'days');
+console.log('fast mismatches', fastBad, '· named Shabbaths mismatches', specBad, '· ʿomer mismatches', omerBad, 'of', n, 'days');
 if (fastBad || specBad || omerBad) process.exitCode = 1;

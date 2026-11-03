@@ -30,7 +30,7 @@ const CITIES = [
 // ---------- Testi ----------
 const T = {
   it: {
-    alsoRead: 'Si legge anche', reading: 'Lettura della Torà', both: 'Shaḥriṯ e Minḥà', av9In: 'Inizio di Tishʿà be-Aḇ',
+    fastOut: 'Fine del digiuno', reading: 'Lettura della Torà', both: 'Shaḥriṯ e Minḥà', av9In: 'Inizio di Tishʿà be-Aḇ',
     omer: (n, w, d) => `ʿÒmer: stasera si conta il ${n}° giorno` + (w ? ` (${w} settiman${w > 1 ? 'e' : 'a'}${d ? ` e ${d} giorn${d > 1 ? 'i' : 'o'}` : ''})` : ''),
     title: 'Zemannim secondo il Mishné Torà', today: 'Oggi', week: ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'],
     months: ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'],
@@ -48,7 +48,7 @@ const T = {
     translitLbl: 'Traslitterazione di כ e ת', bethLbl: 'Traslitterazione di ב', tequfa: 'tequfà', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico'
   },
   en: {
-    alsoRead: 'Also read', reading: 'Tora reading', both: 'Shaḥriṯ and Minḥa', av9In: 'Tishʿa be-Aḇ begins',
+    fastOut: 'Fast ends', reading: 'Tora reading', both: 'Shaḥriṯ and Minḥa', av9In: 'Tishʿa be-Aḇ begins',
     omer: (n, w, d) => `ʿOmer: tonight is day ${n}` + (w ? ` (${w} week${w > 1 ? 's' : ''}${d ? ` and ${d} day${d > 1 ? 's' : ''}` : ''})` : ''),
     title: 'Zemannim according to the Mishne Tora', today: 'Today', week: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
@@ -66,7 +66,7 @@ const T = {
     translitLbl: 'Romanization of כ and ת', bethLbl: 'Romanization of ב', tequfa: 'tequfa', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only'
   },
   fr: {
-    alsoRead: 'On lit aussi', reading: 'Lecture de la Tora', both: 'Shaḥriṯ et Minḥa', av9In: 'Début de Tishʿa be-Aḇ',
+    fastOut: 'Fin du jeûne', reading: 'Lecture de la Tora', both: 'Shaḥriṯ et Minḥa', av9In: 'Début de Tishʿa be-Aḇ',
     omer: (n, w, d) => `ʿOmer : ce soir, ${n === 1 ? '1er' : n + 'e'} jour` + (w ? ` (${w} semaine${w > 1 ? 's' : ''}${d ? ` et ${d} jour${d > 1 ? 's' : ''}` : ''})` : ''),
     title: 'Zemannim selon le Mishne Tora', today: 'Aujourd’hui', week: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
     months: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
@@ -84,7 +84,7 @@ const T = {
     translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul'
   },
   he: {
-    alsoRead: 'קוראים גם', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחילת תשעה באב',
+    fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחילת תשעה באב',
     omer: (n, w, d) => `ספירת העומר: הלילה יום ${E.hebNumeral(n)}` + (w ? `, ${w === 1 ? 'שבוע אחד' : E.hebNumeral(w) + ' שבועות'}${d ? ' ו' + (d === 1 ? 'יום אחד' : E.hebNumeral(d) + ' ימים') : ''}` : ''),
     title: 'זמנים על פי משנה תורה', today: 'היום', week: ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום שישי', 'שבת'],
     months: ['ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני', 'יולי', 'אוגוסט', 'ספטמבר', 'אוקטובר', 'נובמבר', 'דצמבר'],
@@ -237,9 +237,9 @@ function render() {
   html += '<section class="card par">';
   if (par) html += `<div class="label">${l.parasha}</div><div class="parhe" lang="he" dir="rtl">${pHe(par)}</div>${cap() ? `<div class="small">${pIt(par)}</div>` : ''}`;
   else html += `<div class="label">${l.festShabbath}</div>`;
-  // Le quattro parashiyyoṯ (Tefillà 13:20), lette nel secondo rotolo
+  // Sabati con nome: le quattro parashiyyoṯ (Tefillà 13:20) e Shabbaṯ ha-Gaḏol
   const sp = E.specialParasha(sat);
-  if (sp) html += `<div class="diverge">${l.alsoRead}${COLON()} <span lang="he">${E.SPECIAL[sp][1]}</span>${cap() ? ` (${roman(E.SPECIAL[sp][0])})` : ''}</div>`;
+  if (sp) html += `<div class="diverge"><span lang="he">${E.SPECIAL[sp][1]}</span>${cap() ? ` · ${roman(E.SPECIAL[sp][0])}` : ''}</div>`;
   if (JSON.stringify(par) !== JSON.stringify(other)) {
     const where = o.israel ? l.inDiaspora : l.inIsrael;
     const what = other ? (cap() ? `<span lang="he">${pHe(other)}</span> (${pIt(other)})` : pHe(other)) : l.festReading;
@@ -289,6 +289,8 @@ function render() {
       let extra = '';
       if (t.key === 'shqia' && (tomorrow.shabbath || tomorrow.yomTov)) extra = tomorrow.shabbath ? l.shabbIn : l.ytIn;
       if (t.key === 'tzeth' && (r.info.shabbath || r.info.yomTov) && !(tomorrow.shabbath || tomorrow.yomTov)) extra = r.info.shabbath ? l.shabbOut : l.ytOut;
+      // I digiuni finiscono all'uscita delle stelle (scelta dell'utente, 2026-11-03)
+      if (t.key === 'tzeth' && r.info.fast) extra = (extra ? extra + ' · ' : '') + l.fastOut;
       // Tishʿà be-Aḇ comincia la sera: «בין השמשות שלו, אסור כיום הכיפורים» (Taʿaniyyoṯ 5:7)
       if (t.key === 'shqia' && tomorrow.fast && tomorrow.fast.key === 'av9') extra = (extra ? extra + ' · ' : '') + l.av9In;
       const kind = (t.key === 'tzeth' && extra) ? 'c' : z.r;

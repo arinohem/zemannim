@@ -111,12 +111,14 @@ function fastReading(key) {
   return key === 'av9' ? { shahrith: 'כי תוליד בנים', minha: 'ויחל משה' } : { shahrith: 'ויחל משה', minha: 'ויחל משה' };
 }
 
-// ---------- Le quattro parashiyyoṯ (MT Tefillà 13:20–21) ----------
+// ---------- Sabati con nome: le quattro parashiyyoṯ (MT Tefillà 13:20–21) e Shabbaṯ ha-Gaḏol ----------
 // Sheqalim: il sabato di Rosh Ḥòḏesh Aḏar o quello prima; Zaḵor: il sabato della settimana in cui cade Purim (il 14);
 // Ha-ḥòḏesh: il sabato della settimana di Rosh Ḥòḏesh Nisan; Parà: il sabato prima di Ha-ḥòḏesh.
 // Negli anni embolismici si conta da Aḏar II: 13:21 ammette fra Sheqalim e Zaḵor al massimo un sabato di intervallo.
+// Shabbaṯ ha-Gaḏol, il sabato prima di Pèsaḥ: scelta dell'utente (2026-11-03), non trovato nel MT.
 const SPECIAL = {
-  sheqalim: ['Sheqalim', 'פרשת שקלים'], zakhor: ['Zaḵor', 'פרשת זכור'], para: ['Parà', 'פרשת פרה'], hahodesh: ['Ha-ḥòḏesh', 'פרשת החדש']
+  sheqalim: ['Shabbaṯ Sheqalim', 'שבת שקלים'], zakhor: ['Shabbaṯ Zaḵor', 'שבת זכור'], para: ['Shabbaṯ Parà', 'שבת פרה'],
+  hahodesh: ['Shabbaṯ ha-Ḥòḏesh', 'שבת החדש'], haggadol: ['Shabbaṯ ha-Gaḏol', 'שבת הגדול']
 };
 function specialParasha(sat) { // sat = rd di un sabato
   const { y } = hebFromRd(sat);
@@ -126,6 +128,7 @@ function specialParasha(sat) { // sat = rd di un sabato
   if (sat === prevSatOnOrBefore(rdFromHeb(y, am, 14))) return 'zakhor';
   if (sat === hahodesh - 7) return 'para';
   if (sat === hahodesh) return 'hahodesh';
+  if (sat === prevSatOnOrBefore(rdFromHeb(y, 1, 14))) return 'haggadol';
   return null;
 }
 
