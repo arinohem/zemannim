@@ -129,17 +129,18 @@ function dayInfo(rd, opt) {
 const PARASHIYYOTH = [
   ['Bereshith', 'בראשית'], ['Noaḥ', 'נח'], ['Lekh lekhà', 'לך לך'], ['Wayyerà', 'וירא'], ['Ḥayyé Sarà', 'חיי שרה'],
   ['Toleḏoth', 'תולדות'], ['Wayyeṣé', 'ויצא'], ['Wayyishlaḥ', 'וישלח'], ['Wayyésheḇ', 'וישב'], ['Miqqeṣ', 'מקץ'],
-  ['Wayyiggash', 'ויגש'], ['Wayḥì', 'ויחי'], ['Shemoth', 'שמות'], ['Waerà', 'וארא'], ['Bo', 'בא'],
+  ['Wayyiggash', 'ויגש'], ['Wayḥì', 'ויחי'], ['Shemoth', 'שמות'], ['Waʾerà', 'וארא'], ['Bo', 'בא'],
   ['Beshallaḥ', 'בשלח'], ['Yithrò', 'יתרו'], ['Mishpaṭim', 'משפטים'], ['Terumà', 'תרומה'], ['Teṣawwè', 'תצוה'],
   ['Ki thissà', 'כי תשא'], ['Wayyaqhel', 'ויקהל'], ['Pequḏé', 'פקודי'], ['Wayyiqrà', 'ויקרא'], ['Ṣaw', 'צו'],
   ['Sheminì', 'שמיני'], ['Tazriaʿ', 'תזריע'], ['Meṣoraʿ', 'מצורע'], ['Aḥaré moth', 'אחרי מות'], ['Qeḏoshim', 'קדשים'],
   ['Emor', 'אמר'], ['Behar', 'בהר'], ['Beḥuqqothay', 'בחקתי'], ['Bemiḏbar', 'במדבר'], ['Nasò', 'נשא'],
   ['Behaʿalothekhà', 'בהעלתך'], ['Shelaḥ lekhà', 'שלח לך'], ['Qòraḥ', 'קרח'], ['Ḥuqqath', 'חקת'], ['Balaq', 'בלק'],
-  ['Pineḥas', 'פינחס'], ['Maṭṭoth', 'מטות'], ['Masʿé', 'מסעי'], ['Deḇarim', 'דברים'], ['Waethḥannan', 'ואתחנן'],
+  ['Pineḥas', 'פינחס'], ['Maṭṭoth', 'מטות'], ['Masʿé', 'מסעי'], ['Deḇarim', 'דברים'], ['Waʾethḥannan', 'ואתחנן'],
   ['ʿÉqeḇ', 'עקב'], ['Reʾé', 'ראה'], ['Shofeṭim', 'שופטים'], ['Ki theṣé', 'כי תצא'], ['Ki thaḇò', 'כי תבוא'],
-  ['Niṣṣaḇim', 'נצבים'], ['Wayyélekh', 'וילך'], ['Haazìnu', 'האזינו'], ['We-zoth ha-berakhà', 'וזאת הברכה']
+  ['Niṣṣaḇim', 'נצבים'], ['Wayyélekh', 'וילך'], ['Haʾazinu', 'האזינו'], ['We-zoth ha-berakhà', 'וזאת הברכה']
 ];
-// Accento in italiano sulla sillaba tonica (tronche e piane), secondo gli accenti masoretici dei versetti; Bo e Noaḥ senza accento.
+// Accento in italiano solo dove la tonica non è quella attesa: tronche in vocale, piane in consonante (accenti masoretici);
+// niente accento su Haʾazinu (piana in vocale), Bo e Noaḥ. ʾAlef consonantico scritto, tranne a inizio di parola.
 
 function isFestivalShabbath(rd, il) {
   const i = dayInfo(rd, { israel: il });
@@ -189,7 +190,7 @@ function sedraCycle(y, il) {
     }
     if (combine) { map.set(s[i], [k, k + 1]); k += 2; } else { map.set(s[i], [k]); k += 1; }
   }
-  // dopo Rosh ha-Shanà: Wayyélekh e Haazìnu, oppure solo Haazìnu (Niṣṣaḇim–Wayyélekh uniti)
+  // dopo Rosh ha-Shanà: Wayyélekh e Haʾazinu, oppure solo Haʾazinu (Niṣṣaḇim–Wayyélekh uniti)
   const lastSat = s[s.length - 1];
   if (post.length >= 2) { map.set(post[0], [51]); map.set(post[1], [52]); }
   else if (post.length === 1) { map.set(lastSat, [50, 51]); map.set(post[0], [52]); }

@@ -106,8 +106,8 @@ const ZEMANIM = {
              src: { it: 'Rambam, Comm. alla Mishnà, Berakhoth 1:1 (non MT): 1⅕ ore stagionali prima del sorgere',
                     en: 'Rambam, Commentary on the Mishna, Berakhoth 1:1 (not MT): 1⅕ seasonal hours before sunrise',
                     fr: 'Rambam, Commentaire de la Mishna, Berakhoth 1:1 (pas le MT) : 1⅕ heure saisonnière avant le lever du soleil' }, r: 'n' },
-  netz:    { he: 'הנץ החמה', it: 'Sorgere del sole', en: 'Sunrise', fr: 'Lever du soleil', src: 'MT Qeriath Shemaʿ 1:12; Tefillà 3:1', r: 'n' },
-  shema:   { he: 'סוף זמן קריאת שמע', it: 'Termine per lo Shemaʿ del mattino (3 ore)', en: 'Latest time for the morning Shemaʿ (3 hours)', fr: 'Heure limite pour le Shemaʿ du matin (3 heures)', src: 'MT Qeriath Shemaʿ 1:12–14', r: 'f' },
+  netz:    { he: 'הנץ החמה', it: 'Sorgere del sole', en: 'Sunrise', fr: 'Lever du soleil', src: 'MT Qeriʾath Shemaʿ 1:12; Tefillà 3:1', r: 'n' },
+  shema:   { he: 'סוף זמן קריאת שמע', it: 'Termine per lo Shemaʿ del mattino (3 ore)', en: 'Latest time for the morning Shemaʿ (3 hours)', fr: 'Heure limite pour le Shemaʿ du matin (3 heures)', src: 'MT Qeriʾath Shemaʿ 1:12–14', r: 'f' },
   tefilla: { he: 'סוף זמן תפלת השחר', it: 'Termine per Shaḥrith (4 ore)', en: 'Latest time for Shaḥrith (4 hours)', fr: 'Heure limite pour Shaḥrith (4 heures)', src: 'MT Tefillà 3:1', r: 'f' },
   hatzot:  { he: 'חצות היום', it: 'Mezzogiorno (6 ore)', en: 'Midday (6 hours)', fr: 'Midi (6 heures)', src: 'MT Tefillà 3:9 («חצי היום»)', r: 'n' },
   minhaG:  { he: 'מנחה גדולה', it: 'Minḥà geḏolà (6½ ore)', en: 'Minḥa geḏola (6½ hours)', fr: 'Minḥa geḏola (6½ heures)', src: 'MT Tefillà 3:2, 3:4', r: 'c' },
@@ -119,9 +119,9 @@ const ZEMANIM = {
   shqia:   { he: 'שקיעת החמה', it: 'Tramonto', en: 'Sunset', fr: 'Coucher du soleil', src: 'MT Shabbath 5:3–4; Tefillà 3:4', r: 'f' },
   tzeth:   { he: 'צאת הכוכבים', it: 'Uscita delle stelle', en: 'Emergence of the stars', fr: 'Sortie des étoiles', src: 'MT Terumoth 7:2 («כמו שליש שעה אחר שקיעת החמה»); Shabbath 5:4', r: 'c' },
   hatzotLayla: { he: 'חצות הלילה', it: 'Mezzanotte (fine preferibile dello Shemaʿ della sera)', en: 'Midnight (preferred end of the evening Shemaʿ)', fr: 'Minuit (fin préférable du Shemaʿ du soir)',
-             src: { it: 'MT Qeriath Shemaʿ 1:10; calcolata a metà fra tramonto e sorgere',
-                    en: 'MT Qeriath Shemaʿ 1:10; computed as the midpoint between sunset and sunrise',
-                    fr: 'MT Qeriath Shemaʿ 1:10 ; calculé à mi-chemin entre le coucher et le lever du soleil' }, r: 'n' }
+             src: { it: 'MT Qeriʾath Shemaʿ 1:10; calcolata a metà fra tramonto e sorgere',
+                    en: 'MT Qeriʾath Shemaʿ 1:10; computed as the midpoint between sunset and sunrise',
+                    fr: 'MT Qeriʾath Shemaʿ 1:10 ; calculé à mi-chemin entre le coucher et le lever du soleil' }, r: 'n' }
 };
 // Le fonti-stringa sono citazioni romanizzate (forma italiana); in modalità solo ebraico le note restano in italiano
 const srcText = z => typeof z.src === 'string' ? roman(z.src) : (z.src[S.lang] || z.src.it);

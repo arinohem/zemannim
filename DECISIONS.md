@@ -11,14 +11,14 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Seasonal hours | Sunrise → sunset, ÷ 12 | Tefilla 3:1 (prayer starts «עם הנץ החמה»; 4th hour = «שליש היום»); 3:4 (minḥa «עד שתשקע החמה») | Inferred; Choice |
 | Ṣeth ha-kokhaḇim = end of Shabbath and festivals | 20 fixed minutes after sunset | Terumoth 7:2: «וזה העת כמו שליש שעה אחר שקיעת החמה»; Shabbath 5:4 (three medium stars, no minutes) | MT; Choice; **Setting** (20/18) |
 | Alternative 18 min | ¾ mil × 24 min | Mil = «שני חומשי שעה משעות ההשויה» (Comm. Pesaḥim 3:2). Where the Rambam states ¾ mil himself: **not found** | Comm.; Inferred |
-| ʿAloth ha-shaḥar | 1.2 seasonal *day* hours before sunrise | Comm. Berakhoth 1:1: «בכדי שעה וחומש שעה מן השעות הזמניות». The MT uses dawn only as a limit (Qeriath Shemaʿ 1:10–13; Tefilla 3:6–7) without an interval in the chapters read. Day vs night seasonal hour: text silent; day hour chosen | Comm.; Inferred; Choice; **Setting** (show/hide) |
-| End of morning Shemaʿ | 3 hours | Qeriath Shemaʿ 1:12–14 | MT |
+| ʿAloth ha-shaḥar | 1.2 seasonal *day* hours before sunrise | Comm. Berakhoth 1:1: «בכדי שעה וחומש שעה מן השעות הזמניות». The MT uses dawn only as a limit (Qeriʾath Shemaʿ 1:10–13; Tefilla 3:6–7) without an interval in the chapters read. Day vs night seasonal hour: text silent; day hour chosen | Comm.; Inferred; Choice; **Setting** (show/hide) |
+| End of morning Shemaʿ | 3 hours | Qeriʾath Shemaʿ 1:12–14 | MT |
 | End of Shaḥrith | 4 hours | Tefilla 3:1 | MT |
 | End of Musaf (only on Musaf days) | 7 hours | Tefilla 3:5 | MT |
 | Midday | 6 hours | Tefilla 3:9 («חצי היום») | MT |
 | Minḥa geḏola / qetanna | 6½ / 9½ hours | Tefilla 3:2, 3:4 | MT |
 | 1¼ hours before sunset | 10¾ hours (MT wording, not called פלג המנחה) | Tefilla 3:4: «עד שיישאר מן היום שעה ורביע; ויש לו להתפלל אותה, עד שתשקע החמה» | MT |
-| Midnight | Midpoint sunset → next sunrise | Qeriath Shemaʿ 1:10 («חצי הלילה», undefined) | Inferred |
+| Midnight | Midpoint sunset → next sunrise | Qeriʾath Shemaʿ 1:10 («חצי הלילה», undefined) | Inferred |
 | Candle lighting | **Not shown** | Shabbath 5:3: «מבעוד יום, קודם שקיעת החמה» (no minutes) | MT; Choice |
 | Sun | Sea level, no elevation (NOAA, zenith 90°50′) | Passages read say only «הנץ החמה» / «שקיעת החמה» | Choice |
 | "Fixed" intervals | 20/18 min are clock minutes | Text does not say equal vs seasonal | Choice |
@@ -48,8 +48,9 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Rule | Implementation | Source | Status |
 |---|---|---|---|
 | Languages | Hebrew terms always shown; captions in Italian, English, or French; a fourth option shows Hebrew only | — | Choice (owner, 2026-11-02); **Setting** |
-| Romanisation by language | Italian: the stressed vowel takes an accent — à, è (seḡol), é (ṣere), ì, ò, ù — both in *tronche* (Minḥà, Ḥayyé Sarà, Teṣawwè, Wayḥì, Tishrì) and, since 2026-11-03, in milleʿel words (Sheminì ʿAṣèreth, Pèsaḥ, Rosh Ḥòḏesh, ʿaloth ha-shàḥar, appàyim, Wayyésheḇ, Qòraḥ, ʿÉqeḇ, Wayyélekh, Haazìnu, as the Maḥazor writes ʿAṣèreth); monosyllables have none (Bo, and Noaḥ, whose pataḥ is furtive). English and French: the same forms without accents (Minḥa, Ḥayye Sara) | Stress from the Masoretic accents of the verses that name the parashiyyoth (Sefaria, Miqra according to the Masorah): milleʿel: הַאֲזִ֥ינוּ, וַיֵּ֣שֶׁב, קֹ֔רַח, עֵ֣קֶב, וַיֵּ֖לֶךְ, נֹ֔חַ; the rest final (שָׂרָ֔ה included); segholates and the dual (פֶּסַח, חֹדֶשׁ, עֲצֶרֶת, שַׁחַר, אַפַּיִם) by grammar | Choice (owner, 2026-11-02); stresses Verified |
+| Romanisation by language | Italian: an accent — à, è (seḡol), é (ṣere), ì, ò, ù — marks the stress only where Italian spelling would not predict it (2026-11-03). A word ending in a vowel reads as piana, so the accent marks *tronche* (Minḥà, Ḥayyé Sarà, Teṣawwè, Wayḥì, Tishrì). A word ending in a consonant reads as tronca, so the accent marks milleʿel words (Sheminì ʿAṣèreth, as the Maḥazor writes it; Pèsaḥ, Rosh Ḥòḏesh, ʿaloth ha-shàḥar, appàyim, Wayyésheḇ, Qòraḥ, ʿÉqeḇ, Wayyélekh). A milleʿel word ending in a vowel has none (Haʾazinu); nor do monosyllables (Bo, and Noaḥ, whose pataḥ is furtive). English and French: the same forms without accents (Minḥa, Ḥayye Sara) | Stress from the Masoretic accents of the verses that name the parashiyyoth (Sefaria, Miqra according to the Masorah): milleʿel: הַאֲזִ֥ינוּ, וַיֵּ֣שֶׁב, קֹ֔רַח, עֵ֣קֶב, וַיֵּ֖לֶךְ, נֹ֔חַ; the rest final (שָׂרָ֔ה included); segholates and the dual (פֶּסַח, חֹדֶשׁ, עֲצֶרֶת, שַׁחַר, אַפַּיִם) by grammar | Choice (owner, 2026-11-02); stresses Verified |
 | Refuyyoth | ḇ, ḡ, ḏ, kh, f, th in every language (Sheḇaṭ, Meḡillà, Ḥoḏesh); replaces the older v, gh, dh. Only a real refuyya takes the line: after a silent shewa the letter is plain (Bemiḏbar) | — | Choice (owner, 2026-11-02) |
+| ʾAlef | Consonantal ʾalef is written ʾ (Reʾé, Haʾazinu, Waʾerà, Waʾethḥannan, Qeriʾath); not word-initially, also after a prefix hyphen (Emor, Elul, be-Aḇ); quiescent ʾalef is not written (Bereshith, Rosh, Wayyiqrà, Ṣeth) | — | Choice (owner, 2026-11-03) |
 | Romanisation exceptions | ʿArḇith (spirant, as in the Maḥazor, although the shewa is silent; 2026-11-03); Tazriaʿ (title form, not Thazriaʿ from כִּי תַזְרִיעַ); after a hyphen (article, prefixes) the daghesh forte is not written: the hyphen replaces the gemination (ha-kokhaḇim, ha-moʿeḏ) | — | Choice (owner, 2026-11-02) |
 | Deadline captions | Italian «Termine per», English «Latest time for», French «Heure limite pour» (Shemaʿ, Shaḥrith, Musaf); «Fine» / «End» / «Fin» kept where it is not a deadline (Shabbath, festival, minḥa qetanna) | — | Choice (owner, 2026-11-02) |
 | Decisions page | Italian only for now; may be translated later | — | Choice |
