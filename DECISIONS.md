@@ -59,3 +59,6 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Decisions page | Italian only for now; may be translated later | — | Choice |
 | English and French texts | Drafted by Claude; to be reviewed by the owner | — | To do |
 | Italian texts | Interface, captions, and decisions page: full review of the Italian (style, terminology, consistency), not yet done | — | To do (owner, 2026-11-03) |
+| Minor festivals and recurrences | Decide which to mark (now shown: Rosh Ḥodesh, Ḥanukka, Purim besides the festivals) | — | To do (owner, 2026-11-03) |
+| Seasonal changes | Review how to mark changes such as the start of the request for rain and of the mention of rain | — | To do (owner, 2026-11-03) |
+| Israel / diaspora readings | Review whether and how to mark weeks when the weekly reading differs (now: the other reading is shown below) | — | To do (owner, 2026-11-03) |
