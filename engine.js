@@ -262,6 +262,20 @@ function parashaFor(rd, il) { // rd di un sabato
   }
   return null;
 }
+// Settimane in cui Israele e diaspora leggono parashiyyoṯ diverse: nella diaspora il secondo
+// giorno di festa (Pèsaḥ 22 Nisan, Shaḇuʿoṯ 7 Siwan) cade di sabato; Israele va avanti di una
+// parashà finché la diaspora non ne unisce due. Dato di calendario, non una norma.
+// Restituisce { start, end, fest: 'pesah' | 'shavuoth' } (start = sabato di festa nella diaspora,
+// end = sabato in cui la diaspora unisce due parashiyyoṯ) oppure null.
+function readingSplit(sat) {
+  const differ = rd => JSON.stringify(parashaFor(rd, true)) !== JSON.stringify(parashaFor(rd, false));
+  if (!differ(sat)) return null;
+  let start = sat, end = sat;
+  while (differ(start - 7)) start -= 7;
+  while (differ(end + 7)) end += 7;
+  const { m } = hebFromRd(start);
+  return { start, end, fest: m === 1 ? 'pesah' : 'shavuoth' };
+}
 
 // ---------- Sole (NOAA) ----------
 const RAD = Math.PI / 180;
@@ -408,6 +422,6 @@ function computeDay(rd, opt) {
   return res;
 }
 
-const api = { sciRoman, rdFromGreg, gregFromRd, weekday, hebFromRd, rdFromHeb, hLeap, monthName, hebNumeral, dayInfo, parashaFor, PARASHIYYOTH, specialParasha, SPECIAL, fastReading, omerDay, sunrise, sunset, tequfaTishri, sheelaStartDiaspora, weekdayAmida, computeDay, monthLen, newYear };
+const api = { sciRoman, rdFromGreg, gregFromRd, weekday, hebFromRd, rdFromHeb, hLeap, monthName, hebNumeral, dayInfo, parashaFor, readingSplit, PARASHIYYOTH, specialParasha, SPECIAL, fastReading, omerDay, sunrise, sunset, tequfaTishri, sheelaStartDiaspora, weekdayAmida, computeDay, monthLen, newYear };
 if (typeof module !== 'undefined') module.exports = api; else root.MTEngine = api;
 })(this);

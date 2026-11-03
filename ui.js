@@ -47,6 +47,10 @@ const T = {
     langLbl: 'Lingua', zone: 'Orari nel fuso', shabbIn: 'Inizio dello Shabbaṯ', shabbOut: 'Fine dello Shabbaṯ',
     ytIn: 'Inizio della festa', ytOut: 'Fine della festa', source: 'Fonte', polar: 'In questo luogo e giorno il sole non sorge o non tramonta.',
     firstMention: 'da Musaf si comincia a dire', lastMention: 'si dice fino a Shaḥriṯ; da Musaf non si dice più', israelOn: 'Israele', diaspora: 'diaspora', inIsrael: 'In Israele', naAll: 'in ogni preghiera', arvithKippur: 'ʿArḇiṯ (sera di Kippur)', inDiaspora: 'Nella diaspora', festReading: 'lettura della festa',
+    splitPesah: 'Nella diaspora questo sabato è l’ultimo giorno di Pèsaḥ e si legge la lettura della festa; in Israele si legge la parashà seguente.',
+    splitShavuoth: 'Nella diaspora questo sabato è il secondo giorno di Shaḇuʿoṯ e si legge la lettura della festa; in Israele si legge la parashà seguente.',
+    rejoin: (d, p) => `Le letture tornano a coincidere dopo il ${d}, quando nella diaspora si leggono insieme ${p}.`,
+    rejoinNow: p => `Questo sabato nella diaspora si leggono insieme ${p}; dal sabato seguente la lettura è di nuovo la stessa.`,
     translitLbl: 'Traslitterazione di כ e ת', bethLbl: 'Traslitterazione di ב', tequfa: 'tequfà', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico'
   },
   en: {
@@ -67,6 +71,10 @@ const T = {
     langLbl: 'Language', zone: 'Times in time zone', shabbIn: 'Shabbaṯ begins', shabbOut: 'Shabbaṯ ends',
     ytIn: 'Festival begins', ytOut: 'Festival ends', source: 'Source', polar: 'At this place and date the sun does not rise or does not set.',
     firstMention: 'said from Musaf onwards', lastMention: 'said until Shaḥriṯ; no longer said from Musaf', israelOn: 'Israel', diaspora: 'diaspora', inIsrael: 'In Israel', naAll: 'at every prayer', arvithKippur: 'ʿArḇiṯ (Kippur night)', inDiaspora: 'In the diaspora', festReading: 'festival reading',
+    splitPesah: 'In the diaspora this Shabbaṯ is the last day of Pesaḥ and the festival portion is read; in Israel the next parasha is read.',
+    splitShavuoth: 'In the diaspora this Shabbaṯ is the second day of Shaḇuʿoṯ and the festival portion is read; in Israel the next parasha is read.',
+    rejoin: (d, p) => `The readings coincide again after ${d}, when the diaspora reads ${p} together.`,
+    rejoinNow: p => `This Shabbaṯ the diaspora reads ${p} together; from next Shabbaṯ the reading is the same again.`,
     translitLbl: 'Romanization of כ and ת', bethLbl: 'Romanization of ב', tequfa: 'tequfa', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only'
   },
   fr: {
@@ -87,6 +95,10 @@ const T = {
     langLbl: 'Langue', zone: 'Heures dans le fuseau', shabbIn: 'Début du Shabbaṯ', shabbOut: 'Fin du Shabbaṯ',
     ytIn: 'Début de la fête', ytOut: 'Fin de la fête', source: 'Source', polar: 'En ce lieu et à cette date, le soleil ne se lève pas ou ne se couche pas.',
     firstMention: 'on le dit à partir de Musaf', lastMention: 'on le dit jusqu’à Shaḥriṯ ; à partir de Musaf on ne le dit plus', israelOn: 'Israël', diaspora: 'diaspora', inIsrael: 'En Israël', naAll: 'à chaque prière', arvithKippur: 'ʿArḇiṯ (nuit de Kippur)', inDiaspora: 'En diaspora', festReading: 'lecture de la fête',
+    splitPesah: 'En diaspora, ce Shabbaṯ est le dernier jour de Pesaḥ et on lit la lecture de la fête ; en Israël on lit la parasha suivante.',
+    splitShavuoth: 'En diaspora, ce Shabbaṯ est le deuxième jour de Shaḇuʿoṯ et on lit la lecture de la fête ; en Israël on lit la parasha suivante.',
+    rejoin: (d, p) => `Les lectures coïncident de nouveau après le ${d}, quand la diaspora lit ensemble ${p}.`,
+    rejoinNow: p => `Ce Shabbaṯ, la diaspora lit ensemble ${p} ; à partir du Shabbaṯ suivant la lecture est de nouveau la même.`,
     translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul'
   },
   he: {
@@ -107,6 +119,10 @@ const T = {
     langLbl: 'שפה', zone: 'שעות לפי אזור הזמן', shabbIn: 'כניסת שבת', shabbOut: 'יציאת שבת',
     ytIn: 'כניסת יום טוב', ytOut: 'יציאת יום טוב', source: 'מקור', polar: 'במקום וביום זה החמה אינה זורחת או אינה שוקעת.',
     firstMention: 'מתחילים במוסף', lastMention: 'אומרים עד שחרית; ממוסף אין אומרים', israelOn: 'ארץ ישראל', diaspora: 'חוץ לארץ', inIsrael: 'בארץ ישראל', naAll: 'בכל תפלה ותפלה', arvithKippur: 'ערבית (ליל יום הכפורים)', inDiaspora: 'בחוץ לארץ', festReading: 'קריאת המועד',
+    splitPesah: 'בחוץ לארץ שבת זו היא אחרון של פסח וקוראים בענין המועד; בארץ ישראל קוראים את הפרשה הבאה',
+    splitShavuoth: 'בחוץ לארץ שבת זו היא יום טוב שני של שבועות וקוראים בענין המועד; בארץ ישראל קוראים את הפרשה הבאה',
+    rejoin: (d, p) => `הקריאה חוזרת להיות שוה אחרי ${d}, כשבחוץ לארץ מחברים ${p}`,
+    rejoinNow: p => `בשבת זו מחברים בחוץ לארץ ${p}; מן השבת הבאה הקריאה שוה`,
     translitLbl: 'תעתיק של כ ושל ת', bethLbl: 'תעתיק של ב', chapter: 'פרק', langLbl2: 'שפה (נוסף על העברית)', hebOnly: 'עברית בלבד'
   }
 };
@@ -252,6 +268,14 @@ function render() {
     const where = o.israel ? l.inDiaspora : l.inIsrael;
     const what = other ? (cap() ? `<span lang="he">${pHe(other)}</span> (${pIt(other)})` : pHe(other)) : l.festReading;
     html += `<div class="diverge">${where}${COLON()} ${what}</div>`;
+    // Perché divergono e quando si riallineano: dato di calendario
+    const sp2 = E.readingSplit(sat);
+    if (sp2) {
+      const dj = E.parashaFor(sp2.end, false), pair = cap() ? `<span lang="he">${pHe(dj)}</span> (${pIt(dj)})` : pHe(dj);
+      const why = sat === sp2.start ? (sp2.fest === 'pesah' ? l.splitPesah : l.splitShavuoth) + ' ' : '';
+      const when = sat === sp2.end ? l.rejoinNow(pair) : l.rejoin(gregStr(E.gregFromRd(sp2.end)), pair);
+      html += `<div class="small splitnote">${why}${when}</div>`;
+    }
   }
   html += '</section>';
 
