@@ -7,6 +7,7 @@ const E = window.MTEngine;
 const DEFAULTS = {
   lang: 'it', tzeth: 20, tequfa: 9, dawn: true, israel: 'auto', walled: 'auto', prudent: true,
   translit: 'digraph', // כ e ת refuyyoth: 'digraph' = kh, th; 'line' = ḵ, ṯ
+  beth: 'line',        // ב refuyya: 'line' = ḇ; 'v' = v
   place: { name: 'Ferrara', lat: 44.8378, lon: 11.6198, tz: 'Europe/Rome' }
 };
 let S = Object.assign({}, DEFAULTS);
@@ -42,7 +43,7 @@ const T = {
     langLbl: 'Lingua', zone: 'Orari nel fuso', shabbIn: 'Inizio dello Shabbaṯ', shabbOut: 'Fine dello Shabbaṯ',
     ytIn: 'Inizio della festa', ytOut: 'Fine della festa', source: 'Fonte', polar: 'In questo luogo e giorno il sole non sorge o non tramonta.',
     firstMention: 'da Musaf si comincia a dire', lastMention: 'si dice fino a Shaḥriṯ; da Musaf non si dice più', israelOn: 'Israele', diaspora: 'diaspora', inIsrael: 'In Israele', naAll: 'in ogni preghiera', arvithKippur: 'ʿArḇiṯ (sera di Kippur)', inDiaspora: 'Nella diaspora', festReading: 'lettura della festa',
-    translitLbl: 'Traslitterazione di כ e ת', tequfa: 'tequfà', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico'
+    translitLbl: 'Traslitterazione di כ e ת', bethLbl: 'Traslitterazione di ב', tequfa: 'tequfà', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico'
   },
   en: {
     title: 'Zemannim according to the Mishne Tora', today: 'Today', week: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -58,7 +59,7 @@ const T = {
     langLbl: 'Language', zone: 'Times in time zone', shabbIn: 'Shabbaṯ begins', shabbOut: 'Shabbaṯ ends',
     ytIn: 'Festival begins', ytOut: 'Festival ends', source: 'Source', polar: 'At this place and date the sun does not rise or does not set.',
     firstMention: 'said from Musaf onwards', lastMention: 'said until Shaḥriṯ; no longer said from Musaf', israelOn: 'Israel', diaspora: 'diaspora', inIsrael: 'In Israel', naAll: 'at every prayer', arvithKippur: 'ʿArḇiṯ (Kippur night)', inDiaspora: 'In the diaspora', festReading: 'festival reading',
-    translitLbl: 'Romanization of כ and ת', tequfa: 'tequfa', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only'
+    translitLbl: 'Romanization of כ and ת', bethLbl: 'Romanization of ב', tequfa: 'tequfa', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only'
   },
   fr: {
     title: 'Zemannim selon le Mishne Tora', today: 'Aujourd’hui', week: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
@@ -74,7 +75,7 @@ const T = {
     langLbl: 'Langue', zone: 'Heures dans le fuseau', shabbIn: 'Début du Shabbaṯ', shabbOut: 'Fin du Shabbaṯ',
     ytIn: 'Début de la fête', ytOut: 'Fin de la fête', source: 'Source', polar: 'En ce lieu et à cette date, le soleil ne se lève pas ou ne se couche pas.',
     firstMention: 'on le dit à partir de Musaf', lastMention: 'on le dit jusqu’à Shaḥriṯ ; à partir de Musaf on ne le dit plus', israelOn: 'Israël', diaspora: 'diaspora', inIsrael: 'En Israël', naAll: 'à chaque prière', arvithKippur: 'ʿArḇiṯ (nuit de Kippur)', inDiaspora: 'En diaspora', festReading: 'lecture de la fête',
-    translitLbl: 'Translittération de כ et ת', tequfa: 'tequfa', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul'
+    translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul'
   },
   he: {
     title: 'זמנים על פי משנה תורה', today: 'היום', week: ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום שישי', 'שבת'],
@@ -90,7 +91,7 @@ const T = {
     langLbl: 'שפה', zone: 'שעות לפי אזור הזמן', shabbIn: 'כניסת שבת', shabbOut: 'יציאת שבת',
     ytIn: 'כניסת יום טוב', ytOut: 'יציאת יום טוב', source: 'מקור', polar: 'במקום וביום זה החמה אינה זורחת או אינה שוקעת.',
     firstMention: 'מתחילים במוסף', lastMention: 'אומרים עד שחרית; ממוסף אין אומרים', israelOn: 'ארץ ישראל', diaspora: 'חוץ לארץ', inIsrael: 'בארץ ישראל', naAll: 'בכל תפלה ותפלה', arvithKippur: 'ערבית (ליל יום הכפורים)', inDiaspora: 'בחוץ לארץ', festReading: 'קריאת המועד',
-    translitLbl: 'תעתיק של כ ושל ת', chapter: 'פרק', langLbl2: 'שפה (נוסף על העברית)', hebOnly: 'עברית בלבד'
+    translitLbl: 'תעתיק של כ ושל ת', bethLbl: 'תעתיק של ב', chapter: 'פרק', langLbl2: 'שפה (נוסף על העברית)', hebOnly: 'עברית בלבד'
   }
 };
 // 'he' = solo ebraico; 'it' / 'en' / 'fr' = ebraico con didascalie in quella lingua
@@ -101,7 +102,14 @@ const COLON = () => S.lang === 'fr' ? ' :' : ':';
 const roman = s => S.lang === 'it' ? s : E.sciRoman(s);
 // Nei sorgenti כ e ת refuyyoth sono scritte ḵ e ṯ (lettere che compaiono solo nella traslitterazione);
 // qui diventano kh e th se l'impostazione lo chiede
-const translit = s => S.translit === 'line' ? s : s.replace(/[ḵḴṯṮ]/g, c => ({ 'ḵ': 'kh', 'Ḵ': 'Kh', 'ṯ': 'th', 'Ṯ': 'Th' }[c]));
+// Così anche ב refuyya, scritta ḇ, che diventa v se l'impostazione (separata) lo chiede
+// Gli esempi fissi della pagina delle note stanno in <span class="fix"> e non si convertono
+const translit = html => html.split(/(<span class="fix">[^<]*<\/span>)/).map((s, i) => {
+  if (i % 2) return s;
+  if (S.translit !== 'line') s = s.replace(/[ḵḴṯṮ]/g, c => ({ 'ḵ': 'kh', 'Ḵ': 'Kh', 'ṯ': 'th', 'Ṯ': 'Th' }[c]));
+  if (S.beth === 'v') s = s.replace(/[ḇḆ]/g, c => c === 'ḇ' ? 'v' : 'V');
+  return s;
+}).join('');
 const LOCALE = { it: 'it-IT', en: 'en-GB', fr: 'fr-FR', he: 'he-IL' };
 
 // Voci della lista: etichetta ebraica, didascalie, fonte (stringa o testo per lingua), tipo di arrotondamento
@@ -301,6 +309,7 @@ function openSheet(which) {
       <h3>${l.walledLbl}</h3>${seg('walled', S.walled, [['auto', l.auto], ['on', l.on], ['off', l.off]])}
       <h3>${l.prudentLbl}</h3>${seg('prudent', S.prudent, [[true, l.on], [false, l.off]])}
       <h3>${l.translitLbl}</h3>${seg('translit', S.translit, [['digraph', 'kh, th'], ['line', '&#7733;, &#7791;']])}
+      <h3>${l.bethLbl}</h3>${seg('beth', S.beth, [['line', '&#7687;'], ['v', 'v']])}
       <button class="wide" id="openNotes">${l.notes}</button>`;
   } else html += document.getElementById('notesTpl').innerHTML;
   sh.innerHTML = translit(html);
