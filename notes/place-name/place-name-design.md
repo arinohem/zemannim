@@ -128,3 +128,8 @@ Evidence files: evidence-*.md in this folder (notes/place-name/)
 - EASTERN TABLE APPROVED (owner): area Poland, Baltics, Belarus, Ukraine, Moldova, Russia, Hungary, Romania, Czechia, Slovakia. (1) Traditional Jewish name, Hebrew rabbinic layer, from a list still to be compiled; Yiddish form where no Hebrew one. (2) Otherwise by sound on the local name: a o ó → א; e → ע, ę → ען; ą → אן; i y í ü → י; u ú → ו; ö → ע; initial vowel → א + letter, initial e → ע; vowel after vowel → א; final -a → א, -e → ע; w v → וו; final -ów/-ov → וב; cz ć č cs → טש; sz ś š Hungarian s ș → ש; szcz šč щ → שטש; ż ź rz ž zs → ז, rz after p t k → ש; c ț Hungarian c → צ; Hungarian sz → ס; ch, Polish h, х → ח; Slavic h, Ukrainian г → ה; ł l → ל; ń ny → ני; j → י; k → ק; t → ט; f → פ; dz → דז; no doubling; final forms; Cyrillic from the standard romanization.
   Correction confirmed by the owner: Romanian ce/ci → טש, ch → ק, ă → ע, â/î → י (Chișinău → קישינעו). The preview had listed Romanian ch → טש by mistake.
 - ALL FIVE LANGUAGES APPROVED 2026-11-04. Next: DECISIONS.md row and decisions page.
+
+## Owner's answers, second round (2026-11-04)
+- Section 1, finding the town: option C (bundled GeoNames list + manual correction), with A (online lookup) as an optional setting, off by default, to be added later.
+- Exceptions list: research started (exceptions-italy.md, exceptions-abroad.md, east-names.md in this folder); each form goes to the owner one by one.
+- Data still to prepare with the town list: English pronunciations and the Eastern traditional names (east-names.md).
