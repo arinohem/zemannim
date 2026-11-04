@@ -128,4 +128,4 @@ Wording replaced during the review of the texts, kept so that it can be restored
 | Interface (he), ʿOmer | «ספירת העומר» | «ספירת העמר» | ee6be3d |
 | Times (he), `plag` | «שעה ורביע קודם השקיעה» | «שעה ורביע קדם השקיעה» | ee6be3d |
 | Festivals (he), `engine.js`; `splitShavuoth` | «שבועות» | «שבעות» | ee6be3d |
-| City names (he), Paris | «פריז» | «פאריש» | PENDING |
+| City names (he), Paris | «פריז» | «פאריש» | e7092e3 |
