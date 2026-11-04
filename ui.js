@@ -312,7 +312,9 @@ function render() {
       if (!rain.ask && !rain.askTonight) { const af = E.gregFromRd(rain.askEve); br.push(`${l.askFrom} ${dayNum(af.d)} ${l.months[af.m - 1]}`); }
       if (!o.israel) br.push(S.lang === 'he' ? 'תקופה לפי פרק ' + E.hebNumeral(S.tequfa).replace(/[׳״]/g, '') : l.tequfa + ' ' + l.chapter + ' ' + S.tequfa);
       // Formula del Maḥazor del proprietario (rito italiano antico): d'inverno si aggiunge l'intera frase in Birkaṯ ha-shanim
-      const txt = `${heb('ותן טל ומטר לברכה על פני האדמה ושבע את העולם מברכותיך')} (${l.ask})${COLON()} ${st}${br.length ? ` (${br.join(', ')})` : ''}`;
+      // La formula si mostra, su una riga a sé, solo quando si dice (dalla sera prima dell'inizio), come la menzione
+      const said = rain.ask || rain.askTonight;
+      const txt = `${said ? heb('ותן טל ומטר לברכה על פני האדמה ושבע את העולם מברכותיך') + '<br>' : ''}${l.ask}${COLON()} ${st}${br.length ? ` (${br.join(', ')})` : ''}`;
       notes.push(rain.askTonight || rain.askFirst || rain.askLast ? HL(txt) : txt);
     }
   }
