@@ -99,4 +99,4 @@ Wording replaced during the review of the texts, kept so that it can be restored
 | Decisions page | «Il titolo della parashà è Tazriaʿ.» | «Il titolo della parashà è Tazriaʿ, nella forma del titolo e non Ṯazriaʿ.» | 2733ae5 |
 | Decisions page | «si usa il fuso della città;» | «si usa il fuso orario della città;» | 2733ae5 |
 | Interface (it) | «nell’ʿAḇoḏà» | «nella ʿAḇoḏà» | 2733ae5 |
-| Decisions page, «Letture diverse» | «lì si legge la lettura della festa» | «lì la lettura è quella della festa» | this commit |
+| Decisions page, «Letture diverse» | «lì si legge la lettura della festa» | «lì la lettura è quella della festa» | b7346f7 |
