@@ -103,8 +103,8 @@ const FASTS = [
   { key: 'av9', m: 5, d: 9, ifShabbath: 1, he: 'תשעה באב', it: 'Tishʿà be-Aḇ', en: 'Tishʿa be-Aḇ', fr: 'Tishʿa be-Aḇ' }
 ];
 const MOVED = {
-  post: { it: ' (rinviato a domenica)', he: ' (נדחה)', en: ' (postponed to Sunday)', fr: ' (reporté au dimanche)' },
-  pre: { it: ' (anticipato a giovedì)', he: ' (מוקדם)', en: ' (brought forward to Thursday)', fr: ' (avancé au jeudi)' }
+  post: { it: ' (rinviato a domenica)', he: ' (נדחה ליום ראשון)', en: ' (postponed to Sunday)', fr: ' (reporté au dimanche)' },
+  pre: { it: ' (anticipato a giovedì)', he: ' (מוקדם ליום חמישי)', en: ' (brought forward to Thursday)', fr: ' (avancé au jeudi)' }
 };
 // Lettura della Torà nei digiuni: «ויחל משה» a Shaḥriṯ e a Minḥà; il 9 di Aḇ a Shaḥriṯ «כי תוליד בנים»
 // 17 Tammuz: rito italiano come nel Maḥazor di Bologna 1540–41, di seguito senza saltare, «לפי שבי"ז בתמוז נשתברו הלוחות»;
@@ -162,7 +162,7 @@ function dayInfo(rd, opt) {
   const hs = rdFromHeb(hy, 9, 25);
   if (rd >= hs && rd < hs + 8) {
     const n = rd - hs + 1;
-    info.hanukka = true; add('Ḥanukkà, ' + n + '° giorno', 'חנכה', 'Ḥanukka, day ' + n, 'Ḥanukka, ' + (n === 1 ? '1er' : n + 'e') + ' jour');
+    info.hanukka = true; add('Ḥanukkà, ' + n + '° giorno', 'חנכה, יום ' + hebNumeral(n), 'Ḥanukka, day ' + n, 'Ḥanukka, ' + (n === 1 ? '1er' : n + 'e') + ' jour');
   }
   if (m === adarPurim && d === purimDay) { info.purim = true; add('Purim', 'פורים'); }
   // Digiuni (MT Taʿaniyyoṯ 5:2–5). Dei quattro, quello che cade di sabato si rinvia a domenica;

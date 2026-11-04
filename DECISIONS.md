@@ -110,3 +110,12 @@ Wording replaced during the review of the texts, kept so that it can be restored
 | Interface, rain note | «'tequfà', chapter: 'cap.'» | «'tequfà secondo il', chapter: 'cap.'» | 903bca3 |
 | Interface, rain note | «'tequfa', chapter: 'ch.'» | «'tequfa by', chapter: 'ch.'» | 903bca3 |
 | Interface, rain note | «'tequfa', chapter: 'chap.'» | «'tequfa selon le', chapter: 'chap.'» | 903bca3 |
+| Interface (he), `notes` | «הערות על הבחירות (באיטלקית)» | «הערות על ההכרעות (באיטלקית)» | PENDING |
+| Interface (he), `tzethLbl` | «צאת הכוכבים (מוצאי שבת)» | «צאת הכוכבים (מוצאי שבת ויום טוב)» | PENDING |
+| Interface (he), `askFirst` | «מערבית של אמש» | «מערבית של אתמול» | PENDING |
+| Interface (he), `b11` | «בברכת אחת עשרה» | «בברכה אחת עשרה» | PENDING |
+| Interface (he), `lastMention` | «אומרים עד שחרית; ממוסף אין אומרים» | «אומרים עד שחרית; ממוסף ואילך אין אומרים» | PENDING |
+| Interface (he), `rejoinNow` | «…; מן השבת הבאה הקריאה שוה» | «…; מן השבת הבאה הקריאה שוה שוב.» | PENDING |
+| Interface (he), `splitPesah`, `splitShavuoth`, `rejoin` | no final full stop | final «.» | PENDING |
+| Fasts moved (he), `MOVED` in `engine.js` | «(נדחה)», «(מוקדם)» | «(נדחה ליום ראשון)», «(מוקדם ליום חמישי)» | PENDING |
+| Ḥanukkà (he), `engine.js` | «חנכה» | «חנכה, יום א׳» … «יום ח׳» | PENDING |
