@@ -100,13 +100,13 @@ Wording replaced during the review of the texts, kept so that it can be restored
 | Decisions page | «si usa il fuso della città;» | «si usa il fuso orario della città;» | 2733ae5 |
 | Interface (it) | «nell’ʿAḇoḏà» | «nella ʿAḇoḏà» | 2733ae5 |
 | Decisions page, «Letture diverse» | «lì si legge la lettura della festa» | «lì la lettura è quella della festa» | b7346f7 |
-| Interface, rain note | «'si comincia da ʿArḇiṯ di stasera'» | «'si comincia stasera a ʿArḇiṯ'» | this commit |
-| Interface, rain note | «'sì, da ʿArḇiṯ di ieri sera'» | «'sì; si è cominciato ieri sera a ʿArḇiṯ'» | this commit |
-| Interface, rain note | «'yes, since ʿArḇiṯ last night'» | «'yes; it began at ʿArḇiṯ last night'» | this commit |
-| Interface, rain note | «'oui, depuis ʿArḇiṯ hier soir'» | «'oui ; on a commencé hier soir à ʿArḇiṯ'» | this commit |
-| Interface, rain note | «'da Musaf si comincia a dire'» | «'si comincia a dirlo a Musaf'» | this commit |
-| Interface, rain note | «'said from Musaf onwards'» | «'begins at Musaf'» | this commit |
-| Interface, rain note | «'on le dit à partir de Musaf'» | «'on commence à le dire à Musaf'» | this commit |
-| Interface, rain note | «'tequfà', chapter: 'cap.'» | «'tequfà secondo il', chapter: 'cap.'» | this commit |
-| Interface, rain note | «'tequfa', chapter: 'ch.'» | «'tequfa by', chapter: 'ch.'» | this commit |
-| Interface, rain note | «'tequfa', chapter: 'chap.'» | «'tequfa selon le', chapter: 'chap.'» | this commit |
+| Interface, rain note | «'si comincia da ʿArḇiṯ di stasera'» | «'si comincia stasera a ʿArḇiṯ'» | 903bca3 |
+| Interface, rain note | «'sì, da ʿArḇiṯ di ieri sera'» | «'sì; si è cominciato ieri sera a ʿArḇiṯ'» | 903bca3 |
+| Interface, rain note | «'yes, since ʿArḇiṯ last night'» | «'yes; it began at ʿArḇiṯ last night'» | 903bca3 |
+| Interface, rain note | «'oui, depuis ʿArḇiṯ hier soir'» | «'oui ; on a commencé hier soir à ʿArḇiṯ'» | 903bca3 |
+| Interface, rain note | «'da Musaf si comincia a dire'» | «'si comincia a dirlo a Musaf'» | 903bca3 |
+| Interface, rain note | «'said from Musaf onwards'» | «'begins at Musaf'» | 903bca3 |
+| Interface, rain note | «'on le dit à partir de Musaf'» | «'on commence à le dire à Musaf'» | 903bca3 |
+| Interface, rain note | «'tequfà', chapter: 'cap.'» | «'tequfà secondo il', chapter: 'cap.'» | 903bca3 |
+| Interface, rain note | «'tequfa', chapter: 'ch.'» | «'tequfa by', chapter: 'ch.'» | 903bca3 |
+| Interface, rain note | «'tequfa', chapter: 'chap.'» | «'tequfa selon le', chapter: 'chap.'» | 903bca3 |
