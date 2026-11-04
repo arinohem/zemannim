@@ -1,0 +1,817 @@
+# Italian comuni with z: DiPI (Canepari, dipionline.it) transcriptions, fetched 2026-11-04
+
+ʣ = voiced, ʦ = voiceless. First form = DiPI recommended (central-Italian standard). Region from ISTAT.
+
+## voiced only (111)
+
+- Colledimezzo (Abruzzo): kɔllediˈmɛʣʣo
+- Castelmezzano (Basilicata): kastɛlmeʣˈʣano
+- Zagarise (Calabria): *ʣaɡaˈrize
+- Zambrone (Calabria): *ʣamˈbrone
+- Zungri (Calabria): *ˈʣunɡri
+- San Nazzaro (Campania): Nazzaro: ['naʣˈʣaro, ˈ‒']
+- Serramezzana (Campania): sɛrrameʣˈʣana
+- Gazzola (Emilia-Romagna): ɡaʣˈʣɔla
+- Polesine Zibello (Emilia-Romagna): Zibello: ['*ʣiˈbɛllo']
+- Zerba (Emilia-Romagna): *ˈʣɛrba
+- Zola Predosa (Emilia-Romagna): *ˈʣɔla preˈdoza; -s-
+- Clauzetto (Friuli-Venezia Giulia): klauʣˈʣetto
+- Remanzacco (Friuli-Venezia Giulia): remanˈʣakko
+- Tolmezzo (Friuli-Venezia Giulia): tolˈmɛʣʣo
+- Valvasone Arzene (Friuli-Venezia Giulia): Arzene: ['ˈarʣene']
+- Verzegnis (Friuli-Venezia Giulia): verˈʣɛɲɲis, -eɲ-
+- Zuglio (Friuli-Venezia Giulia): *ˈʣuʎʎo
+- Zagarolo (Lazio): *ʣaɡaˈrɔlo
+- Borzonasca (Liguria): borʣoˈnaska
+- Mezzanego (Liguria): meʣˈʣaneɡo
+- Sarzana (Liguria): sarˈʣana
+- Zignago (Liguria): *ʣiɲˈɲaɡo
+- Zoagli (Liguria): *ʣoˈaʎʎi
+- Bianzone (Lombardia): bjanˈʣone
+- Bizzarone (Lombardia): biʣʣaˈrone
+- Branzi (Lombardia): ˈbranʣi
+- Casalzuigno (Lombardia): kazalʣuˈiɲɲo. -s-
+- Garzeno (Lombardia): ɡarˈʣeno, -ɛ-
+- Gazoldo degli Ippoliti (Lombardia): Gazoldo: ['ɡaʣˈʣɔldo; ↓-ʣ-']
+- Gazzada Schianno (Lombardia): Gazzada: ['ɡaʣˈʣada']
+- Gazzaniga (Lombardia): ɡaʣʣaˈniɡa
+- Gazzuolo (Lombardia): ɡaʣˈʣwɔlo
+- Gonzaga (Lombardia): ɡonˈʣaɡa
+- Izano (Lombardia): iʣˈʣano
+- Mezzago (Lombardia): meʣˈʣaɡo
+- Mezzoldo (Lombardia): meʣˈʣɔldo
+- Montemezzo (Lombardia): monteˈmɛʣʣo
+- Mozzanica (Lombardia): moʣˈʣanika
+- Orzinuovi (Lombardia): orʣiˈnwɔvi
+- Orzivecchi (Lombardia): orʣiˈvɛkki
+- Ozzero (Lombardia): ˈɔʣʣero
+- Rezzato (Lombardia): reʣˈʣato
+- San Nazzaro Val Cavargna (Lombardia): Nazzaro: ['naʣˈʣaro, ˈ‒']
+- San Zeno Naviglio (Lombardia): Zeno: ['*ˈʣɛno']
+- San Zenone al Lambro (Lombardia): Zenone: ['*ʣeˈnone']
+- San Zenone al Po (Lombardia): Zenone: ['*ʣeˈnone']
+- Sannazzaro de' Burgondi (Lombardia): Sannazzaro: ['sannaʣˈʣaro']
+- Suzzara (Lombardia): suʣˈʣara
+- Torricella Verzate (Lombardia): Verzate: ['verˈʣate']
+- Zandobbio (Lombardia): *ʣanˈdɔbbjo
+- Zanica (Lombardia): *ˈʣanika
+- Zavattarello (Lombardia): *ʣavattaˈrɛllo
+- Zelbio (Lombardia): *ˈʣɛlbjo
+- Zeme (Lombardia): *ˈʣɛme
+- Zenevredo (Lombardia): *ʣeneˈvredo; -ɛd-
+- Zerbo (Lombardia): *ˈʣɛrbo
+- Zerbolò (Lombardia): *ʣerboˈlɔ*
+- Zibido San Giacomo (Lombardia): Zibido: ['*ˈʣibido']
+- Zinasco (Lombardia): *ʣiˈnasko
+- Zogno (Lombardia): *ˈʣoɲɲo; -ɔ-
+- Andezeno (Piemonte): andeʣˈʣeno, -ɛ-; ↓-ʣ-
+- Azeglio (Piemonte): aʣˈʣɛʎʎo. -e-, ↓-ʣ-
+- Bianzè (Piemonte): bjanˈʣɛ*
+- Borgolavezzaro (Piemonte): borɡolaveʣˈʣaro
+- Brozolo (Piemonte): ˈbrɔʣʣolo
+- Bruzolo (Piemonte): bruʣˈʣɔlo
+- Dorzano (Piemonte): dorˈʣano
+- Garzigliana (Piemonte): ɡarʣiʎˈʎana
+- Gorzegno (Piemonte): ɡorˈʣeɲɲo
+- Mezzenile (Piemonte): meʣʣeˈnile
+- Mezzomerico (Piemonte): mɛʣʣomeˈriko
+- Miazzina (Piemonte): mjaʣˈʣina
+- Montezemolo (Piemonte): monteʣˈʣɛmolo, ↓-ʣ-; -e-
+- Ozegna (Piemonte): oʣˈʣeɲɲa
+- San Nazzaro Sesia (Piemonte): Nazzaro: ['naʣˈʣaro, ˈ‒']
+- Verzuolo (Piemonte): verˈʣwɔlo
+- Zimone (Piemonte): *ʣiˈmone
+- Zubiena (Piemonte): *ʣuˈbjɛna, -je-
+- Zumaglia (Piemonte): *ʣuˈmaʎʎa
+- Zeddiani (Sardegna): *ʣedˈdjani
+- Campobello di Mazara (Sicilia): Mazara: ['maʣˈʣara, ↓-ʣ-']
+- Mazara del Vallo (Sicilia): Mazara: ['maʣˈʣara, ↓-ʣ-']
+- Mazzarrone (Sicilia): maʣʣarˈrone
+- San Michele di Ganzaria (Sicilia): Ganzaria: ['ɡanʣaˈria']
+- Zafferana Etnea (Sicilia): Zafferana: ['*ʣaffeˈrana']
+- Zeri (Toscana): *ˈʣɛri
+- Bronzolo (Trentino-Alto Adige/Südtirol): bronˈʣɔlo
+- Mezzocorona (Trentino-Alto Adige/Südtirol): mɛʣʣokoˈrona
+- Mezzolombardo (Trentino-Alto Adige/Südtirol): mɛʣʣolomˈbardo
+- Sanzeno (Trentino-Alto Adige/Südtirol): sanˈʣɛno
+- Arzergrande (Veneto): arʣerˈɡrande
+- Arzignano (Veneto): arʣiɲˈɲano
+- Cavarzere (Veneto): kaˈvarʣere
+- Foza (Veneto): ˈfɔʣʣa
+- Galzignano Terme (Veneto): Galzignano: ['ɡalʣiɲˈɲano']
+- Gazzo (Veneto): ˈɡaʣʣo
+- Gazzo Veronese (Veneto): Gazzo: ['ˈɡaʣʣo']
+- Lazise (Veneto): laʣˈʣize; ↓-ʣ-
+- San Zeno di Montagna (Veneto): Zeno: ['*ˈʣɛno']
+- San Zenone degli Ezzelini (Veneto): Zenone: ['*ʣeˈnone']; Ezzelini: None
+- Soverzene (Veneto): soˈvɛrʣene
+- Tezze sul Brenta (Veneto): Tezze: ['ˈteʣʣe. -ɛ-']
+- Val di Zoldo (Veneto): Zoldo: ['*ˈʣɔldo']
+- Vigodarzere (Veneto): viɡoˈdarʣere
+- Zanè (Veneto): *ʣaˈnɛ*
+- Zenson di Piave (Veneto): *ʣenˈson diˈpjave, -ɔn
+- Zermeghedo (Veneto): *ʣermeˈɡedo; -ɛd-
+- Zevio (Veneto): *ˈʣɛvjo
+- Zimella (Veneto): *ʣiˈmɛlla
+- Zovencedo (Veneto): *ʣovenˈʧedo, -ɛd-
+- Zugliano (Veneto): *ʣuʎˈʎano
+
+## voiced first, voiceless variant (46)
+
+- Caraffa di Catanzaro (Calabria): Catanzaro: ['katanˈʣaro, -ʦ-']
+- Catanzaro (Calabria): katanˈʣaro, -ʦ-
+- Rizziconi (Calabria): riʣˈʣikoni, -ʦˈʦ-
+- Zaccanopoli (Calabria): *ʣakkaˈnɔpoli. *ʦ-
+- Zumpano (Calabria): *ʣumˈpano. *ʦ-
+- Zungoli (Campania): *ˈʣunɡoli. *ˈʦ-
+- Anzola dell'Emilia (Emilia-Romagna): Anzola: ['ˈanʣola ', ' ◆ (cogn.) ˈanʣola. anˈʦɔla, -ˈʣɔ-']
+- Marzabotto (Emilia-Romagna): marʣaˈbɔtto. -ʦ-
+- Monzuno (Emilia-Romagna): monˈʣuno, -ʦ-
+- Ozzano dell'Emilia (Emilia-Romagna): Ozzano: ['oʣˈʣano, oʦˈʦ-']
+- Sorbolo Mezzani (Emilia-Romagna): Mezzani: ['meʣˈʣani, -ʦˈʦ-']
+- Zocca (Emilia-Romagna): *ˈʣɔkka. *ˈʦ-
+- Zoppola (Friuli-Venezia Giulia): *ˈʣɔppola. *ˈʦ-
+- Zuccarello (Liguria): *ʣukkaˈrɛllo. *ʦ-
+- Albizzate (Lombardia): albiʣˈʣate, -ʦˈʦ-
+- Barzana (Lombardia): barˈʣana, -ʦ-
+- Barzanò (Lombardia): barʣaˈnɔ*, -ʦ-
+- Cadrezzate con Osmate (Lombardia): Cadrezzate: ['kadreʣˈʣate, -ʦˈʦ-']
+- Castelnuovo Bozzente (Lombardia): Bozzente: ['boʣˈʣɛnte, -ʦˈʦ-']
+- Castrezzato (Lombardia): kastreʣˈʣato, -ʦˈʦ-
+- Colzate (Lombardia): kolˈʣate, -ʦ-
+- Lumezzane (Lombardia): lumeʣˈʣane, -ʦˈʦ-
+- Monza (Lombardia): ˈmonʣa. -ʦ- [T ʦ/ʣ, UML ʣ, R ʣ/ʦ]
+- Novate Mezzola (Lombardia): Mezzola: ['meʣˈʣɔla; -ʦʦ-']
+- Stezzano (Lombardia): steʣˈʣano, -ʦˈʦ-
+- Zeccone (Lombardia): *ʣekˈkone. *ʦ-
+- Grottazzolina (Marche): ɡrɔttaʣʣoˈlina, ɡro-, -ʦʦ-
+- Anzola d'Ossola (Piemonte): Anzola: ['ˈanʣola ', ' ◆ (cogn.) ˈanʣola. anˈʦɔla, -ˈʣɔ-']
+- Bannio Anzino (Piemonte): Anzino: ['anˈʣino, -ʦ-']
+- Conzano (Piemonte): konˈʣano, -ʦ-
+- Ozzano Monferrato (Piemonte): Ozzano: ['oʣˈʣano, oʦˈʦ-']
+- Zapponeta (Puglia): *ʣappoˈneta. *ʦ-
+- Zollino (Puglia): *ʣolˈlino; *ʦ-
+- Urzulei (Sardegna): urʣuˈlɛi. -ʦ-
+- Zerfaliu (Sardegna): *ʣerfaˈliu. *ʦ-
+- Mazzarino (Sicilia): maʣʣaˈrino, -ʦʦ-
+- Canazei (Trentino-Alto Adige/Südtirol): kanaʣˈʣɛi. -ʦˈʦ-
+- Commezzadura (Trentino-Alto Adige/Südtirol): kommeʣʣaˈdura, -ʦʦ-
+- Mezzano (Trentino-Alto Adige/Südtirol): meʣˈʣano, -ʦˈʦ-
+- Brenzone sul Garda (Veneto): Brenzone: ['brenˈʣone, -ʦ-']
+- Correzzola (Veneto): korreʣˈʣɔla, -ʦˈʦ-
+- Grisignano di Zocco (Veneto): Zocco: ['*ˈʣɔkko. *ˈʦ-']
+- Mezzane di Sotto (Veneto): Mezzane: ['meʣˈʣane, -ʦˈʦ-']
+- Romano d'Ezzelino (Veneto): Ezzelino: ['eʣʣeˈlino. -ʦʦ- ']
+- Tonezza del Cimone (Veneto): Tonezza: ['toˈneʣʣa, -ʦʦ-']
+- Zoppè di Cadore (Veneto): Zoppè: ['(-é) *ʣopˈpɛ*. *ʦ-. -e*']
+
+## voiceless first, voiced variant (85)
+
+- Gizzeria (Calabria): ʤiʦʦeˈria; -ʣʣ-
+- San Lorenzo Bellizzi (Calabria): Lorenzo: ['loˈrɛnʦo; ↓-ʣo [ULR ʦ/ʣ]']; Bellizzi: None
+- San Lorenzo del Vallo (Calabria): Lorenzo: ['loˈrɛnʦo; ↓-ʣo [ULR ʦ/ʣ]']
+- Arzano (Campania): arˈʦano, -ʣ-
+- Castel San Lorenzo (Campania): Lorenzo: ['loˈrɛnʦo; ↓-ʣo [ULR ʦ/ʣ]']
+- Marzano Appio (Campania): Marzano: ['marˈʦano, -ʣ-']
+- Marzano di Nola (Campania): Marzano: ['marˈʦano, -ʣ-']
+- San Lorenzo Maggiore (Campania): Lorenzo: ['loˈrɛnʦo; ↓-ʣo [ULR ʦ/ʣ]']
+- San Marzano sul Sarno (Campania): Marzano: ['marˈʦano, -ʣ-']
+- Lizzano in Belvedere (Emilia-Romagna): Lizzano: ['liʦˈʦano, -ʣˈʣ-']
+- Luzzara (Emilia-Romagna): luʦˈʦara, -ʣˈʣ-
+- San Polo d'Enza (Emilia-Romagna): Enza: ['ˈɛnʦa; ↓-ʣa [ULR ʦ/ʣ] ', ' ◆ (top.) ˈɛnʦa. ˈe-']
+- Sant'Ilario d'Enza (Emilia-Romagna): Enza: ['ˈɛnʦa; ↓-ʣa [ULR ʦ/ʣ] ', ' ◆ (top.) ˈɛnʦa. ˈe-']
+- Azzano Decimo (Friuli-Venezia Giulia): Azzano: ['aʦˈʦano, aʣˈʣ-']
+- San Lorenzo Isontino (Friuli-Venezia Giulia): Lorenzo: ['loˈrɛnʦo; ↓-ʣo [ULR ʦ/ʣ]']
+- Manziana (Lazio): manˈʦjana, -ˈʣj-
+- Nazzano (Lazio): naʦˈʦano, -ʣˈʣ-
+- Poggio San Lorenzo (Lazio): Lorenzo: ['loˈrɛnʦo; ↓-ʣo [ULR ʦ/ʣ]']
+- San Lorenzo Nuovo (Lazio): Lorenzo: ['loˈrɛnʦo; ↓-ʣo [ULR ʦ/ʣ]']
+- Borgio Verezzi (Liguria): Verezzi: ['veˈreʦʦi. -ɛʣʣi']
+- San Lorenzo al Mare (Liguria): Lorenzo: ['loˈrɛnʦo; ↓-ʣo [ULR ʦ/ʣ]']
+- Varazze (Liguria): vaˈraʦʦe. -ʣʣ-
+- Azzanello (Lombardia): aʦʦaˈnɛllo, aʣʣ-
+- Azzano Mella (Lombardia): Azzano: ['aʦˈʦano, aʣˈʣ-']
+- Azzate (Lombardia): aʦˈʦate, aʣˈʣ-
+- Azzone (Lombardia): aʦˈʦone, aʣˈʣ-
+- Barzago (Lombardia): barˈʦaɡo, -ʣ-
+- Bellinzago Lombardo (Lombardia): Bellinzago: ['bellinˈʦaɡo; -ʣ-']
+- Berzo Demo (Lombardia): Berzo: ['ˈbɛrʦo, -ʣ-']
+- Berzo Inferiore (Lombardia): Berzo: ['ˈbɛrʦo, -ʣ-']
+- Berzo San Fermo (Lombardia): Berzo: ['ˈbɛrʦo, -ʣ-']
+- Brezzo di Bedero (Lombardia): Brezzo: ['ˈbrɛʦʦo, -e-; -ʣʣ-']
+- Castel Rozzone (Lombardia): kasˈtɛl roʦˈʦone, -ʣˈʣ-
+- Comezzano-Cizzago (Lombardia): Comezzano: ['komeʦˈʦano']; Cizzago: ['ʧiʣˈʣaɡo, -ʦˈʦ-']
+- Guidizzolo (Lombardia): ɡwidiʦˈʦɔlo, -ʣˈʣ-
+- Lezzeno (Lombardia): ˈlɛʦʦeno, -ʣʣ-
+- Lonate Pozzolo (Lombardia): Pozzolo: ['poʦˈʦɔlo, -ʣˈʣ-, ˈpoʦʦo-']
+- Marzano (Lombardia): marˈʦano, -ʣ-
+- Monzambano (Lombardia): monʦamˈbano, -ʣ-
+- Ranzanico (Lombardia): ranʦaˈniko; -ʣ-
+- Rivanazzano Terme (Lombardia): Rivanazzano: ['rivanaʦˈʦano; -ʣˈʣ-']
+- Rozzano (Lombardia): roʦˈʦano, -ʣˈʣ-
+- Trezzo sull'Adda (Lombardia): Trezzo: ['ˈtreʦʦo, -ʣʣ-']
+- Varzi (Lombardia): ˈvarʦi, -ʣi
+- Vellezzo Bellini (Lombardia): Vellezzo: ['velˈleʦʦo. -ɛʣʣ-']
+- Vermezzo con Zelo (Lombardia): Vermezzo: ['verˈmeʦʦo; -mɛ-; -ʣʣ-']; Zelo: None
+- Ortezzano (Marche): orteʦˈʦano, -ʣˈʣ-
+- San Lorenzo in Campo (Marche): Lorenzo: ['loˈrɛnʦo; ↓-ʣo [ULR ʦ/ʣ]']
+- Arizzano (Piemonte): ariʦˈʦano; -ʣˈʣ-
+- Azzano d'Asti (Piemonte): Azzano: ['aʦˈʦano, aʣˈʣ-']
+- Bellinzago Novarese (Piemonte): Bellinzago: ['bellinˈʦaɡo; -ʣ-']
+- Berzano di San Pietro (Piemonte): Berzano: ['berˈʦano, -ʣ-']
+- Berzano di Tortona (Piemonte): Berzano: ['berˈʦano, -ʣ-']
+- Bolzano Novarese (Piemonte): Bolzano: ['bolˈʦano, -ʣ-']
+- Buronzo (Piemonte): buˈronʦo. -ʣ-
+- Grinzane Cavour (Piemonte): Grinzane: ['ɡrinˈʦane; -ʣ-']
+- Lozzolo (Piemonte): ˈlɔʦʦolo, -ʣʣ-
+- San Marzano Oliveto (Piemonte): Marzano: ['marˈʦano, -ʣ-']
+- Sezzadio (Piemonte): seʦˈʦadjo; -ʣˈʣ-
+- Trezzo Tinella (Piemonte): Trezzo: ['ˈtreʦʦo, -ʣʣ-']
+- Varzo (Piemonte): ˈvarʦo, -ʣo
+- Alezio (Puglia): aˈlɛʦʦjo; ↓-ʣʣ-
+- Lizzanello (Puglia): liʦʦaˈnɛllo, -ʣʣ-
+- Lizzano (Puglia): liʦˈʦano, -ʣˈʣ-
+- San Marzano di San Giuseppe (Puglia): Marzano: ['marˈʦano, -ʣ-']
+- Arzachena (Sardegna): arʦaˈkɛna, -ʣ-
+- Arzana (Sardegna): ˈarʦana, -ʣ-; arˈ-
+- Esterzili (Sardegna): esterˈʦili, -ʣ-
+- Ghilarza (Sardegna): ɡiˈlarʦa, -ʣ-
+- Prizzi (Sicilia): ˈpriʦʦi. -ʣʣ-
+- Vizzini (Sicilia): viʦˈʦini. -ʣˈʣ-
+- Borgo San Lorenzo (Toscana): Lorenzo: ['loˈrɛnʦo; ↓-ʣo [ULR ʦ/ʣ]']
+- Calenzano (Toscana): kalenˈʦano. -ʣ-
+- Fivizzano (Toscana): fiviʦˈʦano. -ʣˈʣ-
+- Uzzano (Toscana): uʦˈʦano, -ʣˈʣ-
+- Bolzano (Trentino-Alto Adige/Südtirol): bolˈʦano, -ʣ-
+- San Lorenzo Dorsino (Trentino-Alto Adige/Südtirol): Lorenzo: ['loˈrɛnʦo; ↓-ʣo [ULR ʦ/ʣ]']
+- San Lorenzo di Sebato (Trentino-Alto Adige/Südtirol): Lorenzo: ['loˈrɛnʦo; ↓-ʣo [ULR ʦ/ʣ]']
+- Segonzano (Trentino-Alto Adige/Südtirol): seɡonˈʦano. -ʣ-
+- Auronzo di Cadore (Veneto): Auronzo: ['auˈronʦo; -ɔ-; ↓-ʣ-']
+- Bolzano Vicentino (Veneto): Bolzano: ['bolˈʦano, -ʣ-']
+- Castel d'Azzano (Veneto): Azzano: ['aʦˈʦano, aʣˈʣ-']
+- Erbezzo (Veneto): erˈbeʦʦo. -eʣʣ-, -ɛʦʦ-
+- Papozze (Veneto): paˈpɔʦʦe, -ʣʣ-
+- Preganziol (Veneto): preɡanˈʦjɔl; -ʣ-
+
+## no z sound? (11)
+
+- Avezzano (Abruzzo): (Abr.) aveʦˈʦano. -ʣˈʣ-  |  ◆ (Camp.) aveʦˈʦano
+- Manzano (Friuli-Venezia Giulia): (Em., Trent.) manˈʦano, -ʣ-  |  ◆ (Friu., Istr.) manˈʣano, -ʦ-
+- Mazzano Romano (Lazio): Mazzano: ['(Laz., Ven.) maʦˈʦano ', ' ◆ (Lomb.) maʣˈʣano']
+- Ranzo (Liguria): (Lig.) ˈranʦo, -ʣ-  |  ◆ (Trent.) ˈranʣo, -ʦ-
+- Mazzano (Lombardia): (Laz., Ven.) maʦˈʦano  |  ◆ (Lomb.) maʣˈʣano
+- Gozzano (Piemonte): (cogn., Piem.) ɡoʦˈʦano. -ʣˈʣ-  |  ◆ (Tosc.) ɡoʦˈʦano, -ʣˈʣ-
+- Pezzolo Valle Uzzone (Piemonte): Pezzolo: ['(Piem., Lomb.) peʦˈʦɔlo ', ' ◆ (Sic.) ˈpɛʦʦolo']; Uzzone: ['uʦˈʦone ']
+- Vanzone con San Carlo (Piemonte): Vanzone: ['(Lomb.) vanˈʣone, -ʦ- ', ' ◆ (Piem.) vanˈʦone, -ʣ-']
+- Carzano (Trentino-Alto Adige/Südtirol): (Lomb.) karˈʣano  |  ◆ (Trent.) karˈʦano
+- Bionaz (Valle d'Aosta/Vallée d'Aoste): ˈbjona. -ˈna*, -naʦ*
+- Champdepraz (Valle d'Aosta/Vallée d'Aoste): *ʃandeˈpra°, -*, ↓-mpd-
+
+## notfound (110)
+
+- Pizzoferrato (Abruzzo): Pizzoferrato: None
+- Prezza (Abruzzo): Prezza: None
+- Rocca di Mezzo (Abruzzo): Mezzo: None
+- Anzi (Basilicata): Anzi: None
+- Forenza (Basilicata): Forenza: None
+- Palazzo San Gervasio (Basilicata): Palazzo: None
+- Potenza (Basilicata): Potenza: None
+- Vietri di Potenza (Basilicata): Potenza: None
+- Fabrizia (Calabria): Fabrizia: None
+- Ferruzzano (Calabria): Ferruzzano: None
+- Pizzo (Calabria): Pizzo: None
+- Spezzano Albanese (Calabria): Spezzano: None
+- Spezzano della Sila (Calabria): Spezzano: None
+- Verzino (Calabria): Verzino: None
+- Bellizzi (Campania): Bellizzi: None
+- San Lorenzello (Campania): Lorenzello: None
+- Fiorenzuola d'Arda (Emilia-Romagna): Fiorenzuola: None
+- San Lazzaro di Savena (Emilia-Romagna): Lazzaro: None
+- Ziano Piacentino (Emilia-Romagna): Ziano: None
+- Casarsa della Delizia (Friuli-Venezia Giulia): Delizia: None
+- Pinzano al Tagliamento (Friuli-Venezia Giulia): Pinzano: None
+- Terzo d'Aquileia (Friuli-Venezia Giulia): Terzo: None
+- Albano Laziale (Lazio): Laziale: None
+- Cerreto Laziale (Lazio): Laziale: None
+- Licenza (Lazio): Licenza: None
+- Ponzano Romano (Lazio): Ponzano: None
+- La Spezia (Liguria): Spezia: None
+- Rezzo (Liguria): Rezzo: None
+- Riccò del Golfo di Spezia (Liguria): Spezia: None
+- Alzano Lombardo (Lombardia): Alzano: None
+- Baranzate (Lombardia): Baranzate: None
+- Borgo di Terzo (Lombardia): Terzo: None
+- Bozzolo (Lombardia): Bozzolo: None
+- Castellanza (Lombardia): Castellanza: None
+- Cologno Monzese (Lombardia): Monzese: None
+- Costa di Mezzate (Lombardia): Mezzate: None
+- Cozzo (Lombardia): Cozzo: None
+- Dazio (Lombardia): Dazio: None
+- Gorgonzola (Lombardia): Gorgonzola: None
+- Locate di Triulzi (Lombardia): Triulzi: None
+- Mazzo di Valtellina (Lombardia): Mazzo: None
+- Mezzana Bigli (Lombardia): Mezzana: None
+- Mezzana Rabattone (Lombardia): Mezzana: None
+- Mezzanino (Lombardia): Mezzanino: None
+- Mozzate (Lombardia): Mozzate: None
+- Mozzo (Lombardia): Mozzo: None
+- Palazzo Pignano (Lombardia): Palazzo: None
+- Piazza Brembana (Lombardia): Piazza: None
+- Pozzo d'Adda (Lombardia): Pozzo: None
+- Strozza (Lombardia): Strozza: None
+- Torricella del Pizzo (Lombardia): Pizzo: None
+- Tremezzina (Lombardia): Tremezzina: None
+- Val Rezzo (Lombardia): Rezzo: None
+- Zelo Buon Persico (Lombardia): Zelo: None
+- Zone (Lombardia): Zone: None
+- Comunanza (Marche): Comunanza: None
+- Ponzano di Fermo (Marche): Ponzano: None
+- Potenza Picena (Marche): Potenza: None
+- Torre San Patrizio (Marche): Patrizio: None
+- Ferrazzano (Molise): Ferrazzano: None
+- Alzano Scrivia (Piemonte): Alzano: None
+- Borgomezzavalle (Piemonte): Borgomezzavalle: None
+- Carezzano (Piemonte): Carezzano: None
+- Castagnole delle Lanze (Piemonte): Lanze: None
+- Costanzana (Piemonte): Costanzana: None
+- Felizzano (Piemonte): Felizzano: None
+- Foglizzo (Piemonte): Foglizzo: None
+- Formazza (Piemonte): Formazza: None
+- Mezzana Mortigliengo (Piemonte): Mezzana: None
+- Palazzo Canavese (Piemonte): Palazzo: None
+- Pecetto di Valenza (Piemonte): Valenza: None
+- Ponzano Monferrato (Piemonte): Ponzano: None
+- Rocca d'Arazzo (Piemonte): Arazzo: None
+- Sauze d'Oulx (Piemonte): Sauze: None
+- Sauze di Cesana (Piemonte): Sauze: None
+- Stazzano (Piemonte): Stazzano: None
+- Terzo (Piemonte): Terzo: None
+- Valenza (Piemonte): Valenza: None
+- Pozzomaggiore (Sardegna): Pozzomaggiore: None
+- Barcellona Pozzo di Gotto (Sicilia): Pozzo: None
+- Belmonte Mezzagno (Sicilia): Mezzagno: None
+- Ficarazzi (Sicilia): Ficarazzi: None
+- Forza d'Agrò (Sicilia): Forza: None
+- Frazzanò (Sicilia): Frazzanò: None
+- Mezzojuso (Sicilia): Mezzojuso: None
+- Palazzo Adriano (Sicilia): Palazzo: None
+- Piazza Armerina (Sicilia): Piazza: None
+- San Pietro Clarenza (Sicilia): Clarenza: None
+- Scaletta Zanclea (Sicilia): Zanclea: None
+- Castell'Azzara (Toscana): Azzara: None
+- Firenzuola (Toscana): Firenzuola: None
+- Piazza al Serchio (Toscana): Piazza: None
+- Porto Azzurro (Toscana): Azzurro: None
+- Fierozzo (Trentino-Alto Adige/Südtirol): Fierozzo: None
+- Fortezza (Trentino-Alto Adige/Südtirol): Fortezza: None
+- Mezzana (Trentino-Alto Adige/Südtirol): Mezzana: None
+- Pieve di Bono-Prezzo (Trentino-Alto Adige/Südtirol): Prezzo: None
+- Ronzo-Chienis (Trentino-Alto Adige/Südtirol): Ronzo: None
+- Ronzone (Trentino-Alto Adige/Südtirol): Ronzone: None
+- Spiazzo (Trentino-Alto Adige/Südtirol): Spiazzo: None
+- Ziano di Fiemme (Trentino-Alto Adige/Südtirol): Ziano: None
+- San Venanzo (Umbria): Venanzo: None
+- Perloz (Valle d'Aosta/Vallée d'Aoste): Perloz: None
+- Fonzaso (Veneto): Fonzaso: None
+- Grezzana (Veneto): Grezzana: None
+- Isola Rizza (Veneto): Rizza: None
+- Piazzola sul Brenta (Veneto): Piazzola: None
+- Ponzano Veneto (Veneto): Ponzano: None
+- Terrazzo (Veneto): Terrazzo: None
+- Zero Branco (Veneto): Zero: None
+
+## voiceless only (433)
+
+- Anversa degli Abruzzi (Abruzzo): Abruzzi: ['aˈbruʦʦi']
+- Canzano (Abruzzo): kanˈʦano
+- Celenza sul Trigno (Abruzzo): Celenza: ['ʧeˈlɛnʦa']
+- Montazzoli (Abruzzo): monˈtaʦʦoli
+- Mozzagrogna (Abruzzo): moʦʦaˈɡroɲɲa; -ɔɲ-
+- Pescocostanzo (Abruzzo): pɛskokosˈtanʦo, pe-
+- Pettorano sul Gizio (Abruzzo): Gizio: ['ˈʤiʦʦjo; ↓-ʦ-']
+- Pietraferrazzana (Abruzzo): pjɛtraferraʦˈʦana, pje-
+- Pizzoli (Abruzzo): ˈpiʦʦoli
+- Poggio Picenze (Abruzzo): Picenze: ['piˈʧɛnʦe']
+- Roseto degli Abruzzi (Abruzzo): Abruzzi: ['aˈbruʦʦi']
+- San Valentino in Abruzzo Citeriore (Abruzzo): Abruzzo: ['aˈbruʦʦo']
+- San Vincenzo Valle Roveto (Abruzzo): Vincenzo: ['vinˈʧɛnʦo']
+- Schiavi di Abruzzo (Abruzzo): Abruzzo: ['aˈbruʦʦo']
+- Tagliacozzo (Abruzzo): taʎʎaˈkɔʦʦo
+- Tione degli Abruzzi (Abruzzo): Abruzzi: ['aˈbruʦʦi']
+- Villa Santa Lucia degli Abruzzi (Abruzzo): Abruzzi: ['aˈbruʦʦi']
+- Acerenza (Basilicata): aʧeˈrɛnʦa
+- Banzi (Basilicata): ˈbanʦi
+- Brienza (Basilicata): briˈɛnʦa
+- Genzano di Lucania (Basilicata): Genzano: ['ʤenˈʦano']
+- Laurenzana (Basilicata): laurenˈʦana
+- Scanzano Jonico (Basilicata): Scanzano: ['skanˈʦano']
+- Bruzzano Zeffirio (Calabria): Bruzzano: ['bruʦˈʦano']; Zeffirio: None
+- Calopezzati (Calabria): kalopeʦˈʦati
+- Carfizzi (Calabria): karˈfiʦʦi
+- Carpanzano (Calabria): karpanˈʦano
+- Cerenzia (Calabria): ʧeˈrɛnʦja
+- Cerzeto (Calabria): ʧerˈʦeto
+- Cosenza (Calabria): koˈzɛnʦa; -s-
+- Fiumefreddo Bruzio (Calabria): Bruzio: ['ˈbruʦʦjo']
+- Isola di Capo Rizzuto (Calabria): Rizzuto: ['riʦˈʦuto']
+- Lamezia Terme (Calabria): Lamezia: ['laˈmɛʦʦja']
+- Luzzi (Calabria): ˈluʦʦi
+- Marzi (Calabria): ˈmarʦi
+- Palizzi (Calabria): paˈliʦʦi
+- Pazzano (Calabria): paʦˈʦano
+- Petrizzi (Calabria): peˈtriʦʦi
+- Pizzoni (Calabria): ˈpiʦʦoni, -ʦˈʦ-
+- San Lorenzo (Calabria): sanloˈrɛnʦo • ~ in Lucina sanloˈrɛnʦo inluˈʧina, ↓-ˈlu- ~ di Sebato sanloˈrɛnʦo diseˈbato
+- San Vincenzo La Costa (Calabria): Vincenzo: ['vinˈʧɛnʦo']
+- Vaccarizzo Albanese (Calabria): Vaccarizzo: ['vakkaˈriʦʦo']
+- Vazzano (Calabria): vaʦˈʦano
+- Arienzo (Campania): aˈrjɛnʦo; -iˈɛ-
+- Caiazzo (Campania): kaˈjaʦʦo
+- Calvizzano (Campania): kalviʦˈʦano
+- Castelnuovo di Conza (Campania): Conza: ['ˈkonʦa, -ɔ-']
+- Comiziano (Campania): komiʦˈʦjano; -ʦj-
+- Conza della Campania (Campania): Conza: ['ˈkonʦa, -ɔ-']
+- Durazzano (Campania): duraʦˈʦano
+- Grazzanise (Campania): ɡraʦʦaˈnize
+- Manocalzati (Campania): manokalˈʦati
+- Melizzano (Campania): meliʦˈʦano
+- Pellezzano (Campania): pelleʦˈʦano
+- Pozzuoli (Campania): poʦˈʦwɔli
+- Presenzano (Campania): prezenˈʦano
+- Salza Irpina (Campania): Salza: ['ˈsalʦa']
+- Sant'Andrea di Conza (Campania): Conza: ['ˈkonʦa, -ɔ-']
+- Sanza (Campania): ˈsanʦa
+- Terzigno (Campania): terˈʦiɲɲo
+- Torre Annunziata (Campania): ˈtorre annunˈʦjata
+- Vitulazio (Campania): vituˈlaʦʦjo
+- Agazzano (Emilia-Romagna): aɡaʦˈʦano
+- Besenzone (Emilia-Romagna): bezenˈʦone
+- Cavezzo (Emilia-Romagna): kaˈveʦʦo
+- Dozza (Emilia-Romagna): ˈdɔʦʦa. -o-
+- Faenza (Emilia-Romagna): faˈɛnʦa
+- Fidenza (Emilia-Romagna): fiˈdɛnʦa
+- Grizzana Morandi (Emilia-Romagna): Grizzana: ['ɡriʦˈʦana']
+- Monterenzio (Emilia-Romagna): monteˈrɛnʦjo
+- Palanzano (Emilia-Romagna): palanˈʦano
+- Piacenza (Emilia-Romagna): pjaˈʧɛnʦa
+- Piozzano (Emilia-Romagna): pjoʦˈʦano
+- Podenzano (Emilia-Romagna): podenˈʦano
+- Sala Baganza (Emilia-Romagna): Baganza: ['baˈɡanʦa']
+- Serramazzoni (Emilia-Romagna): sɛrramaʦˈʦoni
+- Terenzo (Emilia-Romagna): teˈrɛnʦo
+- Tizzano Val Parma (Emilia-Romagna): Tizzano: ['tiʦˈʦano']
+- Tredozio (Emilia-Romagna): treˈdɔʦʦjo
+- Valmozzola (Emilia-Romagna): valˈmoʦʦola, -ɔ-
+- Vezzano sul Crostolo (Emilia-Romagna): Vezzano: ['veʦˈʦano']
+- Vigolzone (Emilia-Romagna): viɡolˈʦone
+- Villa Minozzo (Emilia-Romagna): Minozzo: ['miˈnɔʦʦo']
+- Ampezzo (Friuli-Venezia Giulia): amˈpɛʦʦo. -e-
+- Cavazzo Carnico (Friuli-Venezia Giulia): Cavazzo: ['kaˈvaʦʦo']
+- Corno di Rosazzo (Friuli-Venezia Giulia): Rosazzo: ['roˈzaʦʦo']
+- Enemonzo (Friuli-Venezia Giulia): eneˈmonʦo, -ɔ-
+- Farra d'Isonzo (Friuli-Venezia Giulia): Isonzo: ['iˈzonʦo; -ɔ-']
+- Gorizia (Friuli-Venezia Giulia): ɡoˈriʦʦja
+- Gradisca d'Isonzo (Friuli-Venezia Giulia): Isonzo: ['iˈzonʦo; -ɔ-']
+- Lestizza (Friuli-Venezia Giulia): lesˈtiʦʦa
+- Moruzzo (Friuli-Venezia Giulia): moˈruʦʦo
+- Muzzana del Turgnano (Friuli-Venezia Giulia): Muzzana: ['muʦˈʦana']
+- Palazzolo dello Stella (Friuli-Venezia Giulia): Palazzolo: ['palaʦˈʦɔlo']
+- Paluzza (Friuli-Venezia Giulia): paˈluʦʦa
+- Pozzuolo del Friuli (Friuli-Venezia Giulia): Pozzuolo: ['poʦˈʦwɔlo']
+- Romans d'Isonzo (Friuli-Venezia Giulia): Isonzo: ['iˈzonʦo; -ɔ-']
+- San Canzian d'Isonzo (Friuli-Venezia Giulia): Canzian: ['kanˈʦjan']; Isonzo: ['iˈzonʦo; -ɔ-']
+- San Pier d'Isonzo (Friuli-Venezia Giulia): Isonzo: ['iˈzonʦo; -ɔ-']
+- Savogna d'Isonzo (Friuli-Venezia Giulia): Isonzo: ['iˈzonʦo; -ɔ-']
+- Staranzano (Friuli-Venezia Giulia): staranˈʦano
+- Venzone (Friuli-Venezia Giulia): venˈʦone
+- Anguillara Sabazia (Lazio): Sabazia: ['saˈbaʦʦja']
+- Anzio (Lazio): ˈanʦjo
+- Arcinazzo Romano (Lazio): Arcinazzo: ['arʧiˈnaʦʦo']
+- Bomarzo (Lazio): boˈmarʦo
+- Gallicano nel Lazio (Lazio): Lazio: ['ˈlaʦʦjo']
+- Genazzano (Lazio): ʤenaʦˈʦano
+- Genzano di Roma (Lazio): Genzano: ['ʤenˈʦano']
+- Maenza (Lazio): maˈɛnʦa
+- Monte Porzio Catone (Lazio): Porzio: ['ˈpɔrʦjo']
+- Pomezia (Lazio): poˈmɛʦʦja
+- Ponza (Lazio): ˈponʦa
+- Pozzaglia Sabina (Lazio): Pozzaglia: ['poʦˈʦaʎʎa']
+- San Vittore del Lazio (Lazio): Lazio: ['ˈlaʦʦjo']
+- Sezze (Lazio): ˈseʦʦe; -ɛ-
+- Trevi nel Lazio (Lazio): Lazio: ['ˈlaʦʦjo']
+- Vico nel Lazio (Lazio): Lazio: ['ˈlaʦʦjo']
+- Arenzano (Liguria): arenˈʦano
+- Calizzano (Liguria): kaliʦˈʦano
+- Casarza Ligure (Liguria): Casarza: ['kaˈzarʦa; -s-']
+- Civezza (Liguria): ʧiˈveʦʦa
+- Lumarzo (Liguria): luˈmarʦo
+- Onzo (Liguria): ˈonʦo, ˈɔ-
+- Rezzoaglio (Liguria): reʦʦoˈaʎʎo
+- Terzorio (Liguria): terˈʦɔrjo
+- Vernazza (Liguria): verˈnaʦʦa
+- Vezzano Ligure (Liguria): Vezzano: ['veʦˈʦano']
+- Vezzi Portio (Liguria): Vezzi: ['ˈveʦʦi']
+- Agrate Brianza (Lombardia): Brianza: ['briˈanʦa']
+- Aicurzio (Lombardia): aiˈkurʦjo
+- Albuzzano (Lombardia): albuʦˈʦano
+- Alzate Brianza (Lombardia): Alzate: None; Brianza: ['briˈanʦa']
+- Annone di Brianza (Lombardia): Brianza: ['briˈanʦa']
+- Anzano del Parco (Lombardia): Anzano: ['anˈʦano']
+- Arzago d'Adda (Lombardia): Arzago: ['arˈʦaɡo']
+- Azzano San Paolo (Lombardia): aʦˈʦano samˈpaolo
+- Azzio (Lombardia): ˈaʦʦjo
+- Barzio (Lombardia): ˈbarʦjo
+- Bedizzole (Lombardia): bediʦˈʦɔle
+- Beregazzo con Figliaro (Lombardia): Beregazzo: ['bereˈɡaʦʦo']
+- Besana in Brianza (Lombardia): Brianza: ['briˈanʦa']
+- Besozzo (Lombardia): beˈzɔʦʦo. -o-
+- Bianzano (Lombardia): bjanˈʦano
+- Bovezzo (Lombardia): boˈveʦʦo
+- Brinzio (Lombardia): ˈbrinʦjo
+- Busto Arsizio (Lombardia): ˈbusto arˈsiʦʦjo, bustoa-
+- Calolziocorte (Lombardia): kalɔlʦjoˈkorte
+- Calvenzano (Lombardia): kalvenˈʦano
+- Canzo (Lombardia): ˈkanʦo
+- Capizzone (Lombardia): kapiʦˈʦone
+- Carate Brianza (Lombardia): Brianza: ['briˈanʦa']
+- Carlazzo (Lombardia): karˈlaʦʦo
+- Casazza (Lombardia): kaˈzaʦʦa. -s-
+- Casorezzo (Lombardia): kazoˈreʦʦo
+- Cassago Brianza (Lombardia): Brianza: ['briˈanʦa']
+- Cassina Rizzardi (Lombardia): Rizzardi: ['riʦˈʦardi']
+- Castelletto di Branduzzo (Lombardia): Branduzzo: ['branˈduʦʦo']
+- Castello di Brianza (Lombardia): Brianza: ['briˈanʦa']
+- Cavaria con Premezzo (Lombardia): Premezzo: ['preˈmeʦʦo, -ɛ-']
+- Cavenago di Brianza (Lombardia): Brianza: ['briˈanʦa']
+- Cazzago Brabbia (Lombardia): Cazzago: ['kaʦˈʦaɡo']
+- Cazzago San Martino (Lombardia): Cazzago: ['kaʦˈʦaɡo']
+- Cazzano Sant'Andrea (Lombardia): Cazzano: ['kaʦˈʦano']
+- Cesana Brianza (Lombardia): Brianza: ['briˈanʦa']
+- Colle Brianza (Lombardia): Brianza: ['briˈanʦa']
+- Comazzo (Lombardia): koˈmaʦʦo
+- Concorezzo (Lombardia): konkoˈreʦʦo. -ɛ-
+- Confienza (Lombardia): konˈfjɛnʦa
+- Correzzana (Lombardia): korreʦˈʦana
+- Corteolona e Genzone (Lombardia): Genzone: ['ʤenˈʦone']
+- Corzano (Lombardia): korˈʦano
+- Desenzano del Garda (Lombardia): Desenzano: ['dezenˈʦano']
+- Dizzasco (Lombardia): diʦˈʦasko
+- Dolzago (Lombardia): dolˈʦaɡo
+- Dumenza (Lombardia): duˈmɛnʦa
+- Figino Serenza (Lombardia): Serenza: ['seˈrɛnʦa']
+- Gerenzago (Lombardia): ʤerenˈʦaɡo
+- Gerenzano (Lombardia): ʤerenˈʦano
+- Golferenzo (Lombardia): ɡolfeˈrɛnʦo
+- Grezzago (Lombardia): ɡreʦˈʦaɡo
+- Guanzate (Lombardia): ɡwanˈʦate
+- Inarzo (Lombardia): iˈnarʦo
+- Inzago (Lombardia): inˈʦaɡo
+- La Valletta Brianza (Lombardia): Brianza: ['briˈanʦa']
+- Lanzada (Lombardia): lanˈʦada
+- Lazzate (Lombardia): laʦˈʦate
+- Lomazzo (Lombardia): loˈmaʦʦo
+- Lozio (Lombardia): ˈlɔʦʦjo
+- Lozza (Lombardia): ˈlɔʦʦa, -o-
+- Luzzana (Lombardia): luʦˈʦana
+- Marzio (Lombardia): ˈmarʦjo
+- Melzo (Lombardia): ˈmɛlʦo
+- Mesenzana (Lombardia): mezenˈʦana
+- Milzano (Lombardia): milˈʦano
+- Monguzzo (Lombardia): monˈɡuʦʦo
+- Monte Marenzo (Lombardia): Marenzo: ['maˈrɛnʦo']
+- Monticello Brianza (Lombardia): Brianza: ['briˈanʦa']
+- Morazzone (Lombardia): moraʦˈʦone
+- Moscazzano (Lombardia): moskaʦˈʦano
+- Mulazzano (Lombardia): mulaʦˈʦano
+- Pagazzano (Lombardia): paɡaʦˈʦano
+- Palazzago (Lombardia): palaʦˈʦaɡo
+- Palazzolo sull'Oglio (Lombardia): Palazzolo: ['palaʦˈʦɔlo']
+- Parzanica (Lombardia): parˈʦanika
+- Pezzaze (Lombardia): peʦˈʦaʦʦe
+- Piadena Drizzona (Lombardia): Drizzona: ['driʦˈʦona']
+- Piazzatorre (Lombardia): pjaʦʦaˈtorre
+- Piazzolo (Lombardia): pjaʦˈʦɔlo
+- Pizzale (Lombardia): piʦˈʦale
+- Pizzighettone (Lombardia): piʦʦiɡetˈtone
+- Polpenazze del Garda (Lombardia): Polpenazze: ['polpeˈnaʦʦe']
+- Ponte Nizza (Lombardia): Nizza: ['ˈniʦʦa']
+- Porlezza (Lombardia): porˈleʦʦa
+- Pozzaglio ed Uniti (Lombardia): Pozzaglio: ['poʦˈʦaʎʎo']
+- Pozzolengo (Lombardia): poʦʦoˈlenɡo, -ɛ- [T ɛ/e, UMLR e/ɛ]
+- Pozzuolo Martesana (Lombardia): poʦˈʦwɔlo marteˈzana
+- Presezzo (Lombardia): preˈzeʦʦo; -s-
+- Quinzano d'Oglio (Lombardia): Quinzano: ['kwinˈʦano']
+- Rezzago (Lombardia): reʦˈʦaɡo
+- Sarezzo (Lombardia): saˈreʦʦo. -ɛ-
+- Scanzorosciate (Lombardia): skanʦoroʃˈʃate
+- Siziano (Lombardia): siʦˈʦjano; -ʦj-
+- Solza (Lombardia): ˈsolʦa, -ɔ-
+- Songavazzo (Lombardia): sonɡaˈvaʦʦo
+- Stazzona (Lombardia): staʦˈʦona
+- Sulzano (Lombardia): sulˈʦano
+- Tavazzano con Villavesco (Lombardia): Tavazzano: ['tavaʦˈʦano']
+- Torrazza Coste (Lombardia): Torrazza: ['torˈraʦʦa']
+- Trenzano (Lombardia): trenˈʦano
+- Trezzano Rosa (Lombardia): Trezzano: ['treʦˈʦano']
+- Trezzano sul Naviglio (Lombardia): Trezzano: ['treʦˈʦano']
+- Trezzone (Lombardia): treʦˈʦone
+- Trivolzio (Lombardia): triˈvolʦjo, -ɔ-
+- Tronzano Lago Maggiore (Lombardia): Tronzano: ['tronˈʦano']
+- Truccazzano (Lombardia): trukkaʦˈʦano
+- Ubiale Clanezzo (Lombardia): Clanezzo: ['klaˈneʦʦo. -ɛ-']
+- Val di Nizza (Lombardia): Nizza: ['ˈniʦʦa']
+- Vanzaghello (Lombardia): vanʦaˈɡɛllo
+- Vanzago (Lombardia): vanˈʦaɡo
+- Veduggio con Colzano (Lombardia): Colzano: ['kolˈʦano']
+- Velezzo Lomellina (Lombardia): Velezzo: ['veˈleʦʦo. -ˈlɛ-']
+- Verano Brianza (Lombardia): Brianza: ['briˈanʦa']
+- Vezza d'Oglio (Lombardia): Vezza: ['ˈveʦʦa, -ɛ-']
+- Vizzola Ticino (Lombardia): Vizzola: ['viʦˈʦɔla']
+- Vizzolo Predabissi (Lombardia): Vizzolo: ['viʦˈʦɔlo']
+- Monte Porzio (Marche): Porzio: ['ˈpɔrʦjo']
+- Pollenza (Marche): polˈlɛnʦa
+- San Costanzo (Marche): Costanzo: ['kosˈtanʦo']
+- Castel San Vincenzo (Molise): Vincenzo: ['vinˈʧɛnʦo']
+- Castelpizzuto (Molise): kastɛlpiʦˈʦuto
+- Pizzone (Molise): piʦˈʦone
+- Pozzilli (Molise): poʦˈʦilli
+- Alto Sermenza (Piemonte): Sermenza: ['serˈmɛnʦa; -e-']
+- Balzola (Piemonte): ˈbalʦola
+- Basaluzzo (Piemonte): bazaˈluʦʦo
+- Bernezzo (Piemonte): berˈneʦʦo
+- Beura-Cardezza (Piemonte): Cardezza: ['karˈdeʦʦa']
+- Borgo San Dalmazzo (Piemonte): Dalmazzo: ['dalˈmaʦʦo']
+- Bozzole (Piemonte): ˈbɔʦʦole
+- Brandizzo (Piemonte): branˈdiʦʦo
+- Camburzano (Piemonte): kamburˈʦano
+- Caprezzo (Piemonte): kaˈpreʦʦo
+- Casorzo Monferrato (Piemonte): Casorzo: ['kaˈzɔrʦo']
+- Castellazzo Bormida (Piemonte): Castellazzo: ['kastelˈlaʦʦo']
+- Castellazzo Novarese (Piemonte): Castellazzo: ['kastelˈlaʦʦo']
+- Castelletto Uzzone (Piemonte): Uzzone: ['uʦˈʦone ']
+- Cinzano (Piemonte): ʧinˈʦano
+- Coazze (Piemonte): koˈaʦʦe
+- Coazzolo (Piemonte): koaʦˈʦɔlo
+- Colazza (Piemonte): koˈlaʦʦa
+- Cortanze (Piemonte): korˈtanʦe
+- Cortazzone (Piemonte): kortaʦˈʦone
+- Costigliole Saluzzo (Piemonte): Saluzzo: ['saˈluʦʦo']
+- Cravanzana (Piemonte): kravanˈʦana
+- Granozzo con Monticello (Piemonte): Granozzo: ['ɡraˈnɔʦʦo']
+- Grazzano Badoglio (Piemonte): Grazzano: ['ɡraʦˈʦano']
+- Guazzora (Piemonte): ɡwaʦˈʦɔra, -o-
+- Lanzo Torinese (Piemonte): Lanzo: ['ˈlanʦo']
+- Loazzolo (Piemonte): loaʦˈʦɔlo
+- Loranzè (Piemonte): loranˈʦɛ*
+- Maranzana (Piemonte): maranˈʦana
+- Massazza (Piemonte): masˈsaʦʦa
+- Mazzè (Piemonte): maʦˈʦɛ*
+- Melazzo (Piemonte): meˈlaʦʦo
+- Mergozzo (Piemonte): merˈɡɔʦʦo
+- Mombaruzzo (Piemonte): mombaˈruʦʦo
+- Monastero di Lanzo (Piemonte): Lanzo: ['ˈlanʦo']
+- Montemarzino (Piemonte): montemarˈʦino
+- Morozzo (Piemonte): moˈrɔʦʦo
+- Murazzano (Piemonte): muraʦˈʦano
+- Muzzano (Piemonte): muʦˈʦano
+- Narzole (Piemonte): narˈʦɔle
+- Nizza Monferrato (Piemonte): Nizza: ['ˈniʦʦa']
+- Palazzolo Vercellese (Piemonte): Palazzolo: ['palaʦˈʦɔlo']
+- Pallanzeno (Piemonte): pallanˈʦeno, -ɛ-
+- Paruzzaro (Piemonte): paruʦˈʦaro
+- Pezzana (Piemonte): peʦˈʦana
+- Pianezza (Piemonte): pjaˈneʦʦa
+- Pietra Marazzi (Piemonte): ˈpjɛtra maˈraʦʦi, -je-
+- Pietraporzio (Piemonte): pjɛtraˈpɔrʦjo, pje-
+- Piozzo (Piemonte): ˈpjɔʦʦo. -o-, piˈ-
+- Ponzone (Piemonte): ponˈʦone
+- Pozzol Groppo (Piemonte): poʦʦɔlˈɡrɔppo. -op-
+- Pozzolo Formigaro (Piemonte): poʦˈʦɔlo formiˈɡaro
+- Prazzo (Piemonte): ˈpraʦʦo
+- Quagliuzzo (Piemonte): kwaʎˈʎuʦʦo
+- Rosazza (Piemonte): roˈzaʦʦa
+- Saluzzo (Piemonte): saˈluʦʦo
+- Salza di Pinerolo (Piemonte): Salza: ['ˈsalʦa']
+- San Maurizio Canavese (Piemonte): Maurizio: ['mauˈriʦʦjo']
+- San Maurizio d'Opaglio (Piemonte): Maurizio: ['mauˈriʦʦjo']
+- San Pietro Mosezzo (Piemonte): Mosezzo: ['moˈzeʦʦo. -ɛ-']
+- Sarezzano (Piemonte): sareʦˈʦano
+- Sciolze (Piemonte): *ˈʃɔlʦe
+- Scurzolengo (Piemonte): skurʦoˈlenɡo, -ɛ- [T ɛ/e, UMLR e/ɛ]
+- Sizzano (Piemonte): siʦˈʦano
+- Sozzago (Piemonte): soʦˈʦaɡo
+- Torrazza Piemonte (Piemonte): Torrazza: ['torˈraʦʦa']
+- Torrazzo (Piemonte): torˈraʦʦo
+- Tronzano Vercellese (Piemonte): Tronzano: ['tronˈʦano']
+- Vallanzengo (Piemonte): vallanˈʦenɡo, -ɛ- [T ɛ/e, UMLR e/ɛ]
+- Vezza d'Alba (Piemonte): Vezza: ['ˈveʦʦa, -ɛ-']
+- Viguzzolo (Piemonte): viɡuʦˈʦɔlo
+- Villar San Costanzo (Piemonte): Costanzo: ['kosˈtanʦo']
+- Vinzaglio (Piemonte): vinˈʦaʎʎo
+- Anzano di Puglia (Puglia): Anzano: ['anˈʦano']
+- Celenza Valfortore (Puglia): Celenza: ['ʧeˈlɛnʦa']
+- Giovinazzo (Puglia): ʤoviˈnaʦʦo
+- Laterza (Puglia): laˈtɛrʦa
+- Roccaforzata (Puglia): rɔkkaforˈʦata
+- San Pancrazio Salentino (Puglia): Pancrazio: ['panˈkraʦʦjo']
+- Spinazzola (Puglia): spinaʦˈʦɔla
+- Squinzano (Puglia): skwinˈʦano
+- Terlizzi (Puglia): terˈliʦʦi
+- Trepuzzi (Puglia): treˈpuʦʦi; -pˈp-
+- Valenzano (Puglia): valenˈʦano
+- Aritzo (Sardegna): aˈriʦʦo
+- Atzara (Sardegna): aʦˈʦara
+- Bulzi (Sardegna): ˈbulʦi
+- Decimoputzu (Sardegna): dɛʧimoˈpuʦʦu
+- Gonnostramatza (Sardegna): ɡonnostraˈmaʦʦa
+- Jerzu (Sardegna): ˈjɛrʦu
+- Lotzorai (Sardegna): loʦʦoˈrai
+- Olzai (Sardegna): olˈʦai
+- Ozieri (Sardegna): oʦˈʦjɛri; -je-; -ʦj- [TR ɛ, UM e, L e/ɛ]
+- Samatzai (Sardegna): samaʦˈʦai
+- Setzu (Sardegna): ˈsɛʦʦu
+- Tramatza (Sardegna): traˈmaʦʦa
+- Villaputzu (Sardegna): villaˈpuʦʦu
+- Buseto Palizzolo (Sicilia): Palizzolo: ['paliʦˈʦɔlo']
+- Capizzi (Sicilia): kaˈpiʦʦi
+- Librizzi (Sicilia): liˈbriʦʦi
+- Mazzarrà Sant'Andrea (Sicilia): Mazzarrà: ['maʦʦarˈra*']
+- Milazzo (Sicilia): miˈlaʦʦo
+- Nizza di Sicilia (Sicilia): Nizza: ['ˈniʦʦa']
+- Palazzolo Acreide (Sicilia): Palazzolo: ['palaʦˈʦɔlo']
+- Pietraperzia (Sicilia): pjɛtraperˈʦia, pje-; ↓-ˈpɛrʦja
+- Polizzi Generosa (Sicilia): Polizzi: ['poˈliʦʦi']
+- Pozzallo (Sicilia): poʦˈʦallo
+- Randazzo (Sicilia): ranˈdaʦʦo
+- San Marco d'Alunzio (Sicilia): Alunzio: ['aˈlunʦjo']
+- Arezzo (Toscana): aˈreʦʦo
+- Borgo a Mozzano (Toscana): ˈborɡo ammoʦˈʦano
+- Campi Bisenzio (Toscana): ˈkampi biˈzɛnʦjo
+- Chiesina Uzzanese (Toscana): kjeˈzina uʦʦaˈneze. -se
+- Crespina Lorenzana (Toscana): Lorenzana: ['lorenˈʦana']
+- Firenze (Toscana): fiˈrɛnʦe
+- Massa e Cozzile (Toscana): Cozzile: ['koʦˈʦile']
+- Molazzana (Toscana): molaʦˈʦana
+- Mulazzo (Toscana): muˈlaʦʦo
+- Palazzuolo sul Senio (Toscana): Palazzuolo: ['palaʦˈʦwɔlo']
+- Pienza (Toscana): piˈɛnʦa, ˈpjɛ-
+- Podenzana (Toscana): podenˈʦana
+- San Godenzo (Toscana): Godenzo: ['ɡoˈdɛnʦo']
+- San Vincenzo (Toscana): Vincenzo: ['vinˈʧɛnʦo']
+- Seravezza (Toscana): seraˈveʦʦa
+- Stazzema (Toscana): staʦˈʦema, -ɛ-
+- Caderzone Terme (Trentino-Alto Adige/Südtirol): Caderzone: ['kaderˈʦone']
+- Caldonazzo (Trentino-Alto Adige/Südtirol): kaldoˈnaʦʦo
+- Cavizzana (Trentino-Alto Adige/Südtirol): kaviʦˈʦana
+- Civezzano (Trentino-Alto Adige/Südtirol): ʧiveʦˈʦano
+- Falzes (Trentino-Alto Adige/Südtirol): ˈfalʦes
+- Gargazzone (Trentino-Alto Adige/Südtirol): ɡarɡaʦˈʦone
+- Glorenza (Trentino-Alto Adige/Südtirol): ɡloˈrɛnʦa
+- Madruzzo (Trentino-Alto Adige/Südtirol): maˈdruʦʦo
+- Mazzin (Trentino-Alto Adige/Südtirol): maʦˈʦin
+- Naz-Sciaves (Trentino-Alto Adige/Südtirol): Naz: ['ˈnaʦ*']
+- Pellizzano (Trentino-Alto Adige/Südtirol): pelliʦˈʦano
+- Pinzolo (Trentino-Alto Adige/Südtirol): pinˈʦɔlo
+- Predazzo (Trentino-Alto Adige/Südtirol): preˈdaʦʦo
+- Primiero San Martino di Castrozza (Trentino-Alto Adige/Südtirol): Castrozza: ['kasˈtrɔʦʦa']
+- San Pancrazio (Trentino-Alto Adige/Südtirol): Pancrazio: ['panˈkraʦʦjo']
+- Sfruz (Trentino-Alto Adige/Südtirol): sˈfruʦ*
+- Terzolas (Trentino-Alto Adige/Südtirol): terʦoˈlas; -ˈʦɔlas
+- Val di Vizze (Trentino-Alto Adige/Südtirol): Vizze: ['ˈviʦʦe']
+- Collazzone (Umbria): kollaʦˈʦone
+- Breganze (Veneto): breˈɡanʦe
+- Calalzo di Cadore (Veneto): Calalzo: ['kaˈlalʦo']
+- Cazzano di Tramigna (Veneto): Cazzano: ['kaʦˈʦano']
+- Cortina d'Ampezzo (Veneto): Ampezzo: ['amˈpɛʦʦo. -e-']
+- Creazzo (Veneto): kreˈaʦʦo
+- Granze (Veneto): ˈɡranʦe
+- Lorenzago di Cadore (Veneto): Lorenzago: ['lorenˈʦaɡo']
+- Lozzo Atestino (Veneto): ˈloʦʦo atesˈtino, -ɔ-
+- Lozzo di Cadore (Veneto): ˈloʦʦo dikaˈdore, ˈlɔ-
+- Lugo di Vicenza (Veneto): Vicenza: ['viˈʧɛnʦa']
+- Massanzago (Veneto): massanˈʦaɡo
+- Meduna di Livenza (Veneto): Livenza: ['liˈvɛnʦa']
+- Motta di Livenza (Veneto): Livenza: ['liˈvɛnʦa']
+- Mozzecane (Veneto): moʦʦeˈkane
+- Oderzo (Veneto): oˈdɛrʦo
+- Pettorazza Grimani (Veneto): Pettorazza: ['pettoˈraʦʦa']
+- Piacenza d'Adige (Veneto): Piacenza: ['pjaˈʧɛnʦa']
+- Pianezze (Veneto): pjaˈneʦʦe
+- Pozzoleone (Veneto): poʦʦoleˈone
+- Pozzonovo (Veneto): poʦʦoˈnɔvo
+- Rotzo (Veneto): ˈrɔʦʦo
+- Salizzole (Veneto): saliʦˈʦɔle
+- Salzano (Veneto): salˈʦano (cfr. s’alzano ˈsalʦano, ˈsja-, siˈa-)
+- San Martino di Venezze (Veneto): Venezze: ['veˈneʦʦe']
+- San Stino di Livenza (Veneto): Livenza: ['liˈvɛnʦa']
+- San Vito di Leguzzano (Veneto): Leguzzano: ['leɡuʦˈʦano']
+- Scorzè (Veneto): skorˈʦɛ*
+- Selvazzano Dentro (Veneto): Selvazzano: ['selvaʦˈʦano']
+- Sovizzo (Veneto): soˈviʦʦo
+- Tarzo (Veneto): ˈtarʦo
+- Trevenzuolo (Veneto): trevenˈʦwɔlo
+- Vazzola (Veneto): vaʦˈʦɔla
+- Venezia (Veneto): veˈnɛʦʦja
+- Vicenza (Veneto): viˈʧɛnʦa
+- Vigonza (Veneto): viˈɡonʦa
+- Villamarzana (Veneto): villamarˈʦana

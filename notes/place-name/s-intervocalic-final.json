@@ -1,0 +1,2745 @@
+{
+"Almese": {
+"Almese": "v"
+},
+"Baldissero Canavese": {
+"Canavese": "v"
+},
+"Baldissero Torinese": {
+"Torinese": "v"
+},
+"Barone Canavese": {
+"Canavese": "v"
+},
+"Borgaro Torinese": {
+"Torinese": "v"
+},
+"Borgomasino": {
+"Borgomasino": "v"
+},
+"Borgone Susa": {
+"Susa": "v"
+},
+"Bricherasio": {
+"Bricherasio": "v"
+},
+"Brusasco": {
+"Brusasco": "v"
+},
+"Busano": {
+"Busano": "v"
+},
+"Caluso": {
+"Caluso": "v"
+},
+"Candia Canavese": {
+"Canavese": "v"
+},
+"Casalborgone": {
+"Casalborgone": "v"
+},
+"Caselette": {
+"Caselette": "v"
+},
+"Caselle Torinese": {
+"Caselle": "v",
+"Torinese": "v"
+},
+"Castiglione Torinese": {
+"Torinese": "v"
+},
+"Ceresole Reale": {
+"Ceresole": "v"
+},
+"Cesana Torinese": {
+"Cesana": "v",
+"Torinese": "v"
+},
+"Chiesanuova": {
+"Chiesanuova": "v"
+},
+"Chiusa di San Michele": {
+"Chiusa": "v"
+},
+"Coassolo Torinese": {
+"Torinese": "v"
+},
+"Colleretto Giacosa": {
+"Giacosa": "v"
+},
+"Cossano Canavese": {
+"Canavese": "v"
+},
+"Fiorano Canavese": {
+"Canavese": "v"
+},
+"Forno Canavese": {
+"Canavese": "v"
+},
+"Gassino Torinese": {
+"Torinese": "v"
+},
+"Isolabella": {
+"Isolabella": "v"
+},
+"Lanzo Torinese": {
+"Torinese": "v"
+},
+"Luserna San Giovanni": {
+"Luserna": "v"
+},
+"Lusernetta": {
+"Lusernetta": "v"
+},
+"Lusigliè": {
+"Lusigliè": "v"
+},
+"Meana di Susa": {
+"Susa": "v"
+},
+"Moncenisio": {
+"Moncenisio": "v"
+},
+"Montaldo Torinese": {
+"Torinese": "v"
+},
+"Moriondo Torinese": {
+"Torinese": "v"
+},
+"Novalesa": {
+"Novalesa": "v"
+},
+"Orio Canavese": {
+"Canavese": "v"
+},
+"Osasco": {
+"Osasco": "v"
+},
+"Osasio": {
+"Osasio": "v"
+},
+"Palazzo Canavese": {
+"Canavese": "v"
+},
+"Pavone Canavese": {
+"Canavese": "v"
+},
+"Pecetto Torinese": {
+"Torinese": "v"
+},
+"Perosa Argentina": {
+"Perosa": "v"
+},
+"Perosa Canavese": {
+"Perosa": "v",
+"Canavese": "v"
+},
+"Pertusio": {
+"Pertusio": "v"
+},
+"Pino Torinese": {
+"Torinese": "v"
+},
+"Piobesi Torinese": {
+"Piobesi": "v",
+"Torinese": "v"
+},
+"Pont Canavese": {
+"Canavese": "v"
+},
+"Rivarolo Canavese": {
+"Canavese": "v"
+},
+"Rocca Canavese": {
+"Canavese": "v"
+},
+"Romano Canavese": {
+"Canavese": "v"
+},
+"Ronco Canavese": {
+"Canavese": "v"
+},
+"Salerano Canavese": {
+"Canavese": "v"
+},
+"San Benigno Canavese": {
+"Canavese": "v"
+},
+"San Carlo Canavese": {
+"Canavese": "v"
+},
+"San Germano Chisone": {
+"Chisone": "v"
+},
+"San Giorgio Canavese": {
+"Canavese": "v"
+},
+"San Giorio di Susa": {
+"Susa": "v"
+},
+"San Giusto Canavese": {
+"Canavese": "v"
+},
+"San Martino Canavese": {
+"Canavese": "v"
+},
+"San Maurizio Canavese": {
+"Canavese": "v"
+},
+"San Mauro Torinese": {
+"Torinese": "v"
+},
+"Sant'Antonino di Susa": {
+"Susa": "v"
+},
+"Sauze di Cesana": {
+"Cesana": "v"
+},
+"Settimo Torinese": {
+"Torinese": "v"
+},
+"Susa": {
+"Susa": "v"
+},
+"Torre Canavese": {
+"Canavese": "v"
+},
+"Vallo Torinese": {
+"Torinese": "v"
+},
+"Varisella": {
+"Varisella": "v"
+},
+"Vauda Canavese": {
+"Canavese": "v"
+},
+"Villanova Canavese": {
+"Canavese": "v"
+},
+"Villar Perosa": {
+"Perosa": "v"
+},
+"Valchiusa": {
+"Valchiusa": "v"
+},
+"Alagna Valsesia": {
+"Valsesia": "v"
+},
+"Albano Vercellese": {
+"Vercellese": "v"
+},
+"Asigliano Vercellese": {
+"Asigliano": "v",
+"Vercellese": "v"
+},
+"Borgosesia": {
+"Borgosesia": "v"
+},
+"Caresana": {
+"Caresana": "v"
+},
+"Caresanablot": {
+"Caresanablot": "v"
+},
+"Carisio": {
+"Carisio": "v"
+},
+"Casanova Elvo": {
+"Casanova": "v"
+},
+"San Giacomo Vercellese": {
+"Vercellese": "v"
+},
+"Desana": {
+"Desana": "v"
+},
+"Guardabosone": {
+"Guardabosone": "v"
+},
+"Palazzolo Vercellese": {
+"Vercellese": "v"
+},
+"Quinto Vercellese": {
+"Vercellese": "v"
+},
+"Roasio": {
+"Roasio": "v"
+},
+"Rovasenda": {
+"Rovasenda": "v"
+},
+"Sali Vercellese": {
+"Vercellese": "v"
+},
+"San Germano Vercellese": {
+"Vercellese": "v"
+},
+"Serravalle Sesia": {
+"Sesia": "v"
+},
+"Tronzano Vercellese": {
+"Vercellese": "v"
+},
+"Bellinzago Novarese": {
+"Novarese": "v"
+},
+"Bolzano Novarese": {
+"Novarese": "v"
+},
+"Briga Novarese": {
+"Novarese": "v"
+},
+"Carpignano Sesia": {
+"Sesia": "v"
+},
+"Casalbeltrame": {
+"Casalbeltrame": "v"
+},
+"Casaleggio Novara": {
+"Casaleggio": "v"
+},
+"Casalino": {
+"Casalino": "v"
+},
+"Casalvolone": {
+"Casalvolone": "v"
+},
+"Castellazzo Novarese": {
+"Novarese": "v"
+},
+"Fara Novarese": {
+"Novarese": "v"
+},
+"Garbagna Novarese": {
+"Novarese": "v"
+},
+"Lesa": {
+"Lesa": "v"
+},
+"Miasino": {
+"Miasino": "v"
+},
+"Pisano": {
+"Pisano": "v"
+},
+"Prato Sesia": {
+"Sesia": "v"
+},
+"Romagnano Sesia": {
+"Sesia": "v"
+},
+"San Nazzaro Sesia": {
+"Sesia": "v"
+},
+"San Pietro Mosezzo": {
+"Mosezzo": "v"
+},
+"Soriso": {
+"Soriso": "v"
+},
+"Aisone": {
+"Aisone": "v"
+},
+"Bosia": {
+"Bosia": "v"
+},
+"Canosio": {
+"Canosio": "v"
+},
+"Casalgrasso": {
+"Casalgrasso": "v"
+},
+"Ceresole Alba": {
+"Ceresole": "v"
+},
+"Chiusa di Pesio": {
+"Chiusa": "v",
+"Pesio": "v"
+},
+"Clavesana": {
+"Clavesana": "v"
+},
+"Feisoglio": {
+"Feisoglio": "v"
+},
+"Frabosa Soprana": {
+"Frabosa": "v"
+},
+"Frabosa Sottana": {
+"Frabosa": "v"
+},
+"Gottasecca": {
+"Gottasecca": "u"
+},
+"Isasca": {
+"Isasca": "v"
+},
+"Lesegno": {
+"Lesegno": "v"
+},
+"Lisio": {
+"Lisio": "v"
+},
+"Mombasiglio": {
+"Mombasiglio": "v"
+},
+"Monasterolo Casotto": {
+"Casotto": "v"
+},
+"Monesiglio": {
+"Monesiglio": "v"
+},
+"Montelupo Albese": {
+"Albese": "v"
+},
+"Paesana": {
+"Paesana": "v"
+},
+"Piobesi d'Alba": {
+"Piobesi": "v"
+},
+"Torresina": {
+"Torresina": "v"
+},
+"Treiso": {
+"Treiso": "v"
+},
+"Camerano Casasco": {
+"Casasco": "v"
+},
+"Casorzo Monferrato": {
+"Casorzo": "v"
+},
+"Chiusano d'Asti": {
+"Chiusano": "v"
+},
+"Dusino San Michele": {
+"Dusino": "v"
+},
+"Incisa Scapaccino": {
+"Incisa": "v"
+},
+"Isola d'Asti": {
+"Isola": "v"
+},
+"Moncucco Torinese": {
+"Torinese": "v"
+},
+"Vesime": {
+"Vesime": "v"
+},
+"Basaluzzo": {
+"Basaluzzo": "v"
+},
+"Bosio": {
+"Bosio": "v"
+},
+"Carrosio": {
+"Carrosio": "v"
+},
+"Cartosio": {
+"Cartosio": "v"
+},
+"Casal Cermelli": {
+"Casal": "v"
+},
+"Casaleggio Boiro": {
+"Casaleggio": "v"
+},
+"Casale Monferrato": {
+"Casale": "v"
+},
+"Casalnoceto": {
+"Casalnoceto": "v"
+},
+"Casasco": {
+"Casasco": "v"
+},
+"Cereseto": {
+"Cereseto": "v"
+},
+"Francavilla Bisio": {
+"Bisio": "v"
+},
+"Fresonara": {
+"Fresonara": "v"
+},
+"Isola Sant'Antonio": {
+"Isola": "v"
+},
+"Masio": {
+"Masio": "v"
+},
+"Mornese": {
+"Mornese": "v"
+},
+"Murisengo": {
+"Murisengo": "v"
+},
+"Predosa": {
+"Predosa": "v"
+},
+"Rosignano Monferrato": {
+"Rosignano": "v"
+},
+"Trisobbio": {
+"Trisobbio": "v"
+},
+"Visone": {
+"Visone": "v"
+},
+"Casapinta": {
+"Casapinta": "v"
+},
+"Ronco Biellese": {
+"Biellese": "v"
+},
+"Rosazza": {
+"Rosazza": "v"
+},
+"Sala Biellese": {
+"Biellese": "v"
+},
+"Vigliano Biellese": {
+"Biellese": "v"
+},
+"Villanova Biellese": {
+"Biellese": "v"
+},
+"Casale Corte Cerro": {
+"Casale": "v"
+},
+"Cesara": {
+"Cesara": "v"
+},
+"Gignese": {
+"Gignese": "v"
+},
+"Masera": {
+"Masera": "v"
+},
+"Montecrestese": {
+"Montecrestese": "v"
+},
+"Premosello-Chiovenda": {
+"Premosello": "v"
+},
+"Stresa": {
+"Stresa": "v"
+},
+"Avise": {
+"Avise": "v"
+},
+"Emarèse": {
+"Emarèse": "v"
+},
+"Pontboset": {
+"Pontboset": "v"
+},
+"Roisan": {
+"Roisan": "v"
+},
+"Valgrisenche": {
+"Valgrisenche": "v"
+},
+"Arcisate": {
+"Arcisate": "v"
+},
+"Besano": {
+"Besano": "v"
+},
+"Besozzo": {
+"Besozzo": "v"
+},
+"Bisuschio": {
+"Bisuschio": "v"
+},
+"Brusimpiano": {
+"Brusimpiano": "v"
+},
+"Caronno Pertusella": {
+"Pertusella": "v"
+},
+"Caronno Varesino": {
+"Varesino": "v"
+},
+"Casale Litta": {
+"Casale": "v"
+},
+"Casalzuigno": {
+"Casalzuigno": "v"
+},
+"Casorate Sempione": {
+"Casorate": "v"
+},
+"Cocquio-Trevisago": {
+"Trevisago": "v"
+},
+"Crosio della Valle": {
+"Crosio": "v"
+},
+"Ferrera di Varese": {
+"Varese": "v"
+},
+"Golasecca": {
+"Golasecca": "u"
+},
+"Lavena Ponte Tresa": {
+"Tresa": "v"
+},
+"Mesenzana": {
+"Mesenzana": "v"
+},
+"Porto Ceresio": {
+"Ceresio": "v"
+},
+"Varese": {
+"Varese": "v"
+},
+"Albese con Cassano": {
+"Albese": "v"
+},
+"Arosio": {
+"Arosio": "v"
+},
+"Cusino": {
+"Cusino": "v"
+},
+"Domaso": {
+"Domaso": "v"
+},
+"Locate Varesino": {
+"Varesino": "v"
+},
+"Luisago": {
+"Luisago": "v"
+},
+"Moltrasio": {
+"Moltrasio": "v"
+},
+"Plesio": {
+"Plesio": "v"
+},
+"Proserpio": {
+"Proserpio": "v"
+},
+"Pusiano": {
+"Pusiano": "v"
+},
+"Veleso": {
+"Veleso": "v"
+},
+"Albosaggia": {
+"Albosaggia": "v"
+},
+"Chiesa in Valmalenco": {
+"Chiesa": "v"
+},
+"Cosio Valtellino": {
+"Cosio": "v"
+},
+"Fusine": {
+"Fusine": "v"
+},
+"Grosio": {
+"Grosio": "v"
+},
+"Grosotto": {
+"Grosotto": "v"
+},
+"Madesimo": {
+"Madesimo": "v"
+},
+"Mese": {
+"Mese": "v"
+},
+"Pedesina": {
+"Pedesina": "v"
+},
+"Postalesio": {
+"Postalesio": "v"
+},
+"Rasura": {
+"Rasura": "v"
+},
+"Tresivio": {
+"Tresivio": "v"
+},
+"Valdisotto": {
+"Valdisotto": "u"
+},
+"Val Masino": {
+"Masino": "v"
+},
+"Arese": {
+"Arese": "v"
+},
+"Basiano": {
+"Basiano": "v"
+},
+"Basiglio": {
+"Basiglio": "v"
+},
+"Besate": {
+"Besate": "v"
+},
+"Casarile": {
+"Casarile": "v"
+},
+"Casorezzo": {
+"Casorezzo": "v"
+},
+"Cesano Boscone": {
+"Cesano": "v"
+},
+"Cesate": {
+"Cesate": "v"
+},
+"Cinisello Balsamo": {
+"Cinisello": "v"
+},
+"Cologno Monzese": {
+"Monzese": "v"
+},
+"Cusago": {
+"Cusago": "v"
+},
+"Cusano Milanino": {
+"Cusano": "v"
+},
+"Dresano": {
+"Dresano": "v"
+},
+"Garbagnate Milanese": {
+"Milanese": "v"
+},
+"Marcallo con Casone": {
+"Casone": "v"
+},
+"Masate": {
+"Masate": "v"
+},
+"Mesero": {
+"Mesero": "v"
+},
+"Nosate": {
+"Nosate": "v"
+},
+"Novate Milanese": {
+"Milanese": "v"
+},
+"Pogliano Milanese": {
+"Milanese": "v"
+},
+"Pozzuolo Martesana": {
+"Martesana": "v"
+},
+"Pregnana Milanese": {
+"Milanese": "v"
+},
+"Rosate": {
+"Rosate": "v"
+},
+"San Donato Milanese": {
+"Milanese": "v"
+},
+"San Giuliano Milanese": {
+"Milanese": "v"
+},
+"Settimo Milanese": {
+"Milanese": "v"
+},
+"Trezzano Rosa": {
+"Rosa": "v"
+},
+"Villa Cortese": {
+"Cortese": "v"
+},
+"Ardesio": {
+"Ardesio": "v"
+},
+"Brusaporto": {
+"Brusaporto": "v"
+},
+"Capriate San Gervasio": {
+"Gervasio": "v"
+},
+"Casazza": {
+"Casazza": "v"
+},
+"Casirate d'Adda": {
+"Casirate": "v"
+},
+"Castione della Presolana": {
+"Presolana": "v"
+},
+"Chignolo d'Isola": {
+"Isola": "v"
+},
+"Cisano Bergamasco": {
+"Cisano": "v"
+},
+"Ciserano": {
+"Ciserano": "v"
+},
+"Clusone": {
+"Clusone": "v"
+},
+"Cusio": {
+"Cusio": "v"
+},
+"Ghisalba": {
+"Ghisalba": "v"
+},
+"Isola di Fondra": {
+"Isola": "v"
+},
+"Misano di Gera d'Adda": {
+"Misano": "v"
+},
+"Osio Sopra": {
+"Osio": "v"
+},
+"Osio Sotto": {
+"Osio": "v"
+},
+"Presezzo": {
+"Presezzo": "v"
+},
+"Sorisole": {
+"Sorisole": "v"
+},
+"Suisio": {
+"Suisio": "v"
+},
+"Terno d'Isola": {
+"Isola": "v"
+},
+"Torre de' Busi": {
+"Busi": "v"
+},
+"Vedeseta": {
+"Vedeseta": "v"
+},
+"Agnosine": {
+"Agnosine": "v"
+},
+"Borgosatollo": {
+"Borgosatollo": "u"
+},
+"Calvagese della Riviera": {
+"Calvagese": "v"
+},
+"Calvisano": {
+"Calvisano": "v"
+},
+"Concesio": {
+"Concesio": "v"
+},
+"Desenzano del Garda": {
+"Desenzano": "v"
+},
+"Esine": {
+"Esine": "v"
+},
+"Iseo": {
+"Iseo": "v"
+},
+"Isorella": {
+"Isorella": "v"
+},
+"Losine": {
+"Losine": "v"
+},
+"Magasa": {
+"Magasa": "v"
+},
+"Monte Isola": {
+"Isola": "v"
+},
+"Monticelli Brusati": {
+"Brusati": "v"
+},
+"Pisogne": {
+"Pisogne": "v"
+},
+"Preseglie": {
+"Preseglie": "v"
+},
+"Provaglio d'Iseo": {
+"Iseo": "v"
+},
+"Sabbio Chiese": {
+"Chiese": "v"
+},
+"Sale Marasino": {
+"Marasino": "v"
+},
+"San Gervasio Bresciano": {
+"Gervasio": "v"
+},
+"Torbole Casaglia": {
+"Casaglia": "v"
+},
+"Tremosine sul Garda": {
+"Tremosine": "v"
+},
+"Treviso Bresciano": {
+"Treviso": "v"
+},
+"Villanuova sul Clisi": {
+"Clisi": "v"
+},
+"Visano": {
+"Visano": "v"
+},
+"Albonese": {
+"Albonese": "v"
+},
+"Badia Pavese": {
+"Pavese": "v"
+},
+"Belgioioso": {
+"Belgioioso": "v"
+},
+"Campospinoso Albaredo": {
+"Campospinoso": "v"
+},
+"Canneto Pavese": {
+"Pavese": "v"
+},
+"Casanova Lonati": {
+"Casanova": "v"
+},
+"Casatisma": {
+"Casatisma": "v"
+},
+"Casei Gerola": {
+"Casei": "v"
+},
+"Casorate Primo": {
+"Casorate": "v"
+},
+"Certosa di Pavia": {
+"Certosa": "v"
+},
+"Cervesina": {
+"Cervesina": "v"
+},
+"Montalto Pavese": {
+"Pavese": "v"
+},
+"Montesegale": {
+"Montesegale": "u"
+},
+"Monticelli Pavese": {
+"Pavese": "v"
+},
+"Mornico Losana": {
+"Losana": "v"
+},
+"Robecco Pavese": {
+"Pavese": "v"
+},
+"Rocca Susella": {
+"Susella": "v"
+},
+"Romagnese": {
+"Romagnese": "v"
+},
+"Rosasco": {
+"Rosasco": "v"
+},
+"San Genesio ed Uniti": {
+"Genesio": "v"
+},
+"Scaldasole": {
+"Scaldasole": "u"
+},
+"Torre d'Arese": {
+"Arese": "v"
+},
+"Torre d'Isola": {
+"Isola": "v"
+},
+"Acquanegra Cremonese": {
+"Cremonese": "v"
+},
+"Camisano": {
+"Camisano": "v"
+},
+"Casalbuttano ed Uniti": {
+"Casalbuttano": "v"
+},
+"Casale Cremasco-Vidolasco": {
+"Casale": "v"
+},
+"Casaletto Ceredano": {
+"Casaletto": "v"
+},
+"Casaletto di Sopra": {
+"Casaletto": "v"
+},
+"Casaletto Vaprio": {
+"Casaletto": "v"
+},
+"Casalmaggiore": {
+"Casalmaggiore": "v"
+},
+"Casalmorano": {
+"Casalmorano": "v"
+},
+"Corte de' Cortesi con Cignone": {
+"Cortesi": "v"
+},
+"Cremosano": {
+"Cremosano": "v"
+},
+"Grumello Cremonese ed Uniti": {
+"Cremonese": "v"
+},
+"Isola Dovarese": {
+"Isola": "v",
+"Dovarese": "v"
+},
+"Persico Dosimo": {
+"Dosimo": "v"
+},
+"Pessina Cremonese": {
+"Cremonese": "v"
+},
+"Soresina": {
+"Soresina": "v"
+},
+"Acquanegra sul Chiese": {
+"Chiese": "v"
+},
+"Asola": {
+"Asola": "v"
+},
+"Casalmoro": {
+"Casalmoro": "v"
+},
+"Casaloldo": {
+"Casaloldo": "v"
+},
+"Casalromano": {
+"Casalromano": "v"
+},
+"Ceresara": {
+"Ceresara": "v"
+},
+"Dosolo": {
+"Dosolo": "v"
+},
+"Bosisio Parini": {
+"Bosisio": "v"
+},
+"Casargo": {
+"Casargo": "v"
+},
+"Casatenovo": {
+"Casatenovo": "v"
+},
+"Cesana Brianza": {
+"Cesana": "v"
+},
+"Esino Lario": {
+"Esino": "v"
+},
+"Casaletto Lodigiano": {
+"Casaletto": "v"
+},
+"Casalmaiocco": {
+"Casalmaiocco": "v"
+},
+"Casalpusterlengo": {
+"Casalpusterlengo": "v"
+},
+"Caselle Landi": {
+"Caselle": "v"
+},
+"Caselle Lurani": {
+"Caselle": "v"
+},
+"Corte Palasio": {
+"Palasio": "v"
+},
+"Montanaso Lombardo": {
+"Montanaso": "v"
+},
+"Besana in Brianza": {
+"Besana": "v"
+},
+"Bovisio-Masciago": {
+"Bovisio": "v"
+},
+"Cesano Maderno": {
+"Cesano": "v"
+},
+"Desio": {
+"Desio": "v"
+},
+"Misinto": {
+"Misinto": "v"
+},
+"Nova Milanese": {
+"Milanese": "v"
+},
+"Seveso": {
+"Seveso": "v"
+},
+"Villasanta": {
+"Villasanta": "u"
+},
+"Lentate sul Seveso": {
+"Seveso": "v"
+},
+"Chiusa": {
+"Chiusa": "v"
+},
+"Cornedo all'Isarco": {
+"Isarco": "v"
+},
+"Lasa": {
+"Lasa": "v"
+},
+"Luson": {
+"Luson": "v"
+},
+"Monguelfo-Tesido": {
+"Tesido": "v"
+},
+"Moso in Passiria": {
+"Moso": "v"
+},
+"Ortisei": {
+"Ortisei": "v"
+},
+"Rasun-Anterselva": {
+"Rasun": "v"
+},
+"San Genesio Atesino": {
+"Genesio": "v",
+"Atesino": "v"
+},
+"Tesimo": {
+"Tesimo": "v"
+},
+"Valle di Casies": {
+"Casies": "v"
+},
+"Baselga di Pinè": {
+"Baselga": "v"
+},
+"Besenello": {
+"Besenello": "v"
+},
+"Bresimo": {
+"Bresimo": "v"
+},
+"Carisolo": {
+"Carisolo": "v"
+},
+"Castello Tesino": {
+"Tesino": "v"
+},
+"Cavalese": {
+"Cavalese": "v"
+},
+"Cinte Tesino": {
+"Tesino": "v"
+},
+"Isera": {
+"Isera": "v"
+},
+"Lona-Lases": {
+"Lases": "v"
+},
+"Luserna": {
+"Luserna": "v"
+},
+"Pieve Tesino": {
+"Tesino": "v"
+},
+"Tesero": {
+"Tesero": "v"
+},
+"Vignola-Falesina": {
+"Falesina": "v"
+},
+"Borgo Chiese": {
+"Chiese": "v"
+},
+"Cembra Lisignago": {
+"Lisignago": "v"
+},
+"Bosco Chiesanuova": {
+"Chiesanuova": "v"
+},
+"Caprino Veronese": {
+"Veronese": "v"
+},
+"Casaleone": {
+"Casaleone": "v"
+},
+"Cavaion Veronese": {
+"Veronese": "v"
+},
+"Cerro Veronese": {
+"Veronese": "v"
+},
+"Concamarise": {
+"Concamarise": "v"
+},
+"Gazzo Veronese": {
+"Veronese": "v"
+},
+"Illasi": {
+"Illasi": "v"
+},
+"Isola della Scala": {
+"Isola": "v"
+},
+"Isola Rizza": {
+"Isola": "v"
+},
+"Lazise": {
+"Lazise": "v"
+},
+"Malcesine": {
+"Malcesine": "v"
+},
+"Montecchia di Crosara": {
+"Crosara": "v"
+},
+"Povegliano Veronese": {
+"Veronese": "v"
+},
+"Rivoli Veronese": {
+"Veronese": "v"
+},
+"Roverè Veronese": {
+"Veronese": "v"
+},
+"Velo Veronese": {
+"Veronese": "v"
+},
+"Vigasio": {
+"Vigasio": "v"
+},
+"Asiago": {
+"Asiago": "v"
+},
+"Asigliano Veneto": {
+"Asigliano": "v"
+},
+"Camisano Vicentino": {
+"Camisano": "v"
+},
+"Grisignano di Zocco": {
+"Grisignano": "v"
+},
+"Isola Vicentina": {
+"Isola": "v"
+},
+"Posina": {
+"Posina": "v"
+},
+"Rosà": {
+"Rosà": "v"
+},
+"Torri di Quartesolo": {
+"Quartesolo": "v"
+},
+"Valli del Pasubio": {
+"Pasubio": "v"
+},
+"Colceresa": {
+"Colceresa": "v"
+},
+"Lusiana Conco": {
+"Lusiana": "v"
+},
+"Cesiomaggiore": {
+"Cesiomaggiore": "v"
+},
+"Fonzaso": {
+"Fonzaso": "v"
+},
+"Gosaldo": {
+"Gosaldo": "v"
+},
+"San Tomaso Agordino": {
+"Tomaso": "v"
+},
+"Asolo": {
+"Asolo": "v"
+},
+"Casale sul Sile": {
+"Casale": "v"
+},
+"Casier": {
+"Casier": "v"
+},
+"Cavaso del Tomba": {
+"Cavaso": "v"
+},
+"Cison di Valmarino": {
+"Cison": "v"
+},
+"Maser": {
+"Maser": "v"
+},
+"Maserada sul Piave": {
+"Maserada": "v"
+},
+"Monastier di Treviso": {
+"Treviso": "v"
+},
+"Nervesa della Battaglia": {
+"Nervesa": "v"
+},
+"Paese": {
+"Paese": "v"
+},
+"Quinto di Treviso": {
+"Treviso": "v"
+},
+"Resana": {
+"Resana": "v"
+},
+"Riese Pio X": {
+"Riese": "v"
+},
+"Segusino": {
+"Segusino": "v"
+},
+"Spresiano": {
+"Spresiano": "v"
+},
+"Susegana": {
+"Susegana": "v"
+},
+"Treviso": {
+"Treviso": "v"
+},
+"Jesolo": {
+"Jesolo": "v"
+},
+"Musile di Piave": {
+"Musile": "v"
+},
+"Albignasego": {
+"Albignasego": "v"
+},
+"Boara Pisani": {
+"Pisani": "v"
+},
+"Camposampiero": {
+"Camposampiero": "u"
+},
+"Casale di Scodosia": {
+"Casale": "v",
+"Scodosia": "v"
+},
+"Casalserugo": {
+"Casalserugo": "v"
+},
+"Cervarese Santa Croce": {
+"Cervarese": "v"
+},
+"Maserà di Padova": {
+"Maserà": "v"
+},
+"Masi": {
+"Masi": "v"
+},
+"Piombino Dese": {
+"Dese": "v"
+},
+"Solesino": {
+"Solesino": "v"
+},
+"Trebaseleghe": {
+"Trebaseleghe": "v"
+},
+"Villanova di Camposampiero": {
+"Camposampiero": "u"
+},
+"Ariano nel Polesine": {
+"Polesine": "v"
+},
+"Arquà Polesine": {
+"Polesine": "v"
+},
+"Badia Polesine": {
+"Polesine": "v"
+},
+"Bosaro": {
+"Bosaro": "v"
+},
+"Ceneselli": {
+"Ceneselli": "v"
+},
+"Frassinelle Polesine": {
+"Polesine": "v"
+},
+"Fratta Polesine": {
+"Polesine": "v"
+},
+"Lusia": {
+"Lusia": "v"
+},
+"Polesella": {
+"Polesella": "v"
+},
+"Pontecchio Polesine": {
+"Polesine": "v"
+},
+"Rosolina": {
+"Rosolina": "v"
+},
+"Villadose": {
+"Villadose": "v"
+},
+"Villanova Marchesana": {
+"Marchesana": "v"
+},
+"Basiliano": {
+"Basiliano": "v"
+},
+"Chiusaforte": {
+"Chiusaforte": "v"
+},
+"Corno di Rosazzo": {
+"Rosazzo": "v"
+},
+"Coseano": {
+"Coseano": "v"
+},
+"Latisana": {
+"Latisana": "v"
+},
+"Lusevera": {
+"Lusevera": "v"
+},
+"Moggio Udinese": {
+"Udinese": "v"
+},
+"Osoppo": {
+"Osoppo": "v"
+},
+"Pasian di Prato": {
+"Pasian": "v"
+},
+"Resia": {
+"Resia": "v"
+},
+"Resiutta": {
+"Resiutta": "v"
+},
+"San Giovanni al Natisone": {
+"Natisone": "v"
+},
+"San Pietro al Natisone": {
+"Natisone": "v"
+},
+"Tarvisio": {
+"Tarvisio": "v"
+},
+"Torviscosa": {
+"Torviscosa": "v"
+},
+"Trasaghis": {
+"Trasaghis": "v"
+},
+"Tricesimo": {
+"Tricesimo": "v"
+},
+"Trivignano Udinese": {
+"Udinese": "v"
+},
+"Treppo Ligosullo": {
+"Ligosullo": "u"
+},
+"Farra d'Isonzo": {
+"Isonzo": "v"
+},
+"Gradisca d'Isonzo": {
+"Isonzo": "v"
+},
+"Romans d'Isonzo": {
+"Isonzo": "v"
+},
+"San Canzian d'Isonzo": {
+"Isonzo": "v"
+},
+"San Lorenzo Isontino": {
+"Isontino": "v"
+},
+"San Pier d'Isonzo": {
+"Isonzo": "v"
+},
+"Savogna d'Isonzo": {
+"Isonzo": "v"
+},
+"Duino Aurisina": {
+"Aurisina": "v"
+},
+"Casarsa della Delizia": {
+"Casarsa": "v"
+},
+"Frisanco": {
+"Frisanco": "v"
+},
+"Pasiano di Pordenone": {
+"Pasiano": "v"
+},
+"Travesio": {
+"Travesio": "v"
+},
+"Vito d'Asio": {
+"Asio": "v"
+},
+"Valvasone Arzene": {
+"Valvasone": "v"
+},
+"Cesio": {
+"Cesio": "v"
+},
+"Chiusanico": {
+"Chiusanico": "v"
+},
+"Chiusavecchia": {
+"Chiusavecchia": "v"
+},
+"Cosio d'Arroscia": {
+"Cosio": "v"
+},
+"Isolabona": {
+"Isolabona": "v"
+},
+"Vallecrosia": {
+"Vallecrosia": "v"
+},
+"Vasia": {
+"Vasia": "v"
+},
+"Montalto Carpasio": {
+"Carpasio": "v"
+},
+"Albisola Superiore": {
+"Albisola": "u"
+},
+"Casanova Lerrone": {
+"Casanova": "v"
+},
+"Cisano sul Neva": {
+"Cisano": "v"
+},
+"Millesimo": {
+"Millesimo": "v"
+},
+"Nasino": {
+"Nasino": "v"
+},
+"Osiglia": {
+"Osiglia": "v"
+},
+"Busalla": {
+"Busalla": "v"
+},
+"Casarza Ligure": {
+"Casarza": "v"
+},
+"Casella": {
+"Casella": "v"
+},
+"Castiglione Chiavarese": {
+"Chiavarese": "v"
+},
+"Ceranesi": {
+"Ceranesi": "v"
+},
+"Isola del Cantone": {
+"Isola": "v"
+},
+"Masone": {
+"Masone": "v"
+},
+"Moconesi": {
+"Moconesi": "v"
+},
+"Sant'Olcese": {
+"Olcese": "v"
+},
+"Varese Ligure": {
+"Varese": "v"
+},
+"Besenzone": {
+"Besenzone": "v"
+},
+"Lesignano de' Bagni": {
+"Lesignano": "v"
+},
+"Medesano": {
+"Medesano": "v"
+},
+"Sissa Trecasali": {
+"Trecasali": "v"
+},
+"Polesine Zibello": {
+"Polesine": "v"
+},
+"Baiso": {
+"Baiso": "v"
+},
+"Casalgrande": {
+"Casalgrande": "v"
+},
+"Casina": {
+"Casina": "v"
+},
+"Camposanto": {
+"Camposanto": "u"
+},
+"Fiorano Modenese": {
+"Modenese": "v"
+},
+"Montese": {
+"Montese": "v"
+},
+"San Cesario sul Panaro": {
+"Cesario": "v"
+},
+"Casalecchio di Reno": {
+"Casalecchio": "v"
+},
+"Casalfiumanese": {
+"Casalfiumanese": "v"
+},
+"Castel di Casio": {
+"Casio": "v"
+},
+"Castenaso": {
+"Castenaso": "v"
+},
+"Sala Bolognese": {
+"Bolognese": "v"
+},
+"San Pietro in Casale": {
+"Casale": "v"
+},
+"Sant'Agata Bolognese": {
+"Bolognese": "v"
+},
+"Zola Predosa": {
+"Predosa": "v"
+},
+"Lagosanto": {
+"Lagosanto": "u"
+},
+"Masi Torello": {
+"Masi": "v"
+},
+"Mesola": {
+"Mesola": "v"
+},
+"Tresignana": {
+"Tresignana": "v"
+},
+"Brisighella": {
+"Brisighella": "v"
+},
+"Casola Valsenio": {
+"Casola": "v"
+},
+"Castel Bolognese": {
+"Bolognese": "v"
+},
+"Fusignano": {
+"Fusignano": "v"
+},
+"Cesena": {
+"Cesena": "v"
+},
+"Cesenatico": {
+"Cesenatico": "v"
+},
+"Misano Adriatico": {
+"Misano": "v"
+},
+"Casola in Lunigiana": {
+"Casola": "v"
+},
+"Montignoso": {
+"Montignoso": "v"
+},
+"Tresana": {
+"Tresana": "v"
+},
+"Massarosa": {
+"Massarosa": "v"
+},
+"Pietrasanta": {
+"Pietrasanta": "u"
+},
+"Villa Basilica": {
+"Basilica": "v"
+},
+"Ponte Buggianese": {
+"Buggianese": "v"
+},
+"Sambuca Pistoiese": {
+"Pistoiese": "v"
+},
+"Serravalle Pistoiese": {
+"Pistoiese": "v"
+},
+"Chiesina Uzzanese": {
+"Chiesina": "v",
+"Uzzanese": "v"
+},
+"Campi Bisenzio": {
+"Bisenzio": "v"
+},
+"Fiesole": {
+"Fiesole": "v"
+},
+"San Casciano in Val di Pesa": {
+"Pesa": "v"
+},
+"Figline e Incisa Valdarno": {
+"Incisa": "v"
+},
+"Capraia Isola": {
+"Isola": "v"
+},
+"Collesalvetti": {
+"Collesalvetti": "u"
+},
+"Rosignano Marittimo": {
+"Rosignano": "v"
+},
+"Casale Marittimo": {
+"Casale": "v"
+},
+"Orciano Pisano": {
+"Pisano": "v"
+},
+"Pisa": {
+"Pisa": "v"
+},
+"Vicopisano": {
+"Vicopisano": "v"
+},
+"Caprese Michelangelo": {
+"Caprese": "v"
+},
+"Chiusi della Verna": {
+"Chiusi": "v"
+},
+"Casole d'Elsa": {
+"Casole": "v"
+},
+"Chiusi": {
+"Chiusi": "v"
+},
+"Isola del Giglio": {
+"Isola": "v"
+},
+"Assisi": {
+"Assisi": "v"
+},
+"Passignano sul Trasimeno": {
+"Trasimeno": "v"
+},
+"Tuoro sul Trasimeno": {
+"Trasimeno": "v"
+},
+"Belforte all'Isauro": {
+"Isauro": "v"
+},
+"Fratte Rosa": {
+"Rosa": "v"
+},
+"Isola del Piano": {
+"Isola": "v"
+},
+"Pesaro": {
+"Pesaro": "v"
+},
+"Castelleone di Suasa": {
+"Suasa": "v"
+},
+"Cerreto d'Esi": {
+"Esi": "v"
+},
+"Jesi": {
+"Jesi": "v"
+},
+"Osimo": {
+"Osimo": "v"
+},
+"Rosora": {
+"Rosora": "v"
+},
+"San Paolo di Jesi": {
+"Jesi": "v"
+},
+"Esanatoglia": {
+"Esanatoglia": "v"
+},
+"Montecosaro": {
+"Montecosaro": "v"
+},
+"Ripe San Ginesio": {
+"Ginesio": "v"
+},
+"San Ginesio": {
+"Ginesio": "v"
+},
+"Urbisaglia": {
+"Urbisaglia": "v"
+},
+"Acquasanta Terme": {
+"Acquasanta": "u"
+},
+"Montefiore dell'Aso": {
+"Aso": "v"
+},
+"Pedaso": {
+"Pedaso": "v"
+},
+"Farnese": {
+"Farnese": "v"
+},
+"Gallese": {
+"Gallese": "v"
+},
+"Monterosi": {
+"Monterosi": "v"
+},
+"Vasanello": {
+"Vasanello": "v"
+},
+"Borgorose": {
+"Borgorose": "v"
+},
+"Casaprota": {
+"Casaprota": "v"
+},
+"Montasola": {
+"Montasola": "v"
+},
+"Salisano": {
+"Salisano": "v"
+},
+"Casape": {
+"Casape": "v"
+},
+"Pisoniano": {
+"Pisoniano": "v"
+},
+"San Cesareo": {
+"Cesareo": "v"
+},
+"Roccasecca dei Volsci": {
+"Roccasecca": "u"
+},
+"Amaseno": {
+"Amaseno": "v"
+},
+"Ausonia": {
+"Ausonia": "v"
+},
+"Casalattico": {
+"Casalattico": "v"
+},
+"Casalvieri": {
+"Casalvieri": "v"
+},
+"Coreno Ausonio": {
+"Ausonio": "v"
+},
+"Frosinone": {
+"Frosinone": "v"
+},
+"Isola del Liri": {
+"Isola": "v"
+},
+"Pescosolido": {
+"Pescosolido": "u"
+},
+"Roccasecca": {
+"Roccasecca": "u"
+},
+"Viticuso": {
+"Viticuso": "v"
+},
+"Bisegna": {
+"Bisegna": "v"
+},
+"Carapelle Calvisio": {
+"Calvisio": "v"
+},
+"Castelvecchio Calvisio": {
+"Calvisio": "v"
+},
+"Rivisondoli": {
+"Rivisondoli": "v"
+},
+"Roccacasale": {
+"Roccacasale": "v"
+},
+"Roccaraso": {
+"Roccaraso": "v"
+},
+"Sant'Eusanio Forconese": {
+"Eusanio": "v",
+"Forconese": "v"
+},
+"Trasacco": {
+"Trasacco": "v"
+},
+"Bisenti": {
+"Bisenti": "v"
+},
+"Cellino Attanasio": {
+"Attanasio": "v"
+},
+"Isola del Gran Sasso d'Italia": {
+"Isola": "v"
+},
+"Roseto degli Abruzzi": {
+"Roseto": "v"
+},
+"Castiglione a Casauria": {
+"Casauria": "v"
+},
+"Civitella Casanova": {
+"Casanova": "v"
+},
+"Montesilvano": {
+"Montesilvano": "u"
+},
+"Pescosansonesco": {
+"Pescosansonesco": "u"
+},
+"Tocco da Casauria": {
+"Casauria": "v"
+},
+"Canosa Sannita": {
+"Canosa": "v"
+},
+"Casacanditella": {
+"Casacanditella": "v"
+},
+"Casalanguida": {
+"Casalanguida": "v"
+},
+"Casalbordino": {
+"Casalbordino": "v"
+},
+"Casalincontrada": {
+"Casalincontrada": "v"
+},
+"Casoli": {
+"Casoli": "v"
+},
+"Fossacesia": {
+"Fossacesia": "v"
+},
+"Fresagrandinaria": {
+"Fresagrandinaria": "v"
+},
+"Frisa": {
+"Frisa": "v"
+},
+"Monteodorisio": {
+"Monteodorisio": "v"
+},
+"Rosello": {
+"Rosello": "v"
+},
+"Sant'Eusanio del Sangro": {
+"Eusanio": "v"
+},
+"Casacalenda": {
+"Casacalenda": "v"
+},
+"Casalciprano": {
+"Casalciprano": "v"
+},
+"Colle d'Anchise": {
+"Anchise": "v"
+},
+"Gambatesa": {
+"Gambatesa": "v"
+},
+"Guglionesi": {
+"Guglionesi": "v"
+},
+"Limosano": {
+"Limosano": "v"
+},
+"Molise": {
+"Molise": "v"
+},
+"Montenero di Bisaccia": {
+"Bisaccia": "v"
+},
+"Ripalimosani": {
+"Ripalimosani": "v"
+},
+"San Biase": {
+"Biase": "v"
+},
+"San Felice del Molise": {
+"Molise": "v"
+},
+"San Polo Matese": {
+"Matese": "v"
+},
+"Sant'Angelo Limosano": {
+"Limosano": "v"
+},
+"Sant'Elia a Pianisi": {
+"Pianisi": "v"
+},
+"Acquaviva d'Isernia": {
+"Isernia": "v"
+},
+"Castelpetroso": {
+"Castelpetroso": "v"
+},
+"Conca Casale": {
+"Casale": "v"
+},
+"Frosolone": {
+"Frosolone": "v"
+},
+"Isernia": {
+"Isernia": "v"
+},
+"Macchia d'Isernia": {
+"Isernia": "v"
+},
+"Pettoranello del Molise": {
+"Molise": "v"
+},
+"Roccasicura": {
+"Roccasicura": "u"
+},
+"Santa Maria del Molise": {
+"Molise": "v"
+},
+"Sessano del Molise": {
+"Molise": "v"
+},
+"Calvi Risorta": {
+"Risorta": "v"
+},
+"Capodrise": {
+"Capodrise": "v"
+},
+"Casagiove": {
+"Casagiove": "v"
+},
+"Casal di Principe": {
+"Casal": "v"
+},
+"Casaluce": {
+"Casaluce": "v"
+},
+"Casapulla": {
+"Casapulla": "v"
+},
+"Caserta": {
+"Caserta": "v"
+},
+"Castello del Matese": {
+"Matese": "v"
+},
+"Cesa": {
+"Cesa": "v"
+},
+"Francolise": {
+"Francolise": "v"
+},
+"Gallo Matese": {
+"Matese": "v"
+},
+"Grazzanise": {
+"Grazzanise": "v"
+},
+"Marcianise": {
+"Marcianise": "v"
+},
+"Piedimonte Matese": {
+"Matese": "v"
+},
+"Portico di Caserta": {
+"Caserta": "v"
+},
+"Presenzano": {
+"Presenzano": "v"
+},
+"San Gregorio Matese": {
+"Matese": "v"
+},
+"Sparanise": {
+"Sparanise": "v"
+},
+"Casapesenna": {
+"Casapesenna": "v"
+},
+"Amorosi": {
+"Amorosi": "v"
+},
+"Apollosa": {
+"Apollosa": "v"
+},
+"Arpaise": {
+"Arpaise": "v"
+},
+"Baselice": {
+"Baselice": "v"
+},
+"Casalduni": {
+"Casalduni": "v"
+},
+"Cusano Mutri": {
+"Cusano": "v"
+},
+"Foglianise": {
+"Foglianise": "v"
+},
+"Frasso Telesino": {
+"Telesino": "v"
+},
+"Montesarchio": {
+"Montesarchio": "u"
+},
+"Paolisi": {
+"Paolisi": "v"
+},
+"Paupisi": {
+"Paupisi": "v"
+},
+"San Salvatore Telesino": {
+"Telesino": "v"
+},
+"Telese Terme": {
+"Telese": "v"
+},
+"Torrecuso": {
+"Torrecuso": "v"
+},
+"Boscotrecase": {
+"Boscotrecase": "v"
+},
+"Camposano": {
+"Camposano": "u"
+},
+"Casalnuovo di Napoli": {
+"Casalnuovo": "v"
+},
+"Casamarciano": {
+"Casamarciano": "v"
+},
+"Casamicciola Terme": {
+"Casamicciola": "v"
+},
+"Casandrino": {
+"Casandrino": "v"
+},
+"Casavatore": {
+"Casavatore": "v"
+},
+"Casola di Napoli": {
+"Casola": "v"
+},
+"Casoria": {
+"Casoria": "v"
+},
+"San Gennaro Vesuviano": {
+"Vesuviano": "v"
+},
+"San Giuseppe Vesuviano": {
+"Giuseppe": "v",
+"Vesuviano": "v"
+},
+"San Sebastiano al Vesuvio": {
+"Vesuvio": "v"
+},
+"Sant'Anastasia": {
+"Anastasia": "v"
+},
+"Somma Vesuviana": {
+"Vesuviana": "v"
+},
+"Trecase": {
+"Trecase": "v"
+},
+"Bisaccia": {
+"Bisaccia": "v"
+},
+"Caposele": {
+"Caposele": "u"
+},
+"Casalbore": {
+"Casalbore": "v"
+},
+"Cesinali": {
+"Cesinali": "v"
+},
+"Chiusano di San Domenico": {
+"Chiusano": "v"
+},
+"Fontanarosa": {
+"Fontanarosa": "v"
+},
+"Gesualdo": {
+"Gesualdo": "v"
+},
+"Luogosano": {
+"Luogosano": "u"
+},
+"Parolise": {
+"Parolise": "v"
+},
+"Pietradefusi": {
+"Pietradefusi": "v"
+},
+"Taurasi": {
+"Taurasi": "v"
+},
+"Vallesaccarda": {
+"Vallesaccarda": "u"
+},
+"Casalbuono": {
+"Casalbuono": "v"
+},
+"Casaletto Spartano": {
+"Casaletto": "v"
+},
+"Casal Velino": {
+"Casal": "v"
+},
+"Caselle in Pittari": {
+"Caselle": "v"
+},
+"Castiglione del Genovesi": {
+"Genovesi": "v"
+},
+"Ceraso": {
+"Ceraso": "v"
+},
+"Giffoni Sei Casali": {
+"Casali": "v"
+},
+"Montesano sulla Marcellana": {
+"Montesano": "u"
+},
+"Pertosa": {
+"Pertosa": "v"
+},
+"Positano": {
+"Positano": "v"
+},
+"Roccagloriosa": {
+"Roccagloriosa": "v"
+},
+"Sant'Angelo a Fasanella": {
+"Fasanella": "v"
+},
+"Casalnuovo Monterotaro": {
+"Casalnuovo": "v"
+},
+"Casalvecchio di Puglia": {
+"Casalvecchio": "v"
+},
+"Isole Tremiti": {
+"Isole": "v"
+},
+"Lesina": {
+"Lesina": "v"
+},
+"Roseto Valfortore": {
+"Roseto": "v"
+},
+"Casamassima": {
+"Casamassima": "v"
+},
+"Carosino": {
+"Carosino": "v"
+},
+"Ginosa": {
+"Ginosa": "v"
+},
+"Monteiasi": {
+"Monteiasi": "v"
+},
+"Montemesola": {
+"Montemesola": "v"
+},
+"San Marzano di San Giuseppe": {
+"Giuseppe": "v"
+},
+"Brindisi": {
+"Brindisi": "v"
+},
+"Fasano": {
+"Fasano": "v"
+},
+"Mesagne": {
+"Mesagne": "v"
+},
+"Torre Santa Susanna": {
+"Susanna": "v"
+},
+"Arnesano": {
+"Arnesano": "v"
+},
+"Casarano": {
+"Casarano": "v"
+},
+"Diso": {
+"Diso": "v"
+},
+"Montesano Salentino": {
+"Montesano": "u"
+},
+"Muro Leccese": {
+"Leccese": "v"
+},
+"San Cesario di Lecce": {
+"Cesario": "v"
+},
+"Santa Cesarea Terme": {
+"Cesarea": "v"
+},
+"Taurisano": {
+"Taurisano": "v"
+},
+"Tricase": {
+"Tricase": "v"
+},
+"Uggiano la Chiesa": {
+"Chiesa": "v"
+},
+"Porto Cesareo": {
+"Cesareo": "v"
+},
+"Presicce-Acquarica": {
+"Presicce": "v"
+},
+"Canosa di Puglia": {
+"Canosa": "v"
+},
+"Brindisi Montagna": {
+"Brindisi": "v"
+},
+"San Paolo Albanese": {
+"Albanese": "v"
+},
+"Cersosimo": {
+"Cersosimo": "v"
+},
+"Palazzo San Gervasio": {
+"Gervasio": "v"
+},
+"Pietrapertosa": {
+"Pietrapertosa": "v"
+},
+"San Costantino Albanese": {
+"Albanese": "v"
+},
+"Senise": {
+"Senise": "v"
+},
+"Spinoso": {
+"Spinoso": "v"
+},
+"Vaglio Basilicata": {
+"Basilicata": "v"
+},
+"Venosa": {
+"Venosa": "v"
+},
+"Garaguso": {
+"Garaguso": "v"
+},
+"Montescaglioso": {
+"Montescaglioso": "v"
+},
+"Acquaformosa": {
+"Acquaformosa": "v"
+},
+"Acquappesa": {
+"Acquappesa": "v"
+},
+"Bisignano": {
+"Bisignano": "v"
+},
+"Castiglione Cosentino": {
+"Cosentino": "v"
+},
+"Cerisano": {
+"Cerisano": "v"
+},
+"Colosimi": {
+"Colosimi": "v"
+},
+"Cosenza": {
+"Cosenza": "v"
+},
+"Crosia": {
+"Crosia": "v"
+},
+"Falconara Albanese": {
+"Albanese": "v"
+},
+"Grisolia": {
+"Grisolia": "v"
+},
+"Guardia Piemontese": {
+"Piemontese": "v"
+},
+"Marano Marchesato": {
+"Marchesato": "v"
+},
+"Papasidero": {
+"Papasidero": "u"
+},
+"Rose": {
+"Rose": "v"
+},
+"Roseto Capo Spulico": {
+"Roseto": "v"
+},
+"San Basile": {
+"Basile": "v"
+},
+"San Cosmo Albanese": {
+"Albanese": "v"
+},
+"San Giorgio Albanese": {
+"Albanese": "v"
+},
+"Santa Caterina Albanese": {
+"Albanese": "v"
+},
+"Sant'Agata di Esaro": {
+"Esaro": "v"
+},
+"Spezzano Albanese": {
+"Albanese": "v"
+},
+"Trebisacce": {
+"Trebisacce": "v"
+},
+"Vaccarizzo Albanese": {
+"Albanese": "v"
+},
+"Casali del Manco": {
+"Casali": "v"
+},
+"Magisano": {
+"Magisano": "v"
+},
+"Marcedusa": {
+"Marcedusa": "v"
+},
+"Nocera Terinese": {
+"Terinese": "v"
+},
+"Sorbo San Basile": {
+"Basile": "v"
+},
+"Zagarise": {
+"Zagarise": "v"
+},
+"Casignana": {
+"Casignana": "v"
+},
+"Cosoleto": {
+"Cosoleto": "v"
+},
+"Feroleto della Chiesa": {
+"Chiesa": "v"
+},
+"Gioiosa Ionica": {
+"Gioiosa": "v"
+},
+"Marina di Gioiosa Ionica": {
+"Gioiosa": "v"
+},
+"Rosarno": {
+"Rosarno": "v"
+},
+"Casabona": {
+"Casabona": "v"
+},
+"Isola di Capo Rizzuto": {
+"Isola": "v"
+},
+"Mesoraca": {
+"Mesoraca": "v"
+},
+"San Mauro Marchesato": {
+"Marchesato": "v"
+},
+"Dasà": {
+"Dasà": "v"
+},
+"Filogaso": {
+"Filogaso": "v"
+},
+"Buseto Palizzolo": {
+"Buseto": "v"
+},
+"Petrosino": {
+"Petrosino": "v"
+},
+"Misiliscemi": {
+"Misiliscemi": "v"
+},
+"Aliminusa": {
+"Aliminusa": "v"
+},
+"Bisacquino": {
+"Bisacquino": "v"
+},
+"Chiusa Sclafani": {
+"Chiusa": "v"
+},
+"Cinisi": {
+"Cinisi": "v"
+},
+"Collesano": {
+"Collesano": "u"
+},
+"Isola delle Femmine": {
+"Isola": "v"
+},
+"Mezzojuso": {
+"Mezzojuso": "v"
+},
+"Misilmeri": {
+"Misilmeri": "v"
+},
+"Piana degli Albanesi": {
+"Albanesi": "v"
+},
+"Polizzi Generosa": {
+"Generosa": "v"
+},
+"San Giuseppe Jato": {
+"Giuseppe": "v"
+},
+"Termini Imerese": {
+"Imerese": "v"
+},
+"Terrasini": {
+"Terrasini": "v"
+},
+"Alcara li Fusi": {
+"Fusi": "v"
+},
+"Basicò": {
+"Basicò": "v"
+},
+"Casalvecchio Siculo": {
+"Casalvecchio": "v"
+},
+"Cesarò": {
+"Cesarò": "v"
+},
+"Fiumedinisi": {
+"Fiumedinisi": "v"
+},
+"Gioiosa Marea": {
+"Gioiosa": "v"
+},
+"Naso": {
+"Naso": "v"
+},
+"Santa Teresa di Riva": {
+"Teresa": "v"
+},
+"Tusa": {
+"Tusa": "v"
+},
+"Lampedusa e Linosa": {
+"Lampedusa": "v",
+"Linosa": "v"
+},
+"Ravanusa": {
+"Ravanusa": "v"
+},
+"Santa Elisabetta": {
+"Elisabetta": "v"
+},
+"Resuttano": {
+"Resuttano": "v"
+},
+"Riesi": {
+"Riesi": "v"
+},
+"Santa Caterina Villarmosa": {
+"Villarmosa": "v"
+},
+"Nicosia": {
+"Nicosia": "v"
+},
+"Villarosa": {
+"Villarosa": "v"
+},
+"Motta Sant'Anastasia": {
+"Anastasia": "v"
+},
+"Nicolosi": {
+"Nicolosi": "v"
+},
+"Raddusa": {
+"Raddusa": "v"
+},
+"Comiso": {
+"Comiso": "v"
+},
+"Ragusa": {
+"Ragusa": "v"
+},
+"Rosolini": {
+"Rosolini": "v"
+},
+"Siracusa": {
+"Siracusa": "v"
+},
+"Buddusò": {
+"Buddusò": "v"
+},
+"Luogosanto": {
+"Luogosanto": "u"
+},
+"Osilo": {
+"Osilo": "v"
+},
+"Santa Teresa Gallura": {
+"Teresa": "v"
+},
+"Tempio Pausania": {
+"Pausania": "v"
+},
+"Thiesi": {
+"Thiesi": "v"
+},
+"Usini": {
+"Usini": "v"
+},
+"Badesi": {
+"Badesi": "v"
+},
+"Desulo": {
+"Desulo": "v"
+},
+"Girasole": {
+"Girasole": "u"
+},
+"Lanusei": {
+"Lanusei": "v"
+},
+"Orgosolo": {
+"Orgosolo": "v"
+},
+"Orosei": {
+"Orosei": "v"
+},
+"Osidda": {
+"Osidda": "v"
+},
+"Osini": {
+"Osini": "v"
+},
+"Posada": {
+"Posada": "v"
+},
+"Villagrande Strisaili": {
+"Strisaili": "v"
+},
+"Abbasanta": {
+"Abbasanta": "u"
+},
+"Asuni": {
+"Asuni": "v"
+},
+"Busachi": {
+"Busachi": "v"
+},
+"Masullas": {
+"Masullas": "v"
+},
+"Tadasuni": {
+"Tadasuni": "v"
+},
+"Usellus": {
+"Usellus": "v"
+},
+"Bosa": {
+"Bosa": "v"
+},
+"Calasetta": {
+"Calasetta": "v"
+},
+"Gesico": {
+"Gesico": "v"
+},
+"Gonnesa": {
+"Gonnesa": "v"
+},
+"Guasila": {
+"Guasila": "v"
+},
+"Iglesias": {
+"Iglesias": "v"
+},
+"Isili": {
+"Isili": "v"
+},
+"Masainas": {
+"Masainas": "v"
+},
+"Musei": {
+"Musei": "v"
+},
+"Ortacesus": {
+"Ortacesus": "v"
+},
+"Portoscuso": {
+"Portoscuso": "v"
+},
+"San Basilio": {
+"Basilio": "v"
+},
+"Sant'Anna Arresi": {
+"Arresi": "v"
+},
+"Vallermosa": {
+"Vallermosa": "v"
+},
+"Villasalto": {
+"Villasalto": "u"
+},
+"Villasimius": {
+"Villasimius": "u"
+},
+"Villasor": {
+"Villasor": "u"
+},
+"Villaspeciosa": {
+"Villaspeciosa": "v"
+}
+}

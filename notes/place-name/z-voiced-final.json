@@ -1,0 +1,2398 @@
+{
+"Andezeno": {
+"Andezeno": "v"
+},
+"Azeglio": {
+"Azeglio": "v"
+},
+"Brandizzo": {
+"Brandizzo": "u"
+},
+"Brozolo": {
+"Brozolo": "v"
+},
+"Bruzolo": {
+"Bruzolo": "v"
+},
+"Cinzano": {
+"Cinzano": "u"
+},
+"Coazze": {
+"Coazze": "u"
+},
+"Foglizzo": {
+"Foglizzo": "u"
+},
+"Garzigliana": {
+"Garzigliana": "v"
+},
+"Lanzo Torinese": {
+"Lanzo": "u"
+},
+"Loranzè": {
+"Loranzè": "u"
+},
+"Mazzè": {
+"Mazzè": "u"
+},
+"Mezzenile": {
+"Mezzenile": "v"
+},
+"Monastero di Lanzo": {
+"Lanzo": "u"
+},
+"Ozegna": {
+"Ozegna": "v"
+},
+"Palazzo Canavese": {
+"Palazzo": "u"
+},
+"Pianezza": {
+"Pianezza": "u"
+},
+"Quagliuzzo": {
+"Quagliuzzo": "u"
+},
+"Salza di Pinerolo": {
+"Salza": "u"
+},
+"San Maurizio Canavese": {
+"Maurizio": "u"
+},
+"Sauze di Cesana": {
+"Sauze": "v"
+},
+"Sauze d'Oulx": {
+"Sauze": "v"
+},
+"Sciolze": {
+"Sciolze": "u"
+},
+"Torrazza Piemonte": {
+"Torrazza": "u"
+},
+"Bianzè": {
+"Bianzè": "v"
+},
+"Buronzo": {
+"Buronzo": "u"
+},
+"Costanzana": {
+"Costanzana": "u"
+},
+"Lozzolo": {
+"Lozzolo": "u"
+},
+"Palazzolo Vercellese": {
+"Palazzolo": "u"
+},
+"Pezzana": {
+"Pezzana": "u"
+},
+"Tronzano Vercellese": {
+"Tronzano": "u"
+},
+"Alto Sermenza": {
+"Sermenza": "u"
+},
+"Bellinzago Novarese": {
+"Bellinzago": "u"
+},
+"Bolzano Novarese": {
+"Bolzano": "u"
+},
+"Borgolavezzaro": {
+"Borgolavezzaro": "v"
+},
+"Castellazzo Novarese": {
+"Castellazzo": "u"
+},
+"Colazza": {
+"Colazza": "u"
+},
+"Gozzano": {
+"Gozzano": "u"
+},
+"Granozzo con Monticello": {
+"Granozzo": "u"
+},
+"Mezzomerico": {
+"Mezzomerico": "v"
+},
+"Paruzzaro": {
+"Paruzzaro": "u"
+},
+"San Maurizio d'Opaglio": {
+"Maurizio": "u"
+},
+"San Nazzaro Sesia": {
+"Nazzaro": "v"
+},
+"San Pietro Mosezzo": {
+"Mosezzo": "u"
+},
+"Sizzano": {
+"Sizzano": "u"
+},
+"Sozzago": {
+"Sozzago": "u"
+},
+"Vinzaglio": {
+"Vinzaglio": "u"
+},
+"Bernezzo": {
+"Bernezzo": "u"
+},
+"Borgo San Dalmazzo": {
+"Dalmazzo": "u"
+},
+"Castelletto Uzzone": {
+"Uzzone": "u"
+},
+"Costigliole Saluzzo": {
+"Saluzzo": "u"
+},
+"Cravanzana": {
+"Cravanzana": "u"
+},
+"Gorzegno": {
+"Gorzegno": "v"
+},
+"Grinzane Cavour": {
+"Grinzane": "u"
+},
+"Montezemolo": {
+"Montezemolo": "v"
+},
+"Morozzo": {
+"Morozzo": "u"
+},
+"Murazzano": {
+"Murazzano": "u"
+},
+"Narzole": {
+"Narzole": "u"
+},
+"Pezzolo Valle Uzzone": {
+"Pezzolo": "u",
+"Uzzone": "u"
+},
+"Pietraporzio": {
+"Pietraporzio": "u"
+},
+"Piozzo": {
+"Piozzo": "u"
+},
+"Prazzo": {
+"Prazzo": "u"
+},
+"Saluzzo": {
+"Saluzzo": "u"
+},
+"Trezzo Tinella": {
+"Trezzo": "u"
+},
+"Verzuolo": {
+"Verzuolo": "v"
+},
+"Vezza d'Alba": {
+"Vezza": "u"
+},
+"Villar San Costanzo": {
+"Costanzo": "u"
+},
+"Azzano d'Asti": {
+"Azzano": "u"
+},
+"Berzano di San Pietro": {
+"Berzano": "u"
+},
+"Casorzo Monferrato": {
+"Casorzo": "u"
+},
+"Castagnole delle Lanze": {
+"Lanze": "u"
+},
+"Coazzolo": {
+"Coazzolo": "u"
+},
+"Cortanze": {
+"Cortanze": "u"
+},
+"Cortazzone": {
+"Cortazzone": "u"
+},
+"Grazzano Badoglio": {
+"Grazzano": "u"
+},
+"Loazzolo": {
+"Loazzolo": "u"
+},
+"Maranzana": {
+"Maranzana": "u"
+},
+"Mombaruzzo": {
+"Mombaruzzo": "u"
+},
+"Nizza Monferrato": {
+"Nizza": "u"
+},
+"Rocca d'Arazzo": {
+"Arazzo": "u"
+},
+"San Marzano Oliveto": {
+"Marzano": "u"
+},
+"Scurzolengo": {
+"Scurzolengo": "u"
+},
+"Alzano Scrivia": {
+"Alzano": "u"
+},
+"Balzola": {
+"Balzola": "u"
+},
+"Basaluzzo": {
+"Basaluzzo": "u"
+},
+"Berzano di Tortona": {
+"Berzano": "u"
+},
+"Bozzole": {
+"Bozzole": "u"
+},
+"Carezzano": {
+"Carezzano": "u"
+},
+"Castellazzo Bormida": {
+"Castellazzo": "u"
+},
+"Conzano": {
+"Conzano": "v"
+},
+"Felizzano": {
+"Felizzano": "u"
+},
+"Guazzora": {
+"Guazzora": "u"
+},
+"Melazzo": {
+"Melazzo": "u"
+},
+"Montemarzino": {
+"Montemarzino": "u"
+},
+"Ozzano Monferrato": {
+"Ozzano": "v"
+},
+"Pecetto di Valenza": {
+"Valenza": "u"
+},
+"Pietra Marazzi": {
+"Marazzi": "u"
+},
+"Ponzano Monferrato": {
+"Ponzano": "u"
+},
+"Ponzone": {
+"Ponzone": "u"
+},
+"Pozzol Groppo": {
+"Pozzol": "u"
+},
+"Pozzolo Formigaro": {
+"Pozzolo": "u"
+},
+"Sarezzano": {
+"Sarezzano": "u"
+},
+"Sezzadio": {
+"Sezzadio": "u"
+},
+"Stazzano": {
+"Stazzano": "u"
+},
+"Terzo": {
+"Terzo": "u"
+},
+"Valenza": {
+"Valenza": "u"
+},
+"Viguzzolo": {
+"Viguzzolo": "u"
+},
+"Camburzano": {
+"Camburzano": "u"
+},
+"Dorzano": {
+"Dorzano": "v"
+},
+"Massazza": {
+"Massazza": "u"
+},
+"Mezzana Mortigliengo": {
+"Mezzana": "v"
+},
+"Muzzano": {
+"Muzzano": "u"
+},
+"Rosazza": {
+"Rosazza": "u"
+},
+"Torrazzo": {
+"Torrazzo": "u"
+},
+"Vallanzengo": {
+"Vallanzengo": "u"
+},
+"Zimone": {
+"Zimone": "v"
+},
+"Zubiena": {
+"Zubiena": "v"
+},
+"Zumaglia": {
+"Zumaglia": "v"
+},
+"Anzola d'Ossola": {
+"Anzola": "v"
+},
+"Arizzano": {
+"Arizzano": "u"
+},
+"Bannio Anzino": {
+"Anzino": "v"
+},
+"Beura-Cardezza": {
+"Cardezza": "u"
+},
+"Caprezzo": {
+"Caprezzo": "u"
+},
+"Formazza": {
+"Formazza": "u"
+},
+"Mergozzo": {
+"Mergozzo": "u"
+},
+"Miazzina": {
+"Miazzina": "v"
+},
+"Pallanzeno": {
+"Pallanzeno": "u"
+},
+"Vanzone con San Carlo": {
+"Vanzone": "u"
+},
+"Varzo": {
+"Varzo": "u"
+},
+"Borgomezzavalle": {
+"Borgomezzavalle": "v"
+},
+"Bionaz": {
+"Bionaz": "silent"
+},
+"Champdepraz": {
+"Champdepraz": "silent"
+},
+"Perloz": {
+"Perloz": "silent"
+},
+"Albizzate": {
+"Albizzate": "v"
+},
+"Azzate": {
+"Azzate": "u"
+},
+"Azzio": {
+"Azzio": "u"
+},
+"Besozzo": {
+"Besozzo": "u"
+},
+"Brezzo di Bedero": {
+"Brezzo": "u"
+},
+"Brinzio": {
+"Brinzio": "u"
+},
+"Busto Arsizio": {
+"Arsizio": "u"
+},
+"Casalzuigno": {
+"Casalzuigno": "v"
+},
+"Castellanza": {
+"Castellanza": "u"
+},
+"Cavaria con Premezzo": {
+"Premezzo": "u"
+},
+"Cazzago Brabbia": {
+"Cazzago": "u"
+},
+"Dumenza": {
+"Dumenza": "u"
+},
+"Gazzada Schianno": {
+"Gazzada": "v"
+},
+"Gerenzano": {
+"Gerenzano": "u"
+},
+"Inarzo": {
+"Inarzo": "u"
+},
+"Lonate Pozzolo": {
+"Pozzolo": "u"
+},
+"Lozza": {
+"Lozza": "u"
+},
+"Marzio": {
+"Marzio": "u"
+},
+"Mesenzana": {
+"Mesenzana": "u"
+},
+"Morazzone": {
+"Morazzone": "u"
+},
+"Tronzano Lago Maggiore": {
+"Tronzano": "u"
+},
+"Vizzola Ticino": {
+"Vizzola": "u"
+},
+"Cadrezzate con Osmate": {
+"Cadrezzate": "v"
+},
+"Alzate Brianza": {
+"Alzate": "u",
+"Brianza": "u"
+},
+"Anzano del Parco": {
+"Anzano": "u"
+},
+"Beregazzo con Figliaro": {
+"Beregazzo": "u"
+},
+"Bizzarone": {
+"Bizzarone": "v"
+},
+"Canzo": {
+"Canzo": "u"
+},
+"Carlazzo": {
+"Carlazzo": "u"
+},
+"Cassina Rizzardi": {
+"Rizzardi": "u"
+},
+"Castelnuovo Bozzente": {
+"Bozzente": "v"
+},
+"Dizzasco": {
+"Dizzasco": "u"
+},
+"Figino Serenza": {
+"Serenza": "u"
+},
+"Garzeno": {
+"Garzeno": "v"
+},
+"Guanzate": {
+"Guanzate": "u"
+},
+"Lezzeno": {
+"Lezzeno": "u"
+},
+"Lomazzo": {
+"Lomazzo": "u"
+},
+"Monguzzo": {
+"Monguzzo": "u"
+},
+"Montemezzo": {
+"Montemezzo": "v"
+},
+"Mozzate": {
+"Mozzate": "u"
+},
+"Porlezza": {
+"Porlezza": "u"
+},
+"Rezzago": {
+"Rezzago": "u"
+},
+"San Nazzaro Val Cavargna": {
+"Nazzaro": "v"
+},
+"Stazzona": {
+"Stazzona": "u"
+},
+"Trezzone": {
+"Trezzone": "u"
+},
+"Val Rezzo": {
+"Rezzo": "u"
+},
+"Zelbio": {
+"Zelbio": "v"
+},
+"Tremezzina": {
+"Tremezzina": "v"
+},
+"Bianzone": {
+"Bianzone": "v"
+},
+"Dazio": {
+"Dazio": "u"
+},
+"Lanzada": {
+"Lanzada": "u"
+},
+"Mazzo di Valtellina": {
+"Mazzo": "u"
+},
+"Novate Mezzola": {
+"Mezzola": "v"
+},
+"Bellinzago Lombardo": {
+"Bellinzago": "u"
+},
+"Casorezzo": {
+"Casorezzo": "u"
+},
+"Cologno Monzese": {
+"Monzese": "v"
+},
+"Gorgonzola": {
+"Gorgonzola": "v"
+},
+"Grezzago": {
+"Grezzago": "u"
+},
+"Inzago": {
+"Inzago": "u"
+},
+"Locate di Triulzi": {
+"Triulzi": "u"
+},
+"Melzo": {
+"Melzo": "u"
+},
+"Ozzero": {
+"Ozzero": "v"
+},
+"Pozzo d'Adda": {
+"Pozzo": "u"
+},
+"Pozzuolo Martesana": {
+"Pozzuolo": "u"
+},
+"Rozzano": {
+"Rozzano": "u"
+},
+"San Zenone al Lambro": {
+"Zenone": "v"
+},
+"Trezzano Rosa": {
+"Trezzano": "u"
+},
+"Trezzano sul Naviglio": {
+"Trezzano": "u"
+},
+"Trezzo sull'Adda": {
+"Trezzo": "u"
+},
+"Truccazzano": {
+"Truccazzano": "u"
+},
+"Vanzago": {
+"Vanzago": "u"
+},
+"Vizzolo Predabissi": {
+"Vizzolo": "u"
+},
+"Zibido San Giacomo": {
+"Zibido": "v"
+},
+"Vanzaghello": {
+"Vanzaghello": "u"
+},
+"Baranzate": {
+"Baranzate": "u"
+},
+"Vermezzo con Zelo": {
+"Vermezzo": "u",
+"Zelo": "v"
+},
+"Alzano Lombardo": {
+"Alzano": "u"
+},
+"Arzago d'Adda": {
+"Arzago": "u"
+},
+"Azzano San Paolo": {
+"Azzano": "u"
+},
+"Azzone": {
+"Azzone": "u"
+},
+"Barzana": {
+"Barzana": "v"
+},
+"Berzo San Fermo": {
+"Berzo": "u"
+},
+"Bianzano": {
+"Bianzano": "u"
+},
+"Borgo di Terzo": {
+"Terzo": "u"
+},
+"Branzi": {
+"Branzi": "v"
+},
+"Calvenzano": {
+"Calvenzano": "u"
+},
+"Capizzone": {
+"Capizzone": "u"
+},
+"Casazza": {
+"Casazza": "u"
+},
+"Castel Rozzone": {
+"Rozzone": "u"
+},
+"Cazzano Sant'Andrea": {
+"Cazzano": "u"
+},
+"Colzate": {
+"Colzate": "v"
+},
+"Costa di Mezzate": {
+"Mezzate": "v"
+},
+"Gazzaniga": {
+"Gazzaniga": "v"
+},
+"Luzzana": {
+"Luzzana": "u"
+},
+"Mezzoldo": {
+"Mezzoldo": "v"
+},
+"Mozzanica": {
+"Mozzanica": "v"
+},
+"Mozzo": {
+"Mozzo": "u"
+},
+"Pagazzano": {
+"Pagazzano": "u"
+},
+"Palazzago": {
+"Palazzago": "u"
+},
+"Parzanica": {
+"Parzanica": "u"
+},
+"Piazza Brembana": {
+"Piazza": "u"
+},
+"Piazzatorre": {
+"Piazzatorre": "u"
+},
+"Piazzolo": {
+"Piazzolo": "u"
+},
+"Presezzo": {
+"Presezzo": "u"
+},
+"Ranzanico": {
+"Ranzanico": "u"
+},
+"Scanzorosciate": {
+"Scanzorosciate": "u"
+},
+"Songavazzo": {
+"Songavazzo": "u"
+},
+"Stezzano": {
+"Stezzano": "v"
+},
+"Strozza": {
+"Strozza": "u"
+},
+"Ubiale Clanezzo": {
+"Clanezzo": "u"
+},
+"Zandobbio": {
+"Zandobbio": "v"
+},
+"Zanica": {
+"Zanica": "v"
+},
+"Zogno": {
+"Zogno": "v"
+},
+"Solza": {
+"Solza": "u"
+},
+"Azzano Mella": {
+"Azzano": "u"
+},
+"Bedizzole": {
+"Bedizzole": "u"
+},
+"Berzo Demo": {
+"Berzo": "u"
+},
+"Berzo Inferiore": {
+"Berzo": "u"
+},
+"Bovezzo": {
+"Bovezzo": "u"
+},
+"Castrezzato": {
+"Castrezzato": "v"
+},
+"Cazzago San Martino": {
+"Cazzago": "u"
+},
+"Comezzano-Cizzago": {
+"Comezzano": "u",
+"Cizzago": "v"
+},
+"Corzano": {
+"Corzano": "u"
+},
+"Desenzano del Garda": {
+"Desenzano": "u"
+},
+"Lozio": {
+"Lozio": "u"
+},
+"Lumezzane": {
+"Lumezzane": "v"
+},
+"Mazzano": {
+"Mazzano": "v"
+},
+"Milzano": {
+"Milzano": "u"
+},
+"Orzinuovi": {
+"Orzinuovi": "v"
+},
+"Orzivecchi": {
+"Orzivecchi": "v"
+},
+"Palazzolo sull'Oglio": {
+"Palazzolo": "u"
+},
+"Pezzaze": {
+"Pezzaze": "u"
+},
+"Polpenazze del Garda": {
+"Polpenazze": "u"
+},
+"Pozzolengo": {
+"Pozzolengo": "u"
+},
+"Quinzano d'Oglio": {
+"Quinzano": "u"
+},
+"Rezzato": {
+"Rezzato": "v"
+},
+"San Zeno Naviglio": {
+"Zeno": "v"
+},
+"Sarezzo": {
+"Sarezzo": "u"
+},
+"Sulzano": {
+"Sulzano": "u"
+},
+"Trenzano": {
+"Trenzano": "u"
+},
+"Vezza d'Oglio": {
+"Vezza": "u"
+},
+"Zone": {
+"Zone": "v"
+},
+"Albuzzano": {
+"Albuzzano": "u"
+},
+"Castelletto di Branduzzo": {
+"Branduzzo": "u"
+},
+"Confienza": {
+"Confienza": "u"
+},
+"Cozzo": {
+"Cozzo": "u"
+},
+"Gerenzago": {
+"Gerenzago": "u"
+},
+"Golferenzo": {
+"Golferenzo": "u"
+},
+"Marzano": {
+"Marzano": "u"
+},
+"Mezzana Bigli": {
+"Mezzana": "v"
+},
+"Mezzana Rabattone": {
+"Mezzana": "v"
+},
+"Mezzanino": {
+"Mezzanino": "v"
+},
+"Pizzale": {
+"Pizzale": "u"
+},
+"Ponte Nizza": {
+"Nizza": "u"
+},
+"Rivanazzano Terme": {
+"Rivanazzano": "u"
+},
+"Sannazzaro de' Burgondi": {
+"Sannazzaro": "v"
+},
+"San Zenone al Po": {
+"Zenone": "v"
+},
+"Siziano": {
+"Siziano": "u"
+},
+"Torrazza Coste": {
+"Torrazza": "u"
+},
+"Torricella Verzate": {
+"Verzate": "v"
+},
+"Trivolzio": {
+"Trivolzio": "u"
+},
+"Val di Nizza": {
+"Nizza": "u"
+},
+"Varzi": {
+"Varzi": "u"
+},
+"Velezzo Lomellina": {
+"Velezzo": "u"
+},
+"Vellezzo Bellini": {
+"Vellezzo": "u"
+},
+"Zavattarello": {
+"Zavattarello": "v"
+},
+"Zeccone": {
+"Zeccone": "v"
+},
+"Zeme": {
+"Zeme": "v"
+},
+"Zenevredo": {
+"Zenevredo": "v"
+},
+"Zerbo": {
+"Zerbo": "v"
+},
+"Zerbolò": {
+"Zerbolò": "v"
+},
+"Zinasco": {
+"Zinasco": "v"
+},
+"Corteolona e Genzone": {
+"Genzone": "u"
+},
+"Azzanello": {
+"Azzanello": "u"
+},
+"Izano": {
+"Izano": "v"
+},
+"Moscazzano": {
+"Moscazzano": "u"
+},
+"Palazzo Pignano": {
+"Palazzo": "u"
+},
+"Pizzighettone": {
+"Pizzighettone": "u"
+},
+"Pozzaglio ed Uniti": {
+"Pozzaglio": "u"
+},
+"Torricella del Pizzo": {
+"Pizzo": "u"
+},
+"Piadena Drizzona": {
+"Drizzona": "u"
+},
+"Bozzolo": {
+"Bozzolo": "v"
+},
+"Gazoldo degli Ippoliti": {
+"Gazoldo": "v"
+},
+"Gazzuolo": {
+"Gazzuolo": "v"
+},
+"Gonzaga": {
+"Gonzaga": "v"
+},
+"Guidizzolo": {
+"Guidizzolo": "u"
+},
+"Monzambano": {
+"Monzambano": "u"
+},
+"Suzzara": {
+"Suzzara": "v"
+},
+"Annone di Brianza": {
+"Brianza": "u"
+},
+"Barzago": {
+"Barzago": "u"
+},
+"Barzanò": {
+"Barzanò": "v"
+},
+"Barzio": {
+"Barzio": "u"
+},
+"Calolziocorte": {
+"Calolziocorte": "u"
+},
+"Cassago Brianza": {
+"Brianza": "u"
+},
+"Castello di Brianza": {
+"Brianza": "u"
+},
+"Cesana Brianza": {
+"Brianza": "u"
+},
+"Colle Brianza": {
+"Brianza": "u"
+},
+"Dolzago": {
+"Dolzago": "u"
+},
+"Monte Marenzo": {
+"Marenzo": "u"
+},
+"Monticello Brianza": {
+"Brianza": "u"
+},
+"La Valletta Brianza": {
+"Brianza": "u"
+},
+"Comazzo": {
+"Comazzo": "u"
+},
+"Mulazzano": {
+"Mulazzano": "u"
+},
+"Tavazzano con Villavesco": {
+"Tavazzano": "u"
+},
+"Zelo Buon Persico": {
+"Zelo": "v"
+},
+"Agrate Brianza": {
+"Brianza": "u"
+},
+"Aicurzio": {
+"Aicurzio": "u"
+},
+"Besana in Brianza": {
+"Brianza": "u"
+},
+"Carate Brianza": {
+"Brianza": "u"
+},
+"Cavenago di Brianza": {
+"Brianza": "u"
+},
+"Concorezzo": {
+"Concorezzo": "u"
+},
+"Correzzana": {
+"Correzzana": "u"
+},
+"Lazzate": {
+"Lazzate": "u"
+},
+"Mezzago": {
+"Mezzago": "v"
+},
+"Monza": {
+"Monza": "v"
+},
+"Veduggio con Colzano": {
+"Colzano": "u"
+},
+"Verano Brianza": {
+"Brianza": "u"
+},
+"Bolzano": {
+"Bolzano": "u"
+},
+"Bronzolo": {
+"Bronzolo": "v"
+},
+"Falzes": {
+"Falzes": "u"
+},
+"Fortezza": {
+"Fortezza": "u"
+},
+"Gargazzone": {
+"Gargazzone": "u"
+},
+"Glorenza": {
+"Glorenza": "u"
+},
+"Naz-Sciaves": {
+"Naz": "u"
+},
+"San Lorenzo di Sebato": {
+"Lorenzo": "u"
+},
+"San Pancrazio": {
+"Pancrazio": "u"
+},
+"Val di Vizze": {
+"Vizze": "u"
+},
+"Caderzone Terme": {
+"Caderzone": "u"
+},
+"Caldonazzo": {
+"Caldonazzo": "u"
+},
+"Canazei": {
+"Canazei": "v"
+},
+"Carzano": {
+"Carzano": "u"
+},
+"Cavizzana": {
+"Cavizzana": "u"
+},
+"Civezzano": {
+"Civezzano": "u"
+},
+"Commezzadura": {
+"Commezzadura": "v"
+},
+"Fierozzo": {
+"Fierozzo": "u"
+},
+"Mazzin": {
+"Mazzin": "u"
+},
+"Mezzana": {
+"Mezzana": "v"
+},
+"Mezzano": {
+"Mezzano": "v"
+},
+"Mezzocorona": {
+"Mezzocorona": "v"
+},
+"Mezzolombardo": {
+"Mezzolombardo": "v"
+},
+"Ronzo-Chienis": {
+"Ronzo": "v"
+},
+"Pellizzano": {
+"Pellizzano": "u"
+},
+"Pinzolo": {
+"Pinzolo": "u"
+},
+"Predazzo": {
+"Predazzo": "u"
+},
+"Ronzone": {
+"Ronzone": "v"
+},
+"Sanzeno": {
+"Sanzeno": "v"
+},
+"Segonzano": {
+"Segonzano": "u"
+},
+"Sfruz": {
+"Sfruz": "u"
+},
+"Spiazzo": {
+"Spiazzo": "u"
+},
+"Terzolas": {
+"Terzolas": "u"
+},
+"Ziano di Fiemme": {
+"Ziano": "v"
+},
+"San Lorenzo Dorsino": {
+"Lorenzo": "u"
+},
+"Pieve di Bono-Prezzo": {
+"Prezzo": "u"
+},
+"Madruzzo": {
+"Madruzzo": "u"
+},
+"Primiero San Martino di Castrozza": {
+"Castrozza": "u"
+},
+"Brenzone sul Garda": {
+"Brenzone": "v"
+},
+"Castel d'Azzano": {
+"Azzano": "u"
+},
+"Cazzano di Tramigna": {
+"Cazzano": "u"
+},
+"Erbezzo": {
+"Erbezzo": "u"
+},
+"Gazzo Veronese": {
+"Gazzo": "v"
+},
+"Grezzana": {
+"Grezzana": "u"
+},
+"Isola Rizza": {
+"Rizza": "u"
+},
+"Lazise": {
+"Lazise": "v"
+},
+"Mezzane di Sotto": {
+"Mezzane": "v"
+},
+"Mozzecane": {
+"Mozzecane": "u"
+},
+"Salizzole": {
+"Salizzole": "u"
+},
+"San Zeno di Montagna": {
+"Zeno": "v"
+},
+"Terrazzo": {
+"Terrazzo": "u"
+},
+"Trevenzuolo": {
+"Trevenzuolo": "u"
+},
+"Zevio": {
+"Zevio": "v"
+},
+"Zimella": {
+"Zimella": "v"
+},
+"Arzignano": {
+"Arzignano": "v"
+},
+"Bolzano Vicentino": {
+"Bolzano": "u"
+},
+"Breganze": {
+"Breganze": "u"
+},
+"Creazzo": {
+"Creazzo": "u"
+},
+"Foza": {
+"Foza": "v"
+},
+"Grisignano di Zocco": {
+"Zocco": "v"
+},
+"Lugo di Vicenza": {
+"Vicenza": "u"
+},
+"Pianezze": {
+"Pianezze": "u"
+},
+"Pozzoleone": {
+"Pozzoleone": "u"
+},
+"Romano d'Ezzelino": {
+"Ezzelino": "v"
+},
+"Rotzo": {
+"Rotzo": "u"
+},
+"San Vito di Leguzzano": {
+"Leguzzano": "u"
+},
+"Tezze sul Brenta": {
+"Tezze": "v"
+},
+"Tonezza del Cimone": {
+"Tonezza": "v"
+},
+"Vicenza": {
+"Vicenza": "u"
+},
+"Zanè": {
+"Zanè": "v"
+},
+"Zermeghedo": {
+"Zermeghedo": "v"
+},
+"Zovencedo": {
+"Zovencedo": "v"
+},
+"Zugliano": {
+"Zugliano": "v"
+},
+"Sovizzo": {
+"Sovizzo": "u"
+},
+"Auronzo di Cadore": {
+"Auronzo": "u"
+},
+"Calalzo di Cadore": {
+"Calalzo": "u"
+},
+"Cortina d'Ampezzo": {
+"Ampezzo": "u"
+},
+"Fonzaso": {
+"Fonzaso": "u"
+},
+"Lorenzago di Cadore": {
+"Lorenzago": "u"
+},
+"Lozzo di Cadore": {
+"Lozzo": "u"
+},
+"Soverzene": {
+"Soverzene": "v"
+},
+"Zoppè di Cadore": {
+"Zoppè": "v"
+},
+"Val di Zoldo": {
+"Zoldo": "v"
+},
+"Meduna di Livenza": {
+"Livenza": "u"
+},
+"Motta di Livenza": {
+"Livenza": "u"
+},
+"Oderzo": {
+"Oderzo": "u"
+},
+"Ponzano Veneto": {
+"Ponzano": "u"
+},
+"Preganziol": {
+"Preganziol": "u"
+},
+"San Zenone degli Ezzelini": {
+"Zenone": "v",
+"Ezzelini": "v"
+},
+"Tarzo": {
+"Tarzo": "u"
+},
+"Vazzola": {
+"Vazzola": "u"
+},
+"Zenson di Piave": {
+"Zenson": "v"
+},
+"Zero Branco": {
+"Zero": "v"
+},
+"Cavarzere": {
+"Cavarzere": "v"
+},
+"Salzano": {
+"Salzano": "u"
+},
+"San Stino di Livenza": {
+"Livenza": "u"
+},
+"Scorzè": {
+"Scorzè": "u"
+},
+"Venezia": {
+"Venezia": "u"
+},
+"Arzergrande": {
+"Arzergrande": "v"
+},
+"Correzzola": {
+"Correzzola": "v"
+},
+"Galzignano Terme": {
+"Galzignano": "v"
+},
+"Gazzo": {
+"Gazzo": "v"
+},
+"Granze": {
+"Granze": "u"
+},
+"Lozzo Atestino": {
+"Lozzo": "u"
+},
+"Massanzago": {
+"Massanzago": "u"
+},
+"Piacenza d'Adige": {
+"Piacenza": "u"
+},
+"Piazzola sul Brenta": {
+"Piazzola": "u"
+},
+"Pozzonovo": {
+"Pozzonovo": "u"
+},
+"Selvazzano Dentro": {
+"Selvazzano": "u"
+},
+"Vigodarzere": {
+"Vigodarzere": "v"
+},
+"Vigonza": {
+"Vigonza": "u"
+},
+"Papozze": {
+"Papozze": "u"
+},
+"Pettorazza Grimani": {
+"Pettorazza": "u"
+},
+"San Martino di Venezze": {
+"Venezze": "u"
+},
+"Villamarzana": {
+"Villamarzana": "u"
+},
+"Ampezzo": {
+"Ampezzo": "u"
+},
+"Cavazzo Carnico": {
+"Cavazzo": "u"
+},
+"Corno di Rosazzo": {
+"Rosazzo": "u"
+},
+"Enemonzo": {
+"Enemonzo": "u"
+},
+"Lestizza": {
+"Lestizza": "u"
+},
+"Manzano": {
+"Manzano": "v"
+},
+"Moruzzo": {
+"Moruzzo": "u"
+},
+"Muzzana del Turgnano": {
+"Muzzana": "u"
+},
+"Palazzolo dello Stella": {
+"Palazzolo": "u"
+},
+"Paluzza": {
+"Paluzza": "u"
+},
+"Pozzuolo del Friuli": {
+"Pozzuolo": "u"
+},
+"Remanzacco": {
+"Remanzacco": "v"
+},
+"Terzo d'Aquileia": {
+"Terzo": "u"
+},
+"Tolmezzo": {
+"Tolmezzo": "v"
+},
+"Venzone": {
+"Venzone": "u"
+},
+"Verzegnis": {
+"Verzegnis": "v"
+},
+"Zuglio": {
+"Zuglio": "v"
+},
+"Farra d'Isonzo": {
+"Isonzo": "u"
+},
+"Gorizia": {
+"Gorizia": "u"
+},
+"Gradisca d'Isonzo": {
+"Isonzo": "u"
+},
+"Romans d'Isonzo": {
+"Isonzo": "u"
+},
+"San Canzian d'Isonzo": {
+"Canzian": "u",
+"Isonzo": "u"
+},
+"San Lorenzo Isontino": {
+"Lorenzo": "u"
+},
+"San Pier d'Isonzo": {
+"Isonzo": "u"
+},
+"Savogna d'Isonzo": {
+"Isonzo": "u"
+},
+"Staranzano": {
+"Staranzano": "u"
+},
+"Azzano Decimo": {
+"Azzano": "u"
+},
+"Casarsa della Delizia": {
+"Delizia": "u"
+},
+"Clauzetto": {
+"Clauzetto": "v"
+},
+"Pinzano al Tagliamento": {
+"Pinzano": "u"
+},
+"Zoppola": {
+"Zoppola": "v"
+},
+"Valvasone Arzene": {
+"Arzene": "v"
+},
+"Civezza": {
+"Civezza": "u"
+},
+"Ranzo": {
+"Ranzo": "u"
+},
+"Rezzo": {
+"Rezzo": "u"
+},
+"San Lorenzo al Mare": {
+"Lorenzo": "u"
+},
+"Terzorio": {
+"Terzorio": "u"
+},
+"Borgio Verezzi": {
+"Verezzi": "u"
+},
+"Calizzano": {
+"Calizzano": "u"
+},
+"Onzo": {
+"Onzo": "u"
+},
+"Varazze": {
+"Varazze": "u"
+},
+"Vezzi Portio": {
+"Vezzi": "u"
+},
+"Zuccarello": {
+"Zuccarello": "v"
+},
+"Arenzano": {
+"Arenzano": "u"
+},
+"Borzonasca": {
+"Borzonasca": "v"
+},
+"Casarza Ligure": {
+"Casarza": "u"
+},
+"Lumarzo": {
+"Lumarzo": "u"
+},
+"Mezzanego": {
+"Mezzanego": "v"
+},
+"Rezzoaglio": {
+"Rezzoaglio": "u"
+},
+"Zoagli": {
+"Zoagli": "v"
+},
+"La Spezia": {
+"Spezia": "u"
+},
+"Riccò del Golfo di Spezia": {
+"Spezia": "u"
+},
+"Sarzana": {
+"Sarzana": "v"
+},
+"Vernazza": {
+"Vernazza": "u"
+},
+"Vezzano Ligure": {
+"Vezzano": "u"
+},
+"Zignago": {
+"Zignago": "v"
+},
+"Agazzano": {
+"Agazzano": "u"
+},
+"Besenzone": {
+"Besenzone": "u"
+},
+"Fiorenzuola d'Arda": {
+"Fiorenzuola": "u"
+},
+"Gazzola": {
+"Gazzola": "v"
+},
+"Piacenza": {
+"Piacenza": "u"
+},
+"Piozzano": {
+"Piozzano": "u"
+},
+"Podenzano": {
+"Podenzano": "u"
+},
+"Vigolzone": {
+"Vigolzone": "u"
+},
+"Zerba": {
+"Zerba": "v"
+},
+"Ziano Piacentino": {
+"Ziano": "v"
+},
+"Fidenza": {
+"Fidenza": "u"
+},
+"Palanzano": {
+"Palanzano": "u"
+},
+"Sala Baganza": {
+"Baganza": "u"
+},
+"Terenzo": {
+"Terenzo": "u"
+},
+"Tizzano Val Parma": {
+"Tizzano": "u"
+},
+"Valmozzola": {
+"Valmozzola": "u"
+},
+"Polesine Zibello": {
+"Zibello": "v"
+},
+"Sorbolo Mezzani": {
+"Mezzani": "v"
+},
+"Luzzara": {
+"Luzzara": "u"
+},
+"San Polo d'Enza": {
+"Enza": "u"
+},
+"Sant'Ilario d'Enza": {
+"Enza": "u"
+},
+"Vezzano sul Crostolo": {
+"Vezzano": "u"
+},
+"Villa Minozzo": {
+"Minozzo": "u"
+},
+"Cavezzo": {
+"Cavezzo": "u"
+},
+"Serramazzoni": {
+"Serramazzoni": "u"
+},
+"Zocca": {
+"Zocca": "v"
+},
+"Anzola dell'Emilia": {
+"Anzola": "v"
+},
+"Dozza": {
+"Dozza": "u"
+},
+"Grizzana Morandi": {
+"Grizzana": "u"
+},
+"Lizzano in Belvedere": {
+"Lizzano": "u"
+},
+"Marzabotto": {
+"Marzabotto": "v"
+},
+"Monterenzio": {
+"Monterenzio": "u"
+},
+"Monzuno": {
+"Monzuno": "v"
+},
+"Ozzano dell'Emilia": {
+"Ozzano": "v"
+},
+"San Lazzaro di Savena": {
+"Lazzaro": "v"
+},
+"Zola Predosa": {
+"Zola": "v"
+},
+"Faenza": {
+"Faenza": "u"
+},
+"Tredozio": {
+"Tredozio": "u"
+},
+"Fivizzano": {
+"Fivizzano": "u"
+},
+"Mulazzo": {
+"Mulazzo": "u"
+},
+"Podenzana": {
+"Podenzana": "u"
+},
+"Zeri": {
+"Zeri": "v"
+},
+"Borgo a Mozzano": {
+"Mozzano": "u"
+},
+"Molazzana": {
+"Molazzana": "u"
+},
+"Piazza al Serchio": {
+"Piazza": "u"
+},
+"Seravezza": {
+"Seravezza": "u"
+},
+"Stazzema": {
+"Stazzema": "u"
+},
+"Massa e Cozzile": {
+"Cozzile": "u"
+},
+"Uzzano": {
+"Uzzano": "u"
+},
+"Chiesina Uzzanese": {
+"Uzzanese": "u"
+},
+"Borgo San Lorenzo": {
+"Lorenzo": "u"
+},
+"Calenzano": {
+"Calenzano": "u"
+},
+"Campi Bisenzio": {
+"Bisenzio": "u"
+},
+"Firenze": {
+"Firenze": "u"
+},
+"Firenzuola": {
+"Firenzuola": "u"
+},
+"Palazzuolo sul Senio": {
+"Palazzuolo": "u"
+},
+"San Godenzo": {
+"Godenzo": "u"
+},
+"Porto Azzurro": {
+"Azzurro": "v"
+},
+"San Vincenzo": {
+"Vincenzo": "u"
+},
+"Crespina Lorenzana": {
+"Lorenzana": "u"
+},
+"Arezzo": {
+"Arezzo": "u"
+},
+"Pienza": {
+"Pienza": "u"
+},
+"Castell'Azzara": {
+"Azzara": "u"
+},
+"Collazzone": {
+"Collazzone": "u"
+},
+"San Venanzo": {
+"Venanzo": "u"
+},
+"Monte Porzio": {
+"Porzio": "u"
+},
+"San Costanzo": {
+"Costanzo": "u"
+},
+"San Lorenzo in Campo": {
+"Lorenzo": "u"
+},
+"Pollenza": {
+"Pollenza": "u"
+},
+"Potenza Picena": {
+"Potenza": "u"
+},
+"Comunanza": {
+"Comunanza": "u"
+},
+"Grottazzolina": {
+"Grottazzolina": "v"
+},
+"Ortezzano": {
+"Ortezzano": "u"
+},
+"Ponzano di Fermo": {
+"Ponzano": "u"
+},
+"Torre San Patrizio": {
+"Patrizio": "u"
+},
+"Bomarzo": {
+"Bomarzo": "u"
+},
+"San Lorenzo Nuovo": {
+"Lorenzo": "u"
+},
+"Poggio San Lorenzo": {
+"Lorenzo": "u"
+},
+"Pozzaglia Sabina": {
+"Pozzaglia": "u"
+},
+"Albano Laziale": {
+"Laziale": "u"
+},
+"Anguillara Sabazia": {
+"Sabazia": "u"
+},
+"Anzio": {
+"Anzio": "u"
+},
+"Arcinazzo Romano": {
+"Arcinazzo": "u"
+},
+"Cerreto Laziale": {
+"Laziale": "u"
+},
+"Gallicano nel Lazio": {
+"Lazio": "u"
+},
+"Genazzano": {
+"Genazzano": "u"
+},
+"Genzano di Roma": {
+"Genzano": "u"
+},
+"Licenza": {
+"Licenza": "u"
+},
+"Manziana": {
+"Manziana": "u"
+},
+"Mazzano Romano": {
+"Mazzano": "u"
+},
+"Monte Porzio Catone": {
+"Porzio": "u"
+},
+"Nazzano": {
+"Nazzano": "u"
+},
+"Pomezia": {
+"Pomezia": "u"
+},
+"Ponzano Romano": {
+"Ponzano": "u"
+},
+"Zagarolo": {
+"Zagarolo": "v"
+},
+"Maenza": {
+"Maenza": "u"
+},
+"Ponza": {
+"Ponza": "u"
+},
+"Sezze": {
+"Sezze": "u"
+},
+"San Vittore del Lazio": {
+"Lazio": "u"
+},
+"Trevi nel Lazio": {
+"Lazio": "u"
+},
+"Vico nel Lazio": {
+"Lazio": "u"
+},
+"Anversa degli Abruzzi": {
+"Abruzzi": "u"
+},
+"Avezzano": {
+"Avezzano": "u"
+},
+"Pescocostanzo": {
+"Pescocostanzo": "u"
+},
+"Pettorano sul Gizio": {
+"Gizio": "u"
+},
+"Pizzoli": {
+"Pizzoli": "u"
+},
+"Poggio Picenze": {
+"Picenze": "u"
+},
+"Prezza": {
+"Prezza": "v"
+},
+"Rocca di Mezzo": {
+"Mezzo": "v"
+},
+"San Vincenzo Valle Roveto": {
+"Vincenzo": "u"
+},
+"Tagliacozzo": {
+"Tagliacozzo": "u"
+},
+"Tione degli Abruzzi": {
+"Abruzzi": "u"
+},
+"Villa Santa Lucia degli Abruzzi": {
+"Abruzzi": "u"
+},
+"Canzano": {
+"Canzano": "u"
+},
+"Roseto degli Abruzzi": {
+"Abruzzi": "u"
+},
+"San Valentino in Abruzzo Citeriore": {
+"Abruzzo": "u"
+},
+"Celenza sul Trigno": {
+"Celenza": "u"
+},
+"Colledimezzo": {
+"Colledimezzo": "v"
+},
+"Montazzoli": {
+"Montazzoli": "u"
+},
+"Mozzagrogna": {
+"Mozzagrogna": "u"
+},
+"Pizzoferrato": {
+"Pizzoferrato": "u"
+},
+"Schiavi di Abruzzo": {
+"Abruzzo": "u"
+},
+"Pietraferrazzana": {
+"Pietraferrazzana": "u"
+},
+"Ferrazzano": {
+"Ferrazzano": "u"
+},
+"Castelpizzuto": {
+"Castelpizzuto": "u"
+},
+"Castel San Vincenzo": {
+"Vincenzo": "u"
+},
+"Pizzone": {
+"Pizzone": "u"
+},
+"Pozzilli": {
+"Pozzilli": "u"
+},
+"Arienzo": {
+"Arienzo": "u"
+},
+"Caiazzo": {
+"Caiazzo": "u"
+},
+"Grazzanise": {
+"Grazzanise": "u"
+},
+"Marzano Appio": {
+"Marzano": "u"
+},
+"Presenzano": {
+"Presenzano": "u"
+},
+"Vitulazio": {
+"Vitulazio": "u"
+},
+"Durazzano": {
+"Durazzano": "u"
+},
+"Melizzano": {
+"Melizzano": "u"
+},
+"San Lorenzello": {
+"Lorenzello": "u"
+},
+"San Lorenzo Maggiore": {
+"Lorenzo": "u"
+},
+"San Nazzaro": {
+"Nazzaro": "v"
+},
+"Arzano": {
+"Arzano": "u"
+},
+"Calvizzano": {
+"Calvizzano": "u"
+},
+"Comiziano": {
+"Comiziano": "u"
+},
+"Pozzuoli": {
+"Pozzuoli": "u"
+},
+"Terzigno": {
+"Terzigno": "u"
+},
+"Torre Annunziata": {
+"Annunziata": "u"
+},
+"Conza della Campania": {
+"Conza": "u"
+},
+"Manocalzati": {
+"Manocalzati": "u"
+},
+"Marzano di Nola": {
+"Marzano": "u"
+},
+"Salza Irpina": {
+"Salza": "u"
+},
+"Sant'Andrea di Conza": {
+"Conza": "u"
+},
+"Zungoli": {
+"Zungoli": "v"
+},
+"Castelnuovo di Conza": {
+"Conza": "u"
+},
+"Castel San Lorenzo": {
+"Lorenzo": "u"
+},
+"Pellezzano": {
+"Pellezzano": "u"
+},
+"San Marzano sul Sarno": {
+"Marzano": "u"
+},
+"Sanza": {
+"Sanza": "u"
+},
+"Serramezzana": {
+"Serramezzana": "v"
+},
+"Bellizzi": {
+"Bellizzi": "u"
+},
+"Anzano di Puglia": {
+"Anzano": "u"
+},
+"Celenza Valfortore": {
+"Celenza": "u"
+},
+"Zapponeta": {
+"Zapponeta": "v"
+},
+"Giovinazzo": {
+"Giovinazzo": "u"
+},
+"Terlizzi": {
+"Terlizzi": "u"
+},
+"Valenzano": {
+"Valenzano": "u"
+},
+"Laterza": {
+"Laterza": "u"
+},
+"Lizzano": {
+"Lizzano": "u"
+},
+"Roccaforzata": {
+"Roccaforzata": "u"
+},
+"San Marzano di San Giuseppe": {
+"Marzano": "u"
+},
+"San Pancrazio Salentino": {
+"Pancrazio": "u"
+},
+"Alezio": {
+"Alezio": "u"
+},
+"Lizzanello": {
+"Lizzanello": "u"
+},
+"Squinzano": {
+"Squinzano": "u"
+},
+"Trepuzzi": {
+"Trepuzzi": "u"
+},
+"Zollino": {
+"Zollino": "v"
+},
+"Spinazzola": {
+"Spinazzola": "u"
+},
+"Acerenza": {
+"Acerenza": "u"
+},
+"Anzi": {
+"Anzi": "u"
+},
+"Banzi": {
+"Banzi": "u"
+},
+"Brienza": {
+"Brienza": "u"
+},
+"Castelmezzano": {
+"Castelmezzano": "v"
+},
+"Forenza": {
+"Forenza": "u"
+},
+"Genzano di Lucania": {
+"Genzano": "u"
+},
+"Laurenzana": {
+"Laurenzana": "u"
+},
+"Palazzo San Gervasio": {
+"Palazzo": "u"
+},
+"Potenza": {
+"Potenza": "u"
+},
+"Vietri di Potenza": {
+"Potenza": "u"
+},
+"Scanzano Jonico": {
+"Scanzano": "u"
+},
+"Calopezzati": {
+"Calopezzati": "u"
+},
+"Carpanzano": {
+"Carpanzano": "u"
+},
+"Cerzeto": {
+"Cerzeto": "u"
+},
+"Cosenza": {
+"Cosenza": "u"
+},
+"Fiumefreddo Bruzio": {
+"Bruzio": "u"
+},
+"Luzzi": {
+"Luzzi": "u"
+},
+"Marzi": {
+"Marzi": "u"
+},
+"San Lorenzo Bellizzi": {
+"Lorenzo": "u",
+"Bellizzi": "u"
+},
+"San Lorenzo del Vallo": {
+"Lorenzo": "u"
+},
+"San Vincenzo La Costa": {
+"Vincenzo": "u"
+},
+"Spezzano Albanese": {
+"Spezzano": "v"
+},
+"Spezzano della Sila": {
+"Spezzano": "v"
+},
+"Vaccarizzo Albanese": {
+"Vaccarizzo": "u"
+},
+"Zumpano": {
+"Zumpano": "v"
+},
+"Caraffa di Catanzaro": {
+"Catanzaro": "v"
+},
+"Catanzaro": {
+"Catanzaro": "v"
+},
+"Gizzeria": {
+"Gizzeria": "u"
+},
+"Petrizzi": {
+"Petrizzi": "u"
+},
+"Zagarise": {
+"Zagarise": "v"
+},
+"Lamezia Terme": {
+"Lamezia": "u"
+},
+"Bruzzano Zeffirio": {
+"Bruzzano": "u",
+"Zeffirio": "v"
+},
+"Ferruzzano": {
+"Ferruzzano": "u"
+},
+"Palizzi": {
+"Palizzi": "u"
+},
+"Pazzano": {
+"Pazzano": "u"
+},
+"Rizziconi": {
+"Rizziconi": "v"
+},
+"San Lorenzo": {
+"Lorenzo": "u"
+},
+"Carfizzi": {
+"Carfizzi": "u"
+},
+"Cerenzia": {
+"Cerenzia": "u"
+},
+"Isola di Capo Rizzuto": {
+"Rizzuto": "u"
+},
+"Verzino": {
+"Verzino": "v"
+},
+"Fabrizia": {
+"Fabrizia": "u"
+},
+"Pizzo": {
+"Pizzo": "u"
+},
+"Pizzoni": {
+"Pizzoni": "u"
+},
+"Vazzano": {
+"Vazzano": "u"
+},
+"Zaccanopoli": {
+"Zaccanopoli": "v"
+},
+"Zambrone": {
+"Zambrone": "v"
+},
+"Zungri": {
+"Zungri": "v"
+},
+"Buseto Palizzolo": {
+"Palizzolo": "u"
+},
+"Campobello di Mazara": {
+"Mazara": "v"
+},
+"Mazara del Vallo": {
+"Mazara": "v"
+},
+"Belmonte Mezzagno": {
+"Mezzagno": "v"
+},
+"Ficarazzi": {
+"Ficarazzi": "u"
+},
+"Mezzojuso": {
+"Mezzojuso": "v"
+},
+"Palazzo Adriano": {
+"Palazzo": "u"
+},
+"Polizzi Generosa": {
+"Polizzi": "u"
+},
+"Prizzi": {
+"Prizzi": "u"
+},
+"Barcellona Pozzo di Gotto": {
+"Pozzo": "u"
+},
+"Capizzi": {
+"Capizzi": "u"
+},
+"Forza d'Agrò": {
+"Forza": "u"
+},
+"Frazzanò": {
+"Frazzanò": "u"
+},
+"Librizzi": {
+"Librizzi": "u"
+},
+"Mazzarrà Sant'Andrea": {
+"Mazzarrà": "u"
+},
+"Milazzo": {
+"Milazzo": "u"
+},
+"Nizza di Sicilia": {
+"Nizza": "u"
+},
+"San Marco d'Alunzio": {
+"Alunzio": "u"
+},
+"Scaletta Zanclea": {
+"Zanclea": "v"
+},
+"Mazzarino": {
+"Mazzarino": "v"
+},
+"Piazza Armerina": {
+"Piazza": "u"
+},
+"Pietraperzia": {
+"Pietraperzia": "u"
+},
+"Randazzo": {
+"Randazzo": "u"
+},
+"San Michele di Ganzaria": {
+"Ganzaria": "v"
+},
+"San Pietro Clarenza": {
+"Clarenza": "u"
+},
+"Vizzini": {
+"Vizzini": "u"
+},
+"Zafferana Etnea": {
+"Zafferana": "v"
+},
+"Mazzarrone": {
+"Mazzarrone": "v"
+},
+"Pozzallo": {
+"Pozzallo": "u"
+},
+"Palazzolo Acreide": {
+"Palazzolo": "u"
+},
+"Arzachena": {
+"Arzachena": "u"
+},
+"Bulzi": {
+"Bulzi": "u"
+},
+"Ozieri": {
+"Ozieri": "u"
+},
+"Pozzomaggiore": {
+"Pozzomaggiore": "u"
+},
+"Aritzo": {
+"Aritzo": "u"
+},
+"Arzana": {
+"Arzana": "u"
+},
+"Atzara": {
+"Atzara": "u"
+},
+"Jerzu": {
+"Jerzu": "u"
+},
+"Lotzorai": {
+"Lotzorai": "u"
+},
+"Olzai": {
+"Olzai": "u"
+},
+"Urzulei": {
+"Urzulei": "v"
+},
+"Ghilarza": {
+"Ghilarza": "u"
+},
+"Gonnostramatza": {
+"Gonnostramatza": "u"
+},
+"Tramatza": {
+"Tramatza": "u"
+},
+"Zeddiani": {
+"Zeddiani": "v"
+},
+"Zerfaliu": {
+"Zerfaliu": "v"
+},
+"Decimoputzu": {
+"Decimoputzu": "u"
+},
+"Esterzili": {
+"Esterzili": "u"
+},
+"Samatzai": {
+"Samatzai": "u"
+},
+"Setzu": {
+"Setzu": "u"
+},
+"Villaputzu": {
+"Villaputzu": "u"
+}
+}
