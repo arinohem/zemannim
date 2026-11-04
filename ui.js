@@ -8,6 +8,7 @@ const DEFAULTS = {
   lang: 'it', tzeth: 20, tequfa: 9, dawn: true, israel: 'auto', walled: 'auto', prudent: true,
   translit: 'digraph', // כ e ת refuyyoṯ: 'digraph' = kh, th; 'line' = ḵ, ṯ
   beth: 'line',        // ב refuyyà: 'line' = ḇ; 'v' = v
+  netLookup: false,    // nome del luogo cercato in rete (OpenStreetMap); spento in partenza
   place: { name: 'Ferrara', lat: 44.8378, lon: 11.6198, tz: 'Europe/Rome' }
 };
 let S = Object.assign({}, DEFAULTS);
@@ -51,7 +52,7 @@ const T = {
     splitShavuoth: 'Nella diaspora questo sabato è il secondo giorno di Shaḇuʿoṯ, con la lettura della festa; in Israele si legge la parashà seguente.',
     rejoin: (d, p) => `Le letture tornano a coincidere dopo il ${d}, quando nella diaspora si leggono insieme ${p}.`,
     rejoinNow: p => `Questo sabato nella diaspora si leggono insieme ${p}; dal sabato seguente la lettura è di nuovo la stessa.`,
-    translitLbl: 'Traslitterazione di כ e ת', bethLbl: 'Traslitterazione di ב', tequfa: 'tequfà secondo il', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico'
+    translitLbl: 'Traslitterazione di כ e ת', bethLbl: 'Traslitterazione di ב', tequfa: 'tequfà secondo il', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico', nameLatin: 'Nome del luogo', nameHeb: 'Nome in ebraico', save: 'Salva', placeNote: 'Nome trovato con la posizione; si può correggere.', netLbl: 'Cerca il nome del luogo in rete (OpenStreetMap)', netNote: 'Manda la posizione, arrotondata a circa 1 km, a OpenStreetMap; senza rete si usa l’elenco incluso.'
   },
   en: {
     tammuzNote: 'Italian rite (Bologna Maḥazor): read straight through, without skipping. Some read as on the other fasts (<span lang="he">ויחל משה</span>, then <span lang="he">פסל לך</span>), as in the MT', fastOut: 'Fast ends', reading: 'Tora reading', both: 'Shaḥriṯ and Minḥa', av9In: 'Tishʿa be-Aḇ begins',
@@ -75,7 +76,7 @@ const T = {
     splitShavuoth: 'In the diaspora this Shabbaṯ is the second day of Shaḇuʿoṯ and the festival portion is read; in Israel the next parasha is read.',
     rejoin: (d, p) => `The readings coincide again after ${d}, when the diaspora reads ${p} together.`,
     rejoinNow: p => `This Shabbaṯ the diaspora reads ${p} together; from next Shabbaṯ the reading is the same again.`,
-    translitLbl: 'Romanization of כ and ת', bethLbl: 'Romanization of ב', tequfa: 'tequfa by', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only'
+    translitLbl: 'Romanization of כ and ת', bethLbl: 'Romanization of ב', tequfa: 'tequfa by', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only', nameLatin: 'Place name', nameHeb: 'Name in Hebrew', save: 'Save', placeNote: 'Name found from the location; it can be corrected.', netLbl: 'Look up the place name online (OpenStreetMap)', netNote: 'Sends the location, rounded to about 1 km, to OpenStreetMap; offline, the built-in list is used.'
   },
   fr: {
     tammuzNote: 'Rite italien (Maḥazor de Bologne) : on lit à la suite, sans sauter. Certains lisent comme les autres jeûnes (<span lang="he">ויחל משה</span>, puis <span lang="he">פסל לך</span>), comme le MT', fastOut: 'Fin du jeûne', reading: 'Lecture de la Tora', both: 'Shaḥriṯ et Minḥa', av9In: 'Début de Tishʿa be-Aḇ',
@@ -99,7 +100,7 @@ const T = {
     splitShavuoth: 'En diaspora, ce Shabbaṯ est le deuxième jour de Shaḇuʿoṯ, avec la lecture de la fête ; en Israël on lit la parasha suivante.',
     rejoin: (d, p) => `Les lectures coïncident de nouveau après le ${d}, quand la diaspora lit ensemble ${p}.`,
     rejoinNow: p => `Ce Shabbaṯ, la diaspora lit ensemble ${p} ; à partir du Shabbaṯ suivant la lecture est de nouveau la même.`,
-    translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa selon le', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul'
+    translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa selon le', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul', nameLatin: 'Nom du lieu', nameHeb: 'Nom en hébreu', save: 'Enregistrer', placeNote: 'Nom trouvé à partir de la position ; on peut le corriger.', netLbl: 'Chercher le nom du lieu en ligne (OpenStreetMap)', netNote: 'Envoie la position, arrondie à 1 km environ, à OpenStreetMap ; hors ligne, la liste intégrée est utilisée.'
   },
   he: {
     tammuzNote: 'מנהג איטליה (מחזור בולוניה): קורין הכל על הסדר ואין מדלגין. ויש שקורין כשאר תעניות (ויחל משה ופסל לך), כמשנה תורה', fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחלת תשעה באב',
@@ -123,7 +124,7 @@ const T = {
     splitShavuoth: 'בחוץ לארץ שבת זו היא יום טוב שני של שבעות וקוראים בענין המועד; בארץ ישראל קוראים את הפרשה הבאה.',
     rejoin: (d, p) => `הקריאה חוזרת להיות שוה אחרי ${d}, כשבחוץ לארץ מחברים ${p}.`,
     rejoinNow: p => `בשבת זו מחברים בחוץ לארץ ${p}; מן השבת הבאה הקריאה שוה שוב.`,
-    translitLbl: 'תעתיק של כ ושל ת', bethLbl: 'תעתיק של ב', chapter: 'פרק', langLbl2: 'שפה (נוסף על העברית)', hebOnly: 'עברית בלבד'
+    translitLbl: 'תעתיק של כ ושל ת', bethLbl: 'תעתיק של ב', chapter: 'פרק', langLbl2: 'שפה (נוסף על העברית)', hebOnly: 'עברית בלבד', nameLatin: 'שם המקום באותיות לטיניות', nameHeb: 'שם המקום בעברית', save: 'שמור', placeNote: 'השם נמצא לפי המיקום; אפשר לתקנו.', netLbl: 'חפש את שם המקום ברשת (OpenStreetMap)', netNote: 'שולח את המיקום, בעיגול לכקילומטר, אל OpenStreetMap; בלי רשת משתמשים ברשימה שבתוך היישום.'
   }
 };
 // 'he' = solo ebraico; 'it' / 'en' / 'fr' = ebraico con didascalie in quella lingua
@@ -185,7 +186,74 @@ const PLACE_NAMES = {
   'Posizione attuale': { en: 'Current location', fr: 'Position actuelle', he: 'מיקום נוכחי' },
   'מיקום נוכחי': { it: 'Posizione attuale', en: 'Current location', fr: 'Position actuelle' }
 };
-const placeName = n => (PLACE_NAMES[n] && PLACE_NAMES[n][S.lang]) || n;
+function placeName(n) {
+  const p = S.place;
+  if (p && p.names && n === p.name) return (S.lang === 'he' ? p.names.he : p.names[S.lang]) || p.names.it || p.name;
+  return (PLACE_NAMES[n] && PLACE_NAMES[n][S.lang]) || n;
+}
+
+// ---------- Nome del luogo dalla posizione (elenco incluso: places.json, da GeoNames) ----------
+const P = window.MTPlace;
+let PLACES = null;
+function loadPlaces() {
+  if (PLACES) return Promise.resolve(PLACES);
+  return fetch('places.json').then(r => r.json()).then(d => (PLACES = d));
+}
+function placeFromEntry(e, lat, lon, tz) {
+  const x = e[4] || {}, name = e[2];
+  const data = {}; if (x.z) data.z = x.z; if (x.s) data.s = x.s;
+  return { name, lat, lon, tz, auto: true, rule: e[3], data,
+    names: { it: x.it || name, en: x.en || name, fr: x.fr || name, he: P.hebrew(name, e[3], x) || '' } };
+}
+const fold = s => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’ʼ‘]/g, "'").toLowerCase();
+// Regole per i luoghi trovati in rete: come in tools/build_places.py
+function ruleFor(cc, a, nd) {
+  const st = [a.state, a.county, a.region, a['ISO3166-2-lvl4'], a['ISO3166-2-lvl6']].filter(Boolean).join(' ');
+  if (['IT', 'SM', 'VA', 'MC'].includes(cc)) return ['it', 'it'];
+  if (cc === 'CH') return /Ticino|Tessin|CH-TI/.test(st) ? ['it', 'it'] : /Genève|Geneva|Vaud|Neuchâtel|Jura|Fribourg|Valais|CH-(GE|VD|NE|JU|FR|VS)/.test(st) ? ['fr', 'fr'] : ['de', 'de'];
+  if (cc === 'FR') {
+    if (/Corse|FR-20R/.test(st) || /^(nice|tende|la brigue|breil-sur-roya|saorge|fontan)$/.test(fold(nd.name || ''))) return ['it', 'it'];
+    if (/Bas-Rhin|Haut-Rhin|Moselle|FR-67|FR-68|FR-57|FR-6AE/.test(st)) return ['de', 'de'];
+    return ['fr', 'fr'];
+  }
+  if (cc === 'HR' && /Istar|Istria|Zadar|Šibensk|Splitsko|Dubrova|HR-(18|13|17|15|19)/.test(st)) return nd['name:it'] ? ['it', 'it'] : ['', ''];
+  if (cc === 'SI' && /^(koper|izola|piran)$/.test(fold(nd.name || ''))) return ['it', 'it'];
+  if (cc === 'BE') return /Wallon|Bruxelles|Brussel|BE-WAL|BE-BRU/.test(st) ? ['fr', 'fr'] : ['', ''];
+  if (cc === 'CA' && /Québec|Quebec|CA-QC/.test(st)) return ['fr', 'fr'];
+  if (['DE', 'AT', 'LI'].includes(cc)) return ['de', 'de'];
+  if ('ES MX GT HN SV NI CR PA CU DO PR CO VE EC PE BO CL AR UY PY'.split(' ').includes(cc)) return ['es', 'es'];
+  if ('GB IE US CA AU NZ'.split(' ').includes(cc)) return ['en', 'en'];
+  const east = { PL: 'pl', CZ: 'cs', SK: 'sk', HU: 'hu', RO: 'ro', MD: 'ro', LT: 'lt', LV: 'lv', EE: 'et', UA: 'uk', BY: 'be', RU: 'ru' }[cc];
+  if (east) return [east, ['uk', 'be', 'ru'].includes(east) ? 'en' : east];
+  if (cc === 'IL' || cc === 'PS') return ['he', 'he'];
+  return ['', ''];
+}
+function netLookup(lat, lon, tz, list) {
+  const u = 'https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=10&namedetails=1&addressdetails=1&lat=' + lat.toFixed(2) + '&lon=' + lon.toFixed(2);
+  return fetch(u).then(r => r.ok ? r.json() : null).then(j => {
+    if (!j || !j.namedetails || !(j.namedetails.name || j.name)) return null;
+    const nd = j.namedetails, a = j.address || {}, cc = String(a.country_code || '').toUpperCase();
+    // stesso luogo nell'elenco incluso, vicino e con uno dei nomi: se ne prendono le eccezioni e i dati
+    const names = new Set(Object.values(nd).map(fold));
+    const k = Math.cos(lat * Math.PI / 180);
+    const same = list.filter(e => names.has(fold(e[2])) || (e[4] && ['it', 'en', 'fr'].some(l => e[4][l] && names.has(fold(e[4][l])))))
+      .filter(e => Math.hypot(e[0] - lat, (e[1] - lon) * k) < 0.2);
+    if (same.length) return placeFromEntry(same[0], lat, lon, tz);
+    const [rule, lang] = ruleFor(cc, a, nd);
+    const local = nd.name || j.name, src = (lang && nd['name:' + lang]) || local;
+    const he = rule === 'he' ? (nd['name:he'] || '') : (P.hebrew(src, rule, null, cc) || '');
+    return { name: src, lat, lon, tz, auto: true, rule: rule === 'he' ? '' : rule, data: {}, net: true,
+      names: { it: nd['name:it'] || src, en: nd['name:en'] || src, fr: nd['name:fr'] || src, he } };
+  });
+}
+function locate(lat, lon, tz) {
+  return loadPlaces().then(list => {
+    const n = P.nearest(list, lat, lon);
+    const local = n && n.km < 50 ? placeFromEntry(n.entry, lat, lon, tz) : null;
+    if (!S.netLookup) return local;
+    return netLookup(lat, lon, tz, list).then(r => r || local, () => local);
+  }, () => null);
+}
 
 // ---------- Luogo: Israele e Gerusalemme ----------
 function inIsrael(lat, lon) {
@@ -383,9 +451,15 @@ function openSheet(which) {
   const sh = document.getElementById('sheet');
   let html = `<div class="sheethead"><b>${which === 'notes' ? l.notes : l.settings}</b><button id="closeSheet">${l.close}</button></div>`;
   if (which === 'settings') {
-    html += `<h3>${l.place}</h3><p>${esc(placeName(S.place.name))} (${S.place.lat.toFixed(4)}, ${S.place.lon.toFixed(4)})</p>
-      <button class="wide" id="gps">${l.useGps}</button><p class="small" id="gpsMsg"></p>
-      <select id="city">${CITIES.map((c, i) => `<option value="${i}" ${c[0] === S.place.name ? 'selected' : ''}>${esc(placeName(c[0]))}</option>`).join('')}</select>
+    const pl = S.place;
+    html += `<h3>${l.place}</h3><p>${esc(placeName(pl.name))} (${pl.lat.toFixed(4)}, ${pl.lon.toFixed(4)})</p>`;
+    if (pl.auto && pl.names) html += `<p class="small">${l.placeNote}</p>
+      <label class="small">${l.nameLatin}<input class="field" id="pLat" value="${esc(pl.names[S.lang === 'he' ? 'it' : S.lang] || pl.name)}"></label>
+      <label class="small">${l.nameHeb}<input class="field" id="pHeb" dir="rtl" lang="he" value="${esc(pl.names.he || '')}"></label>
+      <button class="wide" id="pSave">${l.save}</button>`;
+    html += `<button class="wide" id="gps">${l.useGps}</button><p class="small" id="gpsMsg"></p>
+      <select id="city">${pl.auto ? '<option selected disabled>—</option>' : ''}${CITIES.map((c, i) => `<option value="${i}" ${!pl.auto && c[0] === pl.name ? 'selected' : ''}>${esc(PLACE_NAMES[c[0]] && PLACE_NAMES[c[0]][S.lang] || c[0])}</option>`).join('')}</select>
+      <h3>${l.netLbl}</h3>${seg('netLookup', S.netLookup, [[true, l.on], [false, l.off]])}<p class="small">${l.netNote}</p>
       <h3>${cap() ? l.langLbl2 : l.langLbl}</h3>${seg('lang', S.lang, [['it', 'Italiano'], ['en', 'English'], ['fr', 'Français'], ['he', T.he.hebOnly]])}
       <h3>${l.tzethLbl}</h3>${seg('tzeth', S.tzeth, [[20, '20 min'], [18, '18 min']])}
       <h3>${l.tequfaLbl}</h3>${seg('tequfa', S.tequfa, [[9, `${l.chapter} 9 (365¼)`], [10, `${l.chapter} 10`]])}
@@ -414,10 +488,28 @@ function openSheet(which) {
     msg.textContent = l.gpsWait;
     navigator.geolocation.getCurrentPosition(p => {
       let tz; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) {}
-      S.place = { name: 'Posizione attuale', lat: p.coords.latitude, lon: p.coords.longitude, tz };
-      save(); current = todayRd(); render(); openSheet('settings');
+      const lat = p.coords.latitude, lon = p.coords.longitude;
+      locate(lat, lon, tz).then(found => {
+        S.place = found || { name: 'Posizione attuale', lat, lon, tz };
+        save(); current = todayRd(); render(); openSheet('settings');
+      });
     }, () => { msg.textContent = l.gpsFail; }, { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 });
   };
+  // Correzione a mano del nome trovato: il nome ebraico si rifà dal nome latino finché non lo si tocca
+  const pLat = document.getElementById('pLat'), pHeb = document.getElementById('pHeb'), pSave = document.getElementById('pSave');
+  if (pLat && pHeb && pSave) {
+    let hebTouched = false;
+    pHeb.oninput = () => { hebTouched = true; };
+    pLat.oninput = () => { if (!hebTouched) pHeb.value = P.hebrew(pLat.value.trim(), S.place.rule, S.place.data) || ''; };
+    pSave.onclick = () => {
+      const v = pLat.value.trim(); if (!v) return;
+      const pl = S.place, old = pl.names[S.lang === 'he' ? 'it' : S.lang] || pl.name;
+      if (v !== old) pl.names = { it: v, en: v, fr: v, he: pl.names.he };
+      pl.names.he = pHeb.value.trim();
+      pl.name = v; pl.edited = true;
+      save(); render(); openSheet('settings');
+    };
+  }
   const on = document.getElementById('openNotes');
   if (on) on.onclick = () => openSheet('notes');
 }

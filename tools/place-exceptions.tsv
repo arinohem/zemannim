@@ -1,0 +1,89 @@
+# Towns with a traditional Hebrew name, settled with the owner one by one (2026-11-04).
+# Evidence: notes/place-name/ (spelling-evidence.md, exceptions-italy.md, exceptions-abroad.md, place-name-design.md).
+# Columns: Hebrew form, name as in GeoNames (any of its names), country code (ISO 3166-1).
+# The Ashkenazi East is read from notes/place-name/east-names.json by tools/build_places.py (method approved by the owner).
+# Italy
+פירארה	Ferrara	IT
+פאדובה	Padova	IT
+ויניציאה	Venezia	IT
+ליוורנו	Livorno	IT
+רוויגו	Rovigo	IT
+סאלוצצו	Saluzzo	IT
+וירציללי	Vercelli	IT
+קוני	Cuneo	IT
+מנטובה	Mantova	IT
+ריגייו	Reggio nell'Emilia	IT
+קזאלי	Casale Monferrato	IT
+קרימונה	Cremona	IT
+סביוניטה	Sabbioneta	IT
+שונצין	Soncino	IT
+קזאל מיורי	Casalmaggiore	IT
+סינא	Siena	IT
+פיסא	Pisa	IT
+פיסארו	Pesaro	IT
+פלירמו	Palermo	IT
+אוירי	Oria	IT
+ריווא די טרינטא	Riva del Garda	IT
+# Low Countries, England, France
+אמשטרדם	Amsterdam	NL
+האג	The Hague	NL
+ראטערדאם	Rotterdam	NL
+אנטווערפען	Antwerpen	BE
+לונדון	London	GB
+קובינטרי	Coventry	GB
+פאריש	Paris	FR
+מיץ	Metz	FR
+שטראסבורג	Strasbourg	FR
+קאלמאר	Colmar	FR
+מארשיליא	Marseille	FR
+אויגניון	Avignon	FR
+קארפינטראץ	Carpentras	FR
+קאוואליאון	Cavaillon	FR
+לישלוה	L'Isle-sur-la-Sorgue	FR
+מונפשליר	Montpellier	FR
+נרבונה	Narbonne	FR
+טרוייש	Troyes	FR
+# German lands, Bohemia, Moravia, Iberia
+פראנקפורט דמיין	Frankfurt am Main	DE
+וורמייזא	Worms	DE
+מגנצא	Mainz	DE
+שפירא	Speyer	DE
+המבורג	Hamburg	DE
+פיורדא	Fürth	DE
+ווינא	Vienna	AT
+פראג	Prague	CZ
+ניקלשבורג	Mikulov	CZ
+פרעסבורג	Bratislava	SK
+טוליטולה	Toledo	ES
+ברצלונה	Barcelona	ES
+גירונדה	Girona	ES
+אשביליה	Sevilla	ES
+קורטבה	Córdoba	ES
+גרנטה	Granada	ES
+סרקסטה	Zaragoza	ES
+לישבונה	Lisbon	PT
+# Ottoman Empire, Balkans, North Africa, Levant, Iraq
+שאלוניקי	Thessaloníki	GR
+קושטנדינא	Istanbul	TR
+אזמיר	İzmir	TR
+אדריאנופולי	Edirne	TR
+רודוס	Rhodes	GR
+קורפו	Kérkyra	GR
+שאראי	Sarajevo	BA
+פאס	Fès	MA
+מכנאס	Meknès	MA
+תונס	Tunis	TN
+טריפולי	Tripoli	LY
+אלגזאיר	Algiers	DZ
+קסנטינה	Constantine	DZ
+והראן	Oran	DZ
+אלקאהרה	Cairo	EG
+נא אמון	Alexandria	EG
+דמשק	Damascus	SY
+ארם צובה	Aleppo	SY
+בגדאד	Baghdad	IQ
+# Other towns already in the app
+ניו יורק	New York City	US
+סיאול	Seoul	KR
+ירושלים	Jerusalem	IL
+תל אביב	Tel Aviv	IL

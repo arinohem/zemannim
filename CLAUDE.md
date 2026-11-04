@@ -24,7 +24,8 @@ Read `DECISIONS.md` before changing any rule. Every rule there was settled with 
 ## Code layout
 
 - `engine.js` — all calculations, no dependencies: Hebrew calendar (Reingold–Dershowitz arithmetic), festivals (Israel/diaspora), parashiyyoth, sun (NOAA, sea level), MT times, nefilath appayim, rain, tequfa (MT Qiddush ha-Ḥoḏesh 9 and 10).
-- `ui.js` — interface, settings (localStorage), Italian/Hebrew texts, geolocation.
+- `ui.js` — interface, settings (localStorage), Italian/Hebrew texts, geolocation, place lookup (bundled list; optional OpenStreetMap lookup).
+- `placename.js` — Hebrew spelling of town names (rules per language; DECISIONS.md). `places.json` — the bundled town list, built by `tools/build_places.py` from GeoNames (cache in `tools/cache/`, not committed), with `tools/place-exceptions.tsv` (traditional Hebrew names), `notes/place-name/east-names.json` and the z/s data; English pronunciations in `tools/english-ipa.tsv` (`tools/build_english.py`). Rebuild places.json after changing any of these.
 - `tools/index.src.html` — page template, styles, and the in-app "Note sulle scelte" (decisions page, in Italian). **Edit this, not `index.html`.**
 - `tools/build.py` — writes `index.html`; `--preview` writes a single-file `preview.html` (scripts inlined) for previews where external files can't load.
 - `sw.js` — offline cache. **Bump the cache name (`mt-zemanim-vN`) whenever any served file changes**, or installed copies may keep old files.
