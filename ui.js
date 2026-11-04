@@ -37,7 +37,7 @@ const T = {
     afterSunset: 'Dopo il tramonto', parasha: 'Parashà della settimana', festShabbath: 'Sabato festivo: lettura della festa',
     na: 'Nefilaṯ appàyim', shahrith: 'Shaḥriṯ', minha: 'Minḥà', arvith: 'ʿArḇiṯ', yes: 'sì', no: 'no',
     ask: 'Richiesta della pioggia',
-    askYes: 'sì', askNo: 'non ancora', askFrom: 'dalla sera del', askTonight: 'si comincia da ʿArḇiṯ di stasera', askFirst: 'sì, da ʿArḇiṯ di ieri sera', askLast: 'sì, per l’ultima volta a Minḥà',
+    askYes: 'sì', askNo: 'non ancora', askFrom: 'dalla sera del', askTonight: 'si comincia stasera a ʿArḇiṯ', askFirst: 'sì; si è cominciato ieri sera a ʿArḇiṯ', askLast: 'sì, per l’ultima volta a Minḥà',
     scTonight: 'Da ʿArḇiṯ di stasera', scUntilMinha: 'Fino a Minḥà', scUntilNeila: 'Fino a Neʿilà', ifFast: 'Chi digiuna', b3: '3ª benedizione', b11: '11ª benedizione', aboda: 'nella ʿAḇoḏà', hodaya: 'nella Hoḏayà',
     anenu: 'in Shomeaʿ tefillà; l’officiante ne fa una benedizione a sé, fra Goʾel e Rofé', boneh: 'in Boné Yerushalàyim', hour: 'Ora stagionale', settings: 'Impostazioni', notes: 'Note sulle scelte',
     close: 'Chiudi', place: 'Luogo', useGps: 'Usa la mia posizione', gpsFail: 'Posizione non disponibile in questa pagina: scegli una città.',
@@ -46,12 +46,12 @@ const T = {
     walledLbl: 'Città murata (Purim il 15)', auto: 'automatico', on: 'sì', off: 'no', prudentLbl: 'Arrotondamento prudente',
     langLbl: 'Lingua', zone: 'Orari nel fuso orario', shabbIn: 'Inizio dello Shabbaṯ', shabbOut: 'Fine dello Shabbaṯ',
     ytIn: 'Inizio della festa', ytOut: 'Fine della festa', source: 'Fonte', polar: 'In questo luogo e in questa data il sole non sorge o non tramonta.',
-    firstMention: 'da Musaf si comincia a dire', lastMention: 'si dice fino a Shaḥriṯ; da Musaf non si dice più', israelOn: 'Israele', diaspora: 'diaspora', inIsrael: 'In Israele', naAll: 'in ogni preghiera', arvithKippur: 'ʿArḇiṯ (sera di Kippur)', inDiaspora: 'Nella diaspora', festReading: 'lettura della festa',
+    firstMention: 'si comincia a dirlo a Musaf', lastMention: 'si dice fino a Shaḥriṯ; da Musaf non si dice più', israelOn: 'Israele', diaspora: 'diaspora', inIsrael: 'In Israele', naAll: 'in ogni preghiera', arvithKippur: 'ʿArḇiṯ (sera di Kippur)', inDiaspora: 'Nella diaspora', festReading: 'lettura della festa',
     splitPesah: 'Nella diaspora questo sabato è l’ultimo giorno di Pèsaḥ, con la lettura della festa; in Israele si legge la parashà seguente.',
     splitShavuoth: 'Nella diaspora questo sabato è il secondo giorno di Shaḇuʿoṯ, con la lettura della festa; in Israele si legge la parashà seguente.',
     rejoin: (d, p) => `Le letture tornano a coincidere dopo il ${d}, quando nella diaspora si leggono insieme ${p}.`,
     rejoinNow: p => `Questo sabato nella diaspora si leggono insieme ${p}; dal sabato seguente la lettura è di nuovo la stessa.`,
-    translitLbl: 'Traslitterazione di כ e ת', bethLbl: 'Traslitterazione di ב', tequfa: 'tequfà', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico'
+    translitLbl: 'Traslitterazione di כ e ת', bethLbl: 'Traslitterazione di ב', tequfa: 'tequfà secondo il', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico'
   },
   en: {
     tammuzNote: 'Italian rite (Bologna Maḥazor): read straight through, without skipping. Some read as on the other fasts (<span lang="he">ויחל משה</span>, then <span lang="he">פסל לך</span>), as in the MT', fastOut: 'Fast ends', reading: 'Tora reading', both: 'Shaḥriṯ and Minḥa', av9In: 'Tishʿa be-Aḇ begins',
@@ -61,7 +61,7 @@ const T = {
     afterSunset: 'After sunset', parasha: 'Weekly parasha', festShabbath: 'Festival Shabbaṯ: festival reading',
     na: 'Nefilaṯ appayim', shahrith: 'Shaḥriṯ', minha: 'Minḥa', arvith: 'ʿArḇiṯ', yes: 'yes', no: 'no',
     ask: 'Request for rain',
-    askYes: 'yes', askNo: 'not yet', askFrom: 'from the evening of', askTonight: 'begins at ʿArḇiṯ tonight', askFirst: 'yes, since ʿArḇiṯ last night', askLast: 'yes, for the last time at Minḥa',
+    askYes: 'yes', askNo: 'not yet', askFrom: 'from the evening of', askTonight: 'begins at ʿArḇiṯ tonight', askFirst: 'yes; it began at ʿArḇiṯ last night', askLast: 'yes, for the last time at Minḥa',
     scTonight: 'From ʿArḇiṯ tonight', scUntilMinha: 'Until Minḥa', scUntilNeila: 'Until Neʿila', ifFast: 'If fasting', b3: '3rd blessing', b11: '11th blessing', aboda: 'in the ʿAḇoḏa', hodaya: 'in the Hoḏaya',
     anenu: 'in Shomeaʿ tefilla; the reader makes it a separate blessing, between Goʾel and Rofe', boneh: 'in Bone Yerushalayim', hour: 'Seasonal hour', settings: 'Settings', notes: 'Notes on the choices (in Italian)',
     close: 'Close', place: 'Place', useGps: 'Use my location', gpsFail: 'Location is not available on this page: choose a city.',
@@ -70,12 +70,12 @@ const T = {
     walledLbl: 'Walled city (Purim on the 15th)', auto: 'automatic', on: 'yes', off: 'no', prudentLbl: 'Prudent rounding',
     langLbl: 'Language', zone: 'Times in time zone', shabbIn: 'Shabbaṯ begins', shabbOut: 'Shabbaṯ ends',
     ytIn: 'Festival begins', ytOut: 'Festival ends', source: 'Source', polar: 'At this place and date the sun does not rise or does not set.',
-    firstMention: 'said from Musaf onwards', lastMention: 'said until Shaḥriṯ; no longer said from Musaf', israelOn: 'Israel', diaspora: 'diaspora', inIsrael: 'In Israel', naAll: 'at every prayer', arvithKippur: 'ʿArḇiṯ (Kippur night)', inDiaspora: 'In the diaspora', festReading: 'festival reading',
+    firstMention: 'begins at Musaf', lastMention: 'said until Shaḥriṯ; no longer said from Musaf', israelOn: 'Israel', diaspora: 'diaspora', inIsrael: 'In Israel', naAll: 'at every prayer', arvithKippur: 'ʿArḇiṯ (Kippur night)', inDiaspora: 'In the diaspora', festReading: 'festival reading',
     splitPesah: 'In the diaspora this Shabbaṯ is the last day of Pesaḥ and the festival portion is read; in Israel the next parasha is read.',
     splitShavuoth: 'In the diaspora this Shabbaṯ is the second day of Shaḇuʿoṯ and the festival portion is read; in Israel the next parasha is read.',
     rejoin: (d, p) => `The readings coincide again after ${d}, when the diaspora reads ${p} together.`,
     rejoinNow: p => `This Shabbaṯ the diaspora reads ${p} together; from next Shabbaṯ the reading is the same again.`,
-    translitLbl: 'Romanization of כ and ת', bethLbl: 'Romanization of ב', tequfa: 'tequfa', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only'
+    translitLbl: 'Romanization of כ and ת', bethLbl: 'Romanization of ב', tequfa: 'tequfa by', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only'
   },
   fr: {
     tammuzNote: 'Rite italien (Maḥazor de Bologne) : on lit à la suite, sans sauter. Certains lisent comme les autres jeûnes (<span lang="he">ויחל משה</span>, puis <span lang="he">פסל לך</span>), comme le MT', fastOut: 'Fin du jeûne', reading: 'Lecture de la Tora', both: 'Shaḥriṯ et Minḥa', av9In: 'Début de Tishʿa be-Aḇ',
@@ -85,7 +85,7 @@ const T = {
     afterSunset: 'Après le coucher du soleil', parasha: 'Parasha de la semaine', festShabbath: 'Shabbaṯ de fête : lecture de la fête',
     na: 'Nefilaṯ appayim', shahrith: 'Shaḥriṯ', minha: 'Minḥa', arvith: 'ʿArḇiṯ', yes: 'oui', no: 'non',
     ask: 'Demande de la pluie',
-    askYes: 'oui', askNo: 'pas encore', askFrom: 'à partir du soir du', askTonight: 'commence ce soir à ʿArḇiṯ', askFirst: 'oui, depuis ʿArḇiṯ hier soir', askLast: 'oui, pour la dernière fois à Minḥa',
+    askYes: 'oui', askNo: 'pas encore', askFrom: 'à partir du soir du', askTonight: 'commence ce soir à ʿArḇiṯ', askFirst: 'oui ; on a commencé hier soir à ʿArḇiṯ', askLast: 'oui, pour la dernière fois à Minḥa',
     scTonight: 'À partir de ʿArḇiṯ ce soir', scUntilMinha: 'Jusqu’à Minḥa', scUntilNeila: 'Jusqu’à Neʿila', ifFast: 'Si l’on jeûne', b3: '3e bénédiction', b11: '11e bénédiction', aboda: 'dans la ʿAḇoḏa', hodaya: 'dans la Hoḏaya',
     anenu: 'dans Shomeaʿ tefilla ; l’officiant en fait une bénédiction à part, entre Goʾel et Rofe', boneh: 'dans Bone Yerushalayim', hour: 'Heure saisonnière', settings: 'Réglages', notes: 'Notes sur les choix (en italien)',
     close: 'Fermer', place: 'Lieu', useGps: 'Utiliser ma position', gpsFail: 'Position indisponible sur cette page : choisissez une ville.',
@@ -94,12 +94,12 @@ const T = {
     walledLbl: 'Ville fortifiée (Purim le 15)', auto: 'automatique', on: 'oui', off: 'non', prudentLbl: 'Arrondi prudent',
     langLbl: 'Langue', zone: 'Heures dans le fuseau horaire', shabbIn: 'Début du Shabbaṯ', shabbOut: 'Fin du Shabbaṯ',
     ytIn: 'Début de la fête', ytOut: 'Fin de la fête', source: 'Source', polar: 'En ce lieu et à cette date, le soleil ne se lève pas ou ne se couche pas.',
-    firstMention: 'on le dit à partir de Musaf', lastMention: 'on le dit jusqu’à Shaḥriṯ ; à partir de Musaf on ne le dit plus', israelOn: 'Israël', diaspora: 'diaspora', inIsrael: 'En Israël', naAll: 'à chaque prière', arvithKippur: 'ʿArḇiṯ (nuit de Kippur)', inDiaspora: 'En diaspora', festReading: 'lecture de la fête',
+    firstMention: 'on commence à le dire à Musaf', lastMention: 'on le dit jusqu’à Shaḥriṯ ; à partir de Musaf on ne le dit plus', israelOn: 'Israël', diaspora: 'diaspora', inIsrael: 'En Israël', naAll: 'à chaque prière', arvithKippur: 'ʿArḇiṯ (nuit de Kippur)', inDiaspora: 'En diaspora', festReading: 'lecture de la fête',
     splitPesah: 'En diaspora, ce Shabbaṯ est le dernier jour de Pesaḥ, avec la lecture de la fête ; en Israël on lit la parasha suivante.',
     splitShavuoth: 'En diaspora, ce Shabbaṯ est le deuxième jour de Shaḇuʿoṯ, avec la lecture de la fête ; en Israël on lit la parasha suivante.',
     rejoin: (d, p) => `Les lectures coïncident de nouveau après le ${d}, quand la diaspora lit ensemble ${p}.`,
     rejoinNow: p => `Ce Shabbaṯ, la diaspora lit ensemble ${p} ; à partir du Shabbaṯ suivant la lecture est de nouveau la même.`,
-    translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul'
+    translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa selon le', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul'
   },
   he: {
     tammuzNote: 'מנהג איטליה (מחזור בולוניה): קורין הכל על הסדר ואין מדלגין. ויש שקורין כשאר תעניות (ויחל משה ופסל לך), כמשנה תורה', fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחילת תשעה באב',
