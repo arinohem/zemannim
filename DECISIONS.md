@@ -82,20 +82,20 @@ Wording replaced during the review of the texts, kept so that it can be restored
 | Decisions page, «Orari del giorno» | «fino a quando resta 1¼ ore» | «finché del giorno resta un’ora e un quarto» | 31188a1 |
 | Decisions page, «Orari del giorno» | «la calcoliamo a metà fra tramonto e sorgere» | «la calcoliamo a metà fra il tramonto e il sorgere del sole» | 31188a1 |
 | Time label, 1¼ hours before sunset | «(si può pregare fino al tramonto)»; EN «(one may pray until sunset)»; FR «(on peut prier jusqu’au coucher du soleil)» | «(si può recitare Minḥà fino al tramonto)»; EN «(Minḥa may be recited until sunset)»; FR «(on peut réciter la prière de Minḥa jusqu’au coucher du soleil)» | 45b5bb3 |
-| Decisions page | «negli altri digiuni a Shaḥriṯ e Minḥà, con «chi digiuna»,» | «negli altri digiuni a Shaḥriṯ e Minḥà, con la nota «chi digiuna»,» | this commit |
-| Decisions page | «detto in ogni preghiera del 9 di Aḇ. Il giorno civile ha» | «detto in ogni preghiera del 9 di Aḇ. ¶ Il giorno civile ha» | this commit |
-| Decisions page | «nell’ʿAḇoḏà (2:12–13 [10–11])» | «nella ʿAḇoḏà (2:12–13 [10–11])» | this commit |
-| Decisions page | «(anno di 365¼ giorni; tequfà di Nisan dell’anno 1 = 7 g 9 h 642 ḥ prima del molad, 9:3). Il cap. 10 (365 g 5 h 997 ḥ 48 r; 9 h 642 ḥ prima del molad, 10:3)» | «(anno di 365¼ giorni; tequfà di Nisan dell’anno 1 = 7 giorni, 9 ore e 642 ḥalaqim prima del molad, 9:3). Il cap. 10 (365 giorni, 5 ore, 997 ḥalaqim e 48 regaʿim; 9 ore e 642 ḥalaqim prima del molad, 10:3)» | this commit |
-| Decisions page | «anticipa la richiesta di circa 11 giorni (nel 2026: 24 novembre invece del 5 dicembre)» | «anticipa la richiesta di circa 11 giorni (nel 2026 il 60° giorno cade il 24 novembre invece del 5 dicembre)» | this commit |
-| Decisions page | «quello che cade di sabato si rinvia a domenica» | «quello che cade di Shabbaṯ si rinvia a domenica» | this commit |
-| Decisions page | «se il 13 cade di sabato si anticipa» | «se il 13 cade di Shabbaṯ si anticipa» | this commit |
-| Decisions page | «per questo il tramonto della vigilia porta l’indicazione.» | «per questo, la vigilia, la riga del tramonto lo segnala.» | this commit |
-| Decisions page | «Conteggio dell’ʿÒmer» (heading) | «Conteggio del ʿÒmer» | this commit |
-| Decisions page | «Si conta di notte, dalla notte del 16 Nisan, i giorni» | «Si contano di notte, dalla notte del 16 Nisan, i giorni» | this commit |
-| Decisions page | «compare il nome del sabato (שבת שקלים» | «compare il nome dello Shabbaṯ (שבת שקלים» | this commit |
-| Decisions page | «Digiuni, ʿÒmer e sabati con nome sono confrontati» | «Digiuni, ʿÒmer e Shabbaṯoṯ con nome sono confrontati» | this commit |
-| Decisions page | «Le restrizioni di Aḇ da Rosh Ḥòḏesh e della settimana del 9 (Taʿaniyyoṯ 5:6); Lag ba-ʿòmer» | «Le restrizioni da Rosh Ḥòḏesh Aḇ e nella settimana del 9 di Aḇ (Taʿaniyyoṯ 5:6); Lag la-ʿÒmer» | this commit |
-| Decisions page | «In queste settimane una nota sotto l’altra lettura spiega il primo sabato perché le letture divergono e ogni settimana indica la data in cui si riallineano.» | «In queste settimane, il primo sabato una nota sotto l’altra lettura spiega perché le letture divergono; ogni settimana la nota indica la data in cui si riallineano.» | this commit |
-| Decisions page | «Il titolo della parashà è Tazriaʿ.» | «Il titolo della parashà è Tazriaʿ, nella forma del titolo e non Ṯazriaʿ.» | this commit |
-| Decisions page | «si usa il fuso della città;» | «si usa il fuso orario della città;» | this commit |
-| Interface (it) | «nell’ʿAḇoḏà» | «nella ʿAḇoḏà» | this commit |
+| Decisions page | «negli altri digiuni a Shaḥriṯ e Minḥà, con «chi digiuna»,» | «negli altri digiuni a Shaḥriṯ e Minḥà, con la nota «chi digiuna»,» | 2733ae5 |
+| Decisions page | «detto in ogni preghiera del 9 di Aḇ. Il giorno civile ha» | «detto in ogni preghiera del 9 di Aḇ. ¶ Il giorno civile ha» | 2733ae5 |
+| Decisions page | «nell’ʿAḇoḏà (2:12–13 [10–11])» | «nella ʿAḇoḏà (2:12–13 [10–11])» | 2733ae5 |
+| Decisions page | «(anno di 365¼ giorni; tequfà di Nisan dell’anno 1 = 7 g 9 h 642 ḥ prima del molad, 9:3). Il cap. 10 (365 g 5 h 997 ḥ 48 r; 9 h 642 ḥ prima del molad, 10:3)» | «(anno di 365¼ giorni; tequfà di Nisan dell’anno 1 = 7 giorni, 9 ore e 642 ḥalaqim prima del molad, 9:3). Il cap. 10 (365 giorni, 5 ore, 997 ḥalaqim e 48 regaʿim; 9 ore e 642 ḥalaqim prima del molad, 10:3)» | 2733ae5 |
+| Decisions page | «anticipa la richiesta di circa 11 giorni (nel 2026: 24 novembre invece del 5 dicembre)» | «anticipa la richiesta di circa 11 giorni (nel 2026 il 60° giorno cade il 24 novembre invece del 5 dicembre)» | 2733ae5 |
+| Decisions page | «quello che cade di sabato si rinvia a domenica» | «quello che cade di Shabbaṯ si rinvia a domenica» | 2733ae5 |
+| Decisions page | «se il 13 cade di sabato si anticipa» | «se il 13 cade di Shabbaṯ si anticipa» | 2733ae5 |
+| Decisions page | «per questo il tramonto della vigilia porta l’indicazione.» | «per questo, la vigilia, la riga del tramonto lo segnala.» | 2733ae5 |
+| Decisions page | «Conteggio dell’ʿÒmer» (heading) | «Conteggio del ʿÒmer» | 2733ae5 |
+| Decisions page | «Si conta di notte, dalla notte del 16 Nisan, i giorni» | «Si contano di notte, dalla notte del 16 Nisan, i giorni» | 2733ae5 |
+| Decisions page | «compare il nome del sabato (שבת שקלים» | «compare il nome dello Shabbaṯ (שבת שקלים» | 2733ae5 |
+| Decisions page | «Digiuni, ʿÒmer e sabati con nome sono confrontati» | «Digiuni, ʿÒmer e Shabbaṯoṯ con nome sono confrontati» | 2733ae5 |
+| Decisions page | «Le restrizioni di Aḇ da Rosh Ḥòḏesh e della settimana del 9 (Taʿaniyyoṯ 5:6); Lag ba-ʿòmer» | «Le restrizioni da Rosh Ḥòḏesh Aḇ e nella settimana del 9 di Aḇ (Taʿaniyyoṯ 5:6); Lag la-ʿÒmer» | 2733ae5 |
+| Decisions page | «In queste settimane una nota sotto l’altra lettura spiega il primo sabato perché le letture divergono e ogni settimana indica la data in cui si riallineano.» | «In queste settimane, il primo sabato una nota sotto l’altra lettura spiega perché le letture divergono; ogni settimana la nota indica la data in cui si riallineano.» | 2733ae5 |
+| Decisions page | «Il titolo della parashà è Tazriaʿ.» | «Il titolo della parashà è Tazriaʿ, nella forma del titolo e non Ṯazriaʿ.» | 2733ae5 |
+| Decisions page | «si usa il fuso della città;» | «si usa il fuso orario della città;» | 2733ae5 |
+| Interface (it) | «nell’ʿAḇoḏà» | «nella ʿAḇoḏà» | 2733ae5 |
