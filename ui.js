@@ -38,7 +38,7 @@ const T = {
     na: 'Nefilaṯ appàyim', shahrith: 'Shaḥriṯ', minha: 'Minḥà', arvith: 'ʿArḇiṯ', yes: 'sì', no: 'no',
     ask: 'Richiesta della pioggia',
     askYes: 'sì', askNo: 'non ancora', askFrom: 'dalla sera del', askTonight: 'si comincia da ʿArḇiṯ di stasera', askFirst: 'sì, da ʿArḇiṯ di ieri sera', askLast: 'sì, per l’ultima volta a Minḥà',
-    scTonight: 'Da ʿArḇiṯ di stasera', scUntilMinha: 'Fino a Minḥà', scUntilNeila: 'Fino a Neʿilà', ifFast: 'Chi digiuna', b3: '3ª benedizione', b11: '11ª benedizione', aboda: 'nell’ʿAḇoḏà', hodaya: 'nella Hoḏayà',
+    scTonight: 'Da ʿArḇiṯ di stasera', scUntilMinha: 'Fino a Minḥà', scUntilNeila: 'Fino a Neʿilà', ifFast: 'Chi digiuna', b3: '3ª benedizione', b11: '11ª benedizione', aboda: 'nella ʿAḇoḏà', hodaya: 'nella Hoḏayà',
     anenu: 'in Shomeaʿ tefillà; l’officiante ne fa una benedizione a sé, fra Goʾel e Rofé', boneh: 'in Boné Yerushalàyim', hour: 'Ora stagionale', settings: 'Impostazioni', notes: 'Note sulle scelte',
     close: 'Chiudi', place: 'Luogo', useGps: 'Usa la mia posizione', gpsFail: 'Posizione non disponibile in questa pagina: scegli una città.',
     gpsWait: 'Ricerca della posizione…', manual: 'Coordinate', apply: 'Applica', tzethLbl: 'Ṣeṯ ha-koḵaḇim (fine dello Shabbaṯ, delle feste e dei digiuni)',
