@@ -147,7 +147,7 @@ const LOCALE = { it: 'it-IT', en: 'en-GB', fr: 'fr-FR', he: 'he-IL' };
 // Voci della lista: etichetta ebraica, didascalie, fonte (stringa o testo per lingua), tipo di arrotondamento
 const ZEMANIM = {
   alot:    { he: 'עלות השחר', it: 'Spuntare dell’alba', en: 'Break of dawn', fr: 'Lever de l’aube',
-             src: { it: 'Rambam, Comm. alla Mishnà, Beraḵoṯ 1:1 (non MT): 1⅕ ore stagionali prima del sorgere',
+             src: { it: 'Rambam, Comm. alla Mishnà, Beraḵoṯ 1:1 (non MT): 1⅕ ore stagionali prima del sorgere del sole',
                     en: 'Rambam, Commentary on the Mishna, Beraḵoṯ 1:1 (not MT): 1⅕ seasonal hours before sunrise',
                     fr: 'Rambam, Commentaire de la Mishna, Beraḵoṯ 1:1 (pas le MT) : 1⅕ heure saisonnière avant le lever du soleil' }, r: 'n' },
   netz:    { he: 'הנץ החמה', it: 'Sorgere del sole', en: 'Sunrise', fr: 'Lever du soleil', src: 'MT Qeriʾaṯ Shemaʿ 1:12; Tefillà 3:1', r: 'n' },
@@ -163,7 +163,7 @@ const ZEMANIM = {
   shqia:   { he: 'שקיעת החמה', it: 'Tramonto', en: 'Sunset', fr: 'Coucher du soleil', src: 'MT Shabbaṯ 5:3–4; Tefillà 3:4', r: 'f' },
   tzeth:   { he: 'צאת הכוכבים', it: 'Uscita delle stelle', en: 'Emergence of the stars', fr: 'Sortie des étoiles', src: 'MT Terumoṯ 7:2 («כמו שליש שעה אחר שקיעת החמה»); Shabbaṯ 5:4', r: 'c' },
   hatzotLayla: { he: 'חצות הלילה', it: 'Mezzanotte (termine preferibile per lo Shemaʿ della sera)', en: 'Midnight (preferred latest time for the evening Shemaʿ)', fr: 'Minuit (heure limite préférable pour le Shemaʿ du soir)',
-             src: { it: 'MT Qeriʾaṯ Shemaʿ 1:10; calcolata a metà fra tramonto e sorgere',
+             src: { it: 'MT Qeriʾaṯ Shemaʿ 1:10; calcolata a metà fra il tramonto e il sorgere del sole',
                     en: 'MT Qeriʾaṯ Shemaʿ 1:10; computed as the midpoint between sunset and sunrise',
                     fr: 'MT Qeriʾaṯ Shemaʿ 1:10 ; calculé à mi-chemin entre le coucher et le lever du soleil' }, r: 'n' }
 };
