@@ -37,7 +37,7 @@ const T = {
     afterSunset: 'Dopo il tramonto', parasha: 'Parashà della settimana', festShabbath: 'Sabato festivo: lettura della festa',
     na: 'Nefilaṯ appàyim', shahrith: 'Shaḥriṯ', minha: 'Minḥà', arvith: 'ʿArḇiṯ', yes: 'sì', no: 'no',
     ask: 'Richiesta della pioggia',
-    askYes: 'sì', askNo: 'non ancora', askFrom: 'dalla sera del', askTonight: 'si comincia stasera a ʿArḇiṯ', askFirst: 'sì; si è cominciato ieri sera a ʿArḇiṯ', askLast: 'sì, per l’ultima volta a Minḥà',
+    askTonight: 'si comincia stasera a ʿArḇiṯ', askFirst: 'si è cominciato ieri sera a ʿArḇiṯ', askLast: 'per l’ultima volta a Minḥà',
     scTonight: 'Da ʿArḇiṯ di stasera', scUntilMinha: 'Fino a Minḥà', scUntilNeila: 'Fino a Neʿilà', ifFast: 'Chi digiuna', b3: '3ª benedizione', b11: '11ª benedizione', aboda: 'nella ʿAḇoḏà', hodaya: 'nella Hoḏayà',
     anenu: 'in Shomeaʿ tefillà; l’officiante ne fa una benedizione a sé, fra Goʾel e Rofé', boneh: 'in Boné Yerushalàyim', hour: 'Ora stagionale', settings: 'Impostazioni', notes: 'Note sulle scelte',
     close: 'Chiudi', place: 'Luogo', useGps: 'Usa la mia posizione', gpsFail: 'Posizione non disponibile in questa pagina: scegli una città.',
@@ -61,7 +61,7 @@ const T = {
     afterSunset: 'After sunset', parasha: 'Weekly parasha', festShabbath: 'Festival Shabbaṯ: festival reading',
     na: 'Nefilaṯ appayim', shahrith: 'Shaḥriṯ', minha: 'Minḥa', arvith: 'ʿArḇiṯ', yes: 'yes', no: 'no',
     ask: 'Request for rain',
-    askYes: 'yes', askNo: 'not yet', askFrom: 'from the evening of', askTonight: 'begins at ʿArḇiṯ tonight', askFirst: 'yes; it began at ʿArḇiṯ last night', askLast: 'yes, for the last time at Minḥa',
+    askTonight: 'begins at ʿArḇiṯ tonight', askFirst: 'it began at ʿArḇiṯ last night', askLast: 'for the last time at Minḥa',
     scTonight: 'From ʿArḇiṯ tonight', scUntilMinha: 'Until Minḥa', scUntilNeila: 'Until Neʿila', ifFast: 'If fasting', b3: '3rd blessing', b11: '11th blessing', aboda: 'in the ʿAḇoḏa', hodaya: 'in the Hoḏaya',
     anenu: 'in Shomeaʿ tefilla; the reader makes it a separate blessing, between Goʾel and Rofe', boneh: 'in Bone Yerushalayim', hour: 'Seasonal hour', settings: 'Settings', notes: 'Notes on the choices (in Italian)',
     close: 'Close', place: 'Place', useGps: 'Use my location', gpsFail: 'Location is not available on this page: choose a city.',
@@ -85,7 +85,7 @@ const T = {
     afterSunset: 'Après le coucher du soleil', parasha: 'Parasha de la semaine', festShabbath: 'Shabbaṯ de fête : lecture de la fête',
     na: 'Nefilaṯ appayim', shahrith: 'Shaḥriṯ', minha: 'Minḥa', arvith: 'ʿArḇiṯ', yes: 'oui', no: 'non',
     ask: 'Demande de la pluie',
-    askYes: 'oui', askNo: 'pas encore', askFrom: 'à partir du soir du', askTonight: 'commence ce soir à ʿArḇiṯ', askFirst: 'oui ; on a commencé hier soir à ʿArḇiṯ', askLast: 'oui, pour la dernière fois à Minḥa',
+    askTonight: 'commence ce soir à ʿArḇiṯ', askFirst: 'on a commencé hier soir à ʿArḇiṯ', askLast: 'pour la dernière fois à Minḥa',
     scTonight: 'À partir de ʿArḇiṯ ce soir', scUntilMinha: 'Jusqu’à Minḥa', scUntilNeila: 'Jusqu’à Neʿila', ifFast: 'Si l’on jeûne', b3: '3e bénédiction', b11: '11e bénédiction', aboda: 'dans la ʿAḇoḏa', hodaya: 'dans la Hoḏaya',
     anenu: 'dans Shomeaʿ tefilla ; l’officiant en fait une bénédiction à part, entre Goʾel et Rofe', boneh: 'dans Bone Yerushalayim', hour: 'Heure saisonnière', settings: 'Réglages', notes: 'Notes sur les choix (en italien)',
     close: 'Fermer', place: 'Lieu', useGps: 'Utiliser ma position', gpsFail: 'Position indisponible sur cette page : choisissez une ville.',
@@ -109,7 +109,7 @@ const T = {
     afterSunset: 'אחר השקיעה', parasha: 'פרשת השבוע', festShabbath: 'שבת של מועד: קריאת המועד',
     na: 'נפילת אפים', shahrith: 'שחרית', minha: 'מנחה', arvith: 'ערבית', yes: 'כן', no: 'לא',
     ask: 'שאלת גשמים',
-    askYes: 'כן', askNo: 'עדיין לא', askFrom: 'מערבית בערב', askTonight: 'מתחילים בערבית של הלילה', askFirst: 'כן, מערבית של אמש', askLast: 'כן, בפעם האחרונה במנחה',
+    askTonight: 'מתחילים בערבית של הלילה', askFirst: 'מערבית של אמש', askLast: 'בפעם האחרונה במנחה',
     scTonight: 'מערבית של הלילה', scUntilMinha: 'עד מנחה', scUntilNeila: 'עד נעילה', ifFast: 'המתענה', b3: 'בברכה שלישית', b11: 'בברכת אחת עשרה', aboda: 'בעבודה', hodaya: 'בהודיה',
     anenu: 'בשומע תפילה; ושליח ציבור אומרה ברכה בפני עצמה, בין גואל לרופא', boneh: 'בבונה ירושלים', hour: 'שעה זמנית', settings: 'הגדרות', notes: 'הערות על הבחירות (באיטלקית)',
     close: 'סגור', place: 'מקום', useGps: 'השתמש במיקום שלי', gpsFail: 'המיקום אינו זמין בדף זה: בחר עיר.',
@@ -305,17 +305,17 @@ function render() {
     if (rain.firstMention) rainTxt += ` (${l.firstMention})`;
     if (rain.lastMention) rainTxt += ` (${l.lastMention})`;
     notes.push(rain.firstMention || rain.lastMention ? HL(rainTxt) : rainTxt);
-    // dopo l'ultima richiesta della stagione la riga non serve più
-    if (rain.ask || current <= rain.askEve) {
-      const st = rain.askTonight ? l.askTonight : !rain.ask ? l.askNo : rain.askFirst ? l.askFirst : rain.askLast ? l.askLast : l.askYes;
-      const br = [];
-      if (!rain.ask && !rain.askTonight) { const af = E.gregFromRd(rain.askEve); br.push(`${l.askFrom} ${dayNum(af.d)} ${l.months[af.m - 1]}`); }
-      if (!o.israel) br.push(S.lang === 'he' ? 'תקופה לפי פרק ' + E.hebNumeral(S.tequfa).replace(/[׳״]/g, '') : l.tequfa + ' ' + l.chapter + ' ' + S.tequfa);
-      // Formula del Maḥazor del proprietario (rito italiano antico): d'inverno si aggiunge l'intera frase in Birkaṯ ha-shanim
-      // La formula si mostra, su una riga a sé, solo quando si dice (dalla sera prima dell'inizio), come la menzione
-      const said = rain.ask || rain.askTonight;
-      const txt = `${said ? heb('ותן טל ומטר לברכה על פני האדמה ושבע את העולם מברכותיך') + '<br>' : ''}${l.ask}${COLON()} ${st}${br.length ? ` (${br.join(', ')})` : ''}`;
-      notes.push(rain.askTonight || rain.askFirst || rain.askLast ? HL(txt) : txt);
+    // Richiesta (formula del Maḥazor del proprietario, rito italiano antico: d'inverno si aggiunge l'intera frase
+    // in Birkaṯ ha-shanim). Come la menzione: solo nei giorni in cui si dice (e la sera prima dell'inizio);
+    // la nota in italiano solo nei giorni di cambio.
+    if (rain.ask || rain.askTonight) {
+      const formula = heb('ותן טל ומטר לברכה על פני האדמה ושבע את העולם מברכותיך');
+      const st = rain.askTonight ? l.askTonight : rain.askFirst ? l.askFirst : rain.askLast ? l.askLast : null;
+      if (!st) notes.push(formula);
+      else {
+        const tq = o.israel ? '' : ` (${S.lang === 'he' ? 'תקופה לפי פרק ' + E.hebNumeral(S.tequfa).replace(/[׳״]/g, '') : l.tequfa + ' ' + l.chapter + ' ' + S.tequfa})`;
+        notes.push(HL(`${formula}<br>${l.ask}${COLON()} ${st}${tq}`));
+      }
     }
   }
   // Aggiunte alla ʿAmiḏà (Tefillà 2:12–13, 2:15, 2:20)
