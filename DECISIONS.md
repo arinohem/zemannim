@@ -81,3 +81,4 @@ Wording replaced during the review of the texts, kept so that it can be restored
 | Decisions page, «Orari del giorno» | «Musaf: fino a 7 ore» | «Musaf: fino alla fine della 7ª ora» | 31188a1 |
 | Decisions page, «Orari del giorno» | «fino a quando resta 1¼ ore» | «finché del giorno resta un’ora e un quarto» | 31188a1 |
 | Decisions page, «Orari del giorno» | «la calcoliamo a metà fra tramonto e sorgere» | «la calcoliamo a metà fra il tramonto e il sorgere del sole» | 31188a1 |
+| Time label, 1¼ hours before sunset | «(si può pregare fino al tramonto)»; EN «(one may pray until sunset)»; FR «(on peut prier jusqu’au coucher du soleil)» | «(si può recitare Minḥà fino al tramonto)»; EN «(Minḥa may be recited until sunset)»; FR «(on peut réciter la prière de Minḥa jusqu’au coucher du soleil)» | this commit |
