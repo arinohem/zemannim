@@ -71,3 +71,13 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | Minor festivals and recurrences | Fasts, the ʿOmer, and the four parashiyyoth added (see Liturgy), besides Rosh Ḥoḏesh, Ḥanukka, and Purim | — | Done (owner, 2026-11-03) |
 | Seasonal changes | A note starts or ends a change (mention and request for rain, additions to the ʿAmida): highlighted. The evening before the request: «si comincia da ʿArḇiṯ di stasera». An advance notice some days before was considered and not adopted | — | Done (owner, 2026-11-03) |
 | App logo | Design a suitable logo for the app icon (now `icon-180/192/512.png`); also a maskable version for Android | — | To do (owner, 2026-11-03) |
+
+## Earlier wording kept for reversal
+
+Wording replaced during the review of the texts, kept so that it can be restored (owner, 2026-11-04).
+
+| Place | Earlier wording | Replaced by | Commit |
+|---|---|---|---|
+| Decisions page, «Orari del giorno» | «Musaf: fino a 7 ore» | «Musaf: fino alla fine della 7ª ora» | 31188a1 |
+| Decisions page, «Orari del giorno» | «fino a quando resta 1¼ ore» | «finché del giorno resta un’ora e un quarto» | 31188a1 |
+| Decisions page, «Orari del giorno» | «la calcoliamo a metà fra tramonto e sorgere» | «la calcoliamo a metà fra il tramonto e il sorgere del sole» | 31188a1 |
