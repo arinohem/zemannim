@@ -118,10 +118,10 @@ Wording replaced during the review of the texts, kept so that it can be restored
 | Interface (he), `splitPesah`, `splitShavuoth`, `rejoin` | no final full stop | final «.» | 06caa8e |
 | Fasts moved (he), `MOVED` in `engine.js` | «(נדחה)», «(מוקדם)» | «(נדחה ליום ראשון)», «(מוקדם ליום חמישי)» | 06caa8e |
 | Ḥanukkà (he), `engine.js` | «חנכה» | «חנכה, יום א׳» … «יום ח׳» | 06caa8e |
-| Interface (he), `ytOut` | «יציאת יום טוב» | «מוצאי יום טוב» | PENDING |
-| Interface (he), `anenu` | «בשומע תפילה; ושליח ציבור» | «בשומע תפלה; ושליח צבור» (defective spelling, owner 2026-11-04) | PENDING |
-| Interface (he), `av9In` | «תחילת תשעה באב» | «תחלת תשעה באב» | PENDING |
-| Interface (he), weekday | «יום שישי» | «יום ששי» | PENDING |
-| Interface (he), ʿOmer | «ספירת העומר» | «ספירת העמר» | PENDING |
-| Times (he), `plag` | «שעה ורביע קודם השקיעה» | «שעה ורביע קדם השקיעה» | PENDING |
-| Festivals (he), `engine.js`; `splitShavuoth` | «שבועות» | «שבעות» | PENDING |
+| Interface (he), `ytOut` | «יציאת יום טוב» | «מוצאי יום טוב» | ee6be3d |
+| Interface (he), `anenu` | «בשומע תפילה; ושליח ציבור» | «בשומע תפלה; ושליח צבור» (defective spelling, owner 2026-11-04) | ee6be3d |
+| Interface (he), `av9In` | «תחילת תשעה באב» | «תחלת תשעה באב» | ee6be3d |
+| Interface (he), weekday | «יום שישי» | «יום ששי» | ee6be3d |
+| Interface (he), ʿOmer | «ספירת העומר» | «ספירת העמר» | ee6be3d |
+| Times (he), `plag` | «שעה ורביע קודם השקיעה» | «שעה ורביע קדם השקיעה» | ee6be3d |
+| Festivals (he), `engine.js`; `splitShavuoth` | «שבועות» | «שבעות» | ee6be3d |
