@@ -155,7 +155,7 @@ function dayInfo(rd, opt) {
   if (m === 1 && d > (il ? 15 : 16) && d <= 20) { info.holMoed = true; add('Ḥol ha-moʿeḏ Pèsaḥ', 'חול המועד פסח'); }
   if (m === 1 && (d === 21 || (!il && d === 22))) { info.yomTov = true; d === 21 ? add('Pèsaḥ, settimo giorno', 'שביעי של פסח', 'Pesaḥ, seventh day', 'Pesaḥ, septième jour')
     : add('Pèsaḥ, ottavo giorno', 'אחרון של פסח', 'Pesaḥ, eighth day', 'Pesaḥ, huitième jour'); }
-  if (m === 3 && (d === 6 || (!il && d === 7))) { info.yomTov = true; add('Shaḇuʿoṯ', 'שבועות'); }
+  if (m === 3 && (d === 6 || (!il && d === 7))) { info.yomTov = true; add('Shaḇuʿoṯ', 'שבעות'); }
   if ((d === 1 && m !== 7) || d === 30) { info.roshHodesh = true; add('Rosh Ḥòḏesh', 'ראש חדש'); }
   const hanStart = rdFromHeb(y, 9, 25);
   const hy = (m >= 7) ? y : y - 1; // Ḥanukkà cade in Kislew/Ṭeḇeṯ dell'anno che inizia a Tishrì

@@ -111,7 +111,6 @@ Wording replaced during the review of the texts, kept so that it can be restored
 | Interface, rain note | «'tequfa', chapter: 'ch.'» | «'tequfa by', chapter: 'ch.'» | 903bca3 |
 | Interface, rain note | «'tequfa', chapter: 'chap.'» | «'tequfa selon le', chapter: 'chap.'» | 903bca3 |
 | Interface (he), `notes` | «הערות על הבחירות (באיטלקית)» | «הערות על ההכרעות (באיטלקית)» | 06caa8e |
-| Interface (he), `tzethLbl` | «צאת הכוכבים (מוצאי שבת)» | «צאת הכוכבים (מוצאי שבת ויום טוב)» | 06caa8e |
 | Interface (he), `askFirst` | «מערבית של אמש» | «מערבית של אתמול» | 06caa8e |
 | Interface (he), `b11` | «בברכת אחת עשרה» | «בברכה אחת עשרה» | 06caa8e |
 | Interface (he), `lastMention` | «אומרים עד שחרית; ממוסף אין אומרים» | «אומרים עד שחרית; ממוסף ואילך אין אומרים» | 06caa8e |
@@ -119,3 +118,10 @@ Wording replaced during the review of the texts, kept so that it can be restored
 | Interface (he), `splitPesah`, `splitShavuoth`, `rejoin` | no final full stop | final «.» | 06caa8e |
 | Fasts moved (he), `MOVED` in `engine.js` | «(נדחה)», «(מוקדם)» | «(נדחה ליום ראשון)», «(מוקדם ליום חמישי)» | 06caa8e |
 | Ḥanukkà (he), `engine.js` | «חנכה» | «חנכה, יום א׳» … «יום ח׳» | 06caa8e |
+| Interface (he), `ytOut` | «יציאת יום טוב» | «מוצאי יום טוב» | PENDING |
+| Interface (he), `anenu` | «בשומע תפילה; ושליח ציבור» | «בשומע תפלה; ושליח צבור» (defective spelling, owner 2026-11-04) | PENDING |
+| Interface (he), `av9In` | «תחילת תשעה באב» | «תחלת תשעה באב» | PENDING |
+| Interface (he), weekday | «יום שישי» | «יום ששי» | PENDING |
+| Interface (he), ʿOmer | «ספירת העומר» | «ספירת העמר» | PENDING |
+| Times (he), `plag` | «שעה ורביע קודם השקיעה» | «שעה ורביע קדם השקיעה» | PENDING |
+| Festivals (he), `engine.js`; `splitShavuoth` | «שבועות» | «שבעות» | PENDING |

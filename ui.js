@@ -102,25 +102,25 @@ const T = {
     translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa selon le', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul'
   },
   he: {
-    tammuzNote: 'מנהג איטליה (מחזור בולוניה): קורין הכל על הסדר ואין מדלגין. ויש שקורין כשאר תעניות (ויחל משה ופסל לך), כמשנה תורה', fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחילת תשעה באב',
-    omer: (n, w, d) => `ספירת העומר: הלילה יום ${E.hebNumeral(n)}` + (w ? `, ${w === 1 ? 'שבוע אחד' : E.hebNumeral(w) + ' שבועות'}${d ? ' ו' + (d === 1 ? 'יום אחד' : E.hebNumeral(d) + ' ימים') : ''}` : ''),
-    title: 'זמנים על פי משנה תורה', today: 'היום', week: ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום שישי', 'שבת'],
+    tammuzNote: 'מנהג איטליה (מחזור בולוניה): קורין הכל על הסדר ואין מדלגין. ויש שקורין כשאר תעניות (ויחל משה ופסל לך), כמשנה תורה', fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחלת תשעה באב',
+    omer: (n, w, d) => `ספירת העמר: הלילה יום ${E.hebNumeral(n)}` + (w ? `, ${w === 1 ? 'שבוע אחד' : E.hebNumeral(w) + ' שבועות'}${d ? ' ו' + (d === 1 ? 'יום אחד' : E.hebNumeral(d) + ' ימים') : ''}` : ''),
+    title: 'זמנים על פי משנה תורה', today: 'היום', week: ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום ששי', 'שבת'],
     months: ['ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני', 'יולי', 'אוגוסט', 'ספטמבר', 'אוקטובר', 'נובמבר', 'דצמבר'],
     afterSunset: 'אחר השקיעה', parasha: 'פרשת השבוע', festShabbath: 'שבת של מועד: קריאת המועד',
     na: 'נפילת אפים', shahrith: 'שחרית', minha: 'מנחה', arvith: 'ערבית', yes: 'כן', no: 'לא',
     ask: 'שאלת גשמים',
     askTonight: 'מתחילים בערבית של הלילה', askFirst: 'מערבית של אתמול', askLast: 'בפעם האחרונה במנחה',
     scTonight: 'מערבית של הלילה', scUntilMinha: 'עד מנחה', scUntilNeila: 'עד נעילה', ifFast: 'המתענה', b3: 'בברכה שלישית', b11: 'בברכה אחת עשרה', aboda: 'בעבודה', hodaya: 'בהודיה',
-    anenu: 'בשומע תפילה; ושליח ציבור אומרה ברכה בפני עצמה, בין גואל לרופא', boneh: 'בבונה ירושלים', hour: 'שעה זמנית', settings: 'הגדרות', notes: 'הערות על ההכרעות (באיטלקית)',
+    anenu: 'בשומע תפלה; ושליח צבור אומרה ברכה בפני עצמה, בין גואל לרופא', boneh: 'בבונה ירושלים', hour: 'שעה זמנית', settings: 'הגדרות', notes: 'הערות על ההכרעות (באיטלקית)',
     close: 'סגור', place: 'מקום', useGps: 'השתמש במיקום שלי', gpsFail: 'המיקום אינו זמין בדף זה: בחר עיר.',
-    gpsWait: 'מחפש מיקום…', manual: 'קואורדינטות', apply: 'החל', tzethLbl: 'צאת הכוכבים (מוצאי שבת ויום טוב)',
+    gpsWait: 'מחפש מיקום…', manual: 'קואורדינטות', apply: 'החל', tzethLbl: 'צאת הכוכבים (מוצאי שבת)',
     tequfaLbl: 'תקופה לשאלת גשמים (חוץ לארץ)', dawnLbl: 'הצג עלות השחר', israelLbl: 'ארץ ישראל',
     walledLbl: 'עיר מוקפת חומה (פורים בט״ו)', auto: 'אוטומטי', on: 'כן', off: 'לא', prudentLbl: 'עיגול לחומרא',
     langLbl: 'שפה', zone: 'שעות לפי אזור הזמן', shabbIn: 'כניסת שבת', shabbOut: 'יציאת שבת',
-    ytIn: 'כניסת יום טוב', ytOut: 'יציאת יום טוב', source: 'מקור', polar: 'במקום וביום זה החמה אינה זורחת או אינה שוקעת.',
+    ytIn: 'כניסת יום טוב', ytOut: 'מוצאי יום טוב', source: 'מקור', polar: 'במקום וביום זה החמה אינה זורחת או אינה שוקעת.',
     firstMention: 'מתחילים במוסף', lastMention: 'אומרים עד שחרית; ממוסף ואילך אין אומרים', israelOn: 'ארץ ישראל', diaspora: 'חוץ לארץ', inIsrael: 'בארץ ישראל', naAll: 'בכל תפלה ותפלה', arvithKippur: 'ערבית (ליל יום הכפורים)', inDiaspora: 'בחוץ לארץ', festReading: 'קריאת המועד',
     splitPesah: 'בחוץ לארץ שבת זו היא אחרון של פסח וקוראים בענין המועד; בארץ ישראל קוראים את הפרשה הבאה.',
-    splitShavuoth: 'בחוץ לארץ שבת זו היא יום טוב שני של שבועות וקוראים בענין המועד; בארץ ישראל קוראים את הפרשה הבאה.',
+    splitShavuoth: 'בחוץ לארץ שבת זו היא יום טוב שני של שבעות וקוראים בענין המועד; בארץ ישראל קוראים את הפרשה הבאה.',
     rejoin: (d, p) => `הקריאה חוזרת להיות שוה אחרי ${d}, כשבחוץ לארץ מחברים ${p}.`,
     rejoinNow: p => `בשבת זו מחברים בחוץ לארץ ${p}; מן השבת הבאה הקריאה שוה שוב.`,
     translitLbl: 'תעתיק של כ ושל ת', bethLbl: 'תעתיק של ב', chapter: 'פרק', langLbl2: 'שפה (נוסף על העברית)', hebOnly: 'עברית בלבד'
@@ -157,7 +157,7 @@ const ZEMANIM = {
   minhaG:  { he: 'מנחה גדולה', it: 'Minḥà geḏolà (6½ ore)', en: 'Minḥa geḏola (6½ hours)', fr: 'Minḥa geḏola (6½ heures)', src: 'MT Tefillà 3:2, 3:4', r: 'c' },
   musaf:   { he: 'סוף זמן תפלת המוספין', it: 'Termine per Musaf (7 ore)', en: 'Latest time for Musaf (7 hours)', fr: 'Heure limite pour Musaf (7 heures)', src: 'MT Tefillà 3:5', r: 'f' },
   minhaQ:  { he: 'מנחה קטנה', it: 'Minḥà qeṭannà (9½ ore)', en: 'Minḥa qeṭanna (9½ hours)', fr: 'Minḥa qeṭanna (9½ heures)', src: 'MT Tefillà 3:2, 3:4', r: 'c' },
-  plag:    { he: 'שעה ורביע קודם השקיעה', it: 'Termine per la minḥà qeṭannà, 1¼ ore prima del tramonto (si può recitare Minḥà fino al tramonto)',
+  plag:    { he: 'שעה ורביע קדם השקיעה', it: 'Termine per la minḥà qeṭannà, 1¼ ore prima del tramonto (si può recitare Minḥà fino al tramonto)',
              en: 'Latest time for minḥa qeṭanna, 1¼ hours before sunset (Minḥa may be recited until sunset)',
              fr: 'Heure limite pour la minḥa qeṭanna, 1¼ heure avant le coucher du soleil (on peut réciter la prière de Minḥa jusqu’au coucher du soleil)', src: 'MT Tefillà 3:4', r: 'f' },
   shqia:   { he: 'שקיעת החמה', it: 'Tramonto', en: 'Sunset', fr: 'Coucher du soleil', src: 'MT Shabbaṯ 5:3–4; Tefillà 3:4', r: 'f' },
@@ -289,7 +289,7 @@ function render() {
   }
   if (r.omerTonight) {
     const n = r.omerTonight, w = Math.floor(n / 7), d = n % 7;
-    notes.push(l.omer(n, w, d) + (cap() ? ' <span lang="he">ספירת העומר</span>' : ''));
+    notes.push(l.omer(n, w, d) + (cap() ? ' <span lang="he">ספירת העמר</span>' : ''));
   }
   if (!r.polar) {
     const na = r.na, yn = v => v ? l.yes : l.no;
