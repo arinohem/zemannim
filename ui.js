@@ -172,12 +172,16 @@ const srcText = z => typeof z.src === 'string' ? roman(z.src) : (z.src[S.lang] |
 
 // Nomi delle città (e della posizione GPS) nelle altre lingue; la chiave è il nome salvato
 const PLACE_NAMES = {
-  Londra: { en: 'London', fr: 'Londres', he: 'לונדון' }, Parigi: { en: 'Paris', fr: 'Paris', he: 'פריז' },
+  Londra: { en: 'London', fr: 'Londres', he: 'לונדון' }, Coventry: { he: 'קובינטרי' }, Parigi: { en: 'Paris', fr: 'Paris', he: 'פאריש' },
   Gerusalemme: { en: 'Jerusalem', fr: 'Jérusalem', he: 'ירושלים' }, 'Tel Aviv': { he: 'תל אביב' },
   Seul: { en: 'Seoul', fr: 'Séoul', he: 'סיאול' }, 'New York': { he: 'ניו יורק' },
-  Torino: { en: 'Turin', fr: 'Turin' }, Padova: { en: 'Padua', fr: 'Padoue' }, Venezia: { en: 'Venice', fr: 'Venise' },
-  Milano: { en: 'Milan', fr: 'Milan' }, Roma: { en: 'Rome', fr: 'Rome' }, Firenze: { en: 'Florence', fr: 'Florence' },
-  Livorno: { fr: 'Livourne' }, Napoli: { en: 'Naples', fr: 'Naples' }, Bologna: { fr: 'Bologne' }, Ferrara: { fr: 'Ferrare' },
+  // Città italiane: grafia ebraica degli ebrei italiani (alef per a, yod per e), forme attestate dove ci sono
+  Ferrara: { fr: 'Ferrare', he: 'פירארה' }, Torino: { en: 'Turin', fr: 'Turin', he: 'טורינו' },
+  Padova: { en: 'Padua', fr: 'Padoue', he: 'פאדובה' }, 'Altavilla Vicentina': { he: 'אלטאבילא ויצינטינא' },
+  Venezia: { en: 'Venice', fr: 'Venise', he: 'ויניציאה' }, Bologna: { fr: 'Bologne', he: 'בולונייא' },
+  Milano: { en: 'Milan', fr: 'Milan', he: 'מילאנו' }, Roma: { en: 'Rome', fr: 'Rome', he: 'רומא' },
+  Firenze: { en: 'Florence', fr: 'Florence', he: 'פירינצי' }, Livorno: { fr: 'Livourne', he: 'ליוורנו' },
+  Trieste: { he: 'טריאיסטי' }, Napoli: { en: 'Naples', fr: 'Naples', he: 'נאפולי' },
   'Posizione attuale': { en: 'Current location', fr: 'Position actuelle', he: 'מיקום נוכחי' },
   'מיקום נוכחי': { it: 'Posizione attuale', en: 'Current location', fr: 'Position actuelle' }
 };
