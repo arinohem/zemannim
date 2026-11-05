@@ -15,22 +15,99 @@
 #           uk, be, ru), or '' when the app shows the Latin name only
 #   extra = {it, en, fr: display names where they differ from name; he: fixed Hebrew form
 #           (exceptions list, Ashkenazi East, Israel); z: words with voiced or silent z;
-#           s: words with voiceless intervocalic s}  (Italian data: notes/place-name/)
-import io, json, math, os, re, sys, unicodedata, urllib.request, zipfile
+#           s: words with voiceless intervocalic s; w: title of the Hebrew Wikipedia article,
+#           for places with no rules and English names (owner, 2026-11-05), adapted to the
+#           Judeo-Italian spelling by placename.js; c: country code, with w)
+#
+# Hebrew Wikipedia (CC BY-SA 4.0): the article of the GeoNames place, found through Wikidata
+# (GeoNames id P1566, by a query to query.wikidata.org; the Wikidata id in GeoNames) or through
+# the English Wikipedia link in GeoNames; titles from the hewiki dumps (page, page_props,
+# langlinks) in tools/cache/. Redirects and disambiguation pages are left out.
+import gzip, io, json, math, os, re, sys, unicodedata, urllib.parse, urllib.request, zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, 'tools', 'cache')
 NOTES = os.path.join(ROOT, 'notes', 'place-name')
 GN = 'https://download.geonames.org/export/dump/'
 FILES = ['IT.zip', 'cities15000.zip', 'cities1000.zip', 'alternateNamesV2.zip']
+HEWIKI = 'https://dumps.wikimedia.org/hewiki/latest/hewiki-latest-'
+DUMPS = ['page', 'page_props', 'langlinks']
+UA = {'User-Agent': 'zemannim-build/1.0 (personal PWA; build script)'}
+WDQS = ('SELECT ?item ?gn ?title WHERE { ?item wdt:P1566 ?gn . ?sl schema:about ?item ; '
+        'schema:isPartOf <https://he.wikipedia.org/> ; schema:name ?title . }')
+
+def download(url, p):
+    print('downloading', url, file=sys.stderr)
+    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=900) as r, open(p + '.part', 'wb') as fh:
+        while True:
+            b = r.read(1 << 20)
+            if not b: break
+            fh.write(b)
+    os.replace(p + '.part', p)
 
 def fetch():
     os.makedirs(CACHE, exist_ok=True)
     for f in FILES:
         p = os.path.join(CACHE, f)
-        if not os.path.exists(p):
-            print('downloading', f, file=sys.stderr)
-            urllib.request.urlretrieve(GN + f, p)
+        if not os.path.exists(p): download(GN + f, p)
+    for f in DUMPS:
+        p = os.path.join(CACHE, 'hewiki-' + f + '.sql.gz')
+        if not os.path.exists(p): download(HEWIKI + f + '.sql.gz', p)
+    p = os.path.join(CACHE, 'hewiki-geonames.tsv')
+    if not os.path.exists(p):
+        q = urllib.parse.urlencode({'query': WDQS})
+        try: download('https://query.wikidata.org/sparql?' + q + '&format=tsv', p)
+        except Exception as e: print('Wikidata query failed (P1566 join skipped):', e, file=sys.stderr)
+
+def sql_rows(name):
+    """Rows of a MediaWiki SQL dump (one tuple per line)."""
+    with gzip.open(os.path.join(CACHE, 'hewiki-' + name + '.sql.gz'), 'rt', encoding='utf-8', errors='replace') as fh:
+        for line in fh:
+            if not line.startswith('('): continue
+            i, n, row, cur, q = 1, len(line), [], [], False
+            while i < n:
+                c = line[i]
+                if q:
+                    if c == chr(92): cur.append(line[i + 1]); i += 2; continue
+                    if c == "'": q = False
+                    else: cur.append(c)
+                elif c == "'": q = True
+                elif c == ',': row.append(''.join(cur)); cur = []
+                elif c == ')':
+                    row.append(''.join(cur)); yield row
+                    row, cur = [], []
+                    while i + 1 < n and line[i + 1] in ',(': i += 1   # next tuple on the same line
+                else: cur.append(c)
+                i += 1
+
+NOT_PLACE = {'אוכל', 'פירושונים'}   # disambiguators of articles that are not the town
+def hewiki():
+    """Wikidata id -> title, English title -> title, GeoNames id -> title (articles only, no redirects)."""
+    page = {}
+    for r in sql_rows('page'):
+        if r[1] == '0' and r[3] == '0': page[r[0]] = r[2].replace('_', ' ')
+    disamb, byq = set(), {}
+    for r in sql_rows('page_props'):
+        if r[1] == 'disambiguation': disamb.add(r[0])
+        elif r[1] == 'wikibase_item' and r[0] in page: byq[r[0]] = r[2]
+    ok = lambda pid: pid in page and pid not in disamb and not (re.search(r'\(([^)]*)\)$', page[pid]) or [None, ''])[1] in NOT_PLACE
+    q = {v: page[k] for k, v in byq.items() if ok(k)}
+    en = {}
+    for r in sql_rows('langlinks'):
+        if r[1] == 'en' and ok(r[0]): en[r[2]] = page[r[0]]
+    gn = {}
+    p = os.path.join(CACHE, 'hewiki-geonames.tsv')
+    if os.path.exists(p):
+        for line in open(p, encoding='utf-8').read().splitlines()[1:]:
+            f = line.split('\t')
+            if len(f) < 3: continue
+            qid, g = f[0].rsplit('/', 1)[-1].rstrip('>'), f[1].strip('"')
+            if qid in q: gn.setdefault(g, q[qid])
+    return q, en, gn
+
+def strip_title(t):
+    """Article title without the disambiguator: «ברדה (הולנד)» → ברדה; «פורטלנד, אורגון» → פורטלנד."""
+    return re.sub(r',.*$', '', re.sub(r'\s*\([^)]*\)$', '', t)).strip()
 
 def rows(zname, inner):
     with zipfile.ZipFile(os.path.join(CACHE, zname)) as z, z.open(inner) as fh:
@@ -108,10 +185,14 @@ def main():
     want = set(places) | set(by_id)
     alt = {}   # id -> lang -> (score, name)
     allnames = {}
+    wkdt, enlink = {}, {}
     for f in rows('alternateNamesV2.zip', 'alternateNamesV2.txt'):
         gid = f[1]
         if gid not in want: continue
         lang, nm = f[2], f[3]
+        if lang == 'wkdt': wkdt.setdefault(gid, nm)
+        if lang == 'link' and '//en.wikipedia.org/wiki/' in nm:
+            enlink.setdefault(gid, urllib.parse.unquote(nm.split('/wiki/', 1)[1]).replace('_', ' '))
         if lang in ('link', 'post', 'iata', 'icao', 'faac', 'abbr', 'wkdt', 'unlc', 'fr_1793'): continue
         pref, short, colloq, hist = f[4] == '1', f[5] == '1', f[6] == '1', f[7] == '1'
         if not hist: allnames.setdefault(gid, set()).add(fold(nm))
@@ -167,6 +248,11 @@ def main():
             n, cc, pr, src = line.rstrip('\n').split('\t')
             ipa[(n, cc)] = pr
 
+    hq, hen, hgn = hewiki()
+    def wiki(gid):
+        t = hgn.get(gid) or hq.get(wkdt.get(gid, '')) or hen.get(enlink.get(gid, ''))
+        return strip_title(t) if t else None
+
     out, stats = [], {}
     for d in places.values():
         gid, cc = d['id'], d['cc']
@@ -188,6 +274,9 @@ def main():
             if A(gid, 'he'): x['he'] = A(gid, 'he')
         if rule == 'he': rule = ''
         if rule == 'en' and 'he' not in x and (d['name'], cc) in ipa: x['p'] = ipa[(d['name'], cc)]
+        if rule in ('', 'en') and 'he' not in x and cc not in ('IL', 'PS'):
+            w = wiki(gid)
+            if w: x['w'] = w; x['c'] = cc; stats['wiki'] = stats.get('wiki', 0) + 1
         if cc == 'IT':
             z = {w: v for w, v in zdat.get(name, {}).items() if v != 'u'}
             s = {w: v for w, v in sdat.get(name, {}).items() if v != 'v'}

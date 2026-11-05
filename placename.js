@@ -8,7 +8,7 @@
 'use strict';
 
 const FINAL = { 'כ': 'ך', 'מ': 'ם', 'נ': 'ן', 'פ': 'ף', 'צ': 'ץ' };
-const finalForm = w => w.replace(/[כמנפצ]$/, c => FINAL[c]);
+const finalForm = w => w.replace(/[כמנפצ](?=[׳ׄ]?$)/, c => FINAL[c]);   // also before a geresh or a dot (ץ׳, ךׄ)
 
 function lower(s) { return s.normalize('NFC').toLocaleLowerCase('und'); }
 
@@ -155,15 +155,15 @@ function frWord(w) {
     ['ch', 'ש', 'C'], ['ph', 'פ', 'C'], ['th', 'ט', 'C'], ['gn', 'ניי', 'C'],
     ['ill', 'יי', 'C', x => x.i > 0 && vow(x.w[x.i - 1])],
     ['qu', 'ק', 'C'], ['gu', 'ג', 'C', x => /[eiéèêy]/.test(x.w[x.end] || '')],
-    ['ge', 'ש', 'C', x => /[aou]/.test(x.w[x.end] || '')],
-    ['g', 'ש', 'C', x => /[eiéèêy]/.test(x.w[x.end] || '')],
+    ['ge', 'ז׳', 'C', x => /[aou]/.test(x.w[x.end] || '')],
+    ['g', 'ז׳', 'C', x => /[eiéèêy]/.test(x.w[x.end] || '')],
     ['g', '', '', finalSilent], ['g', 'ג', 'C'],
     ['ç', 'ס', 'C'], ['c', 'ס', 'C', x => /[eiéèêy]/.test(x.w[x.end] || '')], ['ck', 'ק', 'C'], ['c', 'ק', 'C'],
     ['ss', 'ס', 'C'], ['s', '', '', finalSilent], ['s', 'ז', 'C', x => vow(x.w[x.i - 1]) && vow(x.w[x.end])], ['s', 'ס', 'C'],
     ['z', '', '', atEnd], ['z', 'ז', 'C'],
     ['x', '', '', atEnd], ['x', 'קס', 'C'],
     ['t', '', '', finalSilent], ['d', '', '', finalSilent], ['p', '', '', finalSilent],
-    ['j', 'ש', 'C'], ['h', '', ''], ['w', 'וו', 'C'], ['k', 'ק', 'C'], ['q', 'ק', 'C'],
+    ['j', 'ז׳', 'C'], ['h', '', ''], ['w', 'וו', 'C'], ['k', 'ק', 'C'], ['q', 'ק', 'C'],
     ['v', 'ו', 'C', x => x.i === 0], ['v', 'וו', 'C', x => x.i > 0 && !vow(x.w[x.i - 1])], ['v', 'ב', 'C'],
     ['b', 'ב', 'C'], ['d', 'ד', 'C'], ['f', 'פ', 'C'], ['p', 'פ', 'C'], ['t', 'ט', 'C'], ['l', 'ל', 'C'],
     ['m', 'מ', 'C'], ['n', 'נ', 'C'], ['r', 'ר', 'C'],
@@ -201,7 +201,7 @@ function deWord(w) {
   const sylStart = x => x.i === 0 || DE_COMPOUND.test(x.w.slice(x.i));   // word start, or a compound element (-stadt, -stein…)
   const devoice = x => x.end === n || (!vow(x.w[x.end]) && !/[lr]/.test(x.w[x.end]) && x.w[x.end] !== x.w[x.i]);
   const rules = [
-    ['sch', 'ש', 'C'], ['chs', 'קס', 'C'], ['ch', 'כ', 'C'], ['ck', 'ק', 'C'], ['pf', 'פפ', 'C'], ['ph', 'פ', 'C'],
+    ['tsch', 'צ׳', 'C'], ['dsch', 'ג׳', 'C'], ['sch', 'ש', 'C'], ['chs', 'קס', 'C'], ['ch', 'כ', 'C'], ['ck', 'ק', 'C'], ['pf', 'פפ', 'C'], ['ph', 'פ', 'C'],
     ['qu', 'קוו', 'C'], ['dt', 'ט', 'C'], ['th', 'ט', 'C'], ['tz', 'צ', 'C'], ['z', 'צ', 'C'],
     ['S', 'ס', 'C'], ['ss', 'ס', 'C'],
     ['sp', 'שפ', 'C', sylStart], ['st', 'שט', 'C', sylStart],
@@ -231,7 +231,7 @@ function esWord(w, cc) {
   w = lw.replace(/[áà]/g, 'a').replace(/[éè]/g, 'e').replace(/[íì]/g, 'i').replace(/[óò]/g, 'o').replace(/ú/g, 'u');
   const vow = c => /[aeiouü]/.test(c || '');
   const rules = [
-    ['ch', 'צ', 'C'], ['lli', 'לי', 'C', x => !vow(x.w[x.end])], ['ll', 'לי', 'C'], ['ñ', 'ניי', 'C'],
+    ['ch', 'צ׳', 'C'], ['lli', 'לי', 'C', x => !vow(x.w[x.end])], ['ll', 'לי', 'C'], ['ñ', 'ניי', 'C'],
     ['qu', 'ק', 'C'], ['gü', 'גו', 'C'], ['gu', 'ג', 'C', x => /[ei]/.test(x.w[x.end] || '')],
     ['c', 'ס', 'C', x => /[ei]/.test(x.w[x.end] || '')], ['c', 'ק', 'C'], ['z', 'ס', 'C'], ['s', 'ס', 'C'],
     ['j', 'ח', 'C'], ['g', 'ח', 'C', x => /[ei]/.test(x.w[x.end] || '')], ['g', 'ג', 'C'],
@@ -255,37 +255,37 @@ function eastWord(w, lang) {
   const rules = [];
   const R = (...r) => rules.push(r);
   if (cyr) {
-    R('shch', 'שטש', 'C'); R('sh', 'ש', 'C'); R('zh', 'ז', 'C'); R('kh', 'ח', 'C'); R('ch', 'טש', 'C'); R('ts', 'צ', 'C');
+    R('shch', 'שצ׳', 'C'); R('sh', 'ש', 'C'); R('zh', 'ז׳', 'C'); R('kh', 'ח', 'C'); R('ch', 'צ׳', 'C'); R('ts', 'צ', 'C');
     R('ya', 'יא', 'V'); R('ia', 'יא', 'V'); R('yu', 'יו', 'V'); R('iu', 'יו', 'V'); R('ye', 'יע', 'V'); R('ie', 'יע', 'V'); R('yi', 'יי', 'V'); R('yo', 'יא', 'V');
     R('h', 'ה', 'C');
   }
   if (pl) {
-    R('szcz', 'שטש', 'C'); R('sz', 'ש', 'C'); R('cz', 'טש', 'C'); R('rz', 'ש', 'C', x => /[ptk]/.test(x.w[x.i - 1] || '')); R('rz', 'ז', 'C');
-    R('ch', 'ח', 'C'); R('h', 'ח', 'C'); R('dź', 'דז', 'C'); R('dż', 'דז', 'C'); R('dz', 'דז', 'C');
+    R('szcz', 'שצ׳', 'C'); R('sz', 'ש', 'C'); R('cz', 'צ׳', 'C'); R('rz', 'ש', 'C', x => /[ptk]/.test(x.w[x.i - 1] || '')); R('rz', 'ז׳', 'C');
+    R('ch', 'ח', 'C'); R('h', 'ח', 'C'); R('dź', 'ג׳', 'C'); R('dż', 'ג׳', 'C'); R('dz', 'דז', 'C');
     R('ów', 'וב', 'V', x => x.end === n); R('ó', 'א', 'V');
   }
-  if (czsk) { R('ch', 'ח', 'C'); R('h', 'ה', 'C'); R('dž', 'דז', 'C'); R('dz', 'דז', 'C'); R('ř', 'ש', 'C', x => /[ptk]/.test(x.w[x.i - 1] || '')); R('ř', 'ז', 'C'); R('ě', 'יע', 'V'); R('ô', 'ו', 'V'); }
+  if (czsk) { R('ch', 'ח', 'C'); R('h', 'ה', 'C'); R('dž', 'ג׳', 'C'); R('dz', 'דז', 'C'); R('ř', 'ש', 'C', x => /[ptk]/.test(x.w[x.i - 1] || '')); R('ř', 'ז', 'C'); R('ě', 'יע', 'V'); R('ô', 'ו', 'V'); }
   if (hu) {
-    R('dzs', 'דז', 'C'); R('cs', 'טש', 'C'); R('sz', 'ס', 'C'); R('zs', 'ז', 'C'); R('s', 'ש', 'C'); R('ny', 'ני', 'C'); R('gy', 'די', 'C'); R('ty', 'טי', 'C'); R('ly', 'י', 'C');
+    R('dzs', 'ג׳', 'C'); R('cs', 'צ׳', 'C'); R('sz', 'ס', 'C'); R('zs', 'ז׳', 'C'); R('s', 'ש', 'C'); R('ny', 'ני', 'C'); R('gy', 'די', 'C'); R('ty', 'טי', 'C'); R('ly', 'י', 'C');
     R('ch', 'ח', 'C'); R('h', 'ה', 'C');
   }
   if (ro) {
     R('che', 'קע', 'C'); R('chi', 'קי', 'C'); R('ghe', 'גע', 'C'); R('ghi', 'גי', 'C');
-    R('ce', 'טשע', 'C'); R('ci', 'טש', 'C', x => vow(x.w[x.end])); R('ci', 'טשי', 'C');
-    R('ge', 'גע', 'C'); R('gi', 'גי', 'C');
-    R('ș', 'ש', 'C'); R('ş', 'ש', 'C'); R('ț', 'צ', 'C'); R('ţ', 'צ', 'C'); R('j', 'ז', 'C'); R('h', 'ה', 'C');
+    R('ce', 'צ׳ע', 'C'); R('ci', 'צ׳', 'C', x => vow(x.w[x.end])); R('ci', 'צ׳י', 'C');
+    R('ge', 'ג׳ע', 'C'); R('gi', 'ג׳', 'C', x => vow(x.w[x.end])); R('gi', 'ג׳י', 'C');
+    R('ș', 'ש', 'C'); R('ş', 'ש', 'C'); R('ț', 'צ', 'C'); R('ţ', 'צ', 'C'); R('j', 'ז׳', 'C'); R('h', 'ה', 'C');
     R('ă', 'ע', 'V'); R('â', 'י', 'V'); R('î', 'י', 'V');
   }
-  if (balt) { R('ch', 'ח', 'C'); R('h', 'ה', 'C'); R('dž', 'דז', 'C'); R('dz', 'דז', 'C'); R('ķ', 'ק', 'C'); R('ģ', 'ג', 'C'); R('ļ', 'ל', 'C'); R('ņ', 'ני', 'C'); R('ą', 'א', 'V'); R('ę', 'ע', 'V'); }
+  if (balt) { R('ch', 'ח', 'C'); R('h', 'ה', 'C'); R('dž', 'ג׳', 'C'); R('dz', 'דז', 'C'); R('ķ', 'ק', 'C'); R('ģ', 'ג', 'C'); R('ļ', 'ל', 'C'); R('ņ', 'ני', 'C'); R('ą', 'א', 'V'); R('ę', 'ע', 'V'); }
   // shared table
   R('ov', 'וב', 'V', x => x.end === n && cyr);
   R('ev', 'עב', 'V', x => x.end === n && cyr);
-  R('ć', 'טש', 'C'); R('č', 'טש', 'C'); R('ś', 'ש', 'C'); R('š', 'ש', 'C'); R('ż', 'ז', 'C'); R('ź', 'ז', 'C'); R('ž', 'ז', 'C');
+  R('ć', 'צ׳', 'C'); R('č', 'צ׳', 'C'); R('ś', 'ש', 'C'); R('š', 'ש', 'C'); R('ż', 'ז׳', 'C'); R('ź', 'ז׳', 'C'); R('ž', 'ז׳', 'C');
   R('ł', 'ל', 'C'); R('ń', 'ני', 'C'); R('ň', 'ני', 'C'); R('ť', 'ט', 'C'); R('ď', 'ד', 'C'); R('ľ', 'ל', 'C'); R('ĺ', 'ל', 'C'); R('ŕ', 'ר', 'C');
   R('w', 'וו', 'C'); R('v', 'וו', 'C'); R('c', 'צ', 'C'); R('j', 'י', 'C'); R('k', 'ק', 'C'); R('q', 'ק', 'C'); R('t', 'ט', 'C'); R('f', 'פ', 'C');
   R('x', 'קס', 'C'); R('s', 'ס', 'C'); R('z', 'ז', 'C'); R('h', 'ה', 'C'); R('g', 'ג', 'C');
   R('b', 'ב', 'C'); R('d', 'ד', 'C'); R('p', 'פ', 'C'); R('l', 'ל', 'C'); R('m', 'מ', 'C'); R('n', 'נ', 'C'); R('r', 'ר', 'C');
-  R('ę', 'ען', 'V'); R('ą', 'אן', 'V');
+  R('ę', 'ענ', 'V'); R('ą', 'אנ', 'V');   // final nun only at the end (finalForm)
   for (const c of 'aáāoóõ') R(c, 'א', 'V');
   for (const c of 'eéēėöőä') R(c, 'ע', 'V');
   for (const c of 'iíīįyýüű') R(c, 'י', 'V');
@@ -294,11 +294,130 @@ function eastWord(w, lang) {
 }
 const east = (name, lang) => name.split(/[\s\-]+/).filter(Boolean).map(w => eastWord(w, lang)).join(' ');
 
+/* ---------- Israeli form (Hebrew Wikipedia) adapted to the Judeo-Italian spelling ----------
+   Owner, 2026-11-05: for places with no rules and for English names. The geresh letters ג׳ ז׳ צ׳
+   stay; the other geresh letters lose the geresh, except in Arabic-speaking countries, which take
+   the Judeo-Arabic letters with the upper dot (khāʾ כׄ, ghayn גׄ, thāʾ תׄ, dhāl דׄ, ḍād צׄ, ẓāʾ טׄ;
+   jīm ג). The vowels are aligned with the Latin name: an unwritten a takes א, o/u ו, i י, e י
+   (not in Dutch or Flemish, where it is a schwa); final ה is א for a, י for e (א in the Maghreb,
+   where the French spelling writes e for Arabic a); a final vowel the Israeli form does not write
+   is silent. English names that do not match go by the pronunciation, if known. When the Israeli
+   name is another name (Den Bosch for 's-Hertogenbosch), only the letters are changed. */
+const ARAB = new Set('MA DZ TN LY EG SD SA YE OM AE QA BH KW IQ SY LB JO MR DJ SO KM EH'.split(' '));
+const DOT = 'ׄ';
+const ARAB_G = { 'ג': 'ג', 'ח': 'כ' + DOT, 'ע': 'ג' + DOT, 'ת': 'ת' + DOT, 'ד': 'ד' + DOT, 'צ': 'צ' + DOT, 'ט': 'ט' + DOT, 'ז': 'ז׳' };
+const MEDIAL = { 'ך': 'כ', 'ם': 'מ', 'ן': 'נ', 'ף': 'פ', 'ץ': 'צ' };
+const LC = { b: 'בו', c: 'קסצכשג', d: 'דטג', f: 'פ', g: 'גחזכק', h: 'החכ', j: 'גזיחש', k: 'קכ', l: 'ל', m: 'מ', n: 'נ', p: 'פ',
+  q: 'קכג', r: 'ר', s: 'סשזצת', t: 'טתצד', v: 'ובפ', w: 'וב', x: 'קסשחזכ', z: 'זצסשד' };
+function latFold(w) {
+  return w.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/ı/g, 'i').replace(/ł/g, 'l').replace(/ø/g, 'o')
+    .replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/ß/g, 'ss').replace(/đ/g, 'd').replace(/þ/g, 'th').replace(/ð/g, 'd');
+}
+function latTokens(w, en) {
+  w = latFold(w);
+  if (en) w = w.replace(/([^aeiouy])e$/, '$1');   // English silent final e
+  w = w.replace(/([aeiou])h$/, '$1');               // -ah, -eh (Jeddah)
+  const out = [];
+  for (let i = 0; i < w.length;) {
+    const c = w[i];
+    if (/[aeiouy]/.test(c)) { let j = i; while (j < w.length && /[aeiouy]/.test(w[j])) j++; out.push(['V', w.slice(i, j)]); i = j; }
+    else if (/[a-z]/.test(c)) { const p = out[out.length - 1]; if (!(p && p[0] === 'C' && p[1] === c)) out.push(['C', c]); i++; }
+    else i++;
+  }
+  return out;
+}
+// Hebrew word -> units (a letter with its geresh or dot)
+function heUnits(h, cc) {
+  h = h.replace(/[֑-ׇ]/g, m => (m === DOT ? m : '')).replace(/['’`]/g, '׳').replace(/[ךםןףץ]/g, c => MEDIAL[c]);
+  const u = [];
+  for (let i = 0; i < h.length; i++) {
+    let c = h[i];
+    if (!/[א-ת]/.test(c)) continue;
+    if (h[i + 1] === '׳' || h[i + 1] === DOT) {
+      i++;
+      if (ARAB.has(cc) && ARAB_G[c]) c = ARAB_G[c];
+      else if ('גזצ'.includes(c)) c += '׳';
+    }
+    u.push(c);
+  }
+  return u;
+}
+const isMater = x => x === 'א' || x === 'ו' || x === 'י' || x === 'ה';   // ה only at the end of the word
+function israeliWord(units, lat, opt) {
+  const L = latTokens(lat, opt.en), H = units, n = L.length, m = H.length, INF = 1e9;
+  const D = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(INF)), B = D.map(r => r.map(() => null));
+  D[0][0] = 0;
+  const rel = (a, b, c, from) => { if (c < D[a][b]) { D[a][b] = c; B[a][b] = from; } };
+  for (let i = 0; i <= n; i++) for (let j = 0; j <= m; j++) {
+    const d = D[i][j]; if (d >= INF) continue;
+    if (i < n) {
+      const [k, t] = L[i];
+      if (k === 'V') {
+        for (const ln of [1, 2, 3, 4]) if (ln <= t.length + 1 && j + ln <= m && H.slice(j, j + ln).every((x, q) => isMater(x) && (x !== 'ה' || j + q === m - 1))) rel(i + 1, j + ln, d, [i, j, 'keep']);
+        rel(i + 1, j, d + 1, [i, j, 'ins']);
+      } else {
+        if (j < m && (LC[t] || '').includes(H[j][0])) rel(i + 1, j + 1, d, [i, j, 'keep']);
+        if (t === 'h' || t === 'w' || (t === 's' && i > 0 && L[i - 1][1] === 'c')) rel(i + 1, j, d + 0.5, [i, j, 'skip']);
+        if (i > 0 && L[i - 1][0] === 'C') rel(i + 1, j, d + 1.5, [i, j, 'skip']);   // second letter of a cluster (sh, ch, th…)
+        if (j < m) rel(i + 1, j + 1, d + 2.5, [i, j, 'keep']);
+        rel(i + 1, j, d + 3, [i, j, 'skip']);
+      }
+    }
+    if (j < m) rel(i, j + 1, d + 3, [i, j, 'extra']);
+  }
+  if (D[n][m] >= 6) return null;
+  const ops = [];
+  for (let i = n, j = m; i > 0 || j > 0;) { const b = B[i][j]; ops.push([b[0], b[1], i, j, b[2]]); i = b[0]; j = b[1]; }
+  ops.reverse();
+  let out = '', prevV = false;
+  for (const [pi, pj, , j, op] of ops) {
+    let seg = H.slice(pj, j).join('');
+    if (op === 'ins') {
+      const t = L[pi][1];
+      if (pi === n - 1) { prevV = true; continue; }   // a final vowel the Israeli form does not write is silent (Ouarzazate)
+      seg = t[0] === 'a' ? 'א' : /[ou]/.test(t[0]) ? 'ו' : (t[0] === 'e' && opt.schwa) ? '' : 'י';
+      if (seg && (pi === 0 || prevV) && seg !== 'א') seg = 'א' + seg;
+      if (seg) prevV = true;
+      out += seg;
+      continue;
+    }
+    if (op === 'keep' && L[pi][0] === 'V') {
+      const t = L[pi][1];
+      if (pi === n - 1 && /ה$/.test(seg)) {
+        const f = t.slice(-1) === 'a' || (t === 'e' && opt.maghreb) ? 'א' : (t.slice(-1) === 'e' && !opt.schwa) ? 'י' : 'ה';
+        seg = seg.slice(0, -1) + (f === 'א' && /א$/.test(seg.slice(0, -1)) ? '' : f);   // Pessoa פסואה → פיסוא
+      }
+      prevV = true;
+    } else if (op !== 'extra') prevV = false;
+    out += seg;
+  }
+  return out.replace(/([בגדזחטכלמנסעפצקרשת])\1/g, '$1');   // no doubled letters (נאן-נינג → נאנינג)
+}
+function israeli(w, name, cc, rule) {
+  // Maghreb: French spelling, final -e for Arabic -a (Sousse סוסה → סוסא)
+  const opt = { en: rule === 'en', schwa: cc === 'NL' || cc === 'BE', maghreb: /^(MA|DZ|TN|MR)$/.test(cc || '') };
+  const words = (t, re) => t.split(re).filter(Boolean);
+  // the Israeli hyphen may join (נאן-נינג = Nanning) or separate (אל-עין = Al Ain) the words of the Latin name
+  for (const hw of [words(w, /[\s\-־]+/), words(w.replace(/[\-־]/g, ''), /\s+/)]) {
+    const lw = words(name || '', /[\s\-]+/);
+    if (hw.length !== lw.length) continue;
+    const r = hw.map((h, k) => israeliWord(heUnits(h, cc), lw[k], opt));
+    if (!r.includes(null)) return { he: r.map(finalForm).join(' '), phonetic: true };
+  }
+  return { he: words(w, /[\s\-־]+/).map(h => finalForm(heUnits(h, cc).join(''))).join(' '), phonetic: false };
+}
+
 /* ---------- Entry point ----------
-   rule: it, fr, de, es, en, pl, cs, sk, hu, ro, lt, lv, et, uk, be, ru; data: the extra fields of places.json. */
+   rule: it, fr, de, es, en, pl, cs, sk, hu, ro, lt, lv, et, uk, be, ru; data: the extra fields of places.json
+   (he: traditional form; w, c: Hebrew Wikipedia title and country, for no rule and English). */
 function hebrew(name, rule, data, cc) {
   if (data && data.he) return data.he;
   if (!name) return '';
+  if (data && data.w && (rule === '' || rule === 'en')) {
+    // English: when the Israeli form does not match the spelling (Leicester לסטר), the pronunciation decides
+    const r = israeli(data.w, name, data.c, rule);
+    if (r.phonetic || rule === '' || !data.p) return r.he;
+  }
   switch (rule) {
     case 'it': return italian(name, data);
     case 'fr': return french(name);
@@ -313,7 +432,8 @@ function hebrew(name, rule, data, cc) {
 /* ---------- English (by the pronunciation: IPA from tools/english-ipa.tsv) ----------
    /æ/ /ɑː/ → א; /e/ /ɪ/ /iː/ → י; /ɒ/ /ɔː/ /oʊ/ /ʊ/ /uː/ → ו; /ʌ/ /ɜː/ and schwa → the vowel
    letter of the spelling; /eɪ/ → יי; /aɪ/ → איי; /aʊ/ → או; /ɔɪ/ → וי; r after a vowel where
-   spelled; ch צ, j ג (+ י before a vowel), sh ש, θ ת, ð ד, w וו, v as in Italian. */
+   spelled; ch צ׳, j ג׳, /ʒ/ ז׳ (the geresh of the Israeli spelling, owner 2026-11-05), sh ש, θ ת, ð ד,
+   w וו, v as in Italian. */
 const EN_PH = ['juː', 'tʃ', 'dʒ', 'eɪ', 'aɪ', 'aʊ', 'ɔɪ', 'oʊ', 'əʊ', 'ɪə', 'eə', 'ɛə', 'ʊə', 'iː', 'uː', 'ɑː', 'ɔː', 'ɜː', 'ɛː', 'aː', 'ʉː', 'oː'];
 const EN_V = { 'æ': 'A', 'a': 'A', 'ɑ': 'A', 'ɑː': 'A', 'aː': 'A',
   'e': 'I', 'ɛ': 'I', 'ɛː': 'I', 'ɪ': 'I', 'i': 'I', 'iː': 'I', 'ᵻ': 'I',
@@ -321,7 +441,7 @@ const EN_V = { 'æ': 'A', 'a': 'A', 'ɑ': 'A', 'ɑː': 'A', 'aː': 'A',
   'ʌ': 'S', 'ə': 'S', 'ɜ': 'S', 'ɜː': 'S', 'ɝ': 'S', 'ɚ': 'S', 'ɐ': 'S', 'ɘ': 'S', 'ɵ': 'S',
   'eɪ': 'יי', 'aɪ': 'איי', 'aʊ': 'או', 'ɔɪ': 'וי', 'ɪə': 'I+', 'eə': 'I+', 'ɛə': 'I+', 'ʊə': 'O+' };
 const EN_C = { 'p': 'פ', 'b': 'ב', 't': 'ט', 'd': 'ד', 'k': 'ק', 'ɡ': 'ג', 'g': 'ג', 'f': 'פ', 'θ': 'ת', 'ð': 'ד', 's': 'ס', 'z': 'ז',
-  'ʃ': 'ש', 'ʒ': 'ז', 'tʃ': 'צ', 'dʒ': 'ג', 'h': 'ה', 'm': 'מ', 'n': 'נ', 'ŋ': 'נג', 'l': 'ל', 'ɫ': 'ל', 'r': 'ר', 'ɹ': 'ר',
+  'ʃ': 'ש', 'ʒ': 'ז׳', 'tʃ': 'צ׳', 'dʒ': 'ג׳', 'h': 'ה', 'm': 'מ', 'n': 'נ', 'ŋ': 'נג', 'l': 'ל', 'ɫ': 'ל', 'r': 'ר', 'ɹ': 'ר',
   'ɾ': 'ט', 'w': 'וו', 'ʍ': 'וו', 'j': 'י', 'x': 'ח', 'ʔ': '', 'v': 'v' };
 function enPhones(ipa) {
   ipa = ipa.normalize('NFD').replace(/[ˈˌ.‿()]/g, '').replace(/[̩̍]/g, 'ˑ').replace(/[̀-ͯ]/g, '').replace(/ːː/g, 'ː');
@@ -389,13 +509,12 @@ function enWord(ipa, word) {
       if (grp && (!m.part || m.part === 'last') && w[grp.end] === 'r' && !/^[rɹɾ]$/.test(nx || '')) toks.push({ out: 'ר', kind: 'C' });
     } else toks.push({ out: EN_C[p], kind: EN_C[p] ? 'C' : '', ph: p });
   });
-  // v as in Italian; j (dʒ) takes a yod before a vowel not written with yod
+  // v as in Italian
   toks.forEach((t, k) => {
     if (t.out === 'v') {
       const pv = toks[k - 1], nx = toks[k + 1];
       t.out = k === 0 ? 'ו' : (pv && pv.kind === 'V' && nx && nx.kind === 'V') ? 'ב' : 'וו';
     }
-    if (t.ph === 'dʒ' && toks[k + 1] && toks[k + 1].kind === 'V' && !/^י/.test(toks[k + 1].out)) t.out = 'גי';
   });
   const dedup = toks.filter((t, k) => !(t.kind === 'C' && k > 0 && toks[k - 1].kind === 'C' && toks[k - 1].out.slice(-1) === t.out && t.out.length === 1));
   return finalForm(join(dedup));
@@ -417,6 +536,6 @@ function nearest(list, lat, lon) {
   return best ? { entry: best, km: Math.sqrt(bd) * 111.2 } : null;
 }
 
-const api = { hebrew, nearest, italian, french, german, spanish, east };
+const api = { hebrew, nearest, italian, french, german, spanish, east, israeli };
 if (typeof module !== 'undefined') module.exports = api; else root.MTPlace = api;
 })(this);
