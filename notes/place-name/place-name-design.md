@@ -171,3 +171,9 @@ Evidence files: evidence-*.md in this folder (notes/place-name/)
 - Added to the exceptions so that forms presented as attested stay as presented: Sefrou צפרו (no Arabic name in GeoNames), Mecca מכה (GeoNames: مكة المكرمة), Mahdia אלמהדיה (article kept, as proposed).
 - Coverage of the 1,490 places: 867 Arabic name, 27 exceptions, 596 reconstructed. Wikipedia title no longer stored for these countries; hewiki-nonphonetic.tsv down from 124 to 69 rows.
 
+
+## Checks left to the owner (2026-11-05)
+Point 1 is implemented and online (sw.js mt-zemanim-v56). None of these blocks the next work:
+- On the iPhone: first test of the place name as a whole, and how the upper dot (U+05C4) renders, e.g. כׄרטום (Khartoum).
+- Mosul: the app shows מוצל; אשור is REPORTED only, the NLI ketubbot records were not opened (exceptions-arab.md). To check from the owner's browser.
+- hewiki-nonphonetic.tsv: the 69 full Israeli forms not aligned with the Latin name, to check one by one when the owner wishes (some are wrong articles: a park, a fort).
