@@ -164,3 +164,10 @@ Evidence files: evidence-*.md in this folder (notes/place-name/)
 - Geneva: ז׳נב in the exceptions list.
 - Choices of mine while coding, to report: Dutch/Flemish final ה kept (schwa, Kerkrade קרקראדה); Maghreb final -e + ה → א (Sousse סוסא); a final vowel the Israeli form does not write is silent (Ouarzazate ורזאזאת); -ah → final vowel (Jeddah גידא); English j no longer takes a yod before a vowel (ג׳ירזי), since the geresh marks the sound; Romanian gi + vowel → ג׳ (silent i, as ci). Bug fixed in the East table: ę, ą wrote a final nun in mid-word (בעןדזין → בענדזין).
 - Full Israeli forms not aligned with the Latin name: 124, in hewiki-nonphonetic.tsv, for the owner to check one by one (some are wrong articles: a park, a fort).
+
+## Arabic-speaking countries (owner, 2026-11-05)
+- Evidence and proposals: exceptions-arab.md, evidence-arab-*.md, evidence-judeo-arabic-orthography.md. Approved all (Arabic name letter for letter; article dropped at the start; tāʾ marbūṭa ה always; current dots; ك → ג in Morocco and Algeria; the exceptions), with one change: no Hebrew Wikipedia here at all. Where there is no traditional form and no usable Arabic name, the spelling is reconstructed by the Judeo-Arabic rules.
+- Choices of mine in the reconstruction from the Latin name, to report to the owner: names with marked long vowels (BGN: ā ī ū) write only those; other names (French style or plain) write every vowel except e, since length is unknown, as Late Judeo-Arabic writes by sound; final -a, -ah → ה; k כ, q and c ק, t ת, s ס (the Latin does not tell ك/ق, ت/ط, س/ص); a list of common words in their Arabic spelling (`JA_WORDS` in placename.js).
+- Added to the exceptions so that forms presented as attested stay as presented: Sefrou צפרו (no Arabic name in GeoNames), Mecca מכה (GeoNames: مكة المكرمة), Mahdia אלמהדיה (article kept, as proposed).
+- Coverage of the 1,490 places: 867 Arabic name, 27 exceptions, 596 reconstructed. Wikipedia title no longer stored for these countries; hewiki-nonphonetic.tsv down from 124 to 69 rows.
+

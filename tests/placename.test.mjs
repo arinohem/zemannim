@@ -40,16 +40,31 @@ const cases=[
 cases.push(['fr','Jura','ז׳ורא'],['de','Deutsch','דייץ׳']);
 // Hebrew Wikipedia form adapted to the Judeo-Italian spelling (owner, 2026-11-05)
 cases.push(
-  ['','Marrakesh','מאראקיש',{w:'מרקש',c:'MA'}],['','Kagoshima','קאגושימא',{w:'קגושימה',c:'JP'}],['','Breda','ברדא',{w:'ברדה',c:'NL'}],
+  ['','Kagoshima','קאגושימא',{w:'קגושימה',c:'JP'}],['','Breda','ברדא',{w:'ברדה',c:'NL'}],
   ['','Middelburg','מידלבורך',{w:'מידלבורך',c:'NL'}],['','Leiden','ליידן',{w:'ליידן',c:'NL'}],['','Gaziantep','גאזיאנטיף',{w:'גזיאנטפ',c:'TR'}],
   ['','Antalya','אנטאליא',{w:'אנטליה',c:'TR'}],['','Belo Horizonte','בילו הוריזונטי',{w:'בלו הוריזונטה',c:'BR'}],
   ['','Rio de Janeiro','ריו די ז׳אניירו',{w:"ריו דה ז'ניירו",c:'BR'}],['','Coimbra','קוימברא',{w:'קוימברה',c:'PT'}],
-  ['','Zhanjiang','ג׳אנג׳יאנג',{w:"ג'אנג'יאנג",c:'CN'}],['','Funchal','פונשאל',{w:'פונשל',c:'PT'}],['','Sousse','סוסא',{w:'סוסה',c:'TN'}],
-  ['','Ouarzazate','ורזאזאת',{w:'ורזאזאת',c:'MA'}],['','Jeddah','גידא',{w:"ג'דה",c:'SA'}],['','Khartoum','כׄארטום',{w:"ח'רטום",c:'SD'}],
+  ['','Zhanjiang','ג׳אנג׳יאנג',{w:"ג'אנג'יאנג",c:'CN'}],['','Funchal','פונשאל',{w:'פונשל',c:'PT'}],
   ['',"'s-Hertogenbosch",'דן בוס',{w:'דן בוס',c:'NL'}],['','Thiruvananthapuram','טריוונדרום',{w:'טריוונדרום',c:'IN'}],
   ['en','Toronto','טורונטו',{w:'טורונטו',c:'CA',p:'təˈɹɑ.noʊ'}],['en','Edinburgh','אדינבורו',{w:'אדינבורו',c:'GB'}],
   ['en','Chicago','שיקאגו',{w:'שיקגו',c:'US'}],['en','Leicester','ליסטיר',{w:'לסטר',c:'GB',p:'ˈlɛstə'}],
   ['it','Firenze','פירינצי',{w:'פירנצה',c:'IT'}]
+);
+// Arabic-speaking countries: the Arabic name in Hebrew letters (owner, 2026-11-05)
+cases.push(
+  ['ar','Marrakesh','מראכש',{ar:'مراكش',c:'MA'}],['ar','Rabat','רבאט',{ar:'رباط',c:'MA'}],['ar','Safi','אספי',{ar:'آسفي',c:'MA'}],
+  ['ar','Taza','תאזה',{ar:'تازة',c:'MA'}],['ar','Agadir','אגאדיר',{ar:'أكادير',c:'MA'}],['ar','Guelmim','גלמים',{ar:'كلميم',c:'MA'}],
+  ['ar','Ksar El Kebir','קצר אלכביר',{ar:'القصر الكبير',c:'MA'}],['ar','Tlemcen','תלמסאן',{ar:'تلمسان',c:'DZ'}],
+  ['ar','Béjaïa','בגאיה',{ar:'بجاية',c:'DZ'}],['ar','Gabès','קאבס',{ar:'قابس',c:'TN'}],['ar','Gafsa','קפצה',{ar:'ڤفصة',c:'TN'}],
+  ['ar','Bizerte','בנזרת',{ar:'بنزرت',c:'TN'}],['ar','Kairouan','קירואן',{ar:'القيروان',c:'TN'}],['ar','Sousse','סוסה',{ar:'سوسة',c:'TN'}],
+  ['ar','Rosetta','רשיד',{ar:'رشيد',c:'EG'}],['ar','Damietta','דמיאט',{ar:'دمياط',c:'EG'}],['ar','Ismailia','אסמאעיליה',{ar:'مدينة الإسماعيلية',c:'EG'}],
+  ['ar','Basra','בצרה',{ar:'البصرة',c:'IQ'}],['ar','Kirkuk','כרכוך',{ar:'كركوك',c:'IQ'}],['ar','Sanaa','צנעא',{ar:'صنعاء',c:'YE'}],
+  ['ar','Jeddah','גדה',{ar:'جدة',c:'SA'}],['ar','Khaybar','כׄיבר',{ar:'خيبر',c:'SA'}],['ar','Sharjah','שארקה',{ar:'إمارة الشارقة',c:'AE'}],
+  ['ar','Benghazi','בנגׄאזי',{ar:'بنغازي',c:'LY'}],['ar','Houmt Souk','חומה אלסוק',{ar:'حومة السوق',c:'TN'}],
+  // no Arabic name: rebuilt from the Latin name by the same rules
+  ['ar','Ouarzazate','וארזאזאת'],['ar','Tinghir','תינגׄיר'],['ar','Midelt','מידלת'],['ar','Youssoufia','יוסופיה'],['ar','Oulad Tayeb','אולאד תאיב'],
+  ['ar','Abū an Numrus','אבו אלנמרס'],['ar','Ad Dawādimī','דואדמי'],['ar','Laylá','לילי'],['ar','Al Ḩawāmidīyah','חואמדיה'],
+  ['ar','Minyat an Naşr','מניה אלנצר'],['ar','Kafr ash Shaykh','כפר אלשיךׄ'],['ar','Sharjah','שארגה']
 );
 let bad=0;
 for(const [rule,name,want,data] of cases){

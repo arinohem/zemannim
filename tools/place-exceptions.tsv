@@ -73,7 +73,7 @@
 פאס	Fès	MA
 מכנאס	Meknès	MA
 תונס	Tunis	TN
-טריפולי	Tripoli	LY
+טראבלס	Tripoli	LY
 אלגזאיר	Algiers	DZ
 קסנטינה	Constantine	DZ
 והראן	Oran	DZ
@@ -82,6 +82,23 @@
 דמשק	Damascus	SY
 ארם צובה	Aleppo	SY
 בגדאד	Baghdad	IQ
+# Arabic-speaking countries: attested forms that differ from the Judeo-Arabic rule (owner, 2026-11-05;
+# evidence: notes/place-name/exceptions-arab.md). Tripoli (Libya) changed from טריפולי to טראבלס.
+כאזאבלאנכא	Casablanca	MA
+מוגאדור	Essaouira	MA
+תיטואן	Tétouan	MA
+מוסתגאנים	Mostaganem	DZ
+מדיאה	Médéa	DZ
+בונה	Annaba	DZ
+בסכרא	Biskra	DZ
+תקורט	Touggourt	DZ
+ספאקס	Sfax	TN
+אלמהדיה	Mahdia	TN
+צפרו	Sefrou	MA
+מכה	Makkah	SA
+צידון	Sidon	LB
+טרבלס	Tripoli	LB
+חמא	Ḩamāh	SY
 # Other towns already in the app
 ניו יורק	New York City	US
 סיאול	Seoul	KR

@@ -151,7 +151,43 @@ def rule_of(cc, a1, a2, name):
         r = EAST[cc]
         return r, (r if r not in ('uk', 'be', 'ru') else '')   # Cyrillic: the GeoNames name is the romanization
     if cc in ('IL', 'PS'): return 'he', 'he'
+    if cc in ARAB: return 'ar', ''
     return '', ''
+
+# Arabic-speaking countries (owner, 2026-11-05): the Arabic name, letter for letter, if it is the same
+# name as the Latin one (GeoNames sometimes gives another place's name: Mohammedia, Soran).
+ARAB = set('MA DZ TN LY EG SD SA YE OM AE QA BH KW IQ SY LB JO MR DJ SO KM EH'.split())
+AR_CLASS = {'ب': 'B', 'پ': 'B', 'ت': 'T', 'ط': 'T', 'ث': 'TS', 'د': 'D', 'ض': 'D', 'ذ': 'DZ', 'ظ': 'ZD', 'ج': 'G', 'چ': 'S',
+            'غ': 'GR', 'ق': 'KG', 'ك': 'KG', 'ک': 'KG', 'گ': 'G', 'ڨ': 'G', 'س': 'S', 'ص': 'S', 'ش': 'S', 'ز': 'Z', 'ف': 'F', 'ڤ': 'FG',
+            'ر': 'R', 'ل': 'L', 'م': 'M', 'ن': 'N', 'خ': 'K', 'ح': '', 'ه': '', 'ع': '', 'ة': '', 'و': '', 'ي': '', 'ى': '', 'ا': '',
+            'أ': '', 'إ': '', 'آ': '', 'ء': '', 'ئ': '', 'ؤ': ''}
+LAT_CLASS = {'b': 'B', 'p': 'B', 't': 'T', 'd': 'D', 'j': 'G', 'g': 'G', 'k': 'K', 'c': 'K', 'q': 'K', 's': 'S', 'z': 'Z',
+             'x': 'K', 'f': 'F', 'v': 'F', 'r': 'R', 'l': 'L', 'm': 'M', 'n': 'N'}
+AR_ADMIN = re.compile(r'^(بلدية|ولاية|دائرة|ناحية|قضاء|إمارة|محافظة|مدينة)\s+')
+def ar_skel(a):
+    a = re.sub(r'[ً-ٰٟـ‎‏()]|البلدية', '', a)
+    a = AR_ADMIN.sub('', a)
+    a = re.sub(r'(^|\s)ال', r'', a)
+    return [AR_CLASS[c] for c in a if AR_CLASS.get(c)]
+def lat_skel(n):
+    n = fold(n)
+    n = re.sub(r"(al|el|ad|ar|as|ash|at|az|an|ed|er|es|ech|et|ez|en)[\s\-]", ' ', ' ' + n)
+    for a, b in (('kh', 'k'), ('gh', 'g'), ('sh', 's'), ('ch', 's'), ('th', 't'), ('dh', 'd'), ('dj', 'j'), ('ou', 'w')):
+        n = n.replace(a, b)
+    n = re.sub(r'(.)', r'', n)   # doubled letters (Sousse: s, s)
+    return [LAT_CLASS[c] for c in n if c in LAT_CLASS]
+def ar_matches(a, names):
+    A = ar_skel(a)
+    if not A: return False
+    for n in names:
+        L = lat_skel(n)
+        if not L: continue
+        m = [[0] * (len(L) + 1) for _ in range(len(A) + 1)]
+        for i in range(len(A)):
+            for j in range(len(L)):
+                m[i + 1][j + 1] = m[i][j] + 1 if L[j] in A[i] else max(m[i][j + 1], m[i + 1][j])
+        if m[-1][-1] / max(len(A), len(L)) >= 0.6: return True
+    return False
 
 def main():
     fetch()
@@ -181,7 +217,7 @@ def main():
     by_id = {d['id']: d for d in small}
 
     # Alternate names in the languages the app needs
-    langs = {'it', 'en', 'fr', 'de', 'es', 'he', 'pl', 'cs', 'sk', 'hu', 'ro', 'lt', 'lv', 'et'}
+    langs = {'it', 'en', 'fr', 'de', 'es', 'he', 'ar', 'pl', 'cs', 'sk', 'hu', 'ro', 'lt', 'lv', 'et'}
     want = set(places) | set(by_id)
     alt = {}   # id -> lang -> (score, name)
     allnames = {}
@@ -274,6 +310,10 @@ def main():
             if A(gid, 'he'): x['he'] = A(gid, 'he')
         if rule == 'he': rule = ''
         if rule == 'en' and 'he' not in x and (d['name'], cc) in ipa: x['p'] = ipa[(d['name'], cc)]
+        if rule == 'ar' and 'he' not in x:
+            a = A(gid, 'ar')
+            lat_names = [n for n in names_of(d) if re.search('[a-z]', n)]
+            if a and ar_matches(a, lat_names): x['ar'] = a; x['c'] = cc; stats['arabic'] = stats.get('arabic', 0) + 1
         if rule in ('', 'en') and 'he' not in x and cc not in ('IL', 'PS'):
             w = wiki(gid)
             if w: x['w'] = w; x['c'] = cc; stats['wiki'] = stats.get('wiki', 0) + 1

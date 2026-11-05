@@ -226,6 +226,7 @@ function ruleFor(cc, a, nd) {
   const east = { PL: 'pl', CZ: 'cs', SK: 'sk', HU: 'hu', RO: 'ro', MD: 'ro', LT: 'lt', LV: 'lv', EE: 'et', UA: 'uk', BY: 'be', RU: 'ru' }[cc];
   if (east) return [east, ['uk', 'be', 'ru'].includes(east) ? 'en' : east];
   if (cc === 'IL' || cc === 'PS') return ['he', 'he'];
+  if ('MA DZ TN LY EG SD SA YE OM AE QA BH KW IQ SY LB JO MR DJ SO KM EH'.split(' ').includes(cc)) return ['ar', 'en'];
   return ['', ''];
 }
 function netLookup(lat, lon, tz, list) {
@@ -241,7 +242,9 @@ function netLookup(lat, lon, tz, list) {
     if (same.length) return placeFromEntry(same[0], lat, lon, tz);
     const [rule, lang] = ruleFor(cc, a, nd);
     const local = nd.name || j.name, src = (lang && nd['name:' + lang]) || local;
-    const he = rule === 'he' ? (nd['name:he'] || '') : (P.hebrew(src, rule, null, cc) || '');
+    // paesi arabofoni: il nome arabo, lettera per lettera (grafia giudeo-araba)
+    const ar = rule === 'ar' ? (nd['name:ar'] || (/[؀-ۿ]/.test(local) ? local : '')) : '';
+    const he = rule === 'he' ? (nd['name:he'] || '') : (P.hebrew(src, rule, ar ? { ar, c: cc } : null, cc) || '');
     return { name: src, lat, lon, tz, auto: true, rule: rule === 'he' ? '' : rule, data: {}, net: true,
       names: { it: nd['name:it'] || src, en: nd['name:en'] || src, fr: nd['name:fr'] || src, he } };
   });
