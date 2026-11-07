@@ -37,4 +37,5 @@ Read `DECISIONS.md` before changing any rule. Every rule there was settled with 
 2. `python3 tools/build.py`, `npm test`.
 3. If a rule changed, update `DECISIONS.md` and the decisions page in `tools/index.src.html`.
 4. Bump the cache name in `sw.js`.
-5. Commit and push to `main` (Pages deploys from there). If working on another branch, merge into `main` when the owner approves.
+5. `README.md` holds the owner-approved description of the app for outside users (Italian). After every revision of the app, check it against the change and submit it to the owner again, with any proposed edits; change it only with the owner's approval.
+6. Commit and push to `main` (Pages deploys from there). If working on another branch, merge into `main` when the owner approves.
