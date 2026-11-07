@@ -1,5 +1,7 @@
 # Zemannim secondo il Mishné Torà
 
+> **Zemannim secondo il Mishné Torà** mostra sul telefono gli orari halakhici del giorno, la data ebraica, la parashà e le indicazioni per la preghiera. Segue soltanto il Mishné Torà di Maimonide e usa le formule del rito italiano. Ogni scelta è documentata con la sua fonte nell'app stessa. L'app funziona anche senza connessione e, per impostazione predefinita, non invia la posizione in rete.
+
 Zemannim è un'applicazione per il telefono che mostra gli orari halakhici del giorno, la data ebraica, la parashà della settimana e alcune indicazioni per la preghiera. Tutte le regole seguono il Mishné Torà di Maimonide. Dove il Rambam non fissa un dato, l'app non lo ricava da autori successivi e lo segnala.
 
 Per ogni giorno l'app mostra:
