@@ -1,4 +1,4 @@
-/* Interfaccia — Zemannim secondo il Mishné Torà */
+/* Interfaccia — Zemannim */
 (function () {
 'use strict';
 const E = window.MTEngine;
@@ -33,7 +33,7 @@ const T = {
   it: {
     tammuzNote: 'Rito italiano (Maḥazor di Bologna): si legge di seguito, senza saltare. Alcuni leggono come negli altri digiuni (<span lang="he">ויחל משה</span>, poi <span lang="he">פסל לך</span>), secondo il MT', fastOut: 'Fine del digiuno', reading: 'Lettura della Torà', both: 'Shaḥriṯ e Minḥà', av9In: 'Inizio di Tishʿà be-Aḇ',
     omer: (n, w, d) => `ʿÒmer: stasera si conta il ${n}° giorno` + (w ? ` (${w} settiman${w > 1 ? 'e' : 'a'}${d ? ` e ${d} giorn${d > 1 ? 'i' : 'o'}` : ''})` : ''),
-    title: 'Zemannim secondo il Mishné Torà', today: 'Oggi', week: ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'],
+    title: 'Zemannim', subtitle: 'Orari halakhici secondo il Mishné Torà', today: 'Oggi', week: ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'],
     months: ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'],
     afterSunset: 'Dopo il tramonto', parasha: 'Parashà della settimana', festShabbath: 'Sabato festivo: lettura della festa',
     na: 'Nefilaṯ appàyim', shahrith: 'Shaḥriṯ', minha: 'Minḥà', arvith: 'ʿArḇiṯ', yes: 'sì', no: 'no',
@@ -57,7 +57,7 @@ const T = {
   en: {
     tammuzNote: 'Italian rite (Bologna Maḥazor): read straight through, without skipping. Some read as on the other fasts (<span lang="he">ויחל משה</span>, then <span lang="he">פסל לך</span>), as in the MT', fastOut: 'Fast ends', reading: 'Tora reading', both: 'Shaḥriṯ and Minḥa', av9In: 'Tishʿa be-Aḇ begins',
     omer: (n, w, d) => `ʿOmer: tonight is day ${n}` + (w ? ` (${w} week${w > 1 ? 's' : ''}${d ? ` and ${d} day${d > 1 ? 's' : ''}` : ''})` : ''),
-    title: 'Zemannim according to the Mishne Tora', today: 'Today', week: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    title: 'Zemannim', subtitle: 'Halakhic times according to the Mishne Tora', today: 'Today', week: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
     afterSunset: 'After sunset', parasha: 'Weekly parasha', festShabbath: 'Festival Shabbaṯ: festival reading',
     na: 'Nefilaṯ appayim', shahrith: 'Shaḥriṯ', minha: 'Minḥa', arvith: 'ʿArḇiṯ', yes: 'yes', no: 'no',
@@ -81,7 +81,7 @@ const T = {
   fr: {
     tammuzNote: 'Rite italien (Maḥazor de Bologne) : on lit à la suite, sans sauter. Certains lisent comme les autres jeûnes (<span lang="he">ויחל משה</span>, puis <span lang="he">פסל לך</span>), comme le MT', fastOut: 'Fin du jeûne', reading: 'Lecture de la Tora', both: 'Shaḥriṯ et Minḥa', av9In: 'Début de Tishʿa be-Aḇ',
     omer: (n, w, d) => `ʿOmer : ce soir, ${n === 1 ? '1er' : n + 'e'} jour` + (w ? ` (${w} semaine${w > 1 ? 's' : ''}${d ? ` et ${d} jour${d > 1 ? 's' : ''}` : ''})` : ''),
-    title: 'Zemannim selon le Mishne Tora', today: 'Aujourd’hui', week: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
+    title: 'Zemannim', subtitle: 'Horaires halakhiques selon le Mishne Tora', today: 'Aujourd’hui', week: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
     months: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
     afterSunset: 'Après le coucher du soleil', parasha: 'Parasha de la semaine', festShabbath: 'Shabbaṯ de fête : lecture de la fête',
     na: 'Nefilaṯ appayim', shahrith: 'Shaḥriṯ', minha: 'Minḥa', arvith: 'ʿArḇiṯ', yes: 'oui', no: 'non',
@@ -105,7 +105,7 @@ const T = {
   he: {
     tammuzNote: 'מנהג איטליה (מחזור בולוניה): קורין הכל על הסדר ואין מדלגין. ויש שקורין כשאר תעניות (ויחל משה ופסל לך), כמשנה תורה', fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחלת תשעה באב',
     omer: (n, w, d) => `ספירת העמר: הלילה יום ${E.hebNumeral(n)}` + (w ? `, ${w === 1 ? 'שבוע אחד' : E.hebNumeral(w) + ' שבועות'}${d ? ' ו' + (d === 1 ? 'יום אחד' : E.hebNumeral(d) + ' ימים') : ''}` : ''),
-    title: 'זמנים על פי משנה תורה', today: 'היום', week: ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום ששי', 'שבת'],
+    title: 'זמנים', subtitle: 'זמני ההלכה על פי משנה תורה', today: 'היום', week: ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום ששי', 'שבת'],
     months: ['ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני', 'יולי', 'אוגוסט', 'ספטמבר', 'אוקטובר', 'נובמבר', 'דצמבר'],
     afterSunset: 'אחר השקיעה', parasha: 'פרשת השבוע', festShabbath: 'שבת של מועד: קריאת המועד',
     na: 'נפילת אפים', shahrith: 'שחרית', minha: 'מנחה', arvith: 'ערבית', yes: 'כן', no: 'לא',
@@ -130,6 +130,50 @@ const T = {
 // 'he' = solo ebraico; 'it' / 'en' / 'fr' = ebraico con didascalie in quella lingua
 if (!T[S.lang]) S.lang = 'it';
 const L = () => T[S.lang];
+
+// ---------- Installazione ----------
+// Istruzioni per aggiungere l'app alla schermata Home; la voce sparisce quando l'app è già installata.
+const URL_APP = 'https://arinohem.github.io/zemannim/';
+const INSTALL = {
+  it: { title: 'Installazione', ios: 'iPhone (iOS)', android: 'Android', both: 'Su entrambi i sistemi', other: 'Istruzioni per l’altro sistema',
+    iosSteps: [`Apri Safari e vai all’indirizzo ${URL_APP}.`, 'Tocca il pulsante <b>Condividi</b> (il quadrato con la freccia verso l’alto). Nelle versioni recenti di iOS, se non lo vedi nella barra, è nel menu <b>⋯</b>.', 'Scorri il menu e scegli <b>Aggiungi alla schermata Home</b>.', 'Lascia il nome proposto, «Zemannim», e tocca <b>Aggiungi</b>.'],
+    iosAfter: 'L’icona compare nella schermata Home e l’app si apre a tutto schermo, come le altre.',
+    androidSteps: [`Apri Chrome e vai all’indirizzo ${URL_APP}.`, 'Tocca il menu <b>⋮</b> in alto a destra.', 'Scegli <b>Installa app</b> oppure <b>Aggiungi a schermata Home</b>: il nome della voce cambia secondo la versione di Chrome.', 'Conferma con <b>Installa</b>.'],
+    androidAfter: 'L’icona compare nella schermata Home e nell’elenco delle app. Con altri browser, come Samsung Internet o Firefox, la voce si trova in un menu simile.',
+    bothItems: ['<b>Posizione:</b> la prima volta che usi «Usa la mia posizione», il telefono chiede il permesso di accedervi. Se lo neghi, puoi sempre scegliere il luogo dall’elenco delle città.', '<b>Senza rete:</b> dopo la prima apertura l’app funziona anche senza connessione.', '<b>Aggiornamenti:</b> arrivano da soli quando l’app viene aperta con la connessione attiva. Una nuova icona, invece, compare di solito solo dopo aver tolto l’app dalla schermata Home e averla aggiunta di nuovo.'] },
+  en: { title: 'Installation', ios: 'iPhone (iOS)', android: 'Android', both: 'On both systems', other: 'Instructions for the other system',
+    iosSteps: [`Open Safari and go to ${URL_APP}.`, 'Tap the <b>Share</b> button (the square with an upward arrow). In recent versions of iOS, if it is not in the bar, it is in the <b>⋯</b> menu.', 'Scroll down the menu and choose <b>Add to Home Screen</b>.', 'Keep the suggested name, “Zemannim”, and tap <b>Add</b>.'],
+    iosAfter: 'The icon appears on the Home Screen, and the app opens full screen, like the others.',
+    androidSteps: [`Open Chrome and go to ${URL_APP}.`, 'Tap the <b>⋮</b> menu at the top right.', 'Choose <b>Install app</b> or <b>Add to Home screen</b>: the name of the item depends on the version of Chrome.', 'Confirm with <b>Install</b>.'],
+    androidAfter: 'The icon appears on the Home screen and in the list of apps. Other browsers, such as Samsung Internet or Firefox, have the item in a similar menu.',
+    bothItems: ['<b>Location:</b> the first time you use “Use my location”, the phone asks for permission. If you refuse, you can still choose the place from the list of cities.', '<b>Offline:</b> after the first opening, the app also works without a connection.', '<b>Updates:</b> they arrive by themselves when the app is opened online. A new icon, however, usually appears only after removing the app from the Home Screen and adding it again.'] },
+  fr: { title: 'Installation', ios: 'iPhone (iOS)', android: 'Android', both: 'Sur les deux systèmes', other: 'Instructions pour l’autre système',
+    iosSteps: [`Ouvrez Safari et allez à l’adresse ${URL_APP}.`, 'Touchez le bouton <b>Partager</b> (le carré avec une flèche vers le haut). Dans les versions récentes d’iOS, s’il n’est pas dans la barre, il se trouve dans le menu <b>⋯</b>.', 'Faites défiler le menu et choisissez <b>Sur l’écran d’accueil</b>.', 'Gardez le nom proposé, « Zemannim », et touchez <b>Ajouter</b>.'],
+    iosAfter: 'L’icône apparaît sur l’écran d’accueil et l’app s’ouvre en plein écran, comme les autres.',
+    androidSteps: [`Ouvrez Chrome et allez à l’adresse ${URL_APP}.`, 'Touchez le menu <b>⋮</b> en haut à droite.', 'Choisissez <b>Installer l’application</b> ou <b>Ajouter à l’écran d’accueil</b> : le nom de l’option dépend de la version de Chrome.', 'Confirmez avec <b>Installer</b>.'],
+    androidAfter: 'L’icône apparaît sur l’écran d’accueil et dans la liste des applications. Dans d’autres navigateurs, comme Samsung Internet ou Firefox, l’option se trouve dans un menu semblable.',
+    bothItems: ['<b>Position :</b> la première fois que vous utilisez « Utiliser ma position », le téléphone demande l’autorisation. Si vous la refusez, vous pouvez toujours choisir le lieu dans la liste des villes.', '<b>Hors ligne :</b> après la première ouverture, l’app fonctionne aussi sans connexion.', '<b>Mises à jour :</b> elles arrivent d’elles-mêmes quand l’app est ouverte en ligne. Une nouvelle icône, en revanche, n’apparaît en général qu’après avoir retiré l’app de l’écran d’accueil et l’avoir ajoutée de nouveau.'] },
+  he: { title: 'התקנה', ios: 'iPhone (iOS)', android: 'Android', both: 'בשתי המערכות', other: 'הוראות למערכת האחרת',
+    iosSteps: [`פתח את Safari ועבור לכתובת <span dir="ltr">${URL_APP}</span>.`, 'לחץ על כפתור <b>שיתוף</b> (הריבוע עם החץ כלפי מעלה). בגרסאות החדשות של iOS, אם אינו בסרגל, הוא נמצא בתפריט <b>⋯</b>.', 'גלול בתפריט ובחר <b>הוספה למסך הבית</b>.', 'השאר את השם המוצע, <span dir="ltr">Zemannim</span>, ולחץ <b>הוספה</b>.'],
+    iosAfter: 'הסמל מופיע במסך הבית, והיישום נפתח במסך מלא כשאר היישומים.',
+    androidSteps: [`פתח את Chrome ועבור לכתובת <span dir="ltr">${URL_APP}</span>.`, 'לחץ על התפריט <b>⋮</b> שבראש המסך.', 'בחר <b>התקנת האפליקציה</b> או <b>הוספה למסך הבית</b>: שם האפשרות משתנה לפי גרסת Chrome.', 'אשר בלחיצה על <b>התקנה</b>.'],
+    androidAfter: 'הסמל מופיע במסך הבית וברשימת היישומים. בדפדפנים אחרים, כגון Samsung Internet או Firefox, האפשרות נמצאת בתפריט דומה.',
+    bothItems: ['<b>מיקום:</b> בפעם הראשונה שמשתמשים ב«השתמש במיקום שלי» הטלפון מבקש רשות. אם לא נותנים אותה, אפשר תמיד לבחור את המקום מרשימת הערים.', '<b>בלי רשת:</b> אחרי הפתיחה הראשונה היישום פועל גם בלי חיבור.', '<b>עדכונים:</b> הם מגיעים מעצמם כשפותחים את היישום עם חיבור לרשת. אבל סמל חדש מופיע בדרך כלל רק אחרי שמסירים את היישום ממסך הבית ומוסיפים אותו מחדש.'] },
+};
+const isInstalled = () => (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true;
+const phoneOs = () => {
+  const ua = navigator.userAgent || '';
+  if (/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) return 'ios';
+  return /Android/.test(ua) ? 'android' : null;
+};
+function installHtml() {
+  const t = INSTALL[S.lang];
+  const block = os => `<h4>${t[os]}</h4><ol>${t[os + 'Steps'].map(x => `<li>${x}</li>`).join('')}</ol><p>${t[os + 'After']}</p>`;
+  const os = phoneOs();
+  // Sul telefono riconosciuto, le sue istruzioni e le altre richiudibili; altrove, entrambe.
+  const main = os ? block(os) + `<details><summary>${t.other}</summary>${block(os === 'ios' ? 'android' : 'ios')}</details>` : block('ios') + block('android');
+  return `<div class="notesdoc install">${main}<h4>${t.both}</h4><ul>${t.bothItems.map(x => `<li>${x}</li>`).join('')}</ul></div>`;
+}
 const cap = () => S.lang !== 'he';          // ci sono didascalie accanto all'ebraico?
 const COLON = () => S.lang === 'fr' ? ' :' : ':';
 const roman = s => S.lang === 'it' ? s : E.sciRoman(s);
@@ -440,6 +484,7 @@ function render() {
   document.getElementById('placeBtn').onclick = () => openSheet('settings');
   document.getElementById('dateInput').value = `${g.y}-${String(g.m).padStart(2, '0')}-${String(g.d).padStart(2, '0')}`;
   document.getElementById('appTitle').textContent = l.title;
+  document.getElementById('appSub').textContent = l.subtitle;
   document.getElementById('settingsBtn').textContent = l.settings;
   document.getElementById('todayBtn').textContent = l.today;
   document.title = l.title;
@@ -452,7 +497,7 @@ function seg(name, val, choices) {
 function openSheet(which) {
   const l = L();
   const sh = document.getElementById('sheet');
-  let html = `<div class="sheethead"><b>${which === 'notes' ? l.notes : l.settings}</b><button id="closeSheet">${l.close}</button></div>`;
+  let html = `<div class="sheethead"><b>${which === 'notes' ? l.notes : which === 'install' ? INSTALL[S.lang].title : l.settings}</b><button id="closeSheet">${l.close}</button></div>`;
   if (which === 'settings') {
     const pl = S.place;
     html += `<h3>${l.place}</h3><p>${esc(placeName(pl.name))} (${pl.lat.toFixed(4)}, ${pl.lon.toFixed(4)})</p>`;
@@ -472,8 +517,10 @@ function openSheet(which) {
       <h3>${l.prudentLbl}</h3>${seg('prudent', S.prudent, [[true, l.on], [false, l.off]])}
       <h3>${l.translitLbl}</h3>${seg('translit', S.translit, [['digraph', 'kh, th'], ['line', '&#7733;, &#7791;']])}
       <h3>${l.bethLbl}</h3>${seg('beth', S.beth, [['line', '&#7687;'], ['v', 'v']])}
+      ${isInstalled() ? '' : `<button class="wide" id="openInstall">${INSTALL[S.lang].title}</button>`}
       <button class="wide" id="openNotes">${l.notes}</button>`;
-  } else html += document.getElementById('notesTpl').innerHTML;
+  } else if (which === 'install') html += installHtml();
+  else html += document.getElementById('notesTpl').innerHTML;
   sh.innerHTML = translit(html);
   sh.classList.add('open');
   document.getElementById('closeSheet').onclick = () => sh.classList.remove('open');
@@ -515,6 +562,8 @@ function openSheet(which) {
   }
   const on = document.getElementById('openNotes');
   if (on) on.onclick = () => openSheet('notes');
+  const oi = document.getElementById('openInstall');
+  if (oi) oi.onclick = () => openSheet('install');
 }
 
 // ---------- Navigazione ----------

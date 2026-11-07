@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Zemannim secondo il Mishné Torà</title>
+<title>Zemannim</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Zemannim MT">
+<meta name="apple-mobile-web-app-title" content="Zemannim">
+<meta name="description" content="Orari halakhici secondo il Mishné Torà">
 <meta name="theme-color" content="#f4f1ea">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-180.png">
@@ -19,7 +20,8 @@
 html,body { margin:0; background:var(--bg); color:var(--ink); font-family:"Source Sans 3", -apple-system, system-ui, sans-serif; -webkit-text-size-adjust:100%; }
 [lang="he"], .zhe, .parhe, .heb { font-family:"Frank Ruhl Libre", "Times New Roman", serif; }
 header { position:sticky; top:0; z-index:5; background:var(--bg); padding:calc(env(safe-area-inset-top) + 10px) 16px 8px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); }
-header h1 { font-size:17px; margin:0; font-weight:600; }
+header h1 { font-size:17px; margin:0; font-weight:600; line-height:1.2; }
+#appSub { font-size:12.5px; color:var(--mute); line-height:1.25; }
 header button { background:none; border:1px solid var(--line); color:var(--ink); border-radius:16px; padding:5px 12px; font-size:14px; font-family:inherit; }
 main { padding:12px 16px calc(env(safe-area-inset-bottom) + 96px); max-width:560px; margin:0 auto; }
 .place { display:block; width:100%; text-align:start; background:none; border:none; color:var(--acc); text-decoration:underline; font-size:15px; padding:4px 0 10px; font-family:inherit; }
@@ -65,10 +67,12 @@ label.small { display:block; }
 .notesdoc h4 { margin:16px 0 4px; font-size:15px; }
 .notesdoc .st { font-size:12px; padding:1px 7px; border-radius:8px; background:var(--accbg); color:var(--acc); margin-left:4px; }
 .notesdoc p { margin:4px 0; }
+.install ol, .install ul { margin:4px 0; padding-inline-start:22px; } .install li { margin:3px 0; }
+.install details { margin-top:14px; border-top:1px solid var(--line); padding-top:6px; } .install summary { cursor:pointer; color:var(--acc); padding:6px 0; }
 </style>
 </head>
 <body>
-<header><h1 id="appTitle">Zemannim secondo il Mishné Torà</h1><button id="settingsBtn">Impostazioni</button></header>
+<header><div class="brand"><h1 id="appTitle">Zemannim</h1><div id="appSub">Orari halakhici secondo il Mishné Torà</div></div><button id="settingsBtn">Impostazioni</button></header>
 <main id="main"></main>
 <nav><button class="arrow" id="prev" aria-label="giorno precedente">◀</button><input type="date" id="dateInput"><button id="todayBtn">Oggi</button><button class="arrow" id="next" aria-label="giorno successivo">▶</button></nav>
 <div id="sheet"></div>
@@ -97,6 +101,7 @@ label.small { display:block; }
 <h4>Nome del luogo <span class="st">scelta</span></h4><p>Con «Usa la mia posizione» l’app cerca la località più vicina in un elenco incluso nell’app, senza mandare la posizione in rete: tutti i comuni italiani, San Marino, il Vaticano, Monaco e le località oltre i 15.000 abitanti nel resto del mondo, più quelle dell’elenco dei nomi tradizionali (dati di GeoNames, licenza CC BY 4.0). Il nome ebraico segue le regole qui sopra, con le forme tradizionali dove esistono; per i nomi inglesi la pronuncia viene da Wiktionary (CC BY-SA 4.0) e, per Stati Uniti e Canada, dal CMU Pronouncing Dictionary. Per i luoghi senza regole (Paesi Bassi, Fiandre, Portogallo, Brasile, Lussemburgo e il resto del mondo, esclusi i paesi arabofoni) e per i nomi inglesi si parte dal titolo della voce di Wikipedia in ebraico (licenza CC BY-SA 4.0), trovata attraverso Wikidata, e lo si adatta alla grafia degli ebrei italiani confrontandolo col nome latino: la a non scritta prende l’alef (קאגושימא per Kagoshima), o e u la waw, i ed e la yod, ma non la e muta di olandese e fiammingo (ליידן); la he finale diventa א per la a e י per la e (ברדא, בילו הוריזונטי). Le lettere con geresh ג׳ ז׳ צ׳ restano; negli altri casi il geresh cade. Se il nome israeliano è un altro nome (דן בוס per ’s-Hertogenbosch), resta com’è. Per i nomi inglesi, se la forma di Wikipedia non corrisponde alla grafia, vale la pronuncia (ליסטיר per Leicester). Senza la forma di Wikipedia e senza pronuncia resta solo il nome latino. Per Ginevra, senza forma tradizionale, ז׳נב. Il nome trovato si può correggere a mano, in caratteri latini e in ebraico. A parte, e spenta in partenza, c’è la ricerca del nome in rete su OpenStreetMap (dati © OpenStreetMap, licenza ODbL), che manda la posizione arrotondata a circa 1 km. <i>Impostazioni: nome del luogo e nome in ebraico; ricerca in rete sì / no.</i></p>
 <h4>Fuso orario <span class="st">scelta</span></h4><p>Per le città dell’elenco si usa il fuso orario della città; con la posizione GPS, quello del dispositivo.</p>
 <h4>Hafṭaroṯ <span class="st">scelta</span></h4><p>Non si mostrano, per tenere l’interfaccia più pulita. Dopo qualche mese d’uso si valuterà una variante con le hafṭaroṯ.</p>
+<h4>Installazione <span class="st">scelta</span></h4><p>Nelle Impostazioni, la voce «Installazione» spiega come aggiungere l’app alla schermata Home, nelle quattro lingue dell’interfaccia. Su iPhone e su Android mostra le istruzioni di quel sistema, con le altre in una sezione chiusa; altrove le mostra entrambe. Quando l’app è già installata, la voce non compare.</p>
 <h4>Logo <span class="st">scelta</span></h4><p>La lettera ז, iniziale di «זמנים», in una cornice doppia sul marrone dell’app, con una versione per Android che tiene la cornice dentro la zona di sicurezza del ritaglio. Richiama genericamente le iniziali incorniciate dei libri ebraici antichi, senza riprodurne una. La lettera viene dal Frank Ruhl Hofshi di Yanek Iontef. È una prima versione.</p>
 <h4>Da fare</h4><p>Sviluppare ulteriormente il logo. Dopo alcuni mesi d’uso, valutare una variante con le hafṭaroṯ.</p>
 </div></template>

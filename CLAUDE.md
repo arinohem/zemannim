@@ -1,4 +1,4 @@
-# Zemannim secondo il Mishne Tora — instructions for Claude
+# Zemannim — instructions for Claude
 
 A personal web app (PWA) for the owner's iPhone. It shows the day's halakhic times, the Hebrew date, the parasha and a few liturgical notes, **according to the Mishne Tora (MT) only**. It is served by GitHub Pages from the root of `main`: https://arinohem.github.io/zemannim/
 
@@ -18,7 +18,7 @@ Read `DECISIONS.md` before changing any rule. Every rule there was settled with 
 - Italian romanization follows the owner's Maḥazor conventions: an accent (à, è for seḡol, é for ṣere, ì, ò, ù) marks the stress only where Italian spelling would not predict it: words ending in a vowel read as piane, so tronche are accented (Minḥà, Meḡillà, Ḥayyé Sarà, Teṣawwè, Wayḥì); words ending in a consonant read as tronche, so milleʿel words are accented (Sheminì ʿAṣèreth, Pèsaḥ, Ḥòḏesh, ʿÉqeḇ). No accent on milleʿel words ending in a vowel (Haʾazinu) or on monosyllables (Bo, Noaḥ with furtive pathaḥ). Check the stress, e.g. on the Masoretic accents. The Maḥazor project's own rules are in Dropbox `0_progetto_mahazor_italiano/.claude/rules/rubriche.md`.
 - English text uses Oxford British spelling (-ize: romanization; but -yse, -our).
 - English, French, and any other language: the same romanization without those accents (`sciRoman` in `engine.js`).
-- The app's name is **Zemannim** (daḡesh in the nun).
+- The app's name is **Zemannim** (daḡesh in the nun), alone, also under the icon. Subtitle, where there is room for one (header, manifest `description`): «Orari halakhici secondo il Mishné Torà» (EN, FR, HE in `T`, `ui.js`).
 - Italian: no doubled gender forms; use the generic masculine.
 
 ## Code layout

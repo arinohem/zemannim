@@ -1,7 +1,7 @@
 {
   "name": "zemannim",
   "private": true,
-  "description": "Zemannim secondo il Mishne Tora (PWA personale)",
+  "description": "Zemannim: orari halakhici secondo il Mishne Tora (PWA personale)",
   "scripts": {
     "build": "python3 tools/build.py",
     "test": "node tests/placename.test.mjs && node tests/calendar.test.mjs && node tests/festivals.test.mjs && node tests/sun.test.mjs"

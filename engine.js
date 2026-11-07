@@ -1,4 +1,4 @@
-/* Zemannim secondo il Mishné Torà — motore di calcolo.
+/* Zemannim — motore di calcolo.
    Tutto il codice è originale; nessuna dipendenza esterna.
    Calendario ebraico: algoritmi aritmetici standard (Reingold–Dershowitz, "Calendrical Calculations").
    Sole: algoritmo NOAA (Meeus), alba/tramonto a livello del mare, zenit 90°50'. */
