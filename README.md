@@ -29,7 +29,7 @@ Le istruzioni sono diverse per i due sistemi.
 3. Scorri il menu e scegli **Aggiungi alla schermata Home**.
 4. Lascia il nome proposto, «Zemannim», e tocca **Aggiungi**.
 
-L'icona compare nella schermata Home e l'app si apre a tutto schermo, come le altre. Se l'icona non compare nella schermata Home, l'app si trova comunque nella Libreria app e con Cerca.
+L'icona compare nella schermata Home e l'app si apre a tutto schermo, come le altre.
 
 ### Android
 
