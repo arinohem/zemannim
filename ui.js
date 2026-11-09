@@ -64,7 +64,7 @@ const T = {
     ask: 'Request for rain',
     askTonight: 'begins at ʿArḇiṯ tonight', askFirst: 'it began at ʿArḇiṯ last night', askLast: 'for the last time at Minḥa',
     scTonight: 'From ʿArḇiṯ tonight', scUntilMinha: 'Until Minḥa', scUntilNeila: 'Until Neʿila', ifFast: 'If fasting', b3: '3rd blessing', b11: '11th blessing', aboda: 'in the ʿAḇoḏa', hodaya: 'in the Hoḏaya',
-    anenu: 'in Shomeaʿ tefilla; the reader makes it a separate blessing, between Goʾel and Rofe', boneh: 'in Bone Yerushalayim', hour: 'Seasonal hour', settings: 'Settings', notes: 'Notes on the choices (in Italian)',
+    anenu: 'in Shomeaʿ tefilla; the reader makes it a separate blessing, between Goʾel and Rofe', boneh: 'in Bone Yerushalayim', hour: 'Seasonal hour', settings: 'Settings', notes: 'Notes on the choices',
     close: 'Close', place: 'Place', useGps: 'Use my location', gpsFail: 'Location is not available on this page: choose a city.',
     gpsWait: 'Finding your location…', manual: 'Coordinates', apply: 'Apply', tzethLbl: 'Ṣeṯ ha-koḵaḇim (end of Shabbaṯ, festivals, and fasts)',
     tequfaLbl: 'Tequfa for the request for rain (diaspora)', dawnLbl: 'Show ʿaloṯ ha-shaḥar', israelLbl: 'Land of Israel',
@@ -88,7 +88,7 @@ const T = {
     ask: 'Demande de la pluie',
     askTonight: 'commence ce soir à ʿArḇiṯ', askFirst: 'on a commencé hier soir à ʿArḇiṯ', askLast: 'pour la dernière fois à Minḥa',
     scTonight: 'À partir de ʿArḇiṯ ce soir', scUntilMinha: 'Jusqu’à Minḥa', scUntilNeila: 'Jusqu’à Neʿila', ifFast: 'Si l’on jeûne', b3: '3e bénédiction', b11: '11e bénédiction', aboda: 'dans la ʿAḇoḏa', hodaya: 'dans la Hoḏaya',
-    anenu: 'dans Shomeaʿ tefilla ; l’officiant en fait une bénédiction à part, entre Goʾel et Rofe', boneh: 'dans Bone Yerushalayim', hour: 'Heure saisonnière', settings: 'Réglages', notes: 'Notes sur les choix (en italien)',
+    anenu: 'dans Shomeaʿ tefilla ; l’officiant en fait une bénédiction à part, entre Goʾel et Rofe', boneh: 'dans Bone Yerushalayim', hour: 'Heure saisonnière', settings: 'Réglages', notes: 'Notes sur les choix',
     close: 'Fermer', place: 'Lieu', useGps: 'Utiliser ma position', gpsFail: 'Position indisponible sur cette page : choisissez une ville.',
     gpsWait: 'Recherche de la position…', manual: 'Coordonnées', apply: 'Appliquer', tzethLbl: 'Ṣeṯ ha-koḵaḇim (fin du Shabbaṯ, des fêtes et des jeûnes)',
     tequfaLbl: 'Tequfa pour la demande de la pluie (diaspora)', dawnLbl: 'Afficher ʿaloṯ ha-shaḥar', israelLbl: 'Terre d’Israël',
@@ -103,7 +103,7 @@ const T = {
     translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa selon le', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul', nameLatin: 'Nom du lieu', nameHeb: 'Nom en hébreu', save: 'Enregistrer', placeNote: 'Nom trouvé à partir de la position ; on peut le corriger.', netLbl: 'Chercher le nom du lieu en ligne (OpenStreetMap)', netNote: 'Envoie la position, arrondie à 1 km environ, à OpenStreetMap ; hors ligne, la liste intégrée est utilisée.'
   },
   he: {
-    tammuzNote: 'מנהג איטליה (מחזור בולוניה): קורין הכל על הסדר ואין מדלגין. ויש שקורין כשאר תעניות (ויחל משה ופסל לך), כמשנה תורה', fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחלת תשעה באב',
+    tammuzNote: 'מנהג ק״ק איטאליאני (מחזור בולוניה): קורים הכל על הסדר ואין מדלגים. ויש שקורים כשאר תעניות (ויחל משה ופסל לך), כמשנה תורה', fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחלת תשעה באב',
     omer: (n, w, d) => `ספירת העמר: הלילה יום ${E.hebNumeral(n)}` + (w ? `, ${w === 1 ? 'שבוע אחד' : E.hebNumeral(w) + ' שבועות'}${d ? ' ו' + (d === 1 ? 'יום אחד' : E.hebNumeral(d) + ' ימים') : ''}` : ''),
     title: 'זמנים', subtitle: 'זמני ההלכה על פי משנה תורה', today: 'היום', week: ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום ששי', 'שבת'],
     months: ['ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני', 'יולי', 'אוגוסט', 'ספטמבר', 'אוקטובר', 'נובמבר', 'דצמבר'],
@@ -112,7 +112,7 @@ const T = {
     ask: 'שאלת גשמים',
     askTonight: 'מתחילים בערבית של הלילה', askFirst: 'מערבית של אתמול', askLast: 'בפעם האחרונה במנחה',
     scTonight: 'מערבית של הלילה', scUntilMinha: 'עד מנחה', scUntilNeila: 'עד נעילה', ifFast: 'המתענה', b3: 'בברכה שלישית', b11: 'בברכה אחת עשרה', aboda: 'בעבודה', hodaya: 'בהודיה',
-    anenu: 'בשומע תפלה; ושליח צבור אומרה ברכה בפני עצמה, בין גואל לרופא', boneh: 'בבונה ירושלים', hour: 'שעה זמנית', settings: 'הגדרות', notes: 'הערות על ההכרעות (באיטלקית)',
+    anenu: 'בשומע תפלה; ושליח צבור אומרה ברכה בפני עצמה, בין גואל לרופא', boneh: 'בבונה ירושלים', hour: 'שעה זמנית', settings: 'הגדרות', notes: 'הערות על ההכרעות',
     close: 'סגור', place: 'מקום', useGps: 'השתמש במיקום שלי', gpsFail: 'המיקום אינו זמין בדף זה: בחר עיר.',
     gpsWait: 'מחפש מיקום…', manual: 'קואורדינטות', apply: 'החל', tzethLbl: 'צאת הכוכבים (מוצאי שבת)',
     tequfaLbl: 'תקופה לשאלת גשמים (חוץ לארץ)', dawnLbl: 'הצג עלות השחר', israelLbl: 'ארץ ישראל',
@@ -520,7 +520,13 @@ function openSheet(which) {
       ${isInstalled() ? '' : `<button class="wide" id="openInstall">${INSTALL[S.lang].title}</button>`}
       <button class="wide" id="openNotes">${l.notes}</button>`;
   } else if (which === 'install') html += installHtml();
-  else html += document.getElementById('notesTpl').innerHTML;
+  else {
+    // Note nella lingua scelta; l'italiano è in notesTpl
+    let notes = (document.getElementById('notesTpl-' + S.lang) || document.getElementById('notesTpl')).innerHTML;
+    // Nel testo latino ogni citazione ebraica è isolata, altrimenti i numeri che la seguono («…» (10:5 [6])) finiscono nel suo verso
+    if (cap()) notes = notes.replace(/[֐-׿](?:[֐-׿ ,]*[֐-׿])?/g, '<bdi>$&</bdi>');
+    html += notes;
+  }
   sh.innerHTML = translit(html);
   sh.classList.add('open');
   document.getElementById('closeSheet').onclick = () => sh.classList.remove('open');

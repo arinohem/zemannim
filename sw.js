@@ -1,5 +1,5 @@
 // Conserva i file dell'app per l'uso senza rete.
-const C='mt-zemanim-v60', FILES=['./','index.html','engine.js','placename.js','ui.js','places.json','manifest.json','icon-180.png','icon-192.png','icon-512.png','icon-maskable-192.png','icon-maskable-512.png'];
+const C='mt-zemanim-v61', FILES=['./','index.html','engine.js','placename.js','ui.js','places.json','manifest.json','icon-180.png','icon-192.png','icon-512.png','icon-maskable-192.png','icon-maskable-512.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{ if(e.request.method!=='GET')return;

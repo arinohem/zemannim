@@ -93,6 +93,20 @@ function hebNumeral(n) {
   return s.length > 1 ? s.slice(0, -1) + '״' + s.slice(-1) : s + '׳';
 }
 
+// ---------- Giorni nazionali israeliani (non del MT; solo segnalati) ----------
+// Yom ha-ʿAṣmaʾuṯ il 5 Iyyar: se cade di venerdì o sabato si anticipa a giovedì; dal 5764 (2004), se cade di lunedì si rinvia
+// a martedì. Yom ha-Zikkaron il giorno prima. Yom Yerushalàyim il 28 Iyyar, dal 5728 (1968). Regole della legge israeliana.
+function nationalDay(y, m, d) {
+  if (m !== 2) return null;
+  if (y >= 5728 && d === 28) return { key: 'yerushalayim', it: 'Yom Yerushalàyim', he: 'יום ירושלים' };
+  if (y < 5708) return null;
+  const pdow = weekday(rdFromHeb(y, 1, 15)); // giorno della settimana di Pèsaḥ (0 = domenica)
+  const zik = pdow === 0 ? 2 : pdow === 6 ? 3 : (y >= 5764 && pdow === 2) ? 5 : 4;
+  if (d === zik) return { key: 'zikkaron', it: 'Yom ha-Zikkaron', he: 'יום הזכרון' };
+  if (d === zik + 1) return { key: 'atsmauth', it: 'Yom ha-ʿAṣmaʾuṯ', he: 'יום העצמאות' };
+  return null;
+}
+
 // ---------- Digiuni (MT Taʿaniyyoṯ 5:2–5; letture: Tefillà 13:18) ----------
 // m = 12 vale «il mese di Purim» (Aḏar II negli anni embolismici); ifShabbath = spostamento in giorni se cade di sabato
 const FASTS = [
@@ -165,6 +179,9 @@ function dayInfo(rd, opt) {
     info.hanukka = true; add('Ḥanukkà, ' + n + '° giorno', 'חנכה, יום ' + hebNumeral(n), 'Ḥanukka, day ' + n, 'Ḥanukka, ' + (n === 1 ? '1er' : n + 'e') + ' jour');
   }
   if (m === adarPurim && d === purimDay) { info.purim = true; add('Purim', 'פורים'); }
+  // Giorni nazionali israeliani: solo segnalati, senza effetti su preghiere e orari (scelta del curatore, 2026-11-09)
+  const nat = nationalDay(y, m, d);
+  if (nat) { info.national = nat.key; add(nat.it, nat.he); }
   // Digiuni (MT Taʿaniyyoṯ 5:2–5). Dei quattro, quello che cade di sabato si rinvia a domenica;
   // il digiuno di Ester (13 Aḏar, «ונהגו») si anticipa a giovedì 11. Negli anni embolismici in Aḏar II, come Purim (Meḡillà 1:12).
   for (const f of FASTS) {
@@ -185,18 +202,19 @@ function weekdayAmida(i) { return !i.shabbath && !i.yomTov && !i.yomKippur; }
 
 // ---------- Parashiyyoṯ (lettura annuale; MT Tefillà 13:1) ----------
 const PARASHIYYOTH = [
-  ['Bereshiṯ', 'בראשית'], ['Noaḥ', 'נח'], ['Leḵ leḵà', 'לך לך'], ['Wayyerà', 'וירא'], ['Ḥayyé Sarà', 'חיי שרה'],
-  ['Toleḏoṯ', 'תולדות'], ['Wayyeṣé', 'ויצא'], ['Wayyishlaḥ', 'וישלח'], ['Wayyésheḇ', 'וישב'], ['Miqqeṣ', 'מקץ'],
+  ['Bereshiṯ', 'בראשית'], ['Noaḥ', 'נח'], ['Leḵ leḵà', 'לך־לך'], ['Wayyerà', 'וירא'], ['Ḥayyé Sarà', 'חיי שרה'],
+  ['Toleḏoṯ', 'תולדת'], ['Wayyeṣé', 'ויצא'], ['Wayyishlaḥ', 'וישלח'], ['Wayyésheḇ', 'וישב'], ['Miqqeṣ', 'מקץ'],
   ['Wayyiggash', 'ויגש'], ['Wayḥì', 'ויחי'], ['Shemoṯ', 'שמות'], ['Waʾerà', 'וארא'], ['Bo', 'בא'],
   ['Beshallaḥ', 'בשלח'], ['Yiṯrò', 'יתרו'], ['Mishpaṭim', 'משפטים'], ['Terumà', 'תרומה'], ['Teṣawwè', 'תצוה'],
   ['Ki ṯissà', 'כי תשא'], ['Wayyaqhel', 'ויקהל'], ['Pequḏé', 'פקודי'], ['Wayyiqrà', 'ויקרא'], ['Ṣaw', 'צו'],
-  ['Sheminì', 'שמיני'], ['Tazriaʿ', 'תזריע'], ['Meṣoraʿ', 'מצורע'], ['Aḥaré moṯ', 'אחרי מות'], ['Qeḏoshim', 'קדשים'],
+  ['Sheminì', 'שמיני'], ['Tazriaʿ', 'תזריע'], ['Meṣoraʿ', 'מצרע'], ['Aḥaré moṯ', 'אחרי מות'], ['Qeḏoshim', 'קדשים'],
   ['Emor', 'אמר'], ['Behar', 'בהר'], ['Beḥuqqoṯay', 'בחקתי'], ['Bemiḏbar', 'במדבר'], ['Nasò', 'נשא'],
-  ['Behaʿaloṯeḵà', 'בהעלתך'], ['Shelaḥ leḵà', 'שלח לך'], ['Qòraḥ', 'קרח'], ['Ḥuqqaṯ', 'חקת'], ['Balaq', 'בלק'],
+  ['Behaʿaloṯeḵà', 'בהעלתך'], ['Shelaḥ leḵà', 'שלח־לך'], ['Qòraḥ', 'קרח'], ['Ḥuqqaṯ', 'חקת'], ['Balaq', 'בלק'],
   ['Pineḥas', 'פינחס'], ['Maṭṭoṯ', 'מטות'], ['Masʿé', 'מסעי'], ['Deḇarim', 'דברים'], ['Waʾeṯḥannan', 'ואתחנן'],
-  ['ʿÉqeḇ', 'עקב'], ['Reʾé', 'ראה'], ['Shofeṭim', 'שופטים'], ['Ki ṯeṣé', 'כי תצא'], ['Ki ṯaḇò', 'כי תבוא'],
+  ['ʿÉqeḇ', 'עקב'], ['Reʾé', 'ראה'], ['Shofeṭim', 'שפטים'], ['Ki ṯeṣé', 'כי־תצא'], ['Ki ṯaḇò', 'כי־תבוא'],
   ['Niṣṣaḇim', 'נצבים'], ['Wayyéleḵ', 'וילך'], ['Haʾazinu', 'האזינו'], ['We-zoṯ ha-beraḵà', 'וזאת הברכה']
 ];
+// Nomi ebraici come nel testo della Torà (grafia e maqqef; senza l’articolo del versetto: מצרע, משפטים).
 // Accento in italiano solo dove la tonica non è quella attesa: tronche in vocale, piane in consonante (accenti masoretici);
 // niente accento su Haʾazinu (piana in vocale), Bo e Noaḥ. ʾAlef consonantico scritto, tranne a inizio di parola.
 
@@ -321,7 +339,7 @@ function moladNisanRd(y) { // molad di Nisan dell'anno y, in giorni RD (ora di G
 }
 function tequfaTishri(y, method) { // tequfà di Tishrì che segue il Nisan dell'anno y
   // cap. 9: anno di 365¼ giorni; tequfà di Nisan dell'anno 1 = 7g 9h 642p prima del molad di Nisan (9:3)
-  // cap. 10: anno di 365g 5h 997p 48r; tequfà di Nisan dell'anno 1 = 9h 642p prima del molad di Nisan (10:3)
+  // cap. 10: anno di 365g 5h 997p 48r; tequfà di Nisan dell'anno 1 = 9h 642p prima del molad di Nisan (10:2 [3])
   const yearLen = method === 10 ? 365 + 5 / 24 + 997 * PART + 48 / 76 * PART : 365.25;
   const off = method === 10 ? 9 / 24 + 642 * PART : 7 + 9 / 24 + 642 * PART;
   const t1 = moladNisanRd(1) - off;

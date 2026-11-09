@@ -5,7 +5,21 @@ const E = require('../engine.js');
 
 const FAST = {"Tzom Gedaliah": 'gedalya', "Asara B'Tevet": 'tevet10', "Ta'anit Esther": 'esther', 'Tzom Tammuz': 'tammuz17', "Tish'a B'Av": 'av9', "Tish'a B'Av (observed)": 'av9'};
 const SPEC = {'Shabbat HaGadol': 'haggadol', 'Shabbat Shekalim': 'sheqalim', 'Shabbat Zachor': 'zakhor', 'Shabbat Parah': 'para', 'Shabbat HaChodesh': 'hahodesh'};
-let fastBad = 0, specBad = 0, omerBad = 0, n = 0;
+const NAT = {'Yom HaZikaron': 'zikkaron', "Yom HaAtzma'ut": 'atsmauth', 'Yom Yerushalayim': 'yerushalayim'};
+let fastBad = 0, specBad = 0, omerBad = 0, natBad = 0, n = 0;
+// Israeli national days, compared with Hebcal's modern holidays (Yom Yerushalayim from 5728: Hebcal starts at 5727, the year of the event)
+for (let hy = 5700; hy < 6200; hy++) {
+  const theirs = new Map();
+  for (const ev of HebrewCalendar.calendar({year: hy, isHebrewYear: true, il: true})) {
+    const d = ev.getDesc();
+    if (NAT[d] && !(d === 'Yom Yerushalayim' && hy < 5728)) theirs.set(ev.getDate().abs(), NAT[d]);
+  }
+  for (let rd = E.rdFromHeb(hy, 1, 1); rd < E.rdFromHeb(hy, 4, 1); rd++) {
+    const ours = E.dayInfo(rd, {israel: true}).national;
+    if (ours !== theirs.get(rd)) { if (natBad++ < 8) console.log('national', hy, E.gregFromRd(rd), 'ours', ours, 'hebcal', theirs.get(rd)); }
+  }
+}
+console.log('national-day mismatches', natBad);
 for (let hy = 5600; hy < 6200; hy++) {
   const theirsFast = new Map(), theirsSpec = new Map(), theirsOmer = new Map();
   for (const ev of HebrewCalendar.calendar({year: hy, isHebrewYear: true, omer: true, noModern: true})) {
@@ -29,4 +43,4 @@ for (let hy = 5600; hy < 6200; hy++) {
   }
 }
 console.log('fast mismatches', fastBad, '· named Shabbaths mismatches', specBad, '· ʿomer mismatches', omerBad, 'of', n, 'days');
-if (fastBad || specBad || omerBad) process.exitCode = 1;
+if (fastBad || specBad || omerBad || natBad) process.exitCode = 1;
