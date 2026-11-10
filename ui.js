@@ -35,7 +35,8 @@ const T = {
     hamEat: 'Termine per mangiare ḥameṣ', hamEatShabb: 'Termine per mangiare ḥameṣ; ciò che avanza si annulla e si copre', hamTora: 'Da qui il ḥameṣ è vietato dalla Torà',
     hamSearch: 'Stasera, all’inizio della notte: ricerca del ḥameṣ', hamFriday: 'Prima dello Shabbaṯ si elimina il ḥameṣ, tranne quello da mangiare domani fino alle 4 ore',
     cdIn: 'tra', hanLight: 'Accensione dei lumi di Ḥanukkà', hanFriday: 'I lumi di Ḥanukkà si accendono prima',
-    neila: 'Neʿilà si conclude poco prima',moonFirst: 'Da stasera: benedizione della luna (<span lang="he">מחדש חדשים</span>), da recitare appena si vede la luna nuova',
+    neila: 'Neʿilà si conclude poco prima',moonLastEve: 'Stasera: ultima sera per la benedizione della luna (<span lang="he">מחדש חדשים</span>); si può recitare fino al tramonto di domani', moonLastDay: 'Benedizione della luna (<span lang="he">מחדש חדשים</span>): ultimo giorno, fino al tramonto',
+    moonFirst: 'Da stasera: benedizione della luna (<span lang="he">מחדש חדשים</span>), da recitare appena si vede la luna nuova',
     omer: (n, w, d) => `ʿÒmer: stasera si conta il ${n}° giorno` + (w ? ` (${w} settiman${w > 1 ? 'e' : 'a'}${d ? ` e ${d} giorn${d > 1 ? 'i' : 'o'}` : ''})` : ''),
     title: 'Zemannim', subtitle: 'Orari halakhici secondo il Mishné Torà', today: 'Oggi', week: ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'],
     months: ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'],
@@ -63,7 +64,8 @@ const T = {
     hamEat: 'Latest time for eating ḥameṣ', hamEatShabb: 'Latest time for eating ḥameṣ; what is left is annulled and covered', hamTora: 'From here ḥameṣ is forbidden by the Tora',
     hamSearch: 'Tonight, at the beginning of the night: search for ḥameṣ', hamFriday: 'Before Shabbaṯ the ḥameṣ is removed, except what will be eaten tomorrow until 4 hours',
     cdIn: 'in', hanLight: 'Lighting of the Ḥanukka lights', hanFriday: 'The Ḥanukka lights are lit before',
-    neila: 'Neʿila is completed shortly before',moonFirst: 'From tonight: blessing on the moon (<span lang="he">מחדש חדשים</span>), to be recited as soon as the new moon is seen',
+    neila: 'Neʿila is completed shortly before',moonLastEve: 'Tonight: last evening for the blessing on the moon (<span lang="he">מחדש חדשים</span>); it may be recited until sunset tomorrow', moonLastDay: 'Blessing on the moon (<span lang="he">מחדש חדשים</span>): last day, until sunset',
+    moonFirst: 'From tonight: blessing on the moon (<span lang="he">מחדש חדשים</span>), to be recited as soon as the new moon is seen',
     omer: (n, w, d) => `ʿOmer: tonight is day ${n}` + (w ? ` (${w} week${w > 1 ? 's' : ''}${d ? ` and ${d} day${d > 1 ? 's' : ''}` : ''})` : ''),
     title: 'Zemannim', subtitle: 'Halakhic times according to the Mishne Tora', today: 'Today', week: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
@@ -91,7 +93,8 @@ const T = {
     hamEat: 'Heure limite pour manger du ḥameṣ', hamEatShabb: 'Heure limite pour manger du ḥameṣ ; ce qui reste est annulé et recouvert', hamTora: 'À partir d’ici le ḥameṣ est interdit par la Tora',
     hamSearch: 'Ce soir, au début de la nuit : recherche du ḥameṣ', hamFriday: 'Avant le Shabbaṯ on élimine le ḥameṣ, sauf celui que l’on mangera demain jusqu’à 4 heures',
     cdIn: 'dans', hanLight: 'Allumage des lumières de Ḥanukka', hanFriday: 'Les lumières de Ḥanukka s’allument avant',
-    neila: 'La Neʿila s’achève peu avant',moonFirst: 'À partir de ce soir : bénédiction de la lune (<span lang="he">מחדש חדשים</span>), à réciter dès que l’on voit la nouvelle lune',
+    neila: 'La Neʿila s’achève peu avant',moonLastEve: 'Ce soir : dernier soir pour la bénédiction de la lune (<span lang="he">מחדש חדשים</span>) ; on peut la réciter jusqu’au coucher du soleil de demain', moonLastDay: 'Bénédiction de la lune (<span lang="he">מחדש חדשים</span>) : dernier jour, jusqu’au coucher du soleil',
+    moonFirst: 'À partir de ce soir : bénédiction de la lune (<span lang="he">מחדש חדשים</span>), à réciter dès que l’on voit la nouvelle lune',
     omer: (n, w, d) => `ʿOmer : ce soir, ${n === 1 ? '1er' : n + 'e'} jour` + (w ? ` (${w} semaine${w > 1 ? 's' : ''}${d ? ` et ${d} jour${d > 1 ? 's' : ''}` : ''})` : ''),
     title: 'Zemannim', subtitle: 'Horaires halakhiques selon le Mishne Tora', today: 'Aujourd’hui', week: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
     months: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
@@ -119,7 +122,8 @@ const T = {
     hamEat: 'סוף זמן אכילת חמץ', hamEatShabb: 'סוף זמן אכילת חמץ; הנשאר מבטלים אותו וכופים עליו כלי', hamTora: 'מכאן החמץ אסור מן התורה',
     hamSearch: 'הלילה, מתחלת הלילה: בדיקת חמץ', hamFriday: 'מבערים את החמץ מלפני השבת, חוץ ממה שאוכלים למחר עד ארבע שעות',
     cdIn: 'בעוד', hanLight: 'הדלקת נרות חנכה', hanFriday: 'מדליקים נרות חנכה קדם לכן',
-    neila: 'משלימים תפלת נעילה סמוך לשקיעת החמה',moonFirst: 'מהלילה: ברכת הלבנה (מחדש חדשים); מברכים כשרואים את הלבנה בחדושה',
+    neila: 'משלימים תפלת נעילה סמוך לשקיעת החמה',moonLastEve: 'הלילה: לילה אחרון לברכת הלבנה (מחדש חדשים); מברכים עד שקיעת החמה של מחר', moonLastDay: 'ברכת הלבנה (מחדש חדשים): יום אחרון, עד שקיעת החמה',
+    moonFirst: 'מהלילה: ברכת הלבנה (מחדש חדשים); מברכים כשרואים את הלבנה בחדושה',
     omer: (n, w, d) => `ספירת העמר: הלילה יום ${E.hebNumeral(n)}` + (w ? `, ${w === 1 ? 'שבוע אחד' : E.hebNumeral(w) + ' שבועות'}${d ? ' ו' + (d === 1 ? 'יום אחד' : E.hebNumeral(d) + ' ימים') : ''}` : ''),
     title: 'זמנים', subtitle: 'זמני ההלכה על פי משנה תורה', today: 'היום', week: ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום ששי', 'שבת'],
     months: ['ינואר', 'פברואר', 'מרץ', 'אפריל', 'מאי', 'יוני', 'יולי', 'אוגוסט', 'ספטמבר', 'אוקטובר', 'נובמבר', 'דצמבר'],
@@ -491,6 +495,8 @@ function render() {
   if (r.hametz && r.hametz.beforeShabbath) notes.push(HL(l.hamFriday));
   // Benedizione della luna, la sera che apre il mese (Beraḵoṯ 10:18–19 [16–17])
   if (r.moonFirst) notes.push(HL(l.moonFirst));
+  // Ultima sera e ultimo giorno: fino al tramonto che chiude il 15 (lettura adottata dal curatore, 2026-11-10)
+  if (r.moonLast) notes.push(HL(r.moonLast === 'tonight' ? l.moonLastEve : l.moonLastDay));
   html += `<section class="notes">${notes.map(n => n.hl ? `<div class="hl">${n.html}</div>` : `<div>${n}</div>`).join('')}</section>`;
 
   // Orari

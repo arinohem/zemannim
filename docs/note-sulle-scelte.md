@@ -87,7 +87,7 @@ Si usa il cap. 9 di Qiddush ha-Ḥòḏesh (anno di 365¼ giorni, 9:1–2; tequf
 
 ## Benedizione della luna
 
-Chi vede la luna nuova, «הרואה לבנה בחדושה», recita la benedizione che si chiude «מחדש חדשים» (Beraḵoṯ 10:18 [16]). La benedizione va recitata appena si avvista la luna nuova, il prima possibile nel corso del mese. Chi non l’ha recitata la prima notte può farlo «עד ששה עשר יום בחדש, עד שתתמלא פגימתו» (10:19 [17]). La nota compare la sera che apre il giorno 1 del mese.
+Chi vede la luna nuova, «הרואה לבנה בחדושה», recita la benedizione che si chiude «מחדש חדשים» (Beraḵoṯ 10:18 [16]). La benedizione va recitata appena si avvista la luna nuova, il prima possibile nel corso del mese. Chi non l’ha recitata la prima notte può farlo «עד ששה עשר יום בחדש, עד שתתמלא פגימתו» (10:19 [17]). La nota compare la sera che apre il giorno 1 del mese, poi la sera che apre il 15 e il giorno 15, fino al tramonto.
 
 ## Digiuni
 

@@ -405,6 +405,9 @@ function computeDay(rd, opt) {
 
   // Benedizione della luna (MT Beraḵoṯ 10:18–19 [16–17]): la sera che apre il giorno 1 del mese
   res.moonFirst = hebFromRd(rd + 1).d === 1;
+  // «עד ששה עשר יום בחדש» (10:19 [17]): il 16 escluso, il 15 anche di giorno (lettura adottata dal curatore,
+  // 2026-11-10). 'tonight': la sera apre il 15; 'day': il 15, fino al tramonto
+  res.moonLast = hebFromRd(rd + 1).d === 15 ? 'tonight' : res.heb.d === 15 ? 'day' : null;
 
   // Pioggia (Tefillà 2:17–19; formula secondo il rito italiano)
   const { y, m, d } = res.heb;
