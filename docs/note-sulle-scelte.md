@@ -32,9 +32,13 @@ Se il 14 cade di Shabbaṯ, la ricerca si fa il giovedì sera e il ḥameṣ si 
 
 Non ha un orario: il MT dice solo che va conclusa poco prima del tramonto, «כדי שישלים אותה, סמוך לשקיעת החמה» (Tefillà 3:6; così anche 1:9 [7]). Il giorno di Kippur lo ricorda una dicitura sulla riga del tramonto.
 
-## Accensione dei lumi
+## Accensione dei lumi di Shabbaṯ
 
 Non mostrata: il MT dice solo «מבעוד יום, קדם שקיעת החמה» (Shabbaṯ 5:3), senza minuti.
+
+## Lumi di Ḥanukkà
+
+Si accendono al tramonto: «אין מדליקין נרות חנכה קדם שתשקע החמה, אלא עם שקיעתה--לא מאחרין, ולא מקדימין» (Meḡillà wa-Ḥanukkà 4:5). Il tempo dell’accensione va fino a circa mezz’ora dopo il tramonto, o poco più: «מדליק והולך עד שתכלה רגל מן השוק; וכמה הוא זמן זה, כמו חצי שעה או יתר. עבר זמן זה, אינו מדליק» (ivi). L’accensione al tramonto la ricorda una dicitura sulla riga del tramonto, la sera che apre ciascuno degli otto giorni. Il venerdì la dicitura dice che i lumi si accendono prima del tramonto, e all’uscita dello Shabbaṯ l’accensione è indicata sulla riga di ṣeṯ ha-koḵaḇim.
 
 ## Arrotondamento
 
