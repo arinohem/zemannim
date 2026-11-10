@@ -194,11 +194,11 @@ const ZEMANIM = {
   alot:    { he: 'עלות השחר', it: 'Spuntare dell’alba', en: 'Break of dawn', fr: 'Lever de l’aube',
              src: { it: 'Rambam, Comm. alla Mishnà, Beraḵoṯ 1:1 (non MT): 1⅕ ore stagionali prima del sorgere del sole',
                     en: 'Rambam, Commentary on the Mishna, Beraḵoṯ 1:1 (not MT): 1⅕ seasonal hours before sunrise',
-                    fr: 'Rambam, Commentaire de la Mishna, Beraḵoṯ 1:1 (pas le MT) : 1⅕ heure saisonnière avant le lever du soleil' }, r: 'n' },
+                    fr: 'Rambam, Commentaire de la Mishna, Beraḵoṯ 1:1 (pas le MT) : 1⅕ heure saisonnière avant le lever du soleil' }, r: 'c' },
   netz:    { he: 'הנץ החמה', it: 'Sorgere del sole', en: 'Sunrise', fr: 'Lever du soleil', src: 'MT Qeriʾaṯ Shemaʿ 1:12; Tefillà 3:1', r: 'n' },
   shema:   { he: 'סוף זמן קריאת שמע', it: 'Termine per lo Shemaʿ del mattino (3 ore)', en: 'Latest time for the morning Shemaʿ (3 hours)', fr: 'Heure limite pour le Shemaʿ du matin (3 heures)', src: 'MT Qeriʾaṯ Shemaʿ 1:12–14', r: 'f' },
   tefilla: { he: 'סוף זמן תפלת השחר', it: 'Termine per Shaḥriṯ (4 ore)', en: 'Latest time for Shaḥriṯ (4 hours)', fr: 'Heure limite pour Shaḥriṯ (4 heures)', src: 'MT Tefillà 3:1', r: 'f' },
-  hatzot:  { he: 'חצות היום', it: 'Mezzogiorno (6 ore)', en: 'Midday (6 hours)', fr: 'Midi (6 heures)', src: 'MT Tefillà 3:9 («חצי היום»)', r: 'n' },
+  hatzot:  { he: 'חצות היום', it: 'Mezzogiorno (6 ore)', en: 'Midday (6 hours)', fr: 'Midi (6 heures)', src: 'MT Tefillà 3:9 («חצי היום»)', r: 'f' },
   minhaG:  { he: 'מנחה גדולה', it: 'Minḥà geḏolà (6½ ore)', en: 'Minḥa geḏola (6½ hours)', fr: 'Minḥa geḏola (6½ heures)', src: 'MT Tefillà 3:2, 3:4', r: 'c' },
   musaf:   { he: 'סוף זמן תפלת המוספין', it: 'Termine per Musaf (7 ore)', en: 'Latest time for Musaf (7 hours)', fr: 'Heure limite pour Musaf (7 heures)',
              src: { it: 'MT Tefillà 3:5: fino a 7 ore; chi prega dopo esce d’obbligo, pur essendo in difetto, perché il suo tempo è tutto il giorno',
@@ -213,7 +213,7 @@ const ZEMANIM = {
   hatzotLayla: { he: 'חצות הלילה', it: 'Mezzanotte (termine preferibile per lo Shemaʿ della sera)', en: 'Midnight (preferred latest time for the evening Shemaʿ)', fr: 'Minuit (heure limite préférable pour le Shemaʿ du soir)',
              src: { it: 'MT Qeriʾaṯ Shemaʿ 1:10; calcolata a metà fra il tramonto e il sorgere del sole',
                     en: 'MT Qeriʾaṯ Shemaʿ 1:10; computed as the midpoint between sunset and sunrise',
-                    fr: 'MT Qeriʾaṯ Shemaʿ 1:10 ; calculé à mi-chemin entre le coucher et le lever du soleil' }, r: 'n' }
+                    fr: 'MT Qeriʾaṯ Shemaʿ 1:10 ; calculé à mi-chemin entre le coucher et le lever du soleil' }, r: 'f' }
 };
 // Le fonti-stringa sono citazioni romanizzate (forma italiana); in modalità solo ebraico le note restano in italiano
 const srcText = z => typeof z.src === 'string' ? roman(z.src) : (z.src[S.lang] || z.src.it);
@@ -473,9 +473,8 @@ function render() {
       if (t.key === 'tzeth' && r.info.fast) extra = (extra ? extra + ' · ' : '') + l.fastOut;
       // Tishʿà be-Aḇ comincia la sera: «בין השמשות שלו, אסור כיום הכיפורים» (Taʿaniyyoṯ 5:7)
       if (t.key === 'shqia' && tomorrow.fast && tomorrow.fast.key === 'av9') extra = (extra ? extra + ' · ' : '') + l.av9In;
-      const kind = (t.key === 'tzeth' && extra) ? 'c' : z.r;
       html += `<details class="row${i === nextIdx ? ' next' : ''}"><summary>
-        <span class="t">${fmtTime(t.date, kind)}${i === nextIdx ? ' ◂' : ''}</span>
+        <span class="t">${fmtTime(t.date, z.r)}${i === nextIdx ? ' ◂' : ''}</span>
         <span class="z"><span class="zhe" lang="he" dir="rtl">${z.he}</span>${cap() ? `<span class="zit">${z[S.lang]}</span>` : ''}${extra ? `<span class="tag">${extra}</span>` : ''}</span>
         </summary><div class="src">${l.source}${COLON()} ${esc(srcText(z))}${t.key === 'tzeth' ? ` · ${S.tzeth} min` : ''}</div></details>`;
     });

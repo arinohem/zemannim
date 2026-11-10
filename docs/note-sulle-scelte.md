@@ -26,7 +26,17 @@ Non mostrata: il MT dice solo «מבעוד יום, קדם שקיעת החמה» 
 
 ## Arrotondamento
 
-Con l’arrotondamento prudente i termini finali sono arrotondati al minuto precedente, gli inizi al minuto seguente. Non è una regola del MT. *Impostazione: sì / no.*
+Con l’arrotondamento prudente i termini finali sono arrotondati al minuto precedente, gli inizi al minuto seguente. Non è una regola del MT.
+
+Al minuto precedente vanno i termini per lo Shemaʿ del mattino, per Shaḥriṯ, e per Musaf, mezzogiorno, il termine per la minḥà qeṭannà, il tramonto, e la mezzanotte. Al minuto seguente vanno ʿaloṯ ha-shàḥar, minḥà geḏolà, minḥà qeṭannà, e ṣeṯ ha-koḵaḇim.
+
+Mezzogiorno è trattato come termine: fino a mezzogiorno chi ha lasciato passare le 4 ore può ancora recitare Shaḥriṯ (Tefillà 3:1), e da mezzogiorno la vigilia di Pèsaḥ il ḥameṣ è vietato (Ḥameṣ u-Maṣṣà 1:8). La mezzanotte è il termine preferibile per lo Shemaʿ della sera (Qeriʾaṯ Shemaʿ 1:10 [9]).
+
+ʿAloṯ ha-shàḥar è insieme un termine (lo Shemaʿ della sera per chi ha tardato, ʿArḇiṯ, il pasto prima di un digiuno) e un inizio (lo Shemaʿ del mattino e Shaḥriṯ in caso di necessità, la milà); nell’arrotondamento prevale l’inizio. Chi la usa come termine tenga conto che l’orario mostrato può superare quello calcolato di quasi un minuto.
+
+Il sorgere del sole è arrotondato al minuto più vicino: è il momento in cui si finisce lo Shemaʿ e si comincia la ʿAmiḏà di Shaḥriṯ, e nessun verso è prudente per entrambi.
+
+Con l’impostazione spenta tutti gli orari sono arrotondati al minuto più vicino. *Impostazione: sì / no.*
 
 ## Nefilaṯ appàyim
 
