@@ -118,7 +118,7 @@ const T = {
     translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa selon le', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul', nameLatin: 'Nom du lieu', nameHeb: 'Nom en hébreu', save: 'Enregistrer', placeNote: 'Nom trouvé à partir de la position ; on peut le corriger.', netLbl: 'Chercher le nom du lieu en ligne (OpenStreetMap)', netNote: 'Envoie la position, arrondie à 1 km environ, à OpenStreetMap ; hors ligne, la liste intégrée est utilisée.'
   },
   he: {
-    tammuzNote: 'מנהג ק״ק איטאליאני (מחזור בולוניה): קורים הכל על הסדר ואין מדלגים. ויש שקורים כשאר תעניות (ויחל משה ופסל לך), כמשנה תורה', fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחלת תשעה באב',
+    tammuzNote: 'מנהג ק״ק איטאליאני (מחזור בולוניה): קוראים הכל על הסדר ואין מדלגים. ויש שקוראים כשאר תעניות (ויחל משה ופסל לך), כמשנה תורה', fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחלת תשעה באב',
     hamEat: 'סוף זמן אכילת חמץ', hamEatShabb: 'סוף זמן אכילת חמץ; הנשאר מבטלים אותו וכופים עליו כלי', hamTora: 'מכאן החמץ אסור מן התורה',
     hamSearch: 'הלילה, מתחלת הלילה: בדיקת חמץ', hamFriday: 'מבערים את החמץ מלפני השבת, חוץ ממה שאוכלים למחר עד ארבע שעות',
     cdIn: 'בעוד', hanLight: 'הדלקת נרות חנכה', hanFriday: 'מדליקים נרות חנכה קדם לכן',
