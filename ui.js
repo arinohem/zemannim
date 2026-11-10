@@ -139,7 +139,7 @@ const T = {
     walledLbl: 'עיר מוקפת חומה (פורים בט״ו)', auto: 'אוטומטי', on: 'כן', off: 'לא', prudentLbl: 'עיגול לחומרא',
     langLbl: 'שפה', zone: 'שעות לפי אזור הזמן', shabbIn: 'כניסת שבת', shabbOut: 'יציאת שבת',
     ytIn: 'כניסת יום טוב', ytOut: 'מוצאי יום טוב', source: 'מקור', polar: 'במקום וביום זה החמה אינה זורחת או אינה שוקעת.',
-    firstMention: 'מתחילים במוסף', lastMention: 'אומרים עד שחרית; ממוסף ואילך אין אומרים', israelOn: 'ארץ ישראל', diaspora: 'חוץ לארץ', inIsrael: 'בארץ ישראל', naAll: 'בכל תפלה ותפלה', arvithKippur: 'ערבית (ליל יום הכפורים)', inDiaspora: 'בחוץ לארץ', festReading: 'קריאת המועד',
+    firstMention: 'מתחילים במוסף', lastMention: 'אומרים עד שחרית; ממוסף ואלך אין אומרים', israelOn: 'ארץ ישראל', diaspora: 'חוץ לארץ', inIsrael: 'בארץ ישראל', naAll: 'בכל תפלה ותפלה', arvithKippur: 'ערבית (ליל יום הכפורים)', inDiaspora: 'בחוץ לארץ', festReading: 'קריאת המועד',
     splitPesah: 'בחוץ לארץ שבת זו היא אחרון של פסח וקוראים בענין המועד; בארץ ישראל קוראים את הפרשה הבאה.',
     splitShavuoth: 'בחוץ לארץ שבת זו היא יום טוב שני של שבעות וקוראים בענין המועד; בארץ ישראל קוראים את הפרשה הבאה.',
     rejoin: (d, p) => `הקריאה חוזרת להיות שוה אחרי ${d}, כשבחוץ לארץ מחברים ${p}.`,
@@ -480,7 +480,7 @@ function render() {
     let body;
     if (a.key === 'tenDays') body = `${heb('המלך הקדוש')} (${l.b3})` + (a.mishpat ? ` · ${heb('המלך המשפט')} (${l.b11}${a.mishpat !== a.scope && a.mishpat !== 'all' ? ', ' + lc(a.mishpat === 'tonight' ? l.scTonight : l.scUntilMinha) : ''})` : '');
     else if (a.key === 'yaale') body = `${heb('יעלה ויבוא')} (${l.aboda})`;
-    else body = `${heb('על הניסים')} (${l.hodaya})`;
+    else body = `${heb('על הנסים')} (${l.hodaya})`;
     if (a.scope === 'all') notes.push(body);
     else notes.push(HL(`${{ tonight: l.scTonight, untilMinha: l.scUntilMinha, untilNeila: l.scUntilNeila }[a.scope]}${COLON()} ${body}`));
   }

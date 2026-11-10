@@ -72,7 +72,7 @@ function hebFromRd(rd) {
   while (rd > rdFromHeb(y, m, monthLen(m, y))) m = (m === lastMonth(y)) ? 1 : m + 1;
   return { y, m, d: rd - rdFromHeb(y, m, 1) + 1 };
 }
-const MONTHS_HE = { 1: 'ניסן', 2: 'אייר', 3: 'סיון', 4: 'תמוז', 5: 'אב', 6: 'אלול', 7: 'תשרי', 8: 'מרחשון', 9: 'כסלו', 10: 'טבת', 11: 'שבט', 12: 'אדר', 13: 'אדר שני' };
+const MONTHS_HE = { 1: 'ניסן', 2: 'איר', 3: 'סיון', 4: 'תמוז', 5: 'אב', 6: 'אלול', 7: 'תשרי', 8: 'מרחשון', 9: 'כסלו', 10: 'טבת', 11: 'שבט', 12: 'אדר', 13: 'אדר שני' };
 const MONTHS_IT = { 1: 'Nisan', 2: 'Iyyar', 3: 'Siwan', 4: 'Tammuz', 5: 'Aḇ', 6: 'Elul', 7: 'Tishrì', 8: 'Marḥeshwan', 9: 'Kislew', 10: 'Ṭeḇeṯ', 11: 'Sheḇaṭ', 12: 'Aḏar', 13: 'Aḏar II' };
 // Romanizzazione: in italiano le parole tronche e piane hanno l'accento (à, è = seḡol, é = ṣeré, ì, ò, ù);
 // in inglese e francese le stesse forme senza accento (Minḥà → Minḥa)
@@ -118,7 +118,7 @@ const FASTS = [
 ];
 const MOVED = {
   post: { it: ' (rinviato a domenica)', he: ' (נדחה ליום ראשון)', en: ' (postponed to Sunday)', fr: ' (reporté au dimanche)' },
-  pre: { it: ' (anticipato a giovedì)', he: ' (מוקדם ליום חמישי)', en: ' (brought forward to Thursday)', fr: ' (avancé au jeudi)' }
+  pre: { it: ' (anticipato a giovedì)', he: ' (מקדם ליום חמישי)', en: ' (brought forward to Thursday)', fr: ' (avancé au jeudi)' }
 };
 // Lettura della Torà nei digiuni: «ויחל משה» a Shaḥriṯ e a Minḥà; il 9 di Aḇ a Shaḥriṯ «כי תוליד בנים»
 // 17 Tammuz: rito italiano come nel Maḥazor di Bologna 1540–41, di seguito senza saltare, «לפי שבי"ז בתמוז נשתברו הלוחות»;
@@ -434,7 +434,7 @@ function computeDay(rd, opt) {
   const ADD = {
     tenDays: i => i.m === 7 && i.d <= 10,          // 2:20: המלך הקדוש, המלך המשפט
     yaale: i => i.roshHodesh || i.holMoed,          // 2:12–13: יעלה ויבוא nella ʿAḇoḏà
-    nissim: i => i.hanukka || i.purim               // 2:15: על הניסים nella Hoḏayà
+    nissim: i => i.hanukka || i.purim               // 2:15: על הנסים nella Hoḏayà
   };
   res.amida = [];
   for (const key in ADD) {
