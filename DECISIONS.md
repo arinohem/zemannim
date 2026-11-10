@@ -20,7 +20,7 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | 1¼ hours before sunset | 10¾ hours (MT wording, not called פלג המנחה) | Tefilla 3:4: «עד שישאר מן היום שעה ורביע; ויש לו להתפלל אותה, עד שתשקע החמה» | MT |
 | Midnight | Midpoint sunset → next sunrise | Qeriʾath Shemaʿ 1:10 («חצי הלילה», undefined) | Inferred |
 | Candle lighting | **Not shown** | Shabbath 5:3: «מבעוד יום, קדם שקיעת החמה» (no minutes) | MT; Choice |
-| Sun | Sea level, no elevation (NOAA, zenith 90°50′) | Passages read say only «הנץ החמה» / «שקיעת החמה» | Choice |
+| Sun | Sea level, no elevation (NOAA, zenith 90°50′). Sunrise and sunset are those of the Sun's upper limb, the astronomical convention (USNO: 16′ apparent radius + 34′ refraction); kept by the owner, 2026-11-10 | The MT says only «הנץ החמה» / «שקיעת החמה» and does not say which part of the disc counts. Whole MT searched by vocabulary, 2026-11-10 (local mechon-mamre copy): no passage defines it. Nearest: ʿEḏuṯ 2:9 «שהדבר נכר לכל» | Choice |
 | "Fixed" intervals | 20/18 min are clock minutes | Text does not say equal vs seasonal | Choice |
 | Rounding | Prudent: deadlines down, beginnings up | Not an MT rule | Choice; **Setting** |
 | Removed | טלית ותפילין, רבינו תם, MG"A times, maqam, anything ʿOḇaḏya Yosef / Sephardi. Rule (owner, 2026-11-09): a time is shown only if the MT gives it. Talleth and tefillin: the MT gives only visual criteria, no interval, so not shown and not mentioned in the full notes | Ṣiṣith 3:8 «ומאימתי מברך על הציצית בשחר, משיכיר בין תכלת שבה ללבן שבה»; Tefillin 4:10 «ומאימתי זמן הנחתן--מכדי שיראה את חברו ברחוק ארבע אמות ויכירהו, עד שתשקע החמה». Rabbenu Tam and MG"A: not in the MT | MT; Choice |
