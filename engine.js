@@ -374,6 +374,8 @@ function computeDay(rd, opt) {
   T('netz', sr);
   T('shema', at(3));
   T('tefilla', at(4));
+  // 14 Nisan: dall'inizio della sesta ora il ḥameṣ è vietato anche al godimento (MT Ḥameṣ u-Maṣṣà 1:9–10)
+  if (info.m === 1 && info.d === 14) T('hametz', at(5));
   if (info.musaf) T('musaf', at(7));
   T('hatzot', at(6));
   T('minhaG', at(6.5));
@@ -393,6 +395,16 @@ function computeDay(rd, opt) {
   // ʿArḇiṯ appartiene al giorno ebraico che comincia la sera: si fa solo la sera che apre Yom ha-Kippurim.
   res.na = info.yomKippur ? { all: true, shahrith: true, minha: true, arvith: false } :
     { shahrith: !festive, minha: !festive && !ereb, arvith: tomorrow.yomKippur };
+
+  // Ḥameṣ (MT Ḥameṣ u-Maṣṣà 2:3, 3:3). La ricerca si fa all'inizio della notte del 14 Nisan; se il 14 cade
+  // di Shabbaṯ, nella notte del 13 (giovedì sera), e il ḥameṣ si elimina prima dello Shabbaṯ, tranne quello
+  // da mangiare fino alle 4 ore. Si mostra il giorno civile la cui sera apre la notte della ricerca.
+  const eve14 = rdFromHeb(res.heb.y, 1, 14), eveShabb = weekday(eve14) === 6;
+  res.hametz = { day: rd === eve14, shabbath: rd === eve14 && eveShabb,
+    searchTonight: rd === eve14 - (eveShabb ? 2 : 1), beforeShabbath: eveShabb && rd === eve14 - 1 };
+
+  // Benedizione della luna (MT Beraḵoṯ 10:18–19 [16–17]): la sera che apre il giorno 1 del mese
+  res.moonFirst = hebFromRd(rd + 1).d === 1;
 
   // Pioggia (Tefillà 2:17–19; formula secondo il rito italiano)
   const { y, m, d } = res.heb;

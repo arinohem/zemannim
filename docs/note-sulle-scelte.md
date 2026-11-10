@@ -20,6 +20,18 @@ Un’ora e un quinto di ore stagionali del giorno prima del sorgere del sole: «
 
 Shemaʿ del mattino: fino alla fine della 3ª ora, «עד סוף שלוש שעות ביום» (Qeriʾaṯ Shemaʿ 1:12–14 [11–13]). Shaḥriṯ: fino alla fine della 4ª ora, «עד סוף שעה רביעית» (Tefillà 3:1). Musaf, nei giorni in cui si dice: fino alla fine della 7ª ora, «עד שבע שעות ביום»; chi prega dopo esce d’obbligo, pur essendo in difetto: «אף על פי שפשע, יצא ידי חובתו, מפני שזמנה כל היום» (3:5). Mezzogiorno: fine della 6ª ora, «חצות היום» (3:1). Minḥà geḏolà da 6½ ore; qeṭannà da 9½ «עד שישאר מן היום שעה ורביע», ma si può recitare Minḥà «עד שתשקע החמה» (3:2, 3:4). Mezzanotte: termine preferibile dello Shemaʿ della sera, «עד חצי הלילה» (Qeriʾaṯ Shemaʿ 1:10 [9]); il MT non la definisce, e la calcoliamo a metà fra il tramonto e il sorgere del sole.
 
+## Ḥameṣ la vigilia di Pèsaḥ
+
+Il 14 di Nisan si può mangiare ḥameṣ fino alla fine della 4ª ora: «מתר לאכל חמץ ביום ארבעה עשר, עד סוף שעה רביעית; ואין אוכלין בשעה חמישית, אבל נהנין בו» (Ḥameṣ u-Maṣṣà 1:11 [10]). Dall’inizio della 6ª ora, cioè a 5 ore, è vietato anche trarne beneficio, per decreto dei soferim, e lo si brucia (1:9–10); entro quel momento va anche annullato (3:7). Da mezzogiorno il divieto è della Torà (1:8). La riga delle 5 ore compare solo quel giorno.
+
+La ricerca si fa «מתחלת ליל ארבעה עשר לאור הנר» (2:3). La nota compare il 13 senza un orario, perché il passo non dice quando comincia la notte.
+
+Se il 14 cade di Shabbaṯ, la ricerca si fa il giovedì sera e il ḥameṣ si elimina prima dello Shabbaṯ, tranne quello da mangiare fino alle 4 ore; ciò che avanza si annulla e si copre con un recipiente (3:3). Per lo Shabbaṯ il passo nomina solo le 4 ore; la riga delle 5 ore, che quel giorno indica il termine per l’annullamento, viene dalle regole generali (1:9; 3:7).
+
+## Neʿilà
+
+Non ha un orario: il MT dice solo che va conclusa poco prima del tramonto, «כדי שישלים אותה, סמוך לשקיעת החמה» (Tefillà 3:6; così anche 1:9 [7]). Il giorno di Kippur lo ricorda una dicitura sulla riga del tramonto.
+
 ## Accensione dei lumi
 
 Non mostrata: il MT dice solo «מבעוד יום, קדם שקיעת החמה» (Shabbaṯ 5:3), senza minuti.
@@ -28,7 +40,7 @@ Non mostrata: il MT dice solo «מבעוד יום, קדם שקיעת החמה» 
 
 Con l’arrotondamento prudente i termini finali sono arrotondati al minuto precedente, gli inizi al minuto seguente. Non è una regola del MT.
 
-Al minuto precedente vanno i termini per lo Shemaʿ del mattino, per Shaḥriṯ, e per Musaf, mezzogiorno, il termine per la minḥà qeṭannà, il tramonto, e la mezzanotte. Al minuto seguente vanno ʿaloṯ ha-shàḥar, minḥà geḏolà, minḥà qeṭannà, e ṣeṯ ha-koḵaḇim.
+Al minuto precedente vanno i termini per lo Shemaʿ del mattino, per Shaḥriṯ, e per Musaf, il termine delle 5 ore per il ḥameṣ, mezzogiorno, il termine per la minḥà qeṭannà, il tramonto, e la mezzanotte. Al minuto seguente vanno ʿaloṯ ha-shàḥar, minḥà geḏolà, minḥà qeṭannà, e ṣeṯ ha-koḵaḇim.
 
 Mezzogiorno è trattato come termine: fino a mezzogiorno chi ha lasciato passare le 4 ore può ancora recitare Shaḥriṯ (Tefillà 3:1), e da mezzogiorno la vigilia di Pèsaḥ il ḥameṣ è vietato (Ḥameṣ u-Maṣṣà 1:8). La mezzanotte è il termine preferibile per lo Shemaʿ della sera (Qeriʾaṯ Shemaʿ 1:10 [9]).
 
@@ -64,6 +76,10 @@ Le note che aprono o chiudono un cambio (menzione e richiesta della pioggia, agg
 ## Tequfà
 
 Si usa il cap. 9 di Qiddush ha-Ḥòḏesh (anno di 365¼ giorni, 9:1–2; tequfà di Nisan dell’anno 1 = 7 giorni, 9 ore e 642 ḥalaqim prima del molad, 9:3). Il cap. 10 (365 giorni, 5 ore, 997 ḥalaqim e 48 regaʿim, 10:1; 9 ore e 642 ḥalaqim prima del molad, 10:2 [3]) è detto «האמת יותר» (10:5 [6]) e anticipa la richiesta di circa 11 giorni (nel 2026 il 60° giorno cade il 24 novembre invece del 5 dicembre). Entrambi i calcoli sono approssimati e seguono il moto medio del sole; la tequfà vera cade «בכמו שני ימים קדם שתי התקופות» (10:6 [7]). *Impostazione: cap. 9 / cap. 10.*
+
+## Benedizione della luna
+
+Chi vede la luna nuova, «הרואה לבנה בחדושה», recita la benedizione che si chiude «מחדש חדשים» (Beraḵoṯ 10:18 [16]). La benedizione va recitata appena si avvista la luna nuova, il prima possibile nel corso del mese. Chi non l’ha recitata la prima notte può farlo «עד ששה עשר יום בחדש, עד שתתמלא פגימתו» (10:19 [17]). La nota compare la sera che apre il giorno 1 del mese.
 
 ## Digiuni
 
