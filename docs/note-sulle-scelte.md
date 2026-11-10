@@ -54,6 +54,10 @@ Il sorgere del sole è arrotondato al minuto più vicino: è il momento in cui s
 
 Con l’impostazione spenta tutti gli orari sono arrotondati al minuto più vicino. *Impostazione: sì / no.*
 
+## Conto alla rovescia
+
+Nel giorno corrente, sotto il prossimo orario dell’elenco, l’app mostra il tempo che manca, al secondo. Il conto è riferito all’istante calcolato, mentre l’orario della riga è arrotondato al minuto: i due possono differire di meno di un minuto. Per un termine arrotondato al minuto precedente il conto finisce dopo il minuto mostrato (un tramonto calcolato alle 16:50:33 è mostrato 16:50, e il conto arriva a zero 33 secondi dopo le 16:50:00); per un inizio arrotondato al minuto seguente finisce prima. Chi si regola sull’orario mostrato resta dal lato prudente. Non è una regola del MT.
+
 ## Nefilaṯ appàyim
 
 Non si fa: Shabbaṯ, Yom Ṭoḇ e Ḥol ha-moʿeḏ («מועדות»), Rosh ha-Shanà, Rosh Ḥòḏesh, Ḥanukkà, Purim, Minḥà della vigilia di Shabbaṯ e di Yom Ṭoḇ (Tefillà 5:16 [15]). A ʿArḇiṯ non si fa, «ולא בערבית שבכל יום», anche se «יש יחידים שנופלין על פניהם, בערבית»; a Yom ha-Kippurim si fa «בכל תפלה ותפלה», e per questo ʿArḇiṯ compare solo quel giorno. In tutti gli altri giorni si fa, anche il 9 di Aḇ e a Minḥà della vigilia di Kippur: i «ימים טובים» sono i sei giorni elencati in Sheḇiṯaṯ Yom Ṭoḇ 1:1, tra cui Kippur non c’è, e Tefillà 5:16 [15] tratta Kippur come caso a sé.

@@ -34,7 +34,7 @@ const T = {
     tammuzNote: 'Rito italiano (Maḥazor di Bologna): si legge di seguito, senza saltare. Alcuni leggono come negli altri digiuni (<span lang="he">ויחל משה</span>, poi <span lang="he">פסל לך</span>), secondo il MT', fastOut: 'Fine del digiuno', reading: 'Lettura della Torà', both: 'Shaḥriṯ e Minḥà', av9In: 'Inizio di Tishʿà be-Aḇ',
     hamEat: 'Termine per mangiare ḥameṣ', hamEatShabb: 'Termine per mangiare ḥameṣ; ciò che avanza si annulla e si copre', hamTora: 'Da qui il ḥameṣ è vietato dalla Torà',
     hamSearch: 'Stasera, all’inizio della notte: ricerca del ḥameṣ', hamFriday: 'Prima dello Shabbaṯ si elimina il ḥameṣ, tranne quello da mangiare domani fino alle 4 ore',
-    hanLight: 'Accensione dei lumi di Ḥanukkà', hanFriday: 'I lumi di Ḥanukkà si accendono prima',
+    cdIn: 'tra', hanLight: 'Accensione dei lumi di Ḥanukkà', hanFriday: 'I lumi di Ḥanukkà si accendono prima',
     neila: 'Neʿilà si conclude poco prima',moonFirst: 'Da stasera: benedizione della luna (<span lang="he">מחדש חדשים</span>), da recitare appena si vede la luna nuova',
     omer: (n, w, d) => `ʿÒmer: stasera si conta il ${n}° giorno` + (w ? ` (${w} settiman${w > 1 ? 'e' : 'a'}${d ? ` e ${d} giorn${d > 1 ? 'i' : 'o'}` : ''})` : ''),
     title: 'Zemannim', subtitle: 'Orari halakhici secondo il Mishné Torà', today: 'Oggi', week: ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'],
@@ -62,7 +62,7 @@ const T = {
     tammuzNote: 'Italian rite (Bologna Maḥazor): read straight through, without skipping. Some read as on the other fasts (<span lang="he">ויחל משה</span>, then <span lang="he">פסל לך</span>), as in the MT', fastOut: 'Fast ends', reading: 'Tora reading', both: 'Shaḥriṯ and Minḥa', av9In: 'Tishʿa be-Aḇ begins',
     hamEat: 'Latest time for eating ḥameṣ', hamEatShabb: 'Latest time for eating ḥameṣ; what is left is annulled and covered', hamTora: 'From here ḥameṣ is forbidden by the Tora',
     hamSearch: 'Tonight, at the beginning of the night: search for ḥameṣ', hamFriday: 'Before Shabbaṯ the ḥameṣ is removed, except what will be eaten tomorrow until 4 hours',
-    hanLight: 'Lighting of the Ḥanukka lights', hanFriday: 'The Ḥanukka lights are lit before',
+    cdIn: 'in', hanLight: 'Lighting of the Ḥanukka lights', hanFriday: 'The Ḥanukka lights are lit before',
     neila: 'Neʿila is completed shortly before',moonFirst: 'From tonight: blessing on the moon (<span lang="he">מחדש חדשים</span>), to be recited as soon as the new moon is seen',
     omer: (n, w, d) => `ʿOmer: tonight is day ${n}` + (w ? ` (${w} week${w > 1 ? 's' : ''}${d ? ` and ${d} day${d > 1 ? 's' : ''}` : ''})` : ''),
     title: 'Zemannim', subtitle: 'Halakhic times according to the Mishne Tora', today: 'Today', week: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -90,7 +90,7 @@ const T = {
     tammuzNote: 'Rite italien (Maḥazor de Bologne) : on lit à la suite, sans sauter. Certains lisent comme les autres jeûnes (<span lang="he">ויחל משה</span>, puis <span lang="he">פסל לך</span>), comme le MT', fastOut: 'Fin du jeûne', reading: 'Lecture de la Tora', both: 'Shaḥriṯ et Minḥa', av9In: 'Début de Tishʿa be-Aḇ',
     hamEat: 'Heure limite pour manger du ḥameṣ', hamEatShabb: 'Heure limite pour manger du ḥameṣ ; ce qui reste est annulé et recouvert', hamTora: 'À partir d’ici le ḥameṣ est interdit par la Tora',
     hamSearch: 'Ce soir, au début de la nuit : recherche du ḥameṣ', hamFriday: 'Avant le Shabbaṯ on élimine le ḥameṣ, sauf celui que l’on mangera demain jusqu’à 4 heures',
-    hanLight: 'Allumage des lumières de Ḥanukka', hanFriday: 'Les lumières de Ḥanukka s’allument avant',
+    cdIn: 'dans', hanLight: 'Allumage des lumières de Ḥanukka', hanFriday: 'Les lumières de Ḥanukka s’allument avant',
     neila: 'La Neʿila s’achève peu avant',moonFirst: 'À partir de ce soir : bénédiction de la lune (<span lang="he">מחדש חדשים</span>), à réciter dès que l’on voit la nouvelle lune',
     omer: (n, w, d) => `ʿOmer : ce soir, ${n === 1 ? '1er' : n + 'e'} jour` + (w ? ` (${w} semaine${w > 1 ? 's' : ''}${d ? ` et ${d} jour${d > 1 ? 's' : ''}` : ''})` : ''),
     title: 'Zemannim', subtitle: 'Horaires halakhiques selon le Mishne Tora', today: 'Aujourd’hui', week: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
@@ -118,7 +118,7 @@ const T = {
     tammuzNote: 'מנהג ק״ק איטאליאני (מחזור בולוניה): קורים הכל על הסדר ואין מדלגים. ויש שקורים כשאר תעניות (ויחל משה ופסל לך), כמשנה תורה', fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחלת תשעה באב',
     hamEat: 'סוף זמן אכילת חמץ', hamEatShabb: 'סוף זמן אכילת חמץ; הנשאר מבטלים אותו וכופים עליו כלי', hamTora: 'מכאן החמץ אסור מן התורה',
     hamSearch: 'הלילה, מתחלת הלילה: בדיקת חמץ', hamFriday: 'מבערים את החמץ מלפני השבת, חוץ ממה שאוכלים למחר עד ארבע שעות',
-    hanLight: 'הדלקת נרות חנכה', hanFriday: 'מדליקים נרות חנכה קדם לכן',
+    cdIn: 'בעוד', hanLight: 'הדלקת נרות חנכה', hanFriday: 'מדליקים נרות חנכה קדם לכן',
     neila: 'משלימים תפלת נעילה סמוך לשקיעת החמה',moonFirst: 'מהלילה: ברכת הלבנה (מחדש חדשים); מברכים כשרואים את הלבנה בחדושה',
     omer: (n, w, d) => `ספירת העמר: הלילה יום ${E.hebNumeral(n)}` + (w ? `, ${w === 1 ? 'שבוע אחד' : E.hebNumeral(w) + ' שבועות'}${d ? ' ו' + (d === 1 ? 'יום אחד' : E.hebNumeral(d) + ' ימים') : ''}` : ''),
     title: 'זמנים', subtitle: 'זמני ההלכה על פי משנה תורה', today: 'היום', week: ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום ששי', 'שבת'],
@@ -360,6 +360,14 @@ function fmtTime(date, kind) {
     return new Date(ms).toLocaleTimeString(LOCALE[S.lang], { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: S.place.tz || undefined });
   } catch (e) { return new Date(ms).toTimeString().slice(0, 5); }
 }
+// Conto alla rovescia verso il prossimo orario: all'istante calcolato, al secondo, non al minuto arrotondato
+// mostrato nella riga (scelta del curatore, 2026-11-10)
+function cdText(target) {
+  const s = Math.max(0, Math.ceil((target - Date.now()) / 1000));
+  const p = n => String(n).padStart(2, '0');
+  const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60);
+  return `${L().cdIn} <bdi>${h ? h + ':' + p(m) : m}:${p(s % 60)}</bdi>`;
+}
 function hebDateStr(h) {
   return S.lang === 'he'
     ? E.hebNumeral(h.d) + ' ' + E.monthName(h.m, h.y, 'he') + ' ' + E.hebNumeral(h.y)
@@ -515,7 +523,7 @@ function render() {
       // Tishʿà be-Aḇ comincia la sera: «בין השמשות שלו, אסור כיום הכיפורים» (Taʿaniyyoṯ 5:7)
       if (t.key === 'shqia' && tomorrow.fast && tomorrow.fast.key === 'av9') extra = (extra ? extra + ' · ' : '') + l.av9In;
       html += `<details class="row${i === nextIdx ? ' next' : ''}"><summary>
-        <span class="t">${fmtTime(t.date, z.r)}${i === nextIdx ? ' ◂' : ''}</span>
+        <span class="t">${fmtTime(t.date, z.r)}${i === nextIdx ? ` ◂<span class="cd" id="cd" data-t="${t.date.getTime()}">${cdText(t.date.getTime())}</span>` : ''}</span>
         <span class="z"><span class="zhe" lang="he" dir="rtl">${z.he}</span>${cap() ? `<span class="zit">${z[S.lang]}</span>` : ''}${extra ? `<span class="tag">${extra}</span>` : ''}</span>
         </summary><div class="src">${l.source}${COLON()} ${esc(srcText(z))}${t.key === 'tzeth' ? ` · ${S.tzeth} min` : ''}</div></details>`;
     });
@@ -628,6 +636,13 @@ document.getElementById('main').addEventListener('touchend', e => {
   if (Math.abs(dx) > 70) { current += (dx < 0 ? 1 : -1) * (S.lang === 'he' ? -1 : 1); render(); }
 });
 setInterval(() => { if (!document.getElementById('sheet').classList.contains('open')) render(); }, 60000);
+// Ogni secondo si aggiorna solo il conto alla rovescia; all'istante dell'orario si ridisegna, e la riga seguente diventa la prossima
+setInterval(() => {
+  const cd = document.getElementById('cd');
+  if (!cd) return;
+  if (Date.now() >= +cd.dataset.t) { if (!document.getElementById('sheet').classList.contains('open')) render(); }
+  else cd.innerHTML = cdText(+cd.dataset.t);
+}, 1000);
 render();
 
 // Lavoratore per l'uso senza rete (funziona solo se la pagina è ospitata normalmente, non come anteprima)
