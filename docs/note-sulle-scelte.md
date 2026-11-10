@@ -18,7 +18,7 @@ Un’ora e un quinto di ore stagionali del giorno prima del sorgere del sole: «
 
 ## Orari del giorno
 
-Shemaʿ del mattino: fino alla fine della 3ª ora, «עד סוף שלוש שעות ביום» (Qeriʾaṯ Shemaʿ 1:12–14 [11–13]). Shaḥriṯ: fino alla fine della 4ª ora, «עד סוף שעה רביעית» (Tefillà 3:1). Musaf, nei giorni in cui si dice: fino alla fine della 7ª ora, «עד שבע שעות ביום» (3:5). Mezzogiorno: fine della 6ª ora, «חצות היום» (3:1). Minḥà geḏolà da 6½ ore; qeṭannà da 9½ «עד שישאר מן היום שעה ורביע», ma si può recitare Minḥà «עד שתשקע החמה» (3:2, 3:4). Mezzanotte: termine preferibile dello Shemaʿ della sera, «עד חצי הלילה» (Qeriʾaṯ Shemaʿ 1:10 [9]); il MT non la definisce, e la calcoliamo a metà fra il tramonto e il sorgere del sole.
+Shemaʿ del mattino: fino alla fine della 3ª ora, «עד סוף שלוש שעות ביום» (Qeriʾaṯ Shemaʿ 1:12–14 [11–13]). Shaḥriṯ: fino alla fine della 4ª ora, «עד סוף שעה רביעית» (Tefillà 3:1). Musaf, nei giorni in cui si dice: fino alla fine della 7ª ora, «עד שבע שעות ביום»; chi prega dopo esce d’obbligo, pur essendo in difetto: «אף על פי שפשע, יצא ידי חובתו, מפני שזמנה כל היום» (3:5). Mezzogiorno: fine della 6ª ora, «חצות היום» (3:1). Minḥà geḏolà da 6½ ore; qeṭannà da 9½ «עד שישאר מן היום שעה ורביע», ma si può recitare Minḥà «עד שתשקע החמה» (3:2, 3:4). Mezzanotte: termine preferibile dello Shemaʿ della sera, «עד חצי הלילה» (Qeriʾaṯ Shemaʿ 1:10 [9]); il MT non la definisce, e la calcoliamo a metà fra il tramonto e il sorgere del sole.
 
 ## Accensione dei lumi
 

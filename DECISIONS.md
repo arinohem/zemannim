@@ -14,7 +14,7 @@ Halakha numbers follow mechon-mamre.org; where they differ from the printed edit
 | ʿAloth ha-shaḥar | 1.2 seasonal *day* hours before sunrise | Comm. Berakhoth 1:1: «בכדי שעה וחומש שעה מן השעות הזמניות». The MT uses dawn only as a limit (Qeriʾath Shemaʿ 1:10–13; Tefilla 3:6–7) without an interval in the chapters read. Day hours: seasonal hours are by definition day hours; at night there are only fixed hours of 60 minutes, since no sundial can measure them (owner, 2026-11-09) | Comm.; Inferred; Choice; **Setting** (show/hide) |
 | End of morning Shemaʿ | 3 hours | Qeriʾath Shemaʿ 1:12–14 | MT |
 | End of Shaḥrith | 4 hours | Tefilla 3:1 | MT |
-| End of Musaf (only on Musaf days) | 7 hours | Tefilla 3:5 | MT |
+| End of Musaf (only on Musaf days) | 7 hours. Whoever prays later has fulfilled the obligation, though at fault: «אף על פי שפשע--יצא ידי חובתו, מפני שזמנה כל היום»; the MT says «כל היום» and does not name sunset. The app shows only the 7-hour deadline; the source line and the notes add the rest (owner, 2026-11-10; «פשע» = Italian «pur essendo in difetto», English «though at fault», French «bien qu’en faute») | Tefilla 3:5 | MT |
 | Midday | 6 hours | Tefilla 3:1 («עד חצות היום»; before 2026-11-09 cited from 3:9, «חצי היום», which concerns making up a missed prayer) | MT |
 | Minḥa geḏola / qeṭanna | 6½ / 9½ hours | Tefilla 3:2, 3:4 | MT |
 | 1¼ hours before sunset | 10¾ hours (MT wording, not called פלג המנחה) | Tefilla 3:4: «עד שישאר מן היום שעה ורביע; ויש לו להתפלל אותה, עד שתשקע החמה» | MT |
