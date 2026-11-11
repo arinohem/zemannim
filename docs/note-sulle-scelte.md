@@ -165,6 +165,8 @@ Per i luoghi senza regole (Paesi Bassi, Fiandre, Portogallo, Brasile, Lussemburg
 
 Il nome trovato si può correggere a mano, in caratteri latini e in ebraico; il nome ebraico si ricalcola dal nome latino finché non lo si corregge. A parte, e spenta in partenza, c’è la ricerca del nome in rete su OpenStreetMap (dati © OpenStreetMap, licenza ODbL), che manda la posizione arrotondata a circa 1 km; se la località trovata è anche nell’elenco incluso, valgono i dati dell’elenco (forme tradizionali, pronuncia, z e s). *Impostazioni: nome del luogo e nome in ebraico; ricerca in rete sì / no.*
 
+Il luogo segue la posizione del telefono: all’apertura, e ogni volta che l’app torna in primo piano, la posizione viene riletta, e il luogo cambia se ci si è spostati di oltre 5 km o se è cambiato il fuso orario. Se il telefono nega il permesso, l’impostazione si spegne. Si può scegliere dall’elenco un’altra città per vederne gli orari: l’app resta su quella finché non si tocca «Torna alla mia posizione». *Impostazione: sì / no.*
+
 ## Fuso orario
 
 Per le città dell’elenco nelle impostazioni si usa il fuso orario della città; con «Usa la mia posizione», quello del dispositivo. L’ora legale segue le regole del fuso, e il fuso usato è indicato in fondo alla pagina del giorno.

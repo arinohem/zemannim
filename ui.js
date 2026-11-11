@@ -9,6 +9,8 @@ const DEFAULTS = {
   translit: 'digraph', // כ e ת refuyyoṯ: 'digraph' = kh, th; 'line' = ḵ, ṯ
   beth: 'line',        // ב refuyyà: 'line' = ḇ; 'v' = v
   netLookup: false,    // nome del luogo cercato in rete (OpenStreetMap); spento in partenza
+  autoLoc: true,       // posizione automatica: il luogo segue il telefono (oltre 5 km di spostamento)
+  away: false,         // con la posizione automatica: si sta guardando un'altra città, scelta dall'elenco
   place: { name: 'Ferrara', lat: 44.8378, lon: 11.6198, tz: 'Europe/Rome' }
 };
 let S = Object.assign({}, DEFAULTS);
@@ -57,7 +59,8 @@ const T = {
     splitShavuoth: 'Nella diaspora questo sabato è il secondo giorno di Shaḇuʿoṯ, con la lettura della festa; in Israele si legge la parashà seguente.',
     rejoin: (d, p) => `Le letture tornano a coincidere dopo il ${d}, quando nella diaspora si leggono insieme ${p}.`,
     rejoinNow: p => `Questo sabato nella diaspora si leggono insieme ${p}; dal sabato seguente la lettura è di nuovo la stessa.`,
-    translitLbl: 'Traslitterazione di כ e ת', bethLbl: 'Traslitterazione di ב', tequfa: 'tequfà secondo il', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico', nameLatin: 'Nome del luogo', nameHeb: 'Nome in ebraico', save: 'Salva', placeNote: 'Nome trovato con la posizione; si può correggere.', netLbl: 'Cerca il nome del luogo in rete (OpenStreetMap)', netNote: 'Manda la posizione, arrotondata a circa 1 km, a OpenStreetMap; senza rete si usa l’elenco incluso.'
+    translitLbl: 'Traslitterazione di כ e ת', bethLbl: 'Traslitterazione di ב', tequfa: 'tequfà secondo il', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico', nameLatin: 'Nome del luogo', nameHeb: 'Nome in ebraico', save: 'Salva', placeNote: 'Nome trovato con la posizione; si può correggere.', autoLocLbl: 'Posizione automatica', autoLocNote: 'Il luogo segue la posizione del telefono e cambia se ci si sposta di oltre 5 km. Si può scegliere un’altra città per vederne gli orari, e poi tornare alla propria posizione.', backLoc: 'Torna alla mia posizione',
+    netLbl: 'Cerca il nome del luogo in rete (OpenStreetMap)', netNote: 'Manda la posizione, arrotondata a circa 1 km, a OpenStreetMap; senza rete si usa l’elenco incluso.'
   },
   en: {
     tammuzNote: 'Italian rite (Bologna Maḥazor): read straight through, without skipping. Some read as on the other fasts (<span lang="he">ויחל משה</span>, then <span lang="he">פסל לך</span>), as in the MT', fastOut: 'Fast ends', reading: 'Tora reading', both: 'Shaḥriṯ and Minḥa', av9In: 'Tishʿa be-Aḇ begins',
@@ -86,7 +89,8 @@ const T = {
     splitShavuoth: 'In the diaspora this Shabbaṯ is the second day of Shaḇuʿoṯ and the festival portion is read; in Israel the next parasha is read.',
     rejoin: (d, p) => `The readings coincide again after ${d}, when the diaspora reads ${p} together.`,
     rejoinNow: p => `This Shabbaṯ the diaspora reads ${p} together; from next Shabbaṯ the reading is the same again.`,
-    translitLbl: 'Romanization of כ and ת', bethLbl: 'Romanization of ב', tequfa: 'tequfa by', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only', nameLatin: 'Place name', nameHeb: 'Name in Hebrew', save: 'Save', placeNote: 'Name found from the location; it can be corrected.', netLbl: 'Look up the place name online (OpenStreetMap)', netNote: 'Sends the location, rounded to about 1 km, to OpenStreetMap; offline, the built-in list is used.'
+    translitLbl: 'Romanization of כ and ת', bethLbl: 'Romanization of ב', tequfa: 'tequfa by', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only', nameLatin: 'Place name', nameHeb: 'Name in Hebrew', save: 'Save', placeNote: 'Name found from the location; it can be corrected.', autoLocLbl: 'Automatic location', autoLocNote: 'The place follows the phone’s location and changes after a move of more than 5 km. Another city can be chosen to see its times, before going back to one’s own location.', backLoc: 'Back to my location',
+    netLbl: 'Look up the place name online (OpenStreetMap)', netNote: 'Sends the location, rounded to about 1 km, to OpenStreetMap; offline, the built-in list is used.'
   },
   fr: {
     tammuzNote: 'Rite italien (Maḥazor de Bologne) : on lit à la suite, sans sauter. Certains lisent comme les autres jeûnes (<span lang="he">ויחל משה</span>, puis <span lang="he">פסל לך</span>), comme le MT', fastOut: 'Fin du jeûne', reading: 'Lecture de la Tora', both: 'Shaḥriṯ et Minḥa', av9In: 'Début de Tishʿa be-Aḇ',
@@ -115,7 +119,8 @@ const T = {
     splitShavuoth: 'En diaspora, ce Shabbaṯ est le deuxième jour de Shaḇuʿoṯ, avec la lecture de la fête ; en Israël on lit la parasha suivante.',
     rejoin: (d, p) => `Les lectures coïncident de nouveau après le ${d}, quand la diaspora lit ensemble ${p}.`,
     rejoinNow: p => `Ce Shabbaṯ, la diaspora lit ensemble ${p} ; à partir du Shabbaṯ suivant la lecture est de nouveau la même.`,
-    translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa selon le', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul', nameLatin: 'Nom du lieu', nameHeb: 'Nom en hébreu', save: 'Enregistrer', placeNote: 'Nom trouvé à partir de la position ; on peut le corriger.', netLbl: 'Chercher le nom du lieu en ligne (OpenStreetMap)', netNote: 'Envoie la position, arrondie à 1 km environ, à OpenStreetMap ; hors ligne, la liste intégrée est utilisée.'
+    translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa selon le', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul', nameLatin: 'Nom du lieu', nameHeb: 'Nom en hébreu', save: 'Enregistrer', placeNote: 'Nom trouvé à partir de la position ; on peut le corriger.', autoLocLbl: 'Position automatique', autoLocNote: 'Le lieu suit la position du téléphone et change après un déplacement de plus de 5 km. On peut choisir une autre ville pour en voir les heures, puis revenir à sa position.', backLoc: 'Revenir à ma position',
+    netLbl: 'Chercher le nom du lieu en ligne (OpenStreetMap)', netNote: 'Envoie la position, arrondie à 1 km environ, à OpenStreetMap ; hors ligne, la liste intégrée est utilisée.'
   },
   he: {
     tammuzNote: 'מנהג ק״ק איטאליאני (מחזור בולוניה): קוראים הכל על הסדר ואין מדלגים. ויש שקוראים כשאר תעניות (ויחל משה ופסל לך), כמשנה תורה', fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחלת תשעה באב',
@@ -144,7 +149,8 @@ const T = {
     splitShavuoth: 'בחוץ לארץ שבת זו היא יום טוב שני של שבעות וקוראים בענין המועד; בארץ ישראל קוראים את הפרשה הבאה.',
     rejoin: (d, p) => `הקריאה חוזרת להיות שוה אחרי ${d}, כשבחוץ לארץ מחברים ${p}.`,
     rejoinNow: p => `בשבת זו מחברים בחוץ לארץ ${p}; מן השבת הבאה הקריאה שוה שוב.`,
-    translitLbl: 'תעתיק של כ ושל ת', bethLbl: 'תעתיק של ב', chapter: 'פרק', langLbl2: 'שפה (נוסף על העברית)', hebOnly: 'עברית בלבד', nameLatin: 'שם המקום באותיות לטיניות', nameHeb: 'שם המקום בעברית', save: 'שמור', placeNote: 'השם נמצא לפי המיקום; אפשר לתקנו.', netLbl: 'חפש את שם המקום ברשת (OpenStreetMap)', netNote: 'שולח את המיקום, בעיגול לכקילומטר, אל OpenStreetMap; בלי רשת משתמשים ברשימה שבתוך היישום.'
+    translitLbl: 'תעתיק של כ ושל ת', bethLbl: 'תעתיק של ב', chapter: 'פרק', langLbl2: 'שפה (נוסף על העברית)', hebOnly: 'עברית בלבד', nameLatin: 'שם המקום באותיות לטיניות', nameHeb: 'שם המקום בעברית', save: 'שמור', placeNote: 'השם נמצא לפי המיקום; אפשר לתקנו.', autoLocLbl: 'מיקום אוטומטי', autoLocNote: 'המקום נקבע לפי מיקום הטלפון ומשתנה כשמתרחקים יותר מחמשה קילומטרים. אפשר לבחור עיר אחרת כדי לראות את זמניה, ולחזור אחר כך למיקום.', backLoc: 'חזרה למיקום שלי',
+    netLbl: 'חפש את שם המקום ברשת (OpenStreetMap)', netNote: 'שולח את המיקום, בעיגול לכקילומטר, אל OpenStreetMap; בלי רשת משתמשים ברשימה שבתוך היישום.'
   }
 };
 // 'he' = solo ebraico; 'it' / 'en' / 'fr' = ebraico con didascalie in quella lingua
@@ -160,25 +166,25 @@ const INSTALL = {
     iosAfter: 'L’icona compare nella schermata Home e l’app si apre a tutto schermo, come le altre.',
     androidSteps: [`Apri Chrome e vai all’indirizzo ${URL_APP}.`, 'Tocca il menu <b>⋮</b> in alto a destra.', 'Scegli <b>Installa app</b> oppure <b>Aggiungi a schermata Home</b>: il nome della voce cambia secondo la versione di Chrome.', 'Conferma con <b>Installa</b>.'],
     androidAfter: 'L’icona compare nella schermata Home e nell’elenco delle app. Con altri browser, come Samsung Internet o Firefox, la voce si trova in un menu simile.',
-    bothItems: ['<b>Posizione:</b> la prima volta che usi «Usa la mia posizione», il telefono chiede il permesso di accedervi. Se lo neghi, puoi sempre scegliere il luogo dall’elenco delle città.', '<b>Senza rete:</b> dopo la prima apertura l’app funziona anche senza connessione.', '<b>Aggiornamenti:</b> arrivano da soli quando l’app viene aperta con la connessione attiva. Una nuova icona, invece, compare di solito solo dopo aver tolto l’app dalla schermata Home e averla aggiunta di nuovo.'] },
+    bothItems: ['<b>Posizione:</b> alla prima apertura il telefono chiede il permesso di usare la posizione. Se lo neghi, puoi sempre scegliere il luogo dall’elenco delle città.', '<b>Senza rete:</b> dopo la prima apertura l’app funziona anche senza connessione.', '<b>Aggiornamenti:</b> arrivano da soli quando l’app viene aperta con la connessione attiva. Una nuova icona, invece, compare di solito solo dopo aver tolto l’app dalla schermata Home e averla aggiunta di nuovo.'] },
   en: { title: 'Installation', ios: 'iPhone (iOS)', android: 'Android', both: 'On both systems', other: 'Instructions for the other system',
     iosSteps: [`Open Safari and go to ${URL_APP}.`, 'Tap the <b>Share</b> button (the square with an upward arrow). In recent versions of iOS, if it is not in the bar, it is in the <b>⋯</b> menu.', 'Scroll down the menu and choose <b>Add to Home Screen</b>.', 'Keep the suggested name, “Zemannim”, and tap <b>Add</b>.'],
     iosAfter: 'The icon appears on the Home Screen, and the app opens full screen, like the others.',
     androidSteps: [`Open Chrome and go to ${URL_APP}.`, 'Tap the <b>⋮</b> menu at the top right.', 'Choose <b>Install app</b> or <b>Add to Home screen</b>: the name of the item depends on the version of Chrome.', 'Confirm with <b>Install</b>.'],
     androidAfter: 'The icon appears on the Home screen and in the list of apps. Other browsers, such as Samsung Internet or Firefox, have the item in a similar menu.',
-    bothItems: ['<b>Location:</b> the first time you use “Use my location”, the phone asks for permission. If you refuse, you can still choose the place from the list of cities.', '<b>Offline:</b> after the first opening, the app also works without a connection.', '<b>Updates:</b> they arrive by themselves when the app is opened online. A new icon, however, usually appears only after removing the app from the Home Screen and adding it again.'] },
+    bothItems: ['<b>Location:</b> the first time the app is opened, the phone asks for permission to use the location. If you refuse, you can still choose the place from the list of cities.', '<b>Offline:</b> after the first opening, the app also works without a connection.', '<b>Updates:</b> they arrive by themselves when the app is opened online. A new icon, however, usually appears only after removing the app from the Home Screen and adding it again.'] },
   fr: { title: 'Installation', ios: 'iPhone (iOS)', android: 'Android', both: 'Sur les deux systèmes', other: 'Instructions pour l’autre système',
     iosSteps: [`Ouvrez Safari et allez à l’adresse ${URL_APP}.`, 'Touchez le bouton <b>Partager</b> (le carré avec une flèche vers le haut). Dans les versions récentes d’iOS, s’il n’est pas dans la barre, il se trouve dans le menu <b>⋯</b>.', 'Faites défiler le menu et choisissez <b>Sur l’écran d’accueil</b>.', 'Gardez le nom proposé, « Zemannim », et touchez <b>Ajouter</b>.'],
     iosAfter: 'L’icône apparaît sur l’écran d’accueil et l’app s’ouvre en plein écran, comme les autres.',
     androidSteps: [`Ouvrez Chrome et allez à l’adresse ${URL_APP}.`, 'Touchez le menu <b>⋮</b> en haut à droite.', 'Choisissez <b>Installer l’application</b> ou <b>Ajouter à l’écran d’accueil</b> : le nom de l’option dépend de la version de Chrome.', 'Confirmez avec <b>Installer</b>.'],
     androidAfter: 'L’icône apparaît sur l’écran d’accueil et dans la liste des applications. Dans d’autres navigateurs, comme Samsung Internet ou Firefox, l’option se trouve dans un menu semblable.',
-    bothItems: ['<b>Position :</b> la première fois que vous utilisez « Utiliser ma position », le téléphone demande l’autorisation. Si vous la refusez, vous pouvez toujours choisir le lieu dans la liste des villes.', '<b>Hors ligne :</b> après la première ouverture, l’app fonctionne aussi sans connexion.', '<b>Mises à jour :</b> elles arrivent d’elles-mêmes quand l’app est ouverte en ligne. Une nouvelle icône, en revanche, n’apparaît en général qu’après avoir retiré l’app de l’écran d’accueil et l’avoir ajoutée de nouveau.'] },
+    bothItems: ['<b>Position :</b> à la première ouverture, le téléphone demande l’autorisation d’utiliser la position. Si vous la refusez, vous pouvez toujours choisir le lieu dans la liste des villes.', '<b>Hors ligne :</b> après la première ouverture, l’app fonctionne aussi sans connexion.', '<b>Mises à jour :</b> elles arrivent d’elles-mêmes quand l’app est ouverte en ligne. Une nouvelle icône, en revanche, n’apparaît en général qu’après avoir retiré l’app de l’écran d’accueil et l’avoir ajoutée de nouveau.'] },
   he: { title: 'התקנה', ios: 'iPhone (iOS)', android: 'Android', both: 'בשתי המערכות', other: 'הוראות למערכת האחרת',
     iosSteps: [`פתח את Safari ועבור לכתובת <span dir="ltr">${URL_APP}</span>.`, 'לחץ על כפתור <b>שיתוף</b> (הריבוע עם החץ כלפי מעלה). בגרסאות החדשות של iOS, אם אינו בסרגל, הוא נמצא בתפריט <b>⋯</b>.', 'גלול בתפריט ובחר <b>הוספה למסך הבית</b>.', 'השאר את השם המוצע, <span dir="ltr">Zemannim</span>, ולחץ <b>הוספה</b>.'],
     iosAfter: 'הסמל מופיע במסך הבית, והיישום נפתח במסך מלא כשאר היישומים.',
     androidSteps: [`פתח את Chrome ועבור לכתובת <span dir="ltr">${URL_APP}</span>.`, 'לחץ על התפריט <b>⋮</b> שבראש המסך.', 'בחר <b>התקנת האפליקציה</b> או <b>הוספה למסך הבית</b>: שם האפשרות משתנה לפי גרסת Chrome.', 'אשר בלחיצה על <b>התקנה</b>.'],
     androidAfter: 'הסמל מופיע במסך הבית וברשימת היישומים. בדפדפנים אחרים, כגון Samsung Internet או Firefox, האפשרות נמצאת בתפריט דומה.',
-    bothItems: ['<b>מיקום:</b> בפעם הראשונה שמשתמשים ב«השתמש במיקום שלי» הטלפון מבקש רשות. אם לא נותנים אותה, אפשר תמיד לבחור את המקום מרשימת הערים.', '<b>בלי רשת:</b> אחרי הפתיחה הראשונה היישום פועל גם בלי חיבור.', '<b>עדכונים:</b> הם מגיעים מעצמם כשפותחים את היישום עם חיבור לרשת. אבל סמל חדש מופיע בדרך כלל רק אחרי שמסירים את היישום ממסך הבית ומוסיפים אותו מחדש.'] },
+    bothItems: ['<b>מיקום:</b> בפתיחה הראשונה הטלפון מבקש רשות להשתמש במיקום. אם לא נותנים אותה, אפשר תמיד לבחור את המקום מרשימת הערים.', '<b>בלי רשת:</b> אחרי הפתיחה הראשונה היישום פועל גם בלי חיבור.', '<b>עדכונים:</b> הם מגיעים מעצמם כשפותחים את היישום עם חיבור לרשת. אבל סמל חדש מופיע בדרך כלל רק אחרי שמסירים את היישום ממסך הבית ומוסיפים אותו מחדש.'] },
 };
 const isInstalled = () => (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true;
 const phoneOs = () => {
@@ -404,6 +410,7 @@ function render() {
 
   let html = '';
   html += `<button class="place" id="placeBtn">${esc(placeName(S.place.name))} · ${o.israel ? l.israelOn : l.diaspora}</button>`;
+  if (S.autoLoc && S.away) html += `<button class="back" id="backLoc">${l.backLoc}</button>`;
   html += `<section class="card date"><div class="wd">${l.week[wd]}${cap() ? ' / ' + T.he.week[wd] : ''}</div>
     <div class="big">${isToday ? l.today + ' – ' : ''}${gregStr(g)}</div>
     <div class="heb">${hebDateStr(h)}</div>
@@ -539,6 +546,8 @@ function render() {
   }
   document.getElementById('main').innerHTML = translit(html);
   document.getElementById('placeBtn').onclick = () => openSheet('settings');
+  const bl = document.getElementById('backLoc');
+  if (bl) bl.onclick = backToLocation;
   document.getElementById('dateInput').value = `${g.y}-${String(g.m).padStart(2, '0')}-${String(g.d).padStart(2, '0')}`;
   document.getElementById('appTitle').textContent = l.title;
   document.getElementById('appSub').textContent = l.subtitle;
@@ -563,6 +572,7 @@ function openSheet(which) {
       <label class="small">${l.nameHeb}<input class="field" id="pHeb" dir="rtl" lang="he" value="${esc(pl.names.he || '')}"></label>
       <button class="wide" id="pSave">${l.save}</button>`;
     html += `<button class="wide" id="gps">${l.useGps}</button><p class="small" id="gpsMsg"></p>
+      <h3>${l.autoLocLbl}</h3>${seg('autoLoc', S.autoLoc, [[true, l.on], [false, l.off]])}<p class="small">${l.autoLocNote}</p>
       <select id="city">${pl.auto ? '<option selected disabled>—</option>' : ''}${CITIES.map((c, i) => `<option value="${i}" ${!pl.auto && c[0] === pl.name ? 'selected' : ''}>${esc(PLACE_NAMES[c[0]] && PLACE_NAMES[c[0]][S.lang] || c[0])}</option>`).join('')}</select>
       <h3>${l.netLbl}</h3>${seg('netLookup', S.netLookup, [[true, l.on], [false, l.off]])}<p class="small">${l.netNote}</p>
       <h3>${cap() ? l.langLbl2 : l.langLbl}</h3>${seg('lang', S.lang, [['it', 'Italiano'], ['en', 'English'], ['fr', 'Français'], ['he', T.he.hebOnly]])}
@@ -586,14 +596,21 @@ function openSheet(which) {
   }
   sh.innerHTML = translit(html);
   sh.classList.add('open');
-  document.getElementById('closeSheet').onclick = () => sh.classList.remove('open');
+  document.getElementById('closeSheet').onclick = () => { sh.classList.remove('open'); render(); };
   sh.querySelectorAll('.seg button').forEach(b => b.onclick = () => {
     const name = b.parentNode.dataset.name; let v = b.dataset.v;
     if (v === 'true') v = true; else if (v === 'false') v = false; else if (/^\d+$/.test(v)) v = +v;
-    S[name] = v; save(); render(); openSheet('settings');
+    S[name] = v;
+    if (name === 'autoLoc') { S.away = false; delete S.home; }
+    save(); render(); openSheet('settings');
+    if (name === 'autoLoc' && v) refreshLocation(true);
   });
   const city = document.getElementById('city');
-  if (city) city.onchange = () => { const c = CITIES[+city.value]; S.place = { name: c[0], lat: c[1], lon: c[2], tz: c[3] }; save(); current = todayRd(); render(); openSheet('settings'); };
+  if (city) city.onchange = () => { const c = CITIES[+city.value]; 
+    // Con la posizione automatica la città scelta è un'altra città da guardare: il luogo del telefono si conserva
+    // per il ritorno, e la data scelta resta (scelte del curatore, 2026-11-11)
+    if (S.autoLoc) { if (!S.away && S.place.auto) S.home = S.place; S.away = true; }
+    S.place = { name: c[0], lat: c[1], lon: c[2], tz: c[3] }; save(); if (!S.autoLoc) current = todayRd(); render(); openSheet('settings'); };
   const gps = document.getElementById('gps');
   if (gps) gps.onclick = () => {
     const msg = document.getElementById('gpsMsg');
@@ -603,7 +620,8 @@ function openSheet(which) {
       let tz; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) {}
       const lat = p.coords.latitude, lon = p.coords.longitude;
       locate(lat, lon, tz).then(found => {
-        S.place = found || { name: 'Posizione attuale', lat, lon, tz };
+        S.place = found || { name: 'Posizione attuale', lat, lon, tz, auto: true };
+        S.away = false; delete S.home;
         save(); current = todayRd(); render(); openSheet('settings');
       });
     }, () => { msg.textContent = l.gpsFail; }, { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 });
@@ -641,6 +659,39 @@ document.getElementById('main').addEventListener('touchend', e => {
   if (tx === null) return; const dx = e.changedTouches[0].clientX - tx; tx = null;
   if (Math.abs(dx) > 70) { current += (dx < 0 ? 1 : -1) * (S.lang === 'he' ? -1 : 1); render(); }
 });
+// Posizione automatica (predefinita; scelte del curatore, 2026-11-11): il luogo segue il telefono. La posizione si
+// rilegge all'apertura e al ritorno in primo piano; un luogo già preso dal telefono cambia solo oltre 5 km (o se
+// cambia il fuso), così il nome non oscilla e un nome corretto a mano resta finché non ci si sposta. Mentre si
+// guarda un'altra città (S.away) non si rilegge nulla. Se il permesso è negato, l'impostazione si spegne.
+let locBusy = false;
+function refreshLocation(force) {
+  if (!S.autoLoc || S.away || !navigator.geolocation || locBusy) return;
+  locBusy = true;
+  navigator.geolocation.getCurrentPosition(p => {
+    let tz; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) {}
+    const lat = p.coords.latitude, lon = p.coords.longitude, o = S.place, R = Math.PI / 180;
+    const a = Math.sin((lat - o.lat) * R / 2) ** 2 + Math.cos(lat * R) * Math.cos(o.lat * R) * Math.sin((lon - o.lon) * R / 2) ** 2;
+    const km = 12742 * Math.asin(Math.sqrt(a));
+    if (S.away || (o.auto && !force && km <= 5 && (!tz || tz === o.tz))) { locBusy = false; return; }
+    locate(lat, lon, tz).then(found => {
+      locBusy = false;
+      if (S.away || !S.autoLoc) return;
+      S.place = found || { name: 'Posizione attuale', lat, lon, tz, auto: true };
+      save();
+      const open = document.getElementById('sheet').classList.contains('open');
+      if (!open || force) { current = todayRd(); render(); }
+      if (open && force) openSheet('settings'); // acceso dalle impostazioni: il luogo nuovo si vede subito
+    }, () => { locBusy = false; });
+  }, e => { locBusy = false; if (e && e.code === 1) { S.autoLoc = false; save(); } },
+  { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 });
+}
+// Ritorno dalla città guardata al luogo del telefono: subito l'ultimo luogo noto, poi la rilettura
+function backToLocation() {
+  S.away = false;
+  if (S.home) { S.place = S.home; delete S.home; }
+  save(); current = todayRd(); render(); refreshLocation();
+}
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') refreshLocation(); });
 setInterval(() => { if (!document.getElementById('sheet').classList.contains('open')) render(); }, 60000);
 // Ogni secondo si aggiorna solo il conto alla rovescia; all'istante dell'orario si ridisegna, e la riga seguente diventa la prossima
 setInterval(() => {
@@ -650,6 +701,7 @@ setInterval(() => {
   else cd.innerHTML = cdText(+cd.dataset.t);
 }, 1000);
 render();
+refreshLocation();
 
 // Lavoratore per l'uso senza rete (funziona solo se la pagina è ospitata normalmente, non come anteprima)
 if ('serviceWorker' in navigator && location.protocol === 'https:') {
