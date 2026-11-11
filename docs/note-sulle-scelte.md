@@ -10,11 +10,11 @@ Il giorno va dal sorgere del sole al tramonto, diviso in 12 ore. La preghiera de
 
 ## Ṣeṯ ha-koḵaḇim: fine dello Shabbaṯ, delle feste e dei digiuni
 
-20 minuti fissi dopo il tramonto: «וזה העת כמו שליש שעה אחר שקיעת החמה» (Terumoṯ 7:2); lo stesso intervallo in Qiddush ha-Ḥòḏesh 14:6, «לאחר שקיעת החמה בכמו שליש שעה». In alternativa 18 minuti: ¾ di mil, con il mil di «שני חומשי שעה משעות ההשויה» (Comm. Pesaḥim 3:2). *Impostazione: 20 / 18.*
+20 minuti fissi dopo il tramonto: «וזה העת כמו שליש שעה אחר שקיעת החמה» (Terumoṯ 7:2); lo stesso intervallo in Qiddush ha-Ḥòḏesh 14:6, «לאחר שקיעת החמה בכמו שליש שעה». In alternativa 18 minuti: ¾ di mil, con il mil di «שני חמשי שעה משעות ההשויה» (Comm. Pesaḥim 3:2). *Impostazione: 20 / 18.*
 
 ## ʿAloṯ ha-shàḥar
 
-Un’ora e un quinto di ore stagionali del giorno prima del sorgere del sole: «קודם עלות השמש בכדי שעה וחומש שעה מן השעות הזמניות» (Comm. Beraḵoṯ 1:1). Il MT usa l’alba come limite (Qeriʾaṯ Shemaʿ 1:10–13 [9–12]; Tefillà 3:6–7), ma non ne dà la distanza dal sorgere del sole, per la quale ci rifacciamo al Comm. *Impostazione: mostra / nascondi.*
+Un’ora e un quinto di ore stagionali del giorno prima del sorgere del sole: «קדם עלות השמש בכדי שעה וחמש שעה מן השעות הזמניות» (Comm. Beraḵoṯ 1:1). Il MT usa l’alba come limite (Qeriʾaṯ Shemaʿ 1:10–13 [9–12]; Tefillà 3:6–7), ma non ne dà la distanza dal sorgere del sole, per la quale ci rifacciamo al Comm. *Impostazione: mostra / nascondi.*
 
 ## Orari del giorno
 
