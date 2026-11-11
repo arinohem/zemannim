@@ -49,7 +49,7 @@ const T = {
     splitShavuoth: 'Nella diaspora questo sabato è il secondo giorno di Shaḇuʿoṯ, con la lettura della festa; in Israele si legge la parashà seguente.',
     rejoin: (d, p) => `Le letture tornano a coincidere dopo il ${d}, quando nella diaspora si leggono insieme ${p}.`,
     rejoinNow: p => `Questo sabato nella diaspora si leggono insieme ${p}; dal sabato seguente la lettura è di nuovo la stessa.`,
-    translitLbl: 'Traslitterazione di כ e ת', bethLbl: 'Traslitterazione di ב', tequfa: 'tequfà secondo il', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico', nameLatin: 'Nome del luogo', nameHeb: 'Nome in ebraico', save: 'Salva', placeNote: 'Nome trovato con la posizione; si può correggere.', autoLocLbl: 'Posizione automatica', autoLocNote: 'Il luogo segue la posizione del telefono e cambia se ci si sposta di oltre 5 km. Si può scegliere un altro luogo per vederne gli orari, e poi tornare alla propria posizione.', backLoc: 'Torna alla mia posizione', searchLbl: 'Cerca un luogo', searchPh: 'Nome o coordinate (44.84, 11.62)', savedLbl: 'I miei luoghi', recentLbl: 'Scelti di recente', starNote: 'Con ☆ un luogo si aggiunge ai miei luoghi.', starAdd: 'Aggiungi ai miei luoghi', starDel: 'Togli dai miei luoghi', noRes: 'Nessun luogo trovato.',
+    translitLbl: 'Traslitterazione di כ e ת', bethLbl: 'Traslitterazione di ב', tequfa: 'tequfà secondo il', chapter: 'cap.', langLbl2: 'Lingua (oltre all’ebraico)', hebOnly: 'solo ebraico', autoLocLbl: 'Posizione automatica', autoLocNote: 'Il luogo segue la posizione del telefono e cambia se ci si sposta di oltre 5 km. Si può scegliere un altro luogo per vederne gli orari, e poi tornare alla propria posizione.', backLoc: 'Torna alla mia posizione', searchLbl: 'Cerca un luogo', searchPh: 'Nome o coordinate (44.84, 11.62)', savedLbl: 'I miei luoghi', recentLbl: 'Scelti di recente', starNote: 'Con ☆ un luogo si aggiunge ai miei luoghi.', starAdd: 'Aggiungi ai miei luoghi', starDel: 'Togli dai miei luoghi', noRes: 'Nessun luogo trovato.',
     netLbl: 'Cerca il nome del luogo in rete (OpenStreetMap)', netNote: 'Manda la posizione, arrotondata a circa 1 km, a OpenStreetMap; senza rete si usa l’elenco incluso.'
   },
   en: {
@@ -79,7 +79,7 @@ const T = {
     splitShavuoth: 'In the diaspora this Shabbaṯ is the second day of Shaḇuʿoṯ and the festival portion is read; in Israel the next parasha is read.',
     rejoin: (d, p) => `The readings coincide again after ${d}, when the diaspora reads ${p} together.`,
     rejoinNow: p => `This Shabbaṯ the diaspora reads ${p} together; from next Shabbaṯ the reading is the same again.`,
-    translitLbl: 'Romanization of כ and ת', bethLbl: 'Romanization of ב', tequfa: 'tequfa by', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only', nameLatin: 'Place name', nameHeb: 'Name in Hebrew', save: 'Save', placeNote: 'Name found from the location; it can be corrected.', autoLocLbl: 'Automatic location', autoLocNote: 'The place follows the phone’s location and changes after a move of more than 5 km. Another place can be chosen to see its times, before going back to one’s own location.', backLoc: 'Back to my location', searchLbl: 'Search for a place', searchPh: 'Name or coordinates (44.84, 11.62)', savedLbl: 'My places', recentLbl: 'Recently chosen', starNote: 'With ☆ a place is added to my places.', starAdd: 'Add to my places', starDel: 'Remove from my places', noRes: 'No place found.',
+    translitLbl: 'Romanization of כ and ת', bethLbl: 'Romanization of ב', tequfa: 'tequfa by', chapter: 'ch.', langLbl2: 'Language (besides Hebrew)', hebOnly: 'Hebrew only', autoLocLbl: 'Automatic location', autoLocNote: 'The place follows the phone’s location and changes after a move of more than 5 km. Another place can be chosen to see its times, before going back to one’s own location.', backLoc: 'Back to my location', searchLbl: 'Search for a place', searchPh: 'Name or coordinates (44.84, 11.62)', savedLbl: 'My places', recentLbl: 'Recently chosen', starNote: 'With ☆ a place is added to my places.', starAdd: 'Add to my places', starDel: 'Remove from my places', noRes: 'No place found.',
     netLbl: 'Look up the place name online (OpenStreetMap)', netNote: 'Sends the location, rounded to about 1 km, to OpenStreetMap; offline, the built-in list is used.'
   },
   fr: {
@@ -109,7 +109,7 @@ const T = {
     splitShavuoth: 'En diaspora, ce Shabbaṯ est le deuxième jour de Shaḇuʿoṯ, avec la lecture de la fête ; en Israël on lit la parasha suivante.',
     rejoin: (d, p) => `Les lectures coïncident de nouveau après le ${d}, quand la diaspora lit ensemble ${p}.`,
     rejoinNow: p => `Ce Shabbaṯ, la diaspora lit ensemble ${p} ; à partir du Shabbaṯ suivant la lecture est de nouveau la même.`,
-    translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa selon le', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul', nameLatin: 'Nom du lieu', nameHeb: 'Nom en hébreu', save: 'Enregistrer', placeNote: 'Nom trouvé à partir de la position ; on peut le corriger.', autoLocLbl: 'Position automatique', autoLocNote: 'Le lieu suit la position du téléphone et change après un déplacement de plus de 5 km. On peut choisir un autre lieu pour en voir les heures, puis revenir à sa position.', backLoc: 'Revenir à ma position', searchLbl: 'Chercher un lieu', searchPh: 'Nom ou coordonnées (44.84, 11.62)', savedLbl: 'Mes lieux', recentLbl: 'Choisis récemment', starNote: 'Avec ☆ un lieu s’ajoute à mes lieux.', starAdd: 'Ajouter à mes lieux', starDel: 'Retirer de mes lieux', noRes: 'Aucun lieu trouvé.',
+    translitLbl: 'Translittération de כ et ת', bethLbl: 'Translittération de ב', tequfa: 'tequfa selon le', chapter: 'chap.', langLbl2: 'Langue (en plus de l’hébreu)', hebOnly: 'hébreu seul', autoLocLbl: 'Position automatique', autoLocNote: 'Le lieu suit la position du téléphone et change après un déplacement de plus de 5 km. On peut choisir un autre lieu pour en voir les heures, puis revenir à sa position.', backLoc: 'Revenir à ma position', searchLbl: 'Chercher un lieu', searchPh: 'Nom ou coordonnées (44.84, 11.62)', savedLbl: 'Mes lieux', recentLbl: 'Choisis récemment', starNote: 'Avec ☆ un lieu s’ajoute à mes lieux.', starAdd: 'Ajouter à mes lieux', starDel: 'Retirer de mes lieux', noRes: 'Aucun lieu trouvé.',
     netLbl: 'Chercher le nom du lieu en ligne (OpenStreetMap)', netNote: 'Envoie la position, arrondie à 1 km environ, à OpenStreetMap ; hors ligne, la liste intégrée est utilisée.'
   },
   he: {
@@ -139,7 +139,7 @@ const T = {
     splitShavuoth: 'בחוץ לארץ שבת זו היא יום טוב שני של שבעות וקוראים בענין המועד; בארץ ישראל קוראים את הפרשה הבאה.',
     rejoin: (d, p) => `הקריאה חוזרת להיות שוה אחרי ${d}, כשבחוץ לארץ מחברים ${p}.`,
     rejoinNow: p => `בשבת זו מחברים בחוץ לארץ ${p}; מן השבת הבאה הקריאה שוה שוב.`,
-    translitLbl: 'תעתיק של כ ושל ת', bethLbl: 'תעתיק של ב', chapter: 'פרק', langLbl2: 'שפה (נוסף על העברית)', hebOnly: 'עברית בלבד', nameLatin: 'שם המקום באותיות לטיניות', nameHeb: 'שם המקום בעברית', save: 'שמור', placeNote: 'השם נמצא לפי המיקום; אפשר לתקנו.', autoLocLbl: 'מיקום אוטומטי', autoLocNote: 'המקום נקבע לפי מיקום הטלפון ומשתנה כשמתרחקים יותר מחמשה קילומטרים. אפשר לבחור מקום אחר כדי לראות את זמניו, ולחזור אחר כך למיקום.', backLoc: 'חזרה למיקום שלי', searchLbl: 'חיפוש מקום', searchPh: 'שם או קואורדינטות (44.84, 11.62)', savedLbl: 'המקומות שלי', recentLbl: 'נבחרו לאחרונה', starNote: 'ב־☆ מוסיפים מקום למקומות שלי.', starAdd: 'הוסף למקומות שלי', starDel: 'הסר מהמקומות שלי', noRes: 'לא נמצא מקום.',
+    translitLbl: 'תעתיק של כ ושל ת', bethLbl: 'תעתיק של ב', chapter: 'פרק', langLbl2: 'שפה (נוסף על העברית)', hebOnly: 'עברית בלבד', autoLocLbl: 'מיקום אוטומטי', autoLocNote: 'המקום נקבע לפי מיקום הטלפון ומשתנה כשמתרחקים יותר מחמשה קילומטרים. אפשר לבחור מקום אחר כדי לראות את זמניו, ולחזור אחר כך למיקום.', backLoc: 'חזרה למיקום שלי', searchLbl: 'חיפוש מקום', searchPh: 'שם או קואורדינטות (44.84, 11.62)', savedLbl: 'המקומות שלי', recentLbl: 'נבחרו לאחרונה', starNote: 'ב־☆ מוסיפים מקום למקומות שלי.', starAdd: 'הוסף למקומות שלי', starDel: 'הסר מהמקומות שלי', noRes: 'לא נמצא מקום.',
     netLbl: 'חפש את שם המקום ברשת (OpenStreetMap)', netNote: 'שולח את המיקום, בעיגול לכקילומטר, אל OpenStreetMap; בלי רשת משתמשים ברשימה שבתוך היישום.'
   }
 };
@@ -557,7 +557,7 @@ function render() {
     // in Birkaṯ ha-shanim). Come la menzione: solo nei giorni in cui si dice (e la sera prima dell'inizio);
     // la nota in italiano solo nei giorni di cambio.
     if (rain.ask || rain.askTonight) {
-      const formula = heb('ותן טל ומטר לברכה על פני האדמה ושבע את העולם מברכותיך');
+      const formula = heb('ותן טל ומטר לברכה על־פני האדמה ושבע את־העולם מברכותיך');
       const st = rain.askTonight ? l.askTonight : rain.askFirst ? l.askFirst : rain.askLast ? l.askLast : null;
       if (!st) notes.push(formula);
       else {
@@ -570,7 +570,7 @@ function render() {
   for (const a of r.amida || []) {
     let body;
     if (a.key === 'tenDays') body = `${heb('המלך הקדוש')} (${l.b3})` + (a.mishpat ? ` · ${heb('המלך המשפט')} (${l.b11}${a.mishpat !== a.scope && a.mishpat !== 'all' ? ', ' + lc(a.mishpat === 'tonight' ? l.scTonight : l.scUntilMinha) : ''})` : '');
-    else if (a.key === 'yaale') body = `${heb('יעלה ויבוא')} (${l.aboda})`;
+    else if (a.key === 'yaale') body = `${heb('יעלה ויבא')} (${l.aboda})`;
     else body = `${heb('על הנסים')} (${l.hodaya})`;
     if (a.scope === 'all') notes.push(body);
     else notes.push(HL(`${{ tonight: l.scTonight, untilMinha: l.scUntilMinha, untilNeila: l.scUntilNeila }[a.scope]}${COLON()} ${body}`));
@@ -661,10 +661,6 @@ function openSheet(which) {
     const pl = S.place;
     html += `<h3>${l.place}</h3><p>${esc(placeName(pl.name))} (${pl.lat.toFixed(4)}, ${pl.lon.toFixed(4)})</p>
       <h3>${l.searchLbl}</h3><input class="field" id="pq" type="search" autocomplete="off" autocorrect="off" spellcheck="false" dir="auto" placeholder="${esc(l.searchPh)}"><div id="pres"></div>`;
-    if (pl.auto && pl.names) html += `<p class="small">${l.placeNote}</p>
-      <label class="small">${l.nameLatin}<input class="field" id="pLat" value="${esc(pl.names[S.lang === 'he' ? 'it' : S.lang] || pl.name)}"></label>
-      <label class="small">${l.nameHeb}<input class="field" id="pHeb" dir="rtl" lang="he" value="${esc(pl.names.he || '')}"></label>
-      <button class="wide" id="pSave">${l.save}</button>`;
     html += `<button class="wide" id="gps">${l.useGps}</button><p class="small" id="gpsMsg"></p>
       <h3>${l.autoLocLbl}</h3>${seg('autoLoc', S.autoLoc, [[true, l.on], [false, l.off]])}<p class="small">${l.autoLocNote}</p>
       <h3>${l.netLbl}</h3>${seg('netLookup', S.netLookup, [[true, l.on], [false, l.off]])}<p class="small">${l.netNote}</p>
@@ -750,21 +746,6 @@ function openSheet(which) {
       });
     }, () => { msg.textContent = l.gpsFail; }, { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 });
   };
-  // Correzione a mano del nome trovato: il nome ebraico si rifà dal nome latino finché non lo si tocca
-  const pLat = document.getElementById('pLat'), pHeb = document.getElementById('pHeb'), pSave = document.getElementById('pSave');
-  if (pLat && pHeb && pSave) {
-    let hebTouched = false;
-    pHeb.oninput = () => { hebTouched = true; };
-    pLat.oninput = () => { if (!hebTouched) pHeb.value = P.hebrew(pLat.value.trim(), S.place.rule, S.place.data) || ''; };
-    pSave.onclick = () => {
-      const v = pLat.value.trim(); if (!v) return;
-      const pl = S.place, old = pl.names[S.lang === 'he' ? 'it' : S.lang] || pl.name;
-      if (v !== old) pl.names = { it: v, en: v, fr: v, he: pl.names.he };
-      pl.names.he = pHeb.value.trim();
-      pl.name = v; pl.edited = true;
-      save(); render(); openSheet('settings');
-    };
-  }
   const on = document.getElementById('openNotes');
   if (on) on.onclick = () => openSheet('notes');
   const oi = document.getElementById('openInstall');
@@ -785,7 +766,7 @@ document.getElementById('main').addEventListener('touchend', e => {
 });
 // Posizione automatica (predefinita; scelte del curatore, 2026-11-11): il luogo segue il telefono. La posizione si
 // rilegge all'apertura e al ritorno in primo piano; un luogo già preso dal telefono cambia solo oltre 5 km (o se
-// cambia il fuso), così il nome non oscilla e un nome corretto a mano resta finché non ci si sposta. Mentre si
+// cambia il fuso), così il nome non oscilla. Mentre si
 // guarda un'altra città (S.away) non si rilegge nulla. Se il permesso è negato, l'impostazione si spegne.
 let locBusy = false;
 function refreshLocation(force) {
