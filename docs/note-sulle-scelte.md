@@ -62,6 +62,8 @@ Nel giorno corrente, sotto il prossimo orario dell’elenco, l’app mostra il t
 
 Non si fa: Shabbaṯ, Yom Ṭoḇ e Ḥol ha-moʿeḏ («מועדות»), Rosh ha-Shanà, Rosh Ḥòḏesh, Ḥanukkà, Purim, Minḥà della vigilia di Shabbaṯ e di Yom Ṭoḇ (Tefillà 5:16 [15]). A ʿArḇiṯ non si fa, «ולא בערבית שבכל יום», anche se «יש יחידים שנופלין על פניהם, בערבית»; a Yom ha-Kippurim si fa «בכל תפלה ותפלה», e per questo ʿArḇiṯ compare solo quel giorno. In tutti gli altri giorni si fa, anche il 9 di Aḇ e a Minḥà della vigilia di Kippur: i «ימים טובים» sono i sei giorni elencati in Sheḇiṯaṯ Yom Ṭoḇ 1:1, tra cui Kippur non c’è, e Tefillà 5:16 [15] tratta Kippur come caso a sé.
 
+Le diciture del giorno segnalano gli usi diversi. A Kippur, secondo il rito italiano, solo a Neʿilà: lo Shibbolé ha-Lèqeṭ (§ 30, ed. Buber) scrive «ביום הכפורים שחרית ומוסף ומנחה אין נופלין על פניהן אבל בנעילה מותר». Il 9 di Aḇ, secondo il rito italiano, solo a Minḥà: «בתשעה באב שחרית אין נופלין על פניהן… אבל מנחה הואיל ושעת נחמה הוא נופלין על פניהן». A Minḥà della vigilia di Kippur alcuni la omettono («וערב יום הכפורים שחרית ומנחה אין נופלין על פניהן»), e così a Minḥà della vigilia di Ḥanukkà («ויש אוסרין גם מנחה שלפניו»). A Minḥà della vigilia di Rosh Ḥòḏesh la omette lo Shibbolé ha-Lèqeṭ, «ואפי׳ מנחה שלפניו אין נופלין»; lo stesso uso è in un responso pubblicato da Lewin (Oṣar ha-Geonim, Meḡillà, Teshuḇoṯ § 123), che lo presenta come uso del luogo e aggiunge «אבל איסור אין בכך». Gli altri usi riferiti nello stesso paragrafo dello Shibbolé ha-Lèqeṭ non sono segnalati.
+
 ## Pioggia
 
 Menzione nella seconda benedizione: «מתפלת המוספין שליום טוב האחרון שלחג, עד תפלת שחרית שליום טוב הראשון שלפסח» (Tefillà 2:17 [15]); dove si fanno due giorni di Yom Ṭoḇ, da Musaf del primo giorno di Sheminì ʿAṣèreṯ (2:19 [17]). Formula del rito italiano: «משיב הרוח ומוריד הגשם». D’estate, secondo il rito italiano, non si dice nulla, mentre il MT ha «ובימות החמה, מוריד הטל» (2:17 [15]).
@@ -74,7 +76,7 @@ L’app mostra le formule solo nei giorni in cui si dicono e la sera prima dell�
 
 Nei dieci giorni da Rosh ha-Shanà a Yom ha-Kippurim «המלך הקדוש» nella 3ª benedizione e «המלך המשפט» nell’11ª, che c’è solo nella ʿAmiḏà feriale (Tefillà 2:20 [18]); a Rosh Ḥòḏesh e Ḥol ha-moʿeḏ «יעלה ויבוא» nella ʿAḇoḏà (2:12–13 [10–11]); a Ḥanukkà e Purim «על הנסים» nella Hoḏayà (2:15 [13]).
 
-Nei digiuni «עננו» in Shomeaʿ tefillà, e l’officiante ne fa una benedizione a sé fra Goʾel e Rofé; il 9 di Aḇ anche «רחם» in Boné Yerushalàyim (2:16 [14]). «עננו» ha la formula del rito italiano, «עננו יי עננו», dal manoscritto del 1265 e dal Maḥazor di Bologna, dove il MT e il Seder Ḥibbur Berakhoṯ hanno «עננו אבינו». «רחם יי אלהינו עלינו» è la formula del MT; secondo lo Shibbole ha-Leqeṭ e il Seder Tanya si dice in ogni preghiera del 9 di Aḇ.
+Nei digiuni «עננו» in Shomeaʿ tefillà, e l’officiante ne fa una benedizione a sé fra Goʾel e Rofé; il 9 di Aḇ anche «רחם» in Boné Yerushalàyim (2:16 [14]). «עננו» ha la formula del rito italiano, «עננו יי עננו», dal manoscritto del 1265 e dal Maḥazor di Bologna, dove il MT e il Seder Ḥibbur Berakhoṯ hanno «עננו אבינו». «רחם יי אלהינו עלינו» è la formula del MT; secondo lo Shibbolé ha-Lèqeṭ e il Seder Tanya si dice in ogni preghiera del 9 di Aḇ.
 
 Il giorno civile ha Shaḥriṯ e Minḥà del suo giorno ebraico e ʿArḇiṯ del seguente: perciò il giorno prima compare «da ʿArḇiṯ di stasera» e l’ultimo giorno «fino a Minḥà».
 ## Cambi stagionali

@@ -54,7 +54,7 @@ const T = {
     walledLbl: 'Città murata (Purim il 15)', auto: 'automatico', on: 'sì', off: 'no', prudentLbl: 'Arrotondamento prudente',
     langLbl: 'Lingua', zone: 'Orari nel fuso orario', shabbIn: 'Inizio dello Shabbaṯ', shabbOut: 'Fine dello Shabbaṯ',
     ytIn: 'Inizio della festa', ytOut: 'Fine della festa', source: 'Fonte', polar: 'In questo luogo e in questa data il sole non sorge o non tramonta.',
-    firstMention: 'si comincia a dirlo a Musaf', lastMention: 'si dice fino a Shaḥriṯ; da Musaf non si dice più', israelOn: 'Israele', diaspora: 'diaspora', inIsrael: 'In Israele', naAll: 'in ogni preghiera', arvithKippur: 'ʿArḇiṯ (sera di Kippur)', inDiaspora: 'Nella diaspora', festReading: 'lettura della festa',
+    firstMention: 'si comincia a dirlo a Musaf', lastMention: 'si dice fino a Shaḥriṯ; da Musaf non si dice più', israelOn: 'Israele', diaspora: 'diaspora', inIsrael: 'In Israele', naAll: 'in ogni preghiera', naKippurIt: 'secondo il rito italiano solo a Neʿilà', naVar: { kippurEve: 'alcuni la omettono a Minḥà', hanEve: 'alcuni la omettono a Minḥà', rhEve: 'variante: lo Shibbolé ha-Lèqeṭ la omette a Minḥà', av9: 'secondo il rito italiano solo a Minḥà' }, arvithKippur: 'ʿArḇiṯ (sera di Kippur)', inDiaspora: 'Nella diaspora', festReading: 'lettura della festa',
     splitPesah: 'Nella diaspora questo sabato è l’ultimo giorno di Pèsaḥ, con la lettura della festa; in Israele si legge la parashà seguente.',
     splitShavuoth: 'Nella diaspora questo sabato è il secondo giorno di Shaḇuʿoṯ, con la lettura della festa; in Israele si legge la parashà seguente.',
     rejoin: (d, p) => `Le letture tornano a coincidere dopo il ${d}, quando nella diaspora si leggono insieme ${p}.`,
@@ -84,7 +84,7 @@ const T = {
     walledLbl: 'Walled city (Purim on the 15th)', auto: 'automatic', on: 'yes', off: 'no', prudentLbl: 'Prudent rounding',
     langLbl: 'Language', zone: 'Times in time zone', shabbIn: 'Shabbaṯ begins', shabbOut: 'Shabbaṯ ends',
     ytIn: 'Festival begins', ytOut: 'Festival ends', source: 'Source', polar: 'At this place and date the sun does not rise or does not set.',
-    firstMention: 'begins at Musaf', lastMention: 'said until Shaḥriṯ; no longer said from Musaf', israelOn: 'Israel', diaspora: 'diaspora', inIsrael: 'In Israel', naAll: 'at every prayer', arvithKippur: 'ʿArḇiṯ (Kippur night)', inDiaspora: 'In the diaspora', festReading: 'festival reading',
+    firstMention: 'begins at Musaf', lastMention: 'said until Shaḥriṯ; no longer said from Musaf', israelOn: 'Israel', diaspora: 'diaspora', inIsrael: 'In Israel', naAll: 'at every prayer', naKippurIt: 'in the Italian rite, only at Neʿila', naVar: { kippurEve: 'some omit it at Minḥa', hanEve: 'some omit it at Minḥa', rhEve: 'variant: the Shibbole ha-Leqeṭ omits it at Minḥa', av9: 'in the Italian rite, only at Minḥa' }, arvithKippur: 'ʿArḇiṯ (Kippur night)', inDiaspora: 'In the diaspora', festReading: 'festival reading',
     splitPesah: 'In the diaspora this Shabbaṯ is the last day of Pesaḥ and the festival portion is read; in Israel the next parasha is read.',
     splitShavuoth: 'In the diaspora this Shabbaṯ is the second day of Shaḇuʿoṯ and the festival portion is read; in Israel the next parasha is read.',
     rejoin: (d, p) => `The readings coincide again after ${d}, when the diaspora reads ${p} together.`,
@@ -114,7 +114,7 @@ const T = {
     walledLbl: 'Ville fortifiée (Purim le 15)', auto: 'automatique', on: 'oui', off: 'non', prudentLbl: 'Arrondi prudent',
     langLbl: 'Langue', zone: 'Heures dans le fuseau horaire', shabbIn: 'Début du Shabbaṯ', shabbOut: 'Fin du Shabbaṯ',
     ytIn: 'Début de la fête', ytOut: 'Fin de la fête', source: 'Source', polar: 'En ce lieu et à cette date, le soleil ne se lève pas ou ne se couche pas.',
-    firstMention: 'on commence à le dire à Musaf', lastMention: 'on le dit jusqu’à Shaḥriṯ ; à partir de Musaf on ne le dit plus', israelOn: 'Israël', diaspora: 'diaspora', inIsrael: 'En Israël', naAll: 'à chaque prière', arvithKippur: 'ʿArḇiṯ (nuit de Kippur)', inDiaspora: 'En diaspora', festReading: 'lecture de la fête',
+    firstMention: 'on commence à le dire à Musaf', lastMention: 'on le dit jusqu’à Shaḥriṯ ; à partir de Musaf on ne le dit plus', israelOn: 'Israël', diaspora: 'diaspora', inIsrael: 'En Israël', naAll: 'à chaque prière', naKippurIt: 'selon le rite italien, seulement à la Neʿila', naVar: { kippurEve: 'certains l’omettent à Minḥa', hanEve: 'certains l’omettent à Minḥa', rhEve: 'variante : le Shibbole ha-Leqeṭ l’omet à Minḥa', av9: 'selon le rite italien, seulement à Minḥa' }, arvithKippur: 'ʿArḇiṯ (nuit de Kippur)', inDiaspora: 'En diaspora', festReading: 'lecture de la fête',
     splitPesah: 'En diaspora, ce Shabbaṯ est le dernier jour de Pesaḥ, avec la lecture de la fête ; en Israël on lit la parasha suivante.',
     splitShavuoth: 'En diaspora, ce Shabbaṯ est le deuxième jour de Shaḇuʿoṯ, avec la lecture de la fête ; en Israël on lit la parasha suivante.',
     rejoin: (d, p) => `Les lectures coïncident de nouveau après le ${d}, quand la diaspora lit ensemble ${p}.`,
@@ -144,7 +144,7 @@ const T = {
     walledLbl: 'עיר מוקפת חומה (פורים בט״ו)', auto: 'אוטומטי', on: 'כן', off: 'לא', prudentLbl: 'עיגול לחומרא',
     langLbl: 'שפה', zone: 'שעות לפי אזור הזמן', shabbIn: 'כניסת שבת', shabbOut: 'יציאת שבת',
     ytIn: 'כניסת יום טוב', ytOut: 'מוצאי יום טוב', source: 'מקור', polar: 'במקום וביום זה החמה אינה זורחת או אינה שוקעת.',
-    firstMention: 'מתחילים במוסף', lastMention: 'אומרים עד שחרית; ממוסף ואילך אין אומרים', israelOn: 'ארץ ישראל', diaspora: 'חוץ לארץ', inIsrael: 'בארץ ישראל', naAll: 'בכל תפלה ותפלה', arvithKippur: 'ערבית (ליל יום הכפורים)', inDiaspora: 'בחוץ לארץ', festReading: 'קריאת המועד',
+    firstMention: 'מתחילים במוסף', lastMention: 'אומרים עד שחרית; ממוסף ואילך אין אומרים', israelOn: 'ארץ ישראל', diaspora: 'חוץ לארץ', inIsrael: 'בארץ ישראל', naAll: 'בכל תפלה ותפלה', naKippurIt: 'במנהג ק״ק איטאליאני בנעילה בלבד', naVar: { kippurEve: 'יש שאין נופלים במנחה', hanEve: 'יש שאין נופלים במנחה', rhEve: 'ובשבלי הלקט: אין נופלים במנחה', av9: 'במנהג ק״ק איטאליאני במנחה בלבד' }, arvithKippur: 'ערבית (ליל יום הכפורים)', inDiaspora: 'בחוץ לארץ', festReading: 'קריאת המועד',
     splitPesah: 'בחוץ לארץ שבת זו היא אחרון של פסח וקוראים בענין המועד; בארץ ישראל קוראים את הפרשה הבאה.',
     splitShavuoth: 'בחוץ לארץ שבת זו היא יום טוב שני של שבעות וקוראים בענין המועד; בארץ ישראל קוראים את הפרשה הבאה.',
     rejoin: (d, p) => `הקריאה חוזרת להיות שוה אחרי ${d}, כשבחוץ לארץ מחברים ${p}.`,
@@ -457,8 +457,8 @@ function render() {
   }
   if (!r.polar) {
     const na = r.na, yn = v => v ? l.yes : l.no;
-    notes.push(na.all ? `${l.na}${COLON()} ${l.naAll}` :
-      `${l.na}${COLON()} ${l.shahrith} ${yn(na.shahrith)} · ${l.minha} ${yn(na.minha)}${na.arvith ? ` · ${l.arvithKippur} ${yn(true)}` : ''}`);
+    notes.push(na.all ? `${l.na}${COLON()} ${l.naAll}; ${l.naKippurIt}` :
+      `${l.na}${COLON()} ${l.shahrith} ${yn(na.shahrith)} · ${l.minha} ${yn(na.minha)}${na.arvith ? ` · ${l.arvithKippur} ${yn(true)}` : ''}${na.variant ? `; ${l.naVar[na.variant]}` : ''}`);
   }
   const rain = r.rain, HL = html => ({ html, hl: true }); // HL: nota evidenziata (un cambio comincia o finisce)
   const heb = s => `<span lang="he">${s}</span>`;

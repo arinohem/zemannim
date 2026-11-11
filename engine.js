@@ -395,6 +395,13 @@ function computeDay(rd, opt) {
   // ʿArḇiṯ appartiene al giorno ebraico che comincia la sera: si fa solo la sera che apre Yom ha-Kippurim.
   res.na = info.yomKippur ? { all: true, shahrith: true, minha: true, arvith: false } :
     { shahrith: !festive, minha: !festive && !ereb, arvith: tomorrow.yomKippur };
+  // Varianti segnalate dove il MT tace (scelte del curatore, 2026-11-11): vigilia di Kippur e di Ḥanukkà a Minḥà
+  // («alcuni la omettono»), vigilia di Rosh Ḥòḏesh a Minḥà (Shibbole ha-Leqeṭ § 30), 9 di Aḇ (rito italiano: solo a Minḥà)
+  const na = res.na;
+  if (info.fast && info.fast.key === 'av9' && na.shahrith) na.variant = 'av9';
+  else if (na.minha && tomorrow.yomKippur) na.variant = 'kippurEve';
+  else if (na.minha && tomorrow.roshHodesh && !info.roshHodesh) na.variant = 'rhEve';
+  else if (na.minha && tomorrow.hanukka && !info.hanukka) na.variant = 'hanEve';
 
   // Ḥameṣ (MT Ḥameṣ u-Maṣṣà 2:3, 3:3). La ricerca si fa all'inizio della notte del 14 Nisan; se il 14 cade
   // di Shabbaṯ, nella notte del 13 (giovedì sera), e il ḥameṣ si elimina prima dello Shabbaṯ, tranne quello
