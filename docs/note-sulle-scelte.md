@@ -167,11 +167,13 @@ Per i luoghi senza regole (Paesi Bassi, Fiandre, Portogallo, Brasile, Lussemburg
 
 Il nome trovato si può correggere a mano, in caratteri latini e in ebraico; il nome ebraico si ricalcola dal nome latino finché non lo si corregge. A parte, e spenta in partenza, c’è la ricerca del nome in rete su OpenStreetMap (dati © OpenStreetMap, licenza ODbL), che manda la posizione arrotondata a circa 1 km; se la località trovata è anche nell’elenco incluso, valgono i dati dell’elenco (forme tradizionali, pronuncia, z e s). *Impostazioni: nome del luogo e nome in ebraico; ricerca in rete sì / no.*
 
-Il luogo segue la posizione del telefono: all’apertura, e ogni volta che l’app torna in primo piano, la posizione viene riletta, e il luogo cambia se ci si è spostati di oltre 5 km o se è cambiato il fuso orario. Se il telefono nega il permesso, l’impostazione si spegne. Si può scegliere dall’elenco un’altra città per vederne gli orari: l’app resta su quella finché non si tocca «Torna alla mia posizione». *Impostazione: sì / no.*
+Il luogo segue la posizione del telefono: all’apertura, e ogni volta che l’app torna in primo piano, la posizione viene riletta, e il luogo cambia se ci si è spostati di oltre 5 km o se è cambiato il fuso orario. Se il telefono nega il permesso, l’impostazione si spegne. Si può cercare un altro luogo per vederne gli orari: l’app resta su quello finché non si tocca «Torna alla mia posizione». *Impostazione: sì / no.*
+
+Nelle impostazioni un luogo si cerca per nome nello stesso elenco, senza rete. Si confrontano i nomi locale, italiano, inglese e francese, senza tener conto degli accenti; in ebraico anche la grafia israeliana (il nome ebraico di GeoNames e il titolo della voce di Wikipedia in ebraico), che porta al nome nella grafia dell’app (פרארה trova פירארה), e, se non basta, le sole consonanti, senza א, י, ו e senza la he finale (ליבורנו trova ליוורנו). Vengono prima i nomi che corrispondono per intero, poi quelli che cominciano con il testo scritto, poi quelli in cui comincia così una parola; a parità, i luoghi più popolosi e più vicini. Accanto al nome compaiono il paese e, in Italia e negli Stati Uniti, la provincia o lo stato. Si possono scrivere anche le coordinate (44.84, 11.62), utili fuori dai centri abitati: il nome è quello della località più vicina, entro 50 km. Con la stella un luogo si aggiunge ai miei luoghi, che compaiono sotto il campo di ricerca insieme agli ultimi cinque luoghi scelti. *Impostazione: i miei luoghi.*
 
 ## Fuso orario
 
-Per le città dell’elenco nelle impostazioni si usa il fuso orario della città; con «Usa la mia posizione», quello del dispositivo. L’ora legale segue le regole del fuso, e il fuso usato è indicato in fondo alla pagina del giorno.
+Per un luogo cercato si usa il suo fuso orario, dai dati di GeoNames (per le coordinate, quello della località più vicina dell’elenco); con la posizione del telefono, quello del dispositivo. L’ora legale segue le regole del fuso, e il fuso usato è indicato in fondo alla pagina del giorno.
 
 ## Hafṭaroṯ
 

@@ -8,7 +8,7 @@
 #
 # Usage: python3 tools/build_places.py   (downloads GeoNames into tools/cache/ the first time)
 #
-# Each entry of places.json is [lat, lon, name, rule, extra?]:
+# places.json is {"tz": [time zones], "p": [entries]}; each entry is [lat, lon, name, rule, extra, tz, cc, pop, sub?]:
 #   name  = the name the Hebrew spelling is made from (local name; the Italian name in
 #           Italy and in the Italian-named places abroad; the Castilian name in Spain; etc.)
 #   rule  = which spelling rules apply (it, fr, de, es, en, pl, cs, sk, hu, ro, lt, lv, et,
@@ -17,7 +17,13 @@
 #           (exceptions list, Ashkenazi East, Israel); z: words with voiced or silent z;
 #           s: words with voiceless intervocalic s; w: title of the Hebrew Wikipedia article,
 #           for places with no rules and English names (owner, 2026-11-05), adapted to the
-#           Judeo-Italian spelling by placename.js; c: country code, with w)
+#           Judeo-Italian spelling by placename.js; c: country code, with w; q: Israeli Hebrew spellings,
+#           used only by the search (GeoNames Hebrew name and Hebrew Wikipedia title; owner, 2026-11-11)),
+#           0 when empty
+#   tz    = index of the IANA time zone in "tz" (GeoNames; for the few places not in GeoNames, the nearest place's)
+#   cc    = country code (ISO 3166-1)
+#   pop   = round(10·log10(population + 1)), used only to order the search results
+#   sub   = province (Italy: FE, RM…) or state (United States: NY, IL…), to tell homonyms apart in the search
 #
 # Hebrew Wikipedia (CC BY-SA 4.0): the article of the GeoNames place, found through Wikidata
 # (GeoNames id P1566, by a query to query.wikidata.org; the Wikidata id in GeoNames) or through
@@ -194,11 +200,11 @@ def main():
     places = {}   # geonameid -> dict
     for f in rows('IT.zip', 'IT.txt'):
         if f[7] == 'ADM3':
-            places[f[0]] = dict(id=f[0], name=f[1], lat=float(f[4]), lon=float(f[5]), cc='IT', a1=f[10], a2=f[11], pop=int(f[14] or 0))
+            places[f[0]] = dict(id=f[0], name=f[1], lat=float(f[4]), lon=float(f[5]), cc='IT', a1=f[10], a2=f[11], pop=int(f[14] or 0), tz=f[17])
     for f in rows('cities15000.zip', 'cities15000.txt'):
         borough = (f[8] == 'GB' and f[11] == 'GLA' and f[7] == 'PPLA3') or (f[8] == 'US' and f[10] == 'NY' and f[11] in ('005', '047', '061', '081', '085') and f[1] != 'New York City')
         if f[8] != 'IT' and f[7] not in SKIP and not borough:   # London boroughs and New York boroughs: the city is found instead
-            places[f[0]] = dict(id=f[0], name=f[1], lat=float(f[4]), lon=float(f[5]), cc=f[8], a1=f[10], a2=f[11], pop=int(f[14] or 0))
+            places[f[0]] = dict(id=f[0], name=f[1], lat=float(f[4]), lon=float(f[5]), cc=f[8], a1=f[10], a2=f[11], pop=int(f[14] or 0), tz=f[17])
     # Sections of the largest cities (Highbury, Paris 04, Brooklyn…): the city is found instead.
     # Radius 0.004·√population km (London, New York 12 km; Paris 6 km; Milan 5 km: Monza stays apart).
     big = [d for d in places.values() if d['pop'] >= 1000000 and d['cc'] != 'IT']
@@ -210,7 +216,7 @@ def main():
                 del places[d['id']]; break
     small = []
     for f in rows('cities1000.zip', 'cities1000.txt'):
-        d = dict(id=f[0], name=f[1], lat=float(f[4]), lon=float(f[5]), cc=f[8], a1=f[10], a2=f[11], pop=int(f[14] or 0),
+        d = dict(id=f[0], name=f[1], lat=float(f[4]), lon=float(f[5]), cc=f[8], a1=f[10], a2=f[11], pop=int(f[14] or 0), tz=f[17],
                  alt={fold(x) for x in f[3].split(',') if x} | {fold(f[1]), fold(f[2])}, fc=f[7])
         small.append(d)
         if f[8] in ('SM', 'VA', 'MC') and f[7] not in SKIP: places[f[0]] = d
@@ -268,7 +274,7 @@ def main():
         named = [d for d in near if fold(t['local']) in names_of(d) or fold(t.get('title', '')) in names_of(d)]
         pick = max(named or near, key=lambda d: d['pop'], default=None)
         if pick is None:
-            pick = dict(id='e' + t['local'], name=t['local'], lat=t['lat'], lon=t['lon'], cc=t['cc'], a1='', a2='', pop=0)
+            pick = dict(id='e' + t['local'], name=t['local'], lat=t['lat'], lon=t['lon'], cc=t['cc'], a1='', a2='', pop=0, tz='')
         places[pick['id']] = pick
         he.setdefault(pick['id'], heb)
 
@@ -301,10 +307,29 @@ def main():
         else:
             name = d['name']
         if (cc, d['a1']) in DALMATIA_ISTRIA and not A(gid, 'it'): rule = ''
+        # the GeoNames town with the same name next to an Italian comune: its names fill those the comune lacks
+        # (Torino → Turin, Padova → Padua, Padoue), and its Hebrew Wikipedia article is often the town's
+        twins = [gid] + [t['id'] for t in index.get(fold(d['name']), []) if t['cc'] == cc and t['id'] != gid
+                         and fold(d['name']) in (fold(t['name']), fold(A(t['id'], 'it') or ''))
+                         and t.get('fc', '').startswith('PPL') and km(t['lat'], t['lon'], d['lat'], d['lon']) < 15]
+        # only for towns of 15,000+ (where exonyms are usual), not administrative names nor mere spelling variants
+        letters = lambda v: re.sub(r'[^a-z]', '', fold(v))
+        def twin_name(l):
+            if cc != 'IT' or d['pop'] < 15000: return None
+            for g in twins[1:]:
+                v = A(g, l)
+                if not v or BUREAU.search(v) or re.search(r'\b(province|provincia|city)\b', v, re.I): continue
+                if v in ('Chisra', 'Mont Éryx'): continue   # wrong names in GeoNames (Cerveteri, Erice)
+                if letters(v) != letters(name) and not fold(name).startswith(fold(v) + ' '): return v   # not a variant, nor the name before a merger (Lonato → Lonato del Garda)
         x = {}
+        same = lambda s: unicodedata.normalize('NFC', s).lower().replace('ş', 'ș').replace('ţ', 'ț')
+        marks = lambda s: sum(unicodedata.combining(c) > 0 for c in unicodedata.normalize('NFD', s))
         for l in ('it', 'en', 'fr'):
-            v = A(gid, l)
-            if v and fold(v).replace('ş', 's').replace('ţ', 't') != fold(name).replace('ș', 's').replace('ț', 't'): x[l] = v
+            v = A(gid, l) or twin_name(l)
+            # a form that differs only in accents is kept when it has more of them (Jérusalem, Séoul; not Poznan
+            # for Poznań); Romanian ş/ș and ţ/ț count as the same letter
+            if v and (fold(v).replace('ş', 's').replace('ţ', 't') != fold(name).replace('ș', 's').replace('ț', 't')
+                      or (same(v) != same(name) and marks(v) > marks(name))): x[l] = v
         if gid in he: x['he'] = he[gid]
         elif rule == 'he':
             if A(gid, 'he'): x['he'] = A(gid, 'he')
@@ -317,18 +342,33 @@ def main():
         if rule in ('', 'en') and 'he' not in x and cc not in ('IL', 'PS'):
             w = wiki(gid)
             if w: x['w'] = w; x['c'] = cc; stats['wiki'] = stats.get('wiki', 0) + 1
+        # Israeli spellings for the search: the GeoNames Hebrew name and the Hebrew Wikipedia title (also the twin's)
+        q = []
+        for g in twins:
+            for v in (A(g, 'he'), wiki(g)):
+                if v and v not in q and v != x.get('he') and v != x.get('w') and re.search('[א-ת]', v): q.append(v)
+        if q: x['q'] = q; stats['israeli'] = stats.get('israeli', 0) + 1
         if cc == 'IT':
             z = {w: v for w, v in zdat.get(name, {}).items() if v != 'u'}
             s = {w: v for w, v in sdat.get(name, {}).items() if v != 'v'}
             if z: x['z'] = z
             if s: x['s'] = s
-        e = [round(d['lat'], 3), round(d['lon'], 3), name, rule]
-        if x: e.append(x)
+        sub = d['a2'] if cc == 'IT' else d['a1'] if cc == 'US' else ''
+        e = [round(d['lat'], 3), round(d['lon'], 3), name, rule, x or 0, d.get('tz', ''), cc, round(10 * math.log10(d['pop'] + 1))]
+        if sub: e.append(sub)
         out.append(e)
         stats[rule] = stats.get(rule, 0) + 1
     out.sort(key=lambda e: (e[0], e[1]))
+    # time zone: the nearest place's where GeoNames has none; then an index into the table
+    for e in out:
+        if not e[5]:
+            e[5] = min((o for o in out if o[5]), key=lambda o: km(o[0], o[1], e[0], e[1]))[5]
+    zones = sorted({e[5] for e in out})
+    zi = {z: i for i, z in enumerate(zones)}
+    for e in out: e[5] = zi[e[5]]
     with open(os.path.join(ROOT, 'places.json'), 'w', encoding='utf-8') as fh:
-        fh.write('[\n' + ',\n'.join(json.dumps(e, ensure_ascii=False, separators=(',', ':')) for e in out) + '\n]\n')
+        fh.write('{"tz":' + json.dumps(zones, separators=(',', ':')) + ',\n"p":[\n'
+                 + ',\n'.join(json.dumps(e, ensure_ascii=False, separators=(',', ':')) for e in out) + '\n]}\n')
     print(len(out), 'places;', ', '.join(f'{k or "latin only"} {v}' for k, v in sorted(stats.items())), file=sys.stderr)
 
 if __name__ == '__main__':
