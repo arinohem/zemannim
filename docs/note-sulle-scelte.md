@@ -68,13 +68,13 @@ Le diciture del giorno segnalano gli usi diversi. A Kippur, secondo il rito ital
 
 Menzione nella seconda benedizione: «מתפלת המוספין שליום טוב האחרון שלחג, עד תפלת שחרית שליום טוב הראשון שלפסח» (Tefillà 2:17 [15]); dove si fanno due giorni di Yom Ṭoḇ, da Musaf del primo giorno di Sheminì ʿAṣèreṯ (2:19 [17]). Formula del rito italiano: «משיב הרוח ומוריד הגשם». D’estate, secondo il rito italiano, non si dice nulla, mentre il MT ha «ובימות החמה, מוריד הטל» (2:17 [15]).
 
-Richiesta in Birkaṯ ha-shanim: in Israele «משבעה ימים במרחשון»; nella diaspora «ביום ששים אחר תקופת תשרי», contando come 1° il giorno della tequfà; in entrambi i casi «כל זמן שמזכיר הגשם» (2:18 [16]). Si comincia a ʿArḇiṯ della sera prima o, se quel giorno è Shabbaṯ, alla prima ʿArḇiṯ feriale seguente. L’ultima richiesta è a Minḥà dell’ultimo giorno feriale prima del 15 Nisan. La formula è quella del Maḥazor del curatore dell’app, del rito italiano originale: d’inverno si aggiunge l’intera frase «ותן טל ומטר לברכה על־פני האדמה ושבע את־העולם מברכותיך».
+Richiesta in Birkaṯ ha-shanim: in Israele «משבעה ימים במרחשון»; nella diaspora «ביום ששים אחר תקופת תשרי», contando come 1° il giorno della tequfà; in entrambi i casi «כל זמן שמזכיר הגשם» (2:18 [16]). Si comincia a ʿArḇiṯ della sera prima o, se quel giorno è Shabbaṯ, alla prima ʿArḇiṯ feriale seguente. L’ultima richiesta è a Minḥà dell’ultimo giorno feriale prima del 15 Nisan. La formula è quella del Maḥazor del curatore dell’app, del rito italiano originale: d’inverno si aggiunge l’intera frase «ותן טל ומטר לברכה על פני האדמה ושבע את העולם מברכותיך».
 
 L’app mostra le formule solo nei giorni in cui si dicono e la sera prima dell’inizio; nei giorni di cambio una nota, su una riga a sé, dice quando si comincia o si smette.
 
 ## Aggiunte alla ʿAmiḏà
 
-Nei dieci giorni da Rosh ha-Shanà a Yom ha-Kippurim «המלך הקדוש» nella 3ª benedizione e «המלך המשפט» nell’11ª, che c’è solo nella ʿAmiḏà feriale (Tefillà 2:20 [18]); a Rosh Ḥòḏesh e Ḥol ha-moʿeḏ «יעלה ויבוא» nella ʿAḇoḏà (2:12–13 [10–11]); a Ḥanukkà e Purim «על הנסים» nella Hoḏayà (2:15 [13]).
+Nei dieci giorni da Rosh ha-Shanà a Yom ha-Kippurim «המלך הקדוש» nella 3ª benedizione e «המלך המשפט» nell’11ª, che c’è solo nella ʿAmiḏà feriale (Tefillà 2:20 [18]); a Rosh Ḥòḏesh e Ḥol ha-moʿeḏ «יעלה ויבא» nella ʿAḇoḏà (2:12–13 [10–11]); a Ḥanukkà e Purim «על הנסים» nella Hoḏayà (2:15 [13]).
 
 Nei digiuni «עננו» in Shomeaʿ tefillà, e l’officiante ne fa una benedizione a sé fra Goʾel e Rofé; il 9 di Aḇ anche «רחם» in Boné Yerushalàyim (2:16 [14]). «עננו» ha la formula del rito italiano, «עננו יי עננו», dal manoscritto del 1265 e dal Maḥazor di Bologna, dove il MT e il Seder Ḥibbur Berakhoṯ hanno «עננו אבינו». «רחם יי אלהינו עלינו» è la formula del MT; secondo lo Shibbolé ha-Lèqeṭ e il Seder Tanya si dice in ogni preghiera del 9 di Aḇ.
 

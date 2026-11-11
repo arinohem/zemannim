@@ -440,7 +440,7 @@ function computeDay(rd, opt) {
   // (scelta del proprietario, 2026-11-03), quindi 'untilNeila' = fino a Neʿilà.
   const ADD = {
     tenDays: i => i.m === 7 && i.d <= 10,          // 2:20: המלך הקדוש, המלך המשפט
-    yaale: i => i.roshHodesh || i.holMoed,          // 2:12–13: יעלה ויבוא nella ʿAḇoḏà
+    yaale: i => i.roshHodesh || i.holMoed,          // 2:12–13: יעלה ויבא nella ʿAḇoḏà
     nissim: i => i.hanukka || i.purim               // 2:15: על הנסים nella Hoḏayà
   };
   res.amida = [];

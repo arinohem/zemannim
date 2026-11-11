@@ -557,7 +557,7 @@ function render() {
     // in Birkaṯ ha-shanim). Come la menzione: solo nei giorni in cui si dice (e la sera prima dell'inizio);
     // la nota in italiano solo nei giorni di cambio.
     if (rain.ask || rain.askTonight) {
-      const formula = heb('ותן טל ומטר לברכה על־פני האדמה ושבע את־העולם מברכותיך');
+      const formula = heb('ותן טל ומטר לברכה על פני האדמה ושבע את העולם מברכותיך');
       const st = rain.askTonight ? l.askTonight : rain.askFirst ? l.askFirst : rain.askLast ? l.askLast : null;
       if (!st) notes.push(formula);
       else {
