@@ -238,7 +238,8 @@ const ZEMANIM = {
                     en: 'MT Tefilla 3:5: until 7 hours; whoever prays later has fulfilled the obligation, though at fault, because its time is the whole day',
                     fr: 'MT Tefilla 3:5 : jusqu’à 7 heures ; qui prie plus tard est quitte, bien qu’en faute, car son temps est toute la journée' }, r: 'f' },
   minhaQ:  { he: 'מנחה קטנה', it: 'Minḥà qeṭannà (9½ ore)', en: 'Minḥa qeṭanna (9½ hours)', fr: 'Minḥa qeṭanna (9½ heures)', src: 'MT Tefillà 3:2, 3:4', r: 'c' },
-  plag:    { he: 'שעה ורביע קדם השקיעה', it: 'Termine per la minḥà qeṭannà, 1¼ ore prima del tramonto (si può recitare Minḥà fino al tramonto)',
+  // «פלג המנחה»: nome della Mishnà (Beraḵoṯ 4:1), che il Commento fa coincidere con l'ora e un quarto (curatore, 2026-11-17)
+  plag:    { he: 'שעה ורביע קדם השקיעה (פלג המנחה)', it: 'Termine per la minḥà qeṭannà, 1¼ ore prima del tramonto (si può recitare Minḥà fino al tramonto)',
              en: 'Latest time for minḥa qeṭanna, 1¼ hours before sunset (Minḥa may be recited until sunset)',
              fr: 'Heure limite pour la minḥa qeṭanna, 1¼ heure avant le coucher du soleil (on peut réciter la prière de Minḥa jusqu’au coucher du soleil)', src: 'MT Tefillà 3:4', r: 'f' },
   shqia:   { he: 'שקיעת החמה', it: 'Tramonto', en: 'Sunset', fr: 'Coucher du soleil', src: 'MT Shabbaṯ 5:3–4; Tefillà 3:4', r: 'f' },
@@ -668,9 +669,17 @@ function choosePlace(p) {
   S.recent = [pl, ...S.recent.filter(r => placeKey(r) !== placeKey(pl))].slice(0, 5);
   save(); if (!S.autoLoc) current = todayRd(); render(); openSheet('settings');
 }
-function openSheet(which) {
+// Tasto indietro (Android): ogni pannello aperto è una voce della cronologia, { sheet, d } con d = pannelli aperti;
+// indietro torna al pannello precedente o alla pagina del giorno, invece di uscire dall'app (curatore, 2026-11-17).
+// Ridisegnare lo stesso pannello (impostazioni dopo ogni tocco) non aggiunge voci.
+function openSheet(which, fromHistory) {
   const l = L();
   const sh = document.getElementById('sheet');
+  if (!fromHistory) {
+    const st = sh.classList.contains('open') && history.state && history.state.sheet ? history.state : null;
+    if (!st) history.pushState({ sheet: which, d: 1 }, '');
+    else if (st.sheet !== which) history.pushState({ sheet: which, d: st.d + 1 }, '');
+  }
   let html = `<div class="sheethead"><b>${which === 'notes' ? l.notes : which === 'install' ? INSTALL[S.lang].title : l.settings}</b><button id="closeSheet">${l.close}</button></div>`;
   if (which === 'settings') {
     const pl = S.place;
@@ -701,7 +710,11 @@ function openSheet(which) {
   }
   sh.innerHTML = translit(html);
   sh.classList.add('open');
-  document.getElementById('closeSheet').onclick = () => { sh.classList.remove('open'); render(); };
+  // «Chiudi» chiude tutti i pannelli: torna indietro di d voci, e il gestore di popstate fa il resto
+  document.getElementById('closeSheet').onclick = () => {
+    const st = history.state;
+    if (st && st.sheet) history.go(-st.d); else closeSheet();
+  };
   sh.querySelectorAll('.seg button').forEach(b => b.onclick = () => {
     const name = b.parentNode.dataset.name; let v = b.dataset.v;
     if (v === 'true') v = true; else if (v === 'false') v = false; else if (/^\d+$/.test(v)) v = +v;
@@ -767,6 +780,14 @@ function openSheet(which) {
   const oi = document.getElementById('openInstall');
   if (oi) oi.onclick = () => openSheet('install');
 }
+
+function closeSheet() { document.getElementById('sheet').classList.remove('open'); render(); }
+window.addEventListener('popstate', e => {
+  const st = e.state;
+  if (st && st.sheet) openSheet(st.sheet, true); else if (document.getElementById('sheet').classList.contains('open')) closeSheet();
+});
+// Ricaricata con un pannello nella cronologia: la pagina riparte senza pannelli, quindi si torna alla voce della pagina del giorno
+if (history.state && history.state.sheet) history.go(-history.state.d);
 
 // ---------- Navigazione ----------
 document.getElementById('prev').onclick = () => { current--; render(); };
