@@ -56,7 +56,7 @@ Con l’impostazione spenta tutti gli orari sono arrotondati al minuto più vici
 
 ## Conto alla rovescia
 
-Nel giorno corrente, sotto il prossimo orario dell’elenco, l’app mostra il tempo che manca, al secondo. Il conto è riferito all’istante calcolato, mentre l’orario della riga è arrotondato al minuto: i due possono differire di meno di un minuto. Per un termine arrotondato al minuto precedente il conto finisce dopo il minuto mostrato (un tramonto calcolato alle 16:50:33 è mostrato 16:50, e il conto arriva a zero 33 secondi dopo le 16:50:00); per un inizio arrotondato al minuto seguente finisce prima. Chi si regola sull’orario mostrato resta dal lato prudente. Non è una regola del MT.
+Nel giorno corrente, sotto il prossimo orario dell’elenco, l’app mostra il tempo che manca, al secondo. Con l’impostazione «senza secondi» lo mostra in ore e minuti interi, per difetto, e nell’ultimo minuto dice «meno di un minuto». Il conto è riferito all’istante calcolato, mentre l’orario della riga è arrotondato al minuto: i due possono differire di meno di un minuto. Per un termine arrotondato al minuto precedente il conto finisce dopo il minuto mostrato (un tramonto calcolato alle 16:50:33 è mostrato 16:50, e il conto arriva a zero 33 secondi dopo le 16:50:00); per un inizio arrotondato al minuto seguente finisce prima. Chi si regola sull’orario mostrato resta dal lato prudente. Non è una regola del MT. *Impostazione: con i secondi / senza secondi.*
 
 ## Nefilaṯ appàyim
 
@@ -129,7 +129,7 @@ Quando nella diaspora l’ultimo giorno di Pèsaḥ o il secondo di Shaḇuʿo�
 
 ## Lingue
 
-I termini ebraici compaiono sempre; le didascalie possono essere in italiano, inglese o francese, oppure si può scegliere il solo ebraico. Nell’app le note seguono la lingua scelta; questa versione completa è solo in italiano. *Impostazione: Italiano / English / Français / solo ebraico.*
+I termini ebraici compaiono sempre; le didascalie possono essere in italiano, inglese o francese, oppure si può scegliere il solo ebraico. Al primo avvio l’app parte dalla lingua del telefono, se è una di queste; altrimenti dall’italiano. La pagina chiede al browser di non tradurla in automatico, perché i testi sono già nelle quattro lingue e una traduzione automatica li altera. Nell’app le note seguono la lingua scelta; questa versione completa è solo in italiano. *Impostazione: Italiano / English / Français / solo ebraico.*
 
 Nelle didascalie italiane «sabato» indica il giorno della settimana e del calendario («questo sabato», «Sabato festivo»), «Shabbaṯ» il giorno nel suo senso halakhico («Inizio dello Shabbaṯ», «Shabbaṯ Sheqalim»). Gli orari che chiudono il tempo di una preghiera si chiamano «Termine per» (lo Shemaʿ del mattino, Shaḥriṯ, Musaf, la minḥà qeṭannà), e la mezzanotte è il «termine preferibile» per lo Shemaʿ della sera; «Fine» resta per la fine dello Shabbaṯ e dello Yom Ṭoḇ.
 

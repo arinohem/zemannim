@@ -14,10 +14,20 @@ const DEFAULTS = {
   place: { name: 'Ferrara', lat: 44.8378, lon: 11.6198, tz: 'Europe/Rome', cc: 'IT', sub: 'FE',
            names: { it: 'Ferrara', en: 'Ferrara', fr: 'Ferrare', he: 'פירארה' } },
   saved: [],           // «I miei luoghi», salvati con la stella (scelta del curatore, 2026-11-11)
-  recent: []           // gli ultimi 5 luoghi scelti con la ricerca
+  recent: [],          // gli ultimi 5 luoghi scelti con la ricerca
+  cdSec: true          // conto alla rovescia con i secondi; spento: ore e minuti
 };
-let S = Object.assign({}, DEFAULTS);
-try { const raw = localStorage.getItem('mt-zemanim'); if (raw) S = Object.assign({}, DEFAULTS, JSON.parse(raw)); } catch (e) {}
+let S = Object.assign({}, DEFAULTS), hadLang = false;
+try { const raw = localStorage.getItem('mt-zemanim'); if (raw) { const o = JSON.parse(raw); hadLang = !!o.lang; S = Object.assign({}, DEFAULTS, o); } } catch (e) {}
+// Primo avvio (nessuna lingua salvata): la lingua del telefono, se è una delle quattro; altrimenti l'italiano
+if (!hadLang) {
+  try {
+    for (const c of (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''])) {
+      const k = String(c).slice(0, 2).toLowerCase().replace('iw', 'he');
+      if (['it', 'en', 'fr', 'he'].includes(k)) { S.lang = k; break; }
+    }
+  } catch (e) {}
+}
 function save() { try { localStorage.setItem('mt-zemanim', JSON.stringify(S)); } catch (e) {} }
 
 // ---------- Testi ----------
@@ -26,7 +36,7 @@ const T = {
     tammuzNote: 'Rito italiano (Maḥazor di Bologna): si legge di seguito, senza saltare. Alcuni leggono come negli altri digiuni (<span lang="he">ויחל משה</span>, poi <span lang="he">פסל לך</span>), secondo il MT', fastOut: 'Fine del digiuno', reading: 'Lettura della Torà', both: 'Shaḥriṯ e Minḥà', av9In: 'Inizio di Tishʿà be-Aḇ',
     hamEat: 'Termine per mangiare ḥameṣ', hamEatShabb: 'Termine per mangiare ḥameṣ; ciò che avanza si annulla e si copre', hamTora: 'Da qui il ḥameṣ è vietato dalla Torà',
     hamSearch: 'Stasera, all’inizio della notte: ricerca del ḥameṣ', hamFriday: 'Prima dello Shabbaṯ si elimina il ḥameṣ, tranne quello da mangiare domani fino alle 4 ore',
-    cdIn: 'tra', hanLight: 'Accensione dei lumi di Ḥanukkà', hanFriday: 'I lumi di Ḥanukkà si accendono prima',
+    cdIn: 'tra', cdH: 'h', cdMin: 'min', cdLt: 'tra meno di un minuto', cdLbl: 'Conto alla rovescia', cdSecOn: 'con i secondi', cdSecOff: 'senza secondi', hanLight: 'Accensione dei lumi di Ḥanukkà', hanFriday: 'I lumi di Ḥanukkà si accendono prima',
     neila: 'Neʿilà si conclude poco prima',moonLastEve: 'Stasera: ultima sera per la benedizione della luna (<span lang="he">מחדש חדשים</span>); si può recitare fino al tramonto di domani', moonLastDay: 'Benedizione della luna (<span lang="he">מחדש חדשים</span>): ultimo giorno, fino al tramonto',
     moonFirst: 'Da stasera: benedizione della luna (<span lang="he">מחדש חדשים</span>), da recitare appena si vede la luna nuova',
     omer: (n, w, d) => `ʿÒmer: stasera si conta il ${n}° giorno` + (w ? ` (${w} settiman${w > 1 ? 'e' : 'a'}${d ? ` e ${d} giorn${d > 1 ? 'i' : 'o'}` : ''})` : ''),
@@ -56,7 +66,7 @@ const T = {
     tammuzNote: 'Italian rite (Bologna Maḥazor): read straight through, without skipping. Some read as on the other fasts (<span lang="he">ויחל משה</span>, then <span lang="he">פסל לך</span>), as in the MT', fastOut: 'Fast ends', reading: 'Tora reading', both: 'Shaḥriṯ and Minḥa', av9In: 'Tishʿa be-Aḇ begins',
     hamEat: 'Latest time for eating ḥameṣ', hamEatShabb: 'Latest time for eating ḥameṣ; what is left is annulled and covered', hamTora: 'From here ḥameṣ is forbidden by the Tora',
     hamSearch: 'Tonight, at the beginning of the night: search for ḥameṣ', hamFriday: 'Before Shabbaṯ the ḥameṣ is removed, except what will be eaten tomorrow until 4 hours',
-    cdIn: 'in', hanLight: 'Lighting of the Ḥanukka lights', hanFriday: 'The Ḥanukka lights are lit before',
+    cdIn: 'in', cdH: 'h', cdMin: 'min', cdLt: 'in less than a minute', cdLbl: 'Countdown', cdSecOn: 'with seconds', cdSecOff: 'without seconds', hanLight: 'Lighting of the Ḥanukka lights', hanFriday: 'The Ḥanukka lights are lit before',
     neila: 'Neʿila is completed shortly before',moonLastEve: 'Tonight: last evening for the blessing on the moon (<span lang="he">מחדש חדשים</span>); it may be recited until sunset tomorrow', moonLastDay: 'Blessing on the moon (<span lang="he">מחדש חדשים</span>): last day, until sunset',
     moonFirst: 'From tonight: blessing on the moon (<span lang="he">מחדש חדשים</span>), to be recited as soon as the new moon is seen',
     omer: (n, w, d) => `ʿOmer: tonight is day ${n}` + (w ? ` (${w} week${w > 1 ? 's' : ''}${d ? ` and ${d} day${d > 1 ? 's' : ''}` : ''})` : ''),
@@ -86,7 +96,7 @@ const T = {
     tammuzNote: 'Rite italien (Maḥazor de Bologne) : on lit à la suite, sans sauter. Certains lisent comme les autres jeûnes (<span lang="he">ויחל משה</span>, puis <span lang="he">פסל לך</span>), comme le MT', fastOut: 'Fin du jeûne', reading: 'Lecture de la Tora', both: 'Shaḥriṯ et Minḥa', av9In: 'Début de Tishʿa be-Aḇ',
     hamEat: 'Heure limite pour manger du ḥameṣ', hamEatShabb: 'Heure limite pour manger du ḥameṣ ; ce qui reste est annulé et recouvert', hamTora: 'À partir d’ici le ḥameṣ est interdit par la Tora',
     hamSearch: 'Ce soir, au début de la nuit : recherche du ḥameṣ', hamFriday: 'Avant le Shabbaṯ on élimine le ḥameṣ, sauf celui que l’on mangera demain jusqu’à 4 heures',
-    cdIn: 'dans', hanLight: 'Allumage des lumières de Ḥanukka', hanFriday: 'Les lumières de Ḥanukka s’allument avant',
+    cdIn: 'dans', cdH: 'h', cdMin: 'min', cdLt: 'dans moins d’une minute', cdLbl: 'Compte à rebours', cdSecOn: 'avec les secondes', cdSecOff: 'sans les secondes', hanLight: 'Allumage des lumières de Ḥanukka', hanFriday: 'Les lumières de Ḥanukka s’allument avant',
     neila: 'La Neʿila s’achève peu avant',moonLastEve: 'Ce soir : dernier soir pour la bénédiction de la lune (<span lang="he">מחדש חדשים</span>) ; on peut la réciter jusqu’au coucher du soleil de demain', moonLastDay: 'Bénédiction de la lune (<span lang="he">מחדש חדשים</span>) : dernier jour, jusqu’au coucher du soleil',
     moonFirst: 'À partir de ce soir : bénédiction de la lune (<span lang="he">מחדש חדשים</span>), à réciter dès que l’on voit la nouvelle lune',
     omer: (n, w, d) => `ʿOmer : ce soir, ${n === 1 ? '1er' : n + 'e'} jour` + (w ? ` (${w} semaine${w > 1 ? 's' : ''}${d ? ` et ${d} jour${d > 1 ? 's' : ''}` : ''})` : ''),
@@ -97,7 +107,7 @@ const T = {
     ask: 'Demande de la pluie',
     askTonight: 'commence ce soir à ʿArḇiṯ', askFirst: 'on a commencé hier soir à ʿArḇiṯ', askLast: 'pour la dernière fois à Minḥa',
     scTonight: 'À partir de ʿArḇiṯ ce soir', scUntilMinha: 'Jusqu’à Minḥa', scUntilNeila: 'Jusqu’à Neʿila', ifFast: 'Si l’on jeûne', b3: '3e bénédiction', b11: '11e bénédiction', aboda: 'dans la ʿAḇoḏa', hodaya: 'dans la Hoḏaya',
-    anenu: 'dans Shomeaʿ tefilla ; l’officiant en fait une bénédiction à part, entre Goʾel et Rofe', boneh: 'dans Bone Yerushalayim', hour: 'Heure saisonnière', settings: 'Réglages', notes: 'Notes sur les choix',
+    anenu: 'dans Shomeaʿ tefilla ; l’officiant en fait une bénédiction à part, entre Goʾel et Rofe', boneh: 'dans Bone Yerushalayim', hour: 'Heure saisonnière', settings: 'Paramètres', notes: 'Notes sur les choix',
     close: 'Fermer', place: 'Lieu', useGps: 'Utiliser ma position', gpsFail: 'Position indisponible sur cette page : cherchez un lieu.',
     gpsWait: 'Recherche de la position…', manual: 'Coordonnées', apply: 'Appliquer', tzethLbl: 'Ṣeṯ ha-koḵaḇim (fin du Shabbaṯ, des fêtes et des jeûnes)',
     tequfaLbl: 'Tequfa pour la demande de la pluie (diaspora)', dawnLbl: 'Afficher ʿaloṯ ha-shaḥar', israelLbl: 'Terre d’Israël',
@@ -116,7 +126,7 @@ const T = {
     tammuzNote: 'מנהג ק״ק איטאליאני (מחזור בולוניה): קוראים הכל על הסדר ואין מדלגים. ויש שקוראים כשאר תעניות (ויחל משה ופסל לך), כמשנה תורה', fastOut: 'סוף התענית', reading: 'קריאת התורה', both: 'שחרית ומנחה', av9In: 'תחלת תשעה באב',
     hamEat: 'סוף זמן אכילת חמץ', hamEatShabb: 'סוף זמן אכילת חמץ; הנשאר מבטלים אותו וכופים עליו כלי', hamTora: 'מכאן החמץ אסור מן התורה',
     hamSearch: 'הלילה, מתחלת הלילה: בדיקת חמץ', hamFriday: 'מבערים את החמץ מלפני השבת, חוץ ממה שאוכלים למחר עד ארבע שעות',
-    cdIn: 'בעוד', hanLight: 'הדלקת נרות חנכה', hanFriday: 'מדליקים נרות חנכה קדם לכן',
+    cdIn: 'בעוד', cdH: 'שע׳', cdMin: 'דק׳', cdLt: 'בעוד פחות מדקה', cdLbl: 'ספירה לאחור', cdSecOn: 'עם שניות', cdSecOff: 'בלי שניות', hanLight: 'הדלקת נרות חנכה', hanFriday: 'מדליקים נרות חנכה קדם לכן',
     neila: 'משלימים תפלת נעילה סמוך לשקיעת החמה',moonLastEve: 'הלילה: לילה אחרון לברכת הלבנה (מחדש חדשים); מברכים עד שקיעת החמה של מחר', moonLastDay: 'ברכת הלבנה (מחדש חדשים): יום אחרון, עד שקיעת החמה',
     moonFirst: 'מהלילה: ברכת הלבנה (מחדש חדשים); מברכים כשרואים את הלבנה בחדושה',
     omer: (n, w, d) => `ספירת העמר: הלילה יום ${E.hebNumeral(n)}` + (w ? `, ${w === 1 ? 'שבוע אחד' : E.hebNumeral(w) + ' שבועות'}${d ? ' ו' + (d === 1 ? 'יום אחד' : E.hebNumeral(d) + ' ימים') : ''}` : ''),
@@ -455,9 +465,14 @@ function fmtTime(date, kind) {
   } catch (e) { return new Date(ms).toTimeString().slice(0, 5); }
 }
 // Conto alla rovescia verso il prossimo orario: all'istante calcolato, al secondo, non al minuto arrotondato
-// mostrato nella riga (scelta del curatore, 2026-11-10)
+// mostrato nella riga (scelta del curatore, 2026-11-10). Senza secondi (impostazione cdSec): ore e minuti interi,
+// per difetto, così non si mostra mai più tempo di quanto ne resti; nell'ultimo minuto «meno di un minuto»
 function cdText(target) {
   const s = Math.max(0, Math.ceil((target - Date.now()) / 1000));
+  if (!S.cdSec) {
+    const l = L(), mm = Math.floor(s / 60), hh = Math.floor(mm / 60);
+    return mm < 1 ? l.cdLt : `${l.cdIn} <bdi>${hh ? hh + ' ' + l.cdH + ' ' : ''}${mm % 60} ${l.cdMin}</bdi>`;
+  }
   const p = n => String(n).padStart(2, '0');
   const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60);
   return `${L().cdIn} <bdi>${h ? h + ':' + p(m) : m}:${p(s % 60)}</bdi>`;
@@ -671,6 +686,7 @@ function openSheet(which) {
       <h3>${l.israelLbl}</h3>${seg('israel', S.israel, [['auto', l.auto], ['on', l.on], ['off', l.off]])}
       <h3>${l.walledLbl}</h3>${seg('walled', S.walled, [['auto', l.auto], ['on', l.on], ['off', l.off]])}
       <h3>${l.prudentLbl}</h3>${seg('prudent', S.prudent, [[true, l.on], [false, l.off]])}
+      <h3>${l.cdLbl}</h3>${seg('cdSec', S.cdSec, [[true, l.cdSecOn], [false, l.cdSecOff]])}
       <h3>${l.translitLbl}</h3>${seg('translit', S.translit, [['digraph', 'kh, th'], ['line', '&#7733;, &#7791;']])}
       <h3>${l.bethLbl}</h3>${seg('beth', S.beth, [['line', '&#7687;'], ['v', 'v']])}
       ${isInstalled() ? '' : `<button class="wide" id="openInstall">${INSTALL[S.lang].title}</button>`}
